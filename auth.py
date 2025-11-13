@@ -1,27 +1,32 @@
 from pathlib import Path
+import re
 import bcrypt
 
+USER_DATA_FILE = Path("users.txt")  
+
 def hash_password(plain_text_password: str) -> str:
+    """Return bcrypt hash (utf-8 str) of the given password."""
     password_bytes = plain_text_password.encode("utf-8")
-    salt = bcrypt.gensalt()
+    salt = bcrypt.gensalt()  # default cost is fine for CLI use
     hashed_password = bcrypt.hashpw(password_bytes, salt)
-    return hashed_password.decode("utf-8")  
+    return hashed_password.decode("utf-8")
+
 def verify_password(plain_text_password: str, hashed_password: str) -> bool:
+    """Check plaintext vs stored bcrypt hash."""
     return bcrypt.checkpw(
         plain_text_password.encode("utf-8"),
         hashed_password.encode("utf-8"),
     )
 
-USER_DATA_FILE = Path("users.txt")  
-
 def user_exists(username: str) -> bool:
+    """Check if a username already exists in users.txt (exact match)."""
     if not USER_DATA_FILE.exists():
         return False
     with USER_DATA_FILE.open(mode="r", encoding="utf-8") as f:
         for line in f:
             line = line.strip()
             if not line or "," not in line:
-                continue 
+                continue
             saved_username, _ = line.split(",", 1)
             if saved_username == username:
                 return True
@@ -29,15 +34,15 @@ def user_exists(username: str) -> bool:
 
 def register_user(username: str, password: str) -> bool:
     # Username validation
-    is_valid, error_msg = validate_username(username)
-    if not is_valid:
-        print(f"Error: {error_msg}")
+    ok, msg = validate_username(username)
+    if not ok:
+        print(f"Error: {msg}")
         return False
 
     # Password validation
-    is_valid, error_msg = validate_password(password)
-    if not is_valid:
-        print(f"Error: {error_msg}")
+    ok, msg = validate_password(password)
+    if not ok:
+        print(f"Error: {msg}")
         return False
 
     if user_exists(username):
@@ -74,32 +79,32 @@ def login_user(username: str, password: str) -> bool:
 
 def validate_username(username: str) -> tuple[bool, str]:
     """
-    Returns (is_valid, error_message)
+    Valid username: 3–20 alphanumeric characters (A–Z, a–z, 0–9), no spaces/symbols.
+    Returns (is_valid, error_message).
     """
     username = username.strip()
     if not username:
         return False, "Username cannot be empty."
-    if "," in username:
-        return False, "Username cannot contain a comma."
-    if len(username) < 3:
-        return False, "Username must be at least 3 characters long."
+    if not re.fullmatch(r"[A-Za-z0-9]{3,20}", username):
+        return False, "Username must be 3–20 alphanumeric characters (A–Z, a–z, 0–9) only."
     return True, ""
 
 def validate_password(password: str) -> tuple[bool, str]:
     """
-    Simple password policy (adjust as needed).
+    Valid password: 6–50 characters (any characters allowed).
     Returns (is_valid, error_message).
     """
-    if len(password) < 8:
-        return False, "Password must be at least 8 characters long."
-    # You can add more checks (digits, symbols, etc.) here if you want:
-    # if not any(c.isdigit() for c in password): ...
+    if len(password) < 6:
+        return False, "Password must be at least 6 characters long."
+    if len(password) > 50:
+        return False, "Password must be at most 50 characters long."
     return True, ""
 
 def display_menu():
+    """Displays the main menu options."""
     print("\n" + "=" * 50)
-    print(" MULTI-DOMAIN INTELLIGENCE PLATFORM")
-    print(" Secure Authentication System")
+    print(" PASSWORD SECURITY DEMO")
+    print(" One-way hashing (bcrypt) · No plaintext storage")
     print("=" * 50)
     print("\n[1] Register a new user")
     print("[2] Login")
@@ -107,27 +112,29 @@ def display_menu():
     print("-" * 50)
 
 def main():
-    print("\nWelcome to the Week 7 Authentication System!")
     while True:
+        """Main program loop."""
+        print("\nWelcome to the Week 7 Authentication System!")
         display_menu()
         choice = input("\nPlease select an option (1-3): ").strip()
 
         if choice == "1":
             # Registration flow
             print("\n--- USER REGISTRATION ---")
-            username = input("Enter a username: ").strip()
-            is_valid, error_msg = validate_username(username)
-            if not is_valid:
-                print(f"Error: {error_msg}")
+            username = input("Enter a username (3–20 alphanumeric): ").strip()
+            ok, msg = validate_username(username)
+            if not ok:
+                print(f"Error: {msg}")
                 continue
 
-            password = input("Enter a password: ").strip()
-            is_valid, error_msg = validate_password(password)
-            if not is_valid:
-                print(f"Error: {error_msg}")
+            
+            password = input("Enter a password (6–50 chars): ").strip()
+            ok, msg = validate_password(password)
+            if not ok:
+                print(f"Error: {msg}")
                 continue
 
-            password_confirm = input("Confirm password: ").strip()
+            password_confirm = input("Confirm password: ").strip()  
             if password != password_confirm:
                 print("Error: Passwords do not match.")
                 continue
@@ -138,9 +145,10 @@ def main():
             # Login flow
             print("\n--- USER LOGIN ---")
             username = input("Enter your username: ").strip()
-            password = input("Enter your password: ").strip()
+            password = input("Enter your password: ").strip()  
             if login_user(username, password):
                 print("\nYou are now logged in.")
+                print("(In a real application, you would now access the d")
                 input("\nPress Enter to return to the main menu...")
 
         elif choice == "3":

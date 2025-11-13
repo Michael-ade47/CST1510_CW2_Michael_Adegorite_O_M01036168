@@ -14,8 +14,8 @@ env/
 .DS_Store
 Thumbs.db
 
-# === User Data Files ===
-users.txt
+
+
 
 # === VS Code Settings ===
 .vscode/
