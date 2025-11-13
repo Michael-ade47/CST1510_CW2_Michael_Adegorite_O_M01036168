@@ -1,24 +1,6 @@
-# === Python Bytecode ===
+# Python example
 __pycache__/
 *.pyc
-*.pyo
-*.pyd
-
-# === Virtual Environments ===
-venv/
-.env/
-.venv/
-env/
-
-# === System Files ===
-.DS_Store
-Thumbs.db
-
-
-
-
-# === VS Code Settings ===
+.env
 .vscode/
-
-# === Logs ===
-*.log
+.idea/
