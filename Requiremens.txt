@@ -1,0 +1,2 @@
+pandas
+bcrypt==4.2.0

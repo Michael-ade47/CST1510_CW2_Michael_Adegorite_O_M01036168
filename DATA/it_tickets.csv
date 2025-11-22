@@ -1,0 +1,5 @@
+ticket_id,priority,status,category,subject,description,created_date,resolved_date,assigned_to
+TCKT-001,Low,Closed,Access Issue,Password Reset,User cannot log in due to forgotten password,2024-10-01,2024-10-01,alice
+TCKT-002,High,Open,Network,VPN Not Working,User unable to connect to VPN from home,2024-10-02,,bob
+TCKT-003,Medium,In Progress,Application Bug,Software Crash,CRM tool crashes when saving records,2024-10-03,,kenny
+TCKT-004,Low,Open,Email Issue,Email Not Syncing,Emails are not syncing on mobile device,2024-10-04,,ryan

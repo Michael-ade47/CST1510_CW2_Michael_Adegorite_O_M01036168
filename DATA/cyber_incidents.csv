@@ -1,0 +1,5 @@
+date,incident_type,severity,status,description,reported_by
+2024-10-01,Phishing,High,Open,Employee received suspicious email,alice
+2024-10-03,Malware,Medium,In Progress,Malicious file detected on workstation,bob
+2024-10-05,Data Breach,High,Closed,Unauthorized access to HR database,kenny
+2024-10-08,DDoS,Low,Open,Spike in traffic detected on web server,ryan

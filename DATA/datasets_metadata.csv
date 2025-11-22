@@ -1,0 +1,5 @@
+dataset_name,category,source,last_updated,record_count,file_size_mb
+Network Logs,Security Logs,Firewall System,2024-10-01,100000,12.5
+User Activity,Authentication Logs,Active Directory,2024-10-02,50000,8.2
+Threat Feeds,Threat Intelligence,Open Threat Exchange,2024-10-03,20000,5.7
+Incident Archive,Historical Incidents,Internal SOC,2024-10-05,1500,1.3
