@@ -1,5 +1,1001 @@
-ticket_id,priority,status,category,subject,description,created_date,resolved_date,assigned_to
-TCKT-001,Low,Closed,Access Issue,Password Reset,User cannot log in due to forgotten password,2024-10-01,2024-10-01,alice
-TCKT-002,High,Open,Network,VPN Not Working,User unable to connect to VPN from home,2024-10-02,,bob
-TCKT-003,Medium,In Progress,Application Bug,Software Crash,CRM tool crashes when saving records,2024-10-03,,kenny
-TCKT-004,Low,Open,Email Issue,Email Not Syncing,Emails are not syncing on mobile device,2024-10-04,,ryan
+id,ticket_id,priority,status,category,subject,description,created_date,resolved_date,assigned_to,created_at
+1,TCK-00001,Medium,Open,Access,Access issue #1,Access ticket with medium priority; currently open.,2024-05-27,,eve.owens,2024-05-27 08:16:33
+2,TCK-00002,Low,Open,Hardware,Hardware issue #2,Hardware ticket with low priority; currently open.,2024-04-04,,,2024-04-04 18:34:56
+3,TCK-00003,Low,Resolved,Software,Software issue #3,Software ticket with low priority; currently resolved.,2024-11-10,2024-12-07,alice.smith,2024-11-10 11:33:14
+4,TCK-00004,High,In Progress,Network,Network issue #4,Network ticket with high priority; currently in progress.,2024-04-22,,judy.chen,2024-04-22 11:40:28
+5,TCK-00005,Low,Closed,Hardware,Hardware issue #5,Hardware ticket with low priority; currently closed.,2024-01-26,2024-02-09,charlie.khan,2024-01-26 17:43:19
+6,TCK-00006,Medium,In Progress,Network,Network issue #6,Network ticket with medium priority; currently in progress.,2024-01-31,,bob.jones,2024-01-31 10:01:13
+7,TCK-00007,High,Closed,Software,Software issue #7,Software ticket with high priority; currently closed.,2024-12-24,2025-01-16,charlie.khan,2024-12-24 15:52:00
+8,TCK-00008,Low,Open,Hardware,Hardware issue #8,Hardware ticket with low priority; currently open.,2024-03-05,,alice.smith,2024-03-05 10:32:28
+9,TCK-00009,Critical,Open,Network,Network issue #9,Network ticket with critical priority; currently open.,2024-03-25,,diana.lee,2024-03-25 10:30:50
+10,TCK-00010,High,Resolved,Hardware,Hardware issue #10,Hardware ticket with high priority; currently resolved.,2024-06-10,2024-06-29,bob.jones,2024-06-10 09:23:08
+11,TCK-00011,Medium,In Progress,Security,Security issue #11,Security ticket with medium priority; currently in progress.,2024-01-22,,bob.jones,2024-01-22 15:40:39
+12,TCK-00012,Medium,In Progress,Network,Network issue #12,Network ticket with medium priority; currently in progress.,2024-01-29,,ivan.ali,2024-01-29 09:00:23
+13,TCK-00013,Medium,Closed,Access,Access issue #13,Access ticket with medium priority; currently closed.,2024-03-01,2024-03-21,judy.chen,2024-03-01 08:19:55
+14,TCK-00014,Low,Resolved,Network,Network issue #14,Network ticket with low priority; currently resolved.,2024-04-23,2024-04-26,alice.smith,2024-04-23 08:41:19
+15,TCK-00015,Medium,On Hold,Hardware,Hardware issue #15,Hardware ticket with medium priority; currently on hold.,2024-03-16,,ivan.ali,2024-03-16 09:16:03
+16,TCK-00016,Medium,In Progress,Security,Security issue #16,Security ticket with medium priority; currently in progress.,2024-10-24,,charlie.khan,2024-10-24 16:55:40
+17,TCK-00017,Low,Resolved,Network,Network issue #17,Network ticket with low priority; currently resolved.,2024-08-07,2024-08-20,ivan.ali,2024-08-07 12:22:17
+18,TCK-00018,High,Open,Security,Security issue #18,Security ticket with high priority; currently open.,2024-12-19,,,2024-12-19 08:43:40
+19,TCK-00019,Medium,In Progress,Other,Other issue #19,Other ticket with medium priority; currently in progress.,2024-11-08,,heidi.ng,2024-11-08 13:06:33
+20,TCK-00020,High,In Progress,Security,Security issue #20,Security ticket with high priority; currently in progress.,2024-04-04,,heidi.ng,2024-04-04 08:47:26
+21,TCK-00021,Low,In Progress,Network,Network issue #21,Network ticket with low priority; currently in progress.,2024-11-07,,bob.jones,2024-11-07 10:19:07
+22,TCK-00022,High,Closed,Security,Security issue #22,Security ticket with high priority; currently closed.,2024-05-23,2024-06-21,grace.patel,2024-05-23 14:57:39
+23,TCK-00023,High,Resolved,Software,Software issue #23,Software ticket with high priority; currently resolved.,2024-08-22,2024-09-10,heidi.ng,2024-08-22 18:12:26
+24,TCK-00024,High,Closed,Network,Network issue #24,Network ticket with high priority; currently closed.,2024-06-04,2024-06-29,frank.wong,2024-06-04 11:02:05
+25,TCK-00025,High,Closed,Other,Other issue #25,Other ticket with high priority; currently closed.,2024-10-26,2024-11-16,grace.patel,2024-10-26 12:09:43
+26,TCK-00026,High,Open,Security,Security issue #26,Security ticket with high priority; currently open.,2024-12-14,,judy.chen,2024-12-14 08:20:05
+27,TCK-00027,Medium,On Hold,Other,Other issue #27,Other ticket with medium priority; currently on hold.,2024-08-14,,frank.wong,2024-08-14 16:31:24
+28,TCK-00028,High,On Hold,Other,Other issue #28,Other ticket with high priority; currently on hold.,2024-12-27,,alice.smith,2024-12-27 08:55:17
+29,TCK-00029,Medium,Resolved,Other,Other issue #29,Other ticket with medium priority; currently resolved.,2024-06-19,2024-07-02,charlie.khan,2024-06-19 10:39:20
+30,TCK-00030,High,In Progress,Security,Security issue #30,Security ticket with high priority; currently in progress.,2024-11-08,,heidi.ng,2024-11-08 15:31:48
+31,TCK-00031,High,Closed,Hardware,Hardware issue #31,Hardware ticket with high priority; currently closed.,2024-06-18,2024-07-15,heidi.ng,2024-06-18 17:45:36
+32,TCK-00032,Low,Open,Hardware,Hardware issue #32,Hardware ticket with low priority; currently open.,2024-11-01,,alice.smith,2024-11-01 12:41:27
+33,TCK-00033,Medium,In Progress,Hardware,Hardware issue #33,Hardware ticket with medium priority; currently in progress.,2024-06-28,,heidi.ng,2024-06-28 11:07:11
+34,TCK-00034,High,Resolved,Network,Network issue #34,Network ticket with high priority; currently resolved.,2024-06-09,2024-06-09,diana.lee,2024-06-09 17:18:37
+35,TCK-00035,Medium,In Progress,Security,Security issue #35,Security ticket with medium priority; currently in progress.,2024-06-28,,charlie.khan,2024-06-28 16:46:35
+36,TCK-00036,Medium,Resolved,Software,Software issue #36,Software ticket with medium priority; currently resolved.,2024-07-09,2024-08-08,judy.chen,2024-07-09 15:49:21
+37,TCK-00037,Medium,Closed,Access,Access issue #37,Access ticket with medium priority; currently closed.,2024-03-25,2024-04-20,eve.owens,2024-03-25 10:01:05
+38,TCK-00038,Critical,Resolved,Software,Software issue #38,Software ticket with critical priority; currently resolved.,2024-07-04,2024-07-26,frank.wong,2024-07-04 10:48:28
+39,TCK-00039,Medium,In Progress,Network,Network issue #39,Network ticket with medium priority; currently in progress.,2024-11-14,,alice.smith,2024-11-14 17:12:43
+40,TCK-00040,Critical,Open,Other,Other issue #40,Other ticket with critical priority; currently open.,2024-04-20,,alice.smith,2024-04-20 09:46:53
+41,TCK-00041,Critical,Resolved,Hardware,Hardware issue #41,Hardware ticket with critical priority; currently resolved.,2024-06-19,2024-07-05,eve.owens,2024-06-19 18:13:42
+42,TCK-00042,High,Open,Hardware,Hardware issue #42,Hardware ticket with high priority; currently open.,2024-04-17,,,2024-04-17 12:27:55
+43,TCK-00043,Medium,In Progress,Access,Access issue #43,Access ticket with medium priority; currently in progress.,2024-07-12,,diana.lee,2024-07-12 12:19:26
+44,TCK-00044,Low,Closed,Hardware,Hardware issue #44,Hardware ticket with low priority; currently closed.,2024-11-19,2024-12-11,alice.smith,2024-11-19 12:31:26
+45,TCK-00045,Medium,Closed,Hardware,Hardware issue #45,Hardware ticket with medium priority; currently closed.,2024-06-16,2024-07-08,frank.wong,2024-06-16 14:23:06
+46,TCK-00046,High,In Progress,Access,Access issue #46,Access ticket with high priority; currently in progress.,2024-11-14,,diana.lee,2024-11-14 12:29:20
+47,TCK-00047,Low,Resolved,Software,Software issue #47,Software ticket with low priority; currently resolved.,2024-05-05,2024-05-09,grace.patel,2024-05-05 17:47:32
+48,TCK-00048,Low,On Hold,Security,Security issue #48,Security ticket with low priority; currently on hold.,2024-09-11,,frank.wong,2024-09-11 13:07:49
+49,TCK-00049,Medium,Resolved,Hardware,Hardware issue #49,Hardware ticket with medium priority; currently resolved.,2024-09-22,2024-10-19,ivan.ali,2024-09-22 09:07:35
+50,TCK-00050,High,Resolved,Access,Access issue #50,Access ticket with high priority; currently resolved.,2024-03-01,2024-03-16,ivan.ali,2024-03-01 09:44:24
+51,TCK-00051,Medium,Resolved,Security,Security issue #51,Security ticket with medium priority; currently resolved.,2024-02-17,2024-03-14,diana.lee,2024-02-17 10:55:15
+52,TCK-00052,Medium,Closed,Security,Security issue #52,Security ticket with medium priority; currently closed.,2024-04-29,2024-05-08,alice.smith,2024-04-29 09:32:56
+53,TCK-00053,Medium,Resolved,Other,Other issue #53,Other ticket with medium priority; currently resolved.,2024-10-10,2024-10-17,alice.smith,2024-10-10 12:06:51
+54,TCK-00054,Medium,On Hold,Access,Access issue #54,Access ticket with medium priority; currently on hold.,2024-12-05,,grace.patel,2024-12-05 13:43:27
+55,TCK-00055,Medium,Open,Access,Access issue #55,Access ticket with medium priority; currently open.,2024-01-10,,,2024-01-10 10:12:19
+56,TCK-00056,High,Open,Hardware,Hardware issue #56,Hardware ticket with high priority; currently open.,2024-05-14,,heidi.ng,2024-05-14 14:07:34
+57,TCK-00057,Critical,Resolved,Software,Software issue #57,Software ticket with critical priority; currently resolved.,2024-05-19,2024-05-26,grace.patel,2024-05-19 09:20:29
+58,TCK-00058,Medium,Closed,Security,Security issue #58,Security ticket with medium priority; currently closed.,2024-01-24,2024-02-11,heidi.ng,2024-01-24 14:20:46
+59,TCK-00059,Low,In Progress,Access,Access issue #59,Access ticket with low priority; currently in progress.,2024-02-12,,bob.jones,2024-02-12 08:05:28
+60,TCK-00060,Medium,Open,Software,Software issue #60,Software ticket with medium priority; currently open.,2024-04-07,,,2024-04-07 13:03:19
+61,TCK-00061,High,On Hold,Network,Network issue #61,Network ticket with high priority; currently on hold.,2024-10-12,,judy.chen,2024-10-12 09:35:56
+62,TCK-00062,Low,Closed,Other,Other issue #62,Other ticket with low priority; currently closed.,2024-05-20,2024-05-21,grace.patel,2024-05-20 18:47:55
+63,TCK-00063,Medium,On Hold,Security,Security issue #63,Security ticket with medium priority; currently on hold.,2024-02-22,,heidi.ng,2024-02-22 16:17:59
+64,TCK-00064,Critical,Closed,Network,Network issue #64,Network ticket with critical priority; currently closed.,2024-08-20,2024-09-19,eve.owens,2024-08-20 14:55:18
+65,TCK-00065,Low,In Progress,Access,Access issue #65,Access ticket with low priority; currently in progress.,2024-05-30,,bob.jones,2024-05-30 16:29:13
+66,TCK-00066,High,On Hold,Access,Access issue #66,Access ticket with high priority; currently on hold.,2024-05-16,,heidi.ng,2024-05-16 18:24:39
+67,TCK-00067,Low,Open,Software,Software issue #67,Software ticket with low priority; currently open.,2024-05-19,,eve.owens,2024-05-19 18:10:40
+68,TCK-00068,Low,Closed,Access,Access issue #68,Access ticket with low priority; currently closed.,2024-02-14,2024-02-27,ivan.ali,2024-02-14 09:43:33
+69,TCK-00069,Medium,Closed,Hardware,Hardware issue #69,Hardware ticket with medium priority; currently closed.,2024-03-04,2024-03-04,judy.chen,2024-03-04 15:12:25
+70,TCK-00070,Low,Closed,Security,Security issue #70,Security ticket with low priority; currently closed.,2024-05-09,2024-05-28,alice.smith,2024-05-09 15:25:11
+71,TCK-00071,High,Closed,Access,Access issue #71,Access ticket with high priority; currently closed.,2024-05-03,2024-05-03,eve.owens,2024-05-03 17:58:26
+72,TCK-00072,High,Closed,Other,Other issue #72,Other ticket with high priority; currently closed.,2024-01-02,2024-01-09,alice.smith,2024-01-02 08:17:42
+73,TCK-00073,Critical,Resolved,Software,Software issue #73,Software ticket with critical priority; currently resolved.,2024-11-02,2024-11-25,frank.wong,2024-11-02 11:43:43
+74,TCK-00074,High,Resolved,Security,Security issue #74,Security ticket with high priority; currently resolved.,2024-12-25,2024-12-25,grace.patel,2024-12-25 17:13:13
+75,TCK-00075,Low,Closed,Hardware,Hardware issue #75,Hardware ticket with low priority; currently closed.,2024-10-29,2024-11-13,diana.lee,2024-10-29 16:56:17
+76,TCK-00076,High,Resolved,Software,Software issue #76,Software ticket with high priority; currently resolved.,2024-11-17,2024-12-04,bob.jones,2024-11-17 13:39:40
+77,TCK-00077,Low,Open,Software,Software issue #77,Software ticket with low priority; currently open.,2024-12-02,,charlie.khan,2024-12-02 13:25:09
+78,TCK-00078,Low,Resolved,Software,Software issue #78,Software ticket with low priority; currently resolved.,2024-02-28,2024-03-18,grace.patel,2024-02-28 11:35:51
+79,TCK-00079,Critical,Open,Hardware,Hardware issue #79,Hardware ticket with critical priority; currently open.,2024-03-11,,heidi.ng,2024-03-11 18:39:51
+80,TCK-00080,Low,Open,Hardware,Hardware issue #80,Hardware ticket with low priority; currently open.,2024-12-25,,,2024-12-25 18:03:07
+81,TCK-00081,Critical,In Progress,Software,Software issue #81,Software ticket with critical priority; currently in progress.,2024-05-13,,alice.smith,2024-05-13 13:58:11
+82,TCK-00082,High,Resolved,Access,Access issue #82,Access ticket with high priority; currently resolved.,2024-09-20,2024-09-30,frank.wong,2024-09-20 11:08:23
+83,TCK-00083,High,Resolved,Network,Network issue #83,Network ticket with high priority; currently resolved.,2024-09-16,2024-09-20,grace.patel,2024-09-16 10:51:30
+84,TCK-00084,Medium,Resolved,Software,Software issue #84,Software ticket with medium priority; currently resolved.,2024-01-09,2024-01-19,grace.patel,2024-01-09 15:37:21
+85,TCK-00085,High,Resolved,Security,Security issue #85,Security ticket with high priority; currently resolved.,2024-04-10,2024-04-10,bob.jones,2024-04-10 15:15:58
+86,TCK-00086,Medium,In Progress,Other,Other issue #86,Other ticket with medium priority; currently in progress.,2024-06-24,,judy.chen,2024-06-24 10:11:59
+87,TCK-00087,Medium,In Progress,Hardware,Hardware issue #87,Hardware ticket with medium priority; currently in progress.,2024-01-21,,diana.lee,2024-01-21 17:25:10
+88,TCK-00088,High,Open,Network,Network issue #88,Network ticket with high priority; currently open.,2024-01-14,,,2024-01-14 09:31:50
+89,TCK-00089,Medium,In Progress,Access,Access issue #89,Access ticket with medium priority; currently in progress.,2024-09-08,,eve.owens,2024-09-08 12:45:05
+90,TCK-00090,Low,Closed,Network,Network issue #90,Network ticket with low priority; currently closed.,2024-08-01,2024-08-03,grace.patel,2024-08-01 14:58:12
+91,TCK-00091,High,In Progress,Hardware,Hardware issue #91,Hardware ticket with high priority; currently in progress.,2024-11-06,,judy.chen,2024-11-06 11:52:46
+92,TCK-00092,Low,Resolved,Software,Software issue #92,Software ticket with low priority; currently resolved.,2024-10-15,2024-10-24,ivan.ali,2024-10-15 09:56:08
+93,TCK-00093,Low,Resolved,Hardware,Hardware issue #93,Hardware ticket with low priority; currently resolved.,2024-02-10,2024-02-18,grace.patel,2024-02-10 16:46:00
+94,TCK-00094,Medium,In Progress,Access,Access issue #94,Access ticket with medium priority; currently in progress.,2024-01-13,,heidi.ng,2024-01-13 11:19:48
+95,TCK-00095,Medium,Open,Access,Access issue #95,Access ticket with medium priority; currently open.,2024-03-12,,judy.chen,2024-03-12 11:23:05
+96,TCK-00096,Low,In Progress,Software,Software issue #96,Software ticket with low priority; currently in progress.,2024-04-24,,eve.owens,2024-04-24 12:54:41
+97,TCK-00097,Low,Closed,Hardware,Hardware issue #97,Hardware ticket with low priority; currently closed.,2024-07-24,2024-08-14,heidi.ng,2024-07-24 16:10:01
+98,TCK-00098,Medium,Resolved,Access,Access issue #98,Access ticket with medium priority; currently resolved.,2024-07-11,2024-07-30,judy.chen,2024-07-11 10:16:49
+99,TCK-00099,Medium,In Progress,Access,Access issue #99,Access ticket with medium priority; currently in progress.,2024-10-13,,diana.lee,2024-10-13 13:40:28
+100,TCK-00100,High,In Progress,Network,Network issue #100,Network ticket with high priority; currently in progress.,2024-02-08,,bob.jones,2024-02-08 12:05:09
+101,TCK-00101,Medium,In Progress,Hardware,Hardware issue #101,Hardware ticket with medium priority; currently in progress.,2024-12-27,,grace.patel,2024-12-27 17:24:24
+102,TCK-00102,Medium,In Progress,Security,Security issue #102,Security ticket with medium priority; currently in progress.,2024-01-07,,eve.owens,2024-01-07 09:22:13
+103,TCK-00103,High,Closed,Access,Access issue #103,Access ticket with high priority; currently closed.,2024-07-23,2024-07-28,charlie.khan,2024-07-23 12:03:03
+104,TCK-00104,High,Open,Network,Network issue #104,Network ticket with high priority; currently open.,2024-04-17,,eve.owens,2024-04-17 17:16:22
+105,TCK-00105,Medium,Open,Network,Network issue #105,Network ticket with medium priority; currently open.,2024-08-29,,bob.jones,2024-08-29 10:04:31
+106,TCK-00106,Medium,Closed,Network,Network issue #106,Network ticket with medium priority; currently closed.,2024-04-26,2024-05-15,bob.jones,2024-04-26 09:03:49
+107,TCK-00107,Medium,In Progress,Security,Security issue #107,Security ticket with medium priority; currently in progress.,2024-06-30,,judy.chen,2024-06-30 12:01:37
+108,TCK-00108,Critical,Open,Software,Software issue #108,Software ticket with critical priority; currently open.,2024-08-31,,,2024-08-31 16:36:29
+109,TCK-00109,High,Open,Software,Software issue #109,Software ticket with high priority; currently open.,2024-11-11,,bob.jones,2024-11-11 15:05:03
+110,TCK-00110,Medium,Resolved,Other,Other issue #110,Other ticket with medium priority; currently resolved.,2024-08-21,2024-09-20,diana.lee,2024-08-21 08:06:43
+111,TCK-00111,High,Resolved,Other,Other issue #111,Other ticket with high priority; currently resolved.,2024-12-31,2025-01-05,heidi.ng,2024-12-31 14:39:41
+112,TCK-00112,High,Open,Other,Other issue #112,Other ticket with high priority; currently open.,2024-12-19,,,2024-12-19 08:31:06
+113,TCK-00113,High,Closed,Software,Software issue #113,Software ticket with high priority; currently closed.,2024-05-12,2024-05-20,grace.patel,2024-05-12 09:52:12
+114,TCK-00114,High,Closed,Hardware,Hardware issue #114,Hardware ticket with high priority; currently closed.,2024-01-11,2024-01-29,bob.jones,2024-01-11 12:21:06
+115,TCK-00115,Medium,Open,Network,Network issue #115,Network ticket with medium priority; currently open.,2024-04-14,,,2024-04-14 18:08:35
+116,TCK-00116,Medium,In Progress,Other,Other issue #116,Other ticket with medium priority; currently in progress.,2024-12-23,,charlie.khan,2024-12-23 14:17:24
+117,TCK-00117,High,Resolved,Software,Software issue #117,Software ticket with high priority; currently resolved.,2024-04-13,2024-04-30,alice.smith,2024-04-13 09:09:32
+118,TCK-00118,Low,Resolved,Other,Other issue #118,Other ticket with low priority; currently resolved.,2024-12-01,2024-12-15,charlie.khan,2024-12-01 08:30:48
+119,TCK-00119,Medium,Resolved,Network,Network issue #119,Network ticket with medium priority; currently resolved.,2024-03-13,2024-03-31,frank.wong,2024-03-13 10:11:31
+120,TCK-00120,Medium,Open,Software,Software issue #120,Software ticket with medium priority; currently open.,2024-06-21,,judy.chen,2024-06-21 15:21:00
+121,TCK-00121,Medium,In Progress,Security,Security issue #121,Security ticket with medium priority; currently in progress.,2024-09-23,,diana.lee,2024-09-23 11:04:50
+122,TCK-00122,Critical,Closed,Access,Access issue #122,Access ticket with critical priority; currently closed.,2024-11-16,2024-12-03,bob.jones,2024-11-16 18:23:43
+123,TCK-00123,High,Open,Security,Security issue #123,Security ticket with high priority; currently open.,2024-12-03,,frank.wong,2024-12-03 12:28:34
+124,TCK-00124,Low,Open,Software,Software issue #124,Software ticket with low priority; currently open.,2024-11-12,,eve.owens,2024-11-12 12:02:23
+125,TCK-00125,Medium,On Hold,Security,Security issue #125,Security ticket with medium priority; currently on hold.,2024-01-12,,judy.chen,2024-01-12 15:03:52
+126,TCK-00126,Critical,Closed,Hardware,Hardware issue #126,Hardware ticket with critical priority; currently closed.,2024-05-23,2024-05-30,bob.jones,2024-05-23 10:48:43
+127,TCK-00127,Medium,Open,Access,Access issue #127,Access ticket with medium priority; currently open.,2024-04-17,,judy.chen,2024-04-17 17:30:00
+128,TCK-00128,Low,On Hold,Network,Network issue #128,Network ticket with low priority; currently on hold.,2024-03-15,,diana.lee,2024-03-15 16:00:44
+129,TCK-00129,Medium,In Progress,Access,Access issue #129,Access ticket with medium priority; currently in progress.,2024-02-15,,charlie.khan,2024-02-15 08:08:11
+130,TCK-00130,High,In Progress,Network,Network issue #130,Network ticket with high priority; currently in progress.,2024-08-20,,heidi.ng,2024-08-20 09:31:31
+131,TCK-00131,High,Closed,Other,Other issue #131,Other ticket with high priority; currently closed.,2024-02-11,2024-02-13,frank.wong,2024-02-11 15:12:26
+132,TCK-00132,High,In Progress,Software,Software issue #132,Software ticket with high priority; currently in progress.,2024-12-02,,ivan.ali,2024-12-02 16:09:38
+133,TCK-00133,High,Open,Security,Security issue #133,Security ticket with high priority; currently open.,2024-04-07,,diana.lee,2024-04-07 15:09:47
+134,TCK-00134,Critical,In Progress,Network,Network issue #134,Network ticket with critical priority; currently in progress.,2024-04-26,,grace.patel,2024-04-26 10:10:54
+135,TCK-00135,Medium,In Progress,Network,Network issue #135,Network ticket with medium priority; currently in progress.,2024-10-30,,judy.chen,2024-10-30 16:53:10
+136,TCK-00136,Medium,Open,Security,Security issue #136,Security ticket with medium priority; currently open.,2024-09-09,,,2024-09-09 14:14:57
+137,TCK-00137,Medium,Open,Hardware,Hardware issue #137,Hardware ticket with medium priority; currently open.,2024-08-25,,ivan.ali,2024-08-25 08:21:36
+138,TCK-00138,Medium,In Progress,Network,Network issue #138,Network ticket with medium priority; currently in progress.,2024-03-11,,ivan.ali,2024-03-11 14:51:15
+139,TCK-00139,Medium,On Hold,Software,Software issue #139,Software ticket with medium priority; currently on hold.,2024-01-23,,frank.wong,2024-01-23 17:27:13
+140,TCK-00140,Critical,Open,Hardware,Hardware issue #140,Hardware ticket with critical priority; currently open.,2024-11-30,,ivan.ali,2024-11-30 15:23:23
+141,TCK-00141,Critical,Closed,Network,Network issue #141,Network ticket with critical priority; currently closed.,2024-10-22,2024-10-28,bob.jones,2024-10-22 15:59:20
+142,TCK-00142,Medium,Closed,Access,Access issue #142,Access ticket with medium priority; currently closed.,2024-07-31,2024-08-26,charlie.khan,2024-07-31 14:13:53
+143,TCK-00143,Low,Closed,Network,Network issue #143,Network ticket with low priority; currently closed.,2024-10-04,2024-10-13,grace.patel,2024-10-04 14:05:36
+144,TCK-00144,Medium,Closed,Network,Network issue #144,Network ticket with medium priority; currently closed.,2024-01-25,2024-01-28,charlie.khan,2024-01-25 18:35:55
+145,TCK-00145,Low,Closed,Other,Other issue #145,Other ticket with low priority; currently closed.,2024-08-19,2024-09-01,grace.patel,2024-08-19 12:25:14
+146,TCK-00146,Medium,On Hold,Access,Access issue #146,Access ticket with medium priority; currently on hold.,2024-12-05,,judy.chen,2024-12-05 13:56:37
+147,TCK-00147,Critical,Closed,Hardware,Hardware issue #147,Hardware ticket with critical priority; currently closed.,2024-11-27,2024-12-26,eve.owens,2024-11-27 09:41:16
+148,TCK-00148,Medium,In Progress,Network,Network issue #148,Network ticket with medium priority; currently in progress.,2024-04-23,,grace.patel,2024-04-23 13:25:06
+149,TCK-00149,Low,Resolved,Other,Other issue #149,Other ticket with low priority; currently resolved.,2024-05-28,2024-06-12,eve.owens,2024-05-28 16:53:26
+150,TCK-00150,High,In Progress,Network,Network issue #150,Network ticket with high priority; currently in progress.,2024-08-27,,diana.lee,2024-08-27 08:41:55
+151,TCK-00151,High,Open,Security,Security issue #151,Security ticket with high priority; currently open.,2024-11-05,,,2024-11-05 13:42:51
+152,TCK-00152,High,Closed,Access,Access issue #152,Access ticket with high priority; currently closed.,2024-05-20,2024-06-19,bob.jones,2024-05-20 18:12:43
+153,TCK-00153,Medium,In Progress,Software,Software issue #153,Software ticket with medium priority; currently in progress.,2024-06-23,,grace.patel,2024-06-23 09:11:46
+154,TCK-00154,Medium,Resolved,Security,Security issue #154,Security ticket with medium priority; currently resolved.,2024-06-09,2024-06-29,charlie.khan,2024-06-09 17:37:25
+155,TCK-00155,Medium,Resolved,Hardware,Hardware issue #155,Hardware ticket with medium priority; currently resolved.,2024-08-07,2024-09-03,alice.smith,2024-08-07 13:21:00
+156,TCK-00156,Low,Open,Software,Software issue #156,Software ticket with low priority; currently open.,2024-06-18,,alice.smith,2024-06-18 12:48:12
+157,TCK-00157,Medium,Closed,Network,Network issue #157,Network ticket with medium priority; currently closed.,2024-12-20,2024-12-23,heidi.ng,2024-12-20 08:37:47
+158,TCK-00158,Low,Open,Security,Security issue #158,Security ticket with low priority; currently open.,2024-09-02,,alice.smith,2024-09-02 18:33:05
+159,TCK-00159,Medium,Resolved,Other,Other issue #159,Other ticket with medium priority; currently resolved.,2024-08-28,2024-09-10,frank.wong,2024-08-28 10:50:29
+160,TCK-00160,Medium,Closed,Software,Software issue #160,Software ticket with medium priority; currently closed.,2024-07-20,2024-07-29,heidi.ng,2024-07-20 15:54:28
+161,TCK-00161,High,Closed,Hardware,Hardware issue #161,Hardware ticket with high priority; currently closed.,2024-02-17,2024-03-16,grace.patel,2024-02-17 14:43:57
+162,TCK-00162,High,Closed,Hardware,Hardware issue #162,Hardware ticket with high priority; currently closed.,2024-08-03,2024-08-07,heidi.ng,2024-08-03 12:32:17
+163,TCK-00163,High,Open,Access,Access issue #163,Access ticket with high priority; currently open.,2024-12-09,,eve.owens,2024-12-09 17:40:49
+164,TCK-00164,Critical,Resolved,Other,Other issue #164,Other ticket with critical priority; currently resolved.,2024-07-29,2024-07-30,judy.chen,2024-07-29 13:10:52
+165,TCK-00165,High,Resolved,Other,Other issue #165,Other ticket with high priority; currently resolved.,2024-01-27,2024-02-05,bob.jones,2024-01-27 08:33:54
+166,TCK-00166,Medium,Open,Security,Security issue #166,Security ticket with medium priority; currently open.,2024-01-19,,charlie.khan,2024-01-19 15:22:22
+167,TCK-00167,High,Resolved,Hardware,Hardware issue #167,Hardware ticket with high priority; currently resolved.,2024-10-02,2024-10-16,eve.owens,2024-10-02 09:27:56
+168,TCK-00168,Medium,In Progress,Access,Access issue #168,Access ticket with medium priority; currently in progress.,2024-12-06,,diana.lee,2024-12-06 08:30:43
+169,TCK-00169,High,In Progress,Hardware,Hardware issue #169,Hardware ticket with high priority; currently in progress.,2024-02-18,,heidi.ng,2024-02-18 12:35:29
+170,TCK-00170,Medium,Open,Other,Other issue #170,Other ticket with medium priority; currently open.,2024-07-16,,heidi.ng,2024-07-16 09:34:21
+171,TCK-00171,Medium,In Progress,Access,Access issue #171,Access ticket with medium priority; currently in progress.,2024-10-31,,ivan.ali,2024-10-31 10:01:26
+172,TCK-00172,High,On Hold,Other,Other issue #172,Other ticket with high priority; currently on hold.,2024-09-16,,judy.chen,2024-09-16 09:28:08
+173,TCK-00173,High,Resolved,Other,Other issue #173,Other ticket with high priority; currently resolved.,2024-10-05,2024-10-30,ivan.ali,2024-10-05 08:04:24
+174,TCK-00174,Critical,Resolved,Access,Access issue #174,Access ticket with critical priority; currently resolved.,2024-06-20,2024-06-21,heidi.ng,2024-06-20 18:02:06
+175,TCK-00175,Low,In Progress,Access,Access issue #175,Access ticket with low priority; currently in progress.,2024-11-28,,ivan.ali,2024-11-28 09:12:44
+176,TCK-00176,Medium,Closed,Access,Access issue #176,Access ticket with medium priority; currently closed.,2024-08-09,2024-08-25,charlie.khan,2024-08-09 13:26:46
+177,TCK-00177,Critical,Closed,Software,Software issue #177,Software ticket with critical priority; currently closed.,2024-03-12,2024-04-11,alice.smith,2024-03-12 16:45:38
+178,TCK-00178,Low,In Progress,Access,Access issue #178,Access ticket with low priority; currently in progress.,2024-05-29,,ivan.ali,2024-05-29 10:31:27
+179,TCK-00179,Medium,Closed,Network,Network issue #179,Network ticket with medium priority; currently closed.,2024-04-21,2024-05-11,bob.jones,2024-04-21 15:21:43
+180,TCK-00180,Critical,On Hold,Security,Security issue #180,Security ticket with critical priority; currently on hold.,2024-06-16,,ivan.ali,2024-06-16 11:56:49
+181,TCK-00181,Low,On Hold,Hardware,Hardware issue #181,Hardware ticket with low priority; currently on hold.,2024-06-21,,charlie.khan,2024-06-21 18:15:16
+182,TCK-00182,Low,Open,Other,Other issue #182,Other ticket with low priority; currently open.,2024-03-31,,charlie.khan,2024-03-31 14:48:21
+183,TCK-00183,High,On Hold,Software,Software issue #183,Software ticket with high priority; currently on hold.,2024-09-03,,eve.owens,2024-09-03 18:30:34
+184,TCK-00184,Critical,Resolved,Other,Other issue #184,Other ticket with critical priority; currently resolved.,2024-07-01,2024-07-16,charlie.khan,2024-07-01 12:34:01
+185,TCK-00185,Medium,Resolved,Network,Network issue #185,Network ticket with medium priority; currently resolved.,2024-02-01,2024-02-05,eve.owens,2024-02-01 13:12:44
+186,TCK-00186,Low,On Hold,Other,Other issue #186,Other ticket with low priority; currently on hold.,2024-03-05,,heidi.ng,2024-03-05 08:07:37
+187,TCK-00187,Medium,Closed,Hardware,Hardware issue #187,Hardware ticket with medium priority; currently closed.,2024-06-28,2024-06-30,bob.jones,2024-06-28 13:06:22
+188,TCK-00188,Medium,Closed,Other,Other issue #188,Other ticket with medium priority; currently closed.,2024-04-20,2024-05-11,heidi.ng,2024-04-20 16:05:24
+189,TCK-00189,Low,Resolved,Other,Other issue #189,Other ticket with low priority; currently resolved.,2024-03-24,2024-03-31,diana.lee,2024-03-24 18:36:10
+190,TCK-00190,High,In Progress,Software,Software issue #190,Software ticket with high priority; currently in progress.,2024-09-10,,eve.owens,2024-09-10 12:15:38
+191,TCK-00191,Low,Open,Security,Security issue #191,Security ticket with low priority; currently open.,2024-10-29,,heidi.ng,2024-10-29 13:00:36
+192,TCK-00192,Low,Open,Security,Security issue #192,Security ticket with low priority; currently open.,2024-07-04,,heidi.ng,2024-07-04 13:06:15
+193,TCK-00193,Medium,In Progress,Access,Access issue #193,Access ticket with medium priority; currently in progress.,2024-12-05,,heidi.ng,2024-12-05 08:06:46
+194,TCK-00194,High,Resolved,Security,Security issue #194,Security ticket with high priority; currently resolved.,2024-08-14,2024-09-03,alice.smith,2024-08-14 11:34:47
+195,TCK-00195,Medium,Resolved,Other,Other issue #195,Other ticket with medium priority; currently resolved.,2024-08-06,2024-09-02,judy.chen,2024-08-06 10:30:41
+196,TCK-00196,Critical,Resolved,Hardware,Hardware issue #196,Hardware ticket with critical priority; currently resolved.,2024-07-13,2024-07-15,grace.patel,2024-07-13 14:38:17
+197,TCK-00197,Critical,Closed,Hardware,Hardware issue #197,Hardware ticket with critical priority; currently closed.,2024-02-03,2024-02-07,frank.wong,2024-02-03 14:15:22
+198,TCK-00198,Low,Closed,Network,Network issue #198,Network ticket with low priority; currently closed.,2024-05-25,2024-06-04,bob.jones,2024-05-25 14:24:39
+199,TCK-00199,Critical,In Progress,Access,Access issue #199,Access ticket with critical priority; currently in progress.,2024-10-12,,grace.patel,2024-10-12 12:25:33
+200,TCK-00200,Medium,Resolved,Hardware,Hardware issue #200,Hardware ticket with medium priority; currently resolved.,2024-10-03,2024-10-11,grace.patel,2024-10-03 17:11:26
+201,TCK-00201,Medium,Closed,Access,Access issue #201,Access ticket with medium priority; currently closed.,2024-01-02,2024-01-07,diana.lee,2024-01-02 18:25:39
+202,TCK-00202,Medium,Closed,Access,Access issue #202,Access ticket with medium priority; currently closed.,2024-04-13,2024-04-22,grace.patel,2024-04-13 18:50:43
+203,TCK-00203,Low,Resolved,Access,Access issue #203,Access ticket with low priority; currently resolved.,2024-05-06,2024-05-20,judy.chen,2024-05-06 13:39:22
+204,TCK-00204,Medium,Closed,Software,Software issue #204,Software ticket with medium priority; currently closed.,2024-10-18,2024-10-21,alice.smith,2024-10-18 18:45:30
+205,TCK-00205,High,On Hold,Security,Security issue #205,Security ticket with high priority; currently on hold.,2024-08-22,,eve.owens,2024-08-22 15:50:10
+206,TCK-00206,High,In Progress,Access,Access issue #206,Access ticket with high priority; currently in progress.,2024-08-12,,bob.jones,2024-08-12 13:55:08
+207,TCK-00207,Medium,Open,Security,Security issue #207,Security ticket with medium priority; currently open.,2024-09-01,,alice.smith,2024-09-01 14:45:07
+208,TCK-00208,Medium,Resolved,Access,Access issue #208,Access ticket with medium priority; currently resolved.,2024-08-14,2024-09-13,grace.patel,2024-08-14 16:55:40
+209,TCK-00209,Critical,Closed,Hardware,Hardware issue #209,Hardware ticket with critical priority; currently closed.,2024-08-15,2024-08-20,alice.smith,2024-08-15 08:32:02
+210,TCK-00210,High,Closed,Other,Other issue #210,Other ticket with high priority; currently closed.,2024-02-19,2024-03-20,bob.jones,2024-02-19 18:55:05
+211,TCK-00211,Low,Resolved,Software,Software issue #211,Software ticket with low priority; currently resolved.,2024-09-11,2024-10-03,heidi.ng,2024-09-11 17:01:16
+212,TCK-00212,Medium,Open,Access,Access issue #212,Access ticket with medium priority; currently open.,2024-06-07,,charlie.khan,2024-06-07 11:17:34
+213,TCK-00213,Low,Open,Hardware,Hardware issue #213,Hardware ticket with low priority; currently open.,2024-04-16,,charlie.khan,2024-04-16 18:01:02
+214,TCK-00214,High,Closed,Security,Security issue #214,Security ticket with high priority; currently closed.,2024-01-29,2024-02-25,frank.wong,2024-01-29 14:33:38
+215,TCK-00215,Medium,Resolved,Other,Other issue #215,Other ticket with medium priority; currently resolved.,2024-08-31,2024-09-16,bob.jones,2024-08-31 11:13:22
+216,TCK-00216,Medium,Open,Network,Network issue #216,Network ticket with medium priority; currently open.,2024-01-17,,eve.owens,2024-01-17 11:04:10
+217,TCK-00217,High,Resolved,Security,Security issue #217,Security ticket with high priority; currently resolved.,2024-09-26,2024-10-26,judy.chen,2024-09-26 16:55:42
+218,TCK-00218,Medium,Resolved,Hardware,Hardware issue #218,Hardware ticket with medium priority; currently resolved.,2024-09-10,2024-09-10,frank.wong,2024-09-10 18:33:19
+219,TCK-00219,Medium,In Progress,Hardware,Hardware issue #219,Hardware ticket with medium priority; currently in progress.,2024-10-27,,judy.chen,2024-10-27 08:14:55
+220,TCK-00220,Critical,On Hold,Software,Software issue #220,Software ticket with critical priority; currently on hold.,2024-09-05,,diana.lee,2024-09-05 12:00:51
+221,TCK-00221,Medium,Closed,Software,Software issue #221,Software ticket with medium priority; currently closed.,2024-04-10,2024-05-09,heidi.ng,2024-04-10 15:04:20
+222,TCK-00222,High,Resolved,Security,Security issue #222,Security ticket with high priority; currently resolved.,2024-06-17,2024-06-21,bob.jones,2024-06-17 08:31:31
+223,TCK-00223,Medium,On Hold,Software,Software issue #223,Software ticket with medium priority; currently on hold.,2024-01-22,,ivan.ali,2024-01-22 15:27:00
+224,TCK-00224,Medium,Resolved,Software,Software issue #224,Software ticket with medium priority; currently resolved.,2024-01-27,2024-01-29,judy.chen,2024-01-27 18:11:42
+225,TCK-00225,Medium,Open,Security,Security issue #225,Security ticket with medium priority; currently open.,2024-10-27,,heidi.ng,2024-10-27 13:50:48
+226,TCK-00226,Low,Resolved,Hardware,Hardware issue #226,Hardware ticket with low priority; currently resolved.,2024-01-04,2024-02-03,judy.chen,2024-01-04 12:47:52
+227,TCK-00227,Low,Open,Access,Access issue #227,Access ticket with low priority; currently open.,2024-02-14,,charlie.khan,2024-02-14 09:15:00
+228,TCK-00228,Critical,In Progress,Security,Security issue #228,Security ticket with critical priority; currently in progress.,2024-04-15,,heidi.ng,2024-04-15 13:56:03
+229,TCK-00229,Medium,Closed,Access,Access issue #229,Access ticket with medium priority; currently closed.,2024-02-29,2024-03-13,eve.owens,2024-02-29 17:20:28
+230,TCK-00230,Critical,Open,Hardware,Hardware issue #230,Hardware ticket with critical priority; currently open.,2024-01-29,,grace.patel,2024-01-29 10:46:55
+231,TCK-00231,Medium,Open,Access,Access issue #231,Access ticket with medium priority; currently open.,2024-07-26,,,2024-07-26 18:34:08
+232,TCK-00232,High,In Progress,Hardware,Hardware issue #232,Hardware ticket with high priority; currently in progress.,2024-11-18,,heidi.ng,2024-11-18 18:00:43
+233,TCK-00233,High,Closed,Hardware,Hardware issue #233,Hardware ticket with high priority; currently closed.,2024-05-16,2024-06-13,bob.jones,2024-05-16 12:09:18
+234,TCK-00234,High,Resolved,Hardware,Hardware issue #234,Hardware ticket with high priority; currently resolved.,2024-05-29,2024-06-13,frank.wong,2024-05-29 12:25:29
+235,TCK-00235,High,Closed,Software,Software issue #235,Software ticket with high priority; currently closed.,2024-08-07,2024-08-15,grace.patel,2024-08-07 10:52:18
+236,TCK-00236,Medium,Resolved,Software,Software issue #236,Software ticket with medium priority; currently resolved.,2024-05-27,2024-06-06,judy.chen,2024-05-27 14:04:40
+237,TCK-00237,High,Closed,Access,Access issue #237,Access ticket with high priority; currently closed.,2024-12-27,2024-12-31,bob.jones,2024-12-27 10:19:41
+238,TCK-00238,Critical,In Progress,Hardware,Hardware issue #238,Hardware ticket with critical priority; currently in progress.,2024-04-18,,ivan.ali,2024-04-18 08:41:25
+239,TCK-00239,High,Resolved,Software,Software issue #239,Software ticket with high priority; currently resolved.,2024-05-25,2024-06-20,grace.patel,2024-05-25 09:32:04
+240,TCK-00240,Medium,Resolved,Security,Security issue #240,Security ticket with medium priority; currently resolved.,2024-08-13,2024-08-25,grace.patel,2024-08-13 10:44:30
+241,TCK-00241,High,Closed,Hardware,Hardware issue #241,Hardware ticket with high priority; currently closed.,2024-01-20,2024-02-03,diana.lee,2024-01-20 10:02:29
+242,TCK-00242,Low,Closed,Security,Security issue #242,Security ticket with low priority; currently closed.,2024-11-17,2024-12-06,alice.smith,2024-11-17 09:10:06
+243,TCK-00243,Medium,On Hold,Software,Software issue #243,Software ticket with medium priority; currently on hold.,2024-11-08,,eve.owens,2024-11-08 11:11:17
+244,TCK-00244,Medium,Resolved,Security,Security issue #244,Security ticket with medium priority; currently resolved.,2024-06-07,2024-07-02,ivan.ali,2024-06-07 16:10:18
+245,TCK-00245,Critical,Open,Network,Network issue #245,Network ticket with critical priority; currently open.,2024-05-20,,bob.jones,2024-05-20 09:43:06
+246,TCK-00246,Low,Resolved,Hardware,Hardware issue #246,Hardware ticket with low priority; currently resolved.,2024-08-08,2024-08-09,eve.owens,2024-08-08 10:52:19
+247,TCK-00247,Medium,Resolved,Software,Software issue #247,Software ticket with medium priority; currently resolved.,2024-08-07,2024-08-26,ivan.ali,2024-08-07 17:25:56
+248,TCK-00248,Medium,On Hold,Hardware,Hardware issue #248,Hardware ticket with medium priority; currently on hold.,2024-03-22,,frank.wong,2024-03-22 14:49:51
+249,TCK-00249,Medium,In Progress,Network,Network issue #249,Network ticket with medium priority; currently in progress.,2024-08-31,,charlie.khan,2024-08-31 10:07:49
+250,TCK-00250,High,Closed,Hardware,Hardware issue #250,Hardware ticket with high priority; currently closed.,2024-05-23,2024-06-20,frank.wong,2024-05-23 17:14:52
+251,TCK-00251,Medium,On Hold,Hardware,Hardware issue #251,Hardware ticket with medium priority; currently on hold.,2024-03-05,,judy.chen,2024-03-05 13:00:31
+252,TCK-00252,Critical,In Progress,Hardware,Hardware issue #252,Hardware ticket with critical priority; currently in progress.,2024-10-12,,alice.smith,2024-10-12 17:03:47
+253,TCK-00253,High,Resolved,Network,Network issue #253,Network ticket with high priority; currently resolved.,2024-05-22,2024-06-04,grace.patel,2024-05-22 11:48:57
+254,TCK-00254,Medium,Open,Access,Access issue #254,Access ticket with medium priority; currently open.,2024-01-03,,diana.lee,2024-01-03 14:42:08
+255,TCK-00255,Medium,In Progress,Security,Security issue #255,Security ticket with medium priority; currently in progress.,2024-11-27,,heidi.ng,2024-11-27 13:52:13
+256,TCK-00256,High,In Progress,Access,Access issue #256,Access ticket with high priority; currently in progress.,2024-03-04,,bob.jones,2024-03-04 14:17:51
+257,TCK-00257,Critical,Open,Access,Access issue #257,Access ticket with critical priority; currently open.,2024-04-20,,,2024-04-20 14:40:42
+258,TCK-00258,Low,On Hold,Other,Other issue #258,Other ticket with low priority; currently on hold.,2024-04-01,,charlie.khan,2024-04-01 15:43:34
+259,TCK-00259,Low,Resolved,Hardware,Hardware issue #259,Hardware ticket with low priority; currently resolved.,2024-04-20,2024-05-02,frank.wong,2024-04-20 14:38:27
+260,TCK-00260,Medium,On Hold,Network,Network issue #260,Network ticket with medium priority; currently on hold.,2024-10-02,,grace.patel,2024-10-02 12:12:36
+261,TCK-00261,High,On Hold,Other,Other issue #261,Other ticket with high priority; currently on hold.,2024-11-26,,ivan.ali,2024-11-26 08:03:42
+262,TCK-00262,High,Closed,Other,Other issue #262,Other ticket with high priority; currently closed.,2024-04-12,2024-05-01,frank.wong,2024-04-12 14:14:50
+263,TCK-00263,Medium,Closed,Software,Software issue #263,Software ticket with medium priority; currently closed.,2024-09-04,2024-09-26,judy.chen,2024-09-04 16:56:34
+264,TCK-00264,Medium,Closed,Network,Network issue #264,Network ticket with medium priority; currently closed.,2024-02-22,2024-03-09,eve.owens,2024-02-22 08:06:01
+265,TCK-00265,Medium,Resolved,Network,Network issue #265,Network ticket with medium priority; currently resolved.,2024-10-13,2024-10-27,bob.jones,2024-10-13 09:39:49
+266,TCK-00266,High,Closed,Access,Access issue #266,Access ticket with high priority; currently closed.,2024-06-28,2024-07-04,charlie.khan,2024-06-28 11:20:46
+267,TCK-00267,Critical,In Progress,Access,Access issue #267,Access ticket with critical priority; currently in progress.,2024-08-17,,heidi.ng,2024-08-17 09:27:32
+268,TCK-00268,High,Open,Hardware,Hardware issue #268,Hardware ticket with high priority; currently open.,2024-08-14,,alice.smith,2024-08-14 10:02:23
+269,TCK-00269,Critical,Open,Hardware,Hardware issue #269,Hardware ticket with critical priority; currently open.,2024-04-22,,alice.smith,2024-04-22 12:43:40
+270,TCK-00270,Low,In Progress,Other,Other issue #270,Other ticket with low priority; currently in progress.,2024-07-27,,eve.owens,2024-07-27 08:11:03
+271,TCK-00271,Medium,Resolved,Network,Network issue #271,Network ticket with medium priority; currently resolved.,2024-09-12,2024-10-12,alice.smith,2024-09-12 16:38:41
+272,TCK-00272,Medium,Resolved,Network,Network issue #272,Network ticket with medium priority; currently resolved.,2024-10-28,2024-11-11,ivan.ali,2024-10-28 15:26:32
+273,TCK-00273,Medium,Resolved,Network,Network issue #273,Network ticket with medium priority; currently resolved.,2024-03-08,2024-03-08,diana.lee,2024-03-08 13:51:22
+274,TCK-00274,High,Open,Network,Network issue #274,Network ticket with high priority; currently open.,2024-06-16,,eve.owens,2024-06-16 14:08:54
+275,TCK-00275,High,Open,Access,Access issue #275,Access ticket with high priority; currently open.,2024-08-24,,bob.jones,2024-08-24 17:26:02
+276,TCK-00276,Medium,Closed,Other,Other issue #276,Other ticket with medium priority; currently closed.,2024-04-25,2024-05-03,frank.wong,2024-04-25 09:13:54
+277,TCK-00277,Medium,Resolved,Network,Network issue #277,Network ticket with medium priority; currently resolved.,2024-08-17,2024-08-26,bob.jones,2024-08-17 08:54:39
+278,TCK-00278,Medium,Resolved,Access,Access issue #278,Access ticket with medium priority; currently resolved.,2024-11-05,2024-11-15,charlie.khan,2024-11-05 12:21:37
+279,TCK-00279,Low,Open,Security,Security issue #279,Security ticket with low priority; currently open.,2024-10-29,,,2024-10-29 09:45:29
+280,TCK-00280,Medium,Open,Network,Network issue #280,Network ticket with medium priority; currently open.,2024-05-03,,alice.smith,2024-05-03 16:57:57
+281,TCK-00281,Medium,Open,Access,Access issue #281,Access ticket with medium priority; currently open.,2024-11-05,,judy.chen,2024-11-05 10:57:23
+282,TCK-00282,High,Open,Other,Other issue #282,Other ticket with high priority; currently open.,2024-03-09,,charlie.khan,2024-03-09 09:41:11
+283,TCK-00283,Low,In Progress,Access,Access issue #283,Access ticket with low priority; currently in progress.,2024-06-08,,bob.jones,2024-06-08 12:17:29
+284,TCK-00284,Medium,Resolved,Network,Network issue #284,Network ticket with medium priority; currently resolved.,2024-03-09,2024-03-31,charlie.khan,2024-03-09 14:10:12
+285,TCK-00285,Medium,On Hold,Hardware,Hardware issue #285,Hardware ticket with medium priority; currently on hold.,2024-05-25,,frank.wong,2024-05-25 13:59:16
+286,TCK-00286,Medium,In Progress,Hardware,Hardware issue #286,Hardware ticket with medium priority; currently in progress.,2024-03-10,,frank.wong,2024-03-10 17:38:30
+287,TCK-00287,Medium,Open,Network,Network issue #287,Network ticket with medium priority; currently open.,2024-01-01,,,2024-01-01 16:42:36
+288,TCK-00288,Low,Closed,Software,Software issue #288,Software ticket with low priority; currently closed.,2024-06-27,2024-07-26,frank.wong,2024-06-27 18:55:11
+289,TCK-00289,Critical,Resolved,Security,Security issue #289,Security ticket with critical priority; currently resolved.,2024-11-18,2024-11-21,alice.smith,2024-11-18 12:23:30
+290,TCK-00290,High,Closed,Hardware,Hardware issue #290,Hardware ticket with high priority; currently closed.,2024-08-01,2024-08-07,judy.chen,2024-08-01 11:57:07
+291,TCK-00291,Low,Closed,Software,Software issue #291,Software ticket with low priority; currently closed.,2024-04-26,2024-05-01,frank.wong,2024-04-26 17:52:44
+292,TCK-00292,Low,In Progress,Security,Security issue #292,Security ticket with low priority; currently in progress.,2024-07-27,,charlie.khan,2024-07-27 13:34:33
+293,TCK-00293,Medium,Closed,Network,Network issue #293,Network ticket with medium priority; currently closed.,2024-11-27,2024-12-01,ivan.ali,2024-11-27 17:41:41
+294,TCK-00294,High,In Progress,Security,Security issue #294,Security ticket with high priority; currently in progress.,2024-02-15,,diana.lee,2024-02-15 17:46:53
+295,TCK-00295,Medium,In Progress,Software,Software issue #295,Software ticket with medium priority; currently in progress.,2024-07-20,,judy.chen,2024-07-20 09:20:33
+296,TCK-00296,Medium,Open,Software,Software issue #296,Software ticket with medium priority; currently open.,2024-04-27,,grace.patel,2024-04-27 10:39:54
+297,TCK-00297,Medium,Open,Other,Other issue #297,Other ticket with medium priority; currently open.,2024-07-08,,charlie.khan,2024-07-08 09:18:22
+298,TCK-00298,High,Closed,Access,Access issue #298,Access ticket with high priority; currently closed.,2024-12-28,2025-01-13,eve.owens,2024-12-28 15:11:39
+299,TCK-00299,High,Closed,Security,Security issue #299,Security ticket with high priority; currently closed.,2024-11-02,2024-12-01,bob.jones,2024-11-02 14:20:14
+300,TCK-00300,Medium,On Hold,Other,Other issue #300,Other ticket with medium priority; currently on hold.,2024-11-01,,eve.owens,2024-11-01 16:50:48
+301,TCK-00301,Medium,Closed,Software,Software issue #301,Software ticket with medium priority; currently closed.,2024-08-18,2024-09-08,charlie.khan,2024-08-18 10:37:45
+302,TCK-00302,Medium,Resolved,Security,Security issue #302,Security ticket with medium priority; currently resolved.,2024-01-02,2024-01-08,ivan.ali,2024-01-02 11:50:40
+303,TCK-00303,Medium,Open,Software,Software issue #303,Software ticket with medium priority; currently open.,2024-05-24,,alice.smith,2024-05-24 17:30:39
+304,TCK-00304,Medium,Resolved,Software,Software issue #304,Software ticket with medium priority; currently resolved.,2024-01-18,2024-01-31,judy.chen,2024-01-18 11:16:33
+305,TCK-00305,Critical,In Progress,Security,Security issue #305,Security ticket with critical priority; currently in progress.,2024-11-22,,ivan.ali,2024-11-22 16:13:50
+306,TCK-00306,Critical,In Progress,Hardware,Hardware issue #306,Hardware ticket with critical priority; currently in progress.,2024-05-16,,heidi.ng,2024-05-16 13:14:33
+307,TCK-00307,High,Resolved,Software,Software issue #307,Software ticket with high priority; currently resolved.,2024-03-07,2024-03-15,charlie.khan,2024-03-07 10:28:17
+308,TCK-00308,Low,On Hold,Access,Access issue #308,Access ticket with low priority; currently on hold.,2024-09-15,,eve.owens,2024-09-15 11:20:55
+309,TCK-00309,Medium,Closed,Access,Access issue #309,Access ticket with medium priority; currently closed.,2024-10-29,2024-11-10,diana.lee,2024-10-29 10:43:59
+310,TCK-00310,Medium,Open,Security,Security issue #310,Security ticket with medium priority; currently open.,2024-03-30,,bob.jones,2024-03-30 12:31:18
+311,TCK-00311,Medium,Resolved,Hardware,Hardware issue #311,Hardware ticket with medium priority; currently resolved.,2024-10-13,2024-10-31,diana.lee,2024-10-13 17:12:44
+312,TCK-00312,Low,In Progress,Other,Other issue #312,Other ticket with low priority; currently in progress.,2024-01-22,,diana.lee,2024-01-22 13:06:04
+313,TCK-00313,High,Closed,Hardware,Hardware issue #313,Hardware ticket with high priority; currently closed.,2024-08-03,2024-08-09,diana.lee,2024-08-03 09:57:15
+314,TCK-00314,High,Resolved,Software,Software issue #314,Software ticket with high priority; currently resolved.,2024-06-07,2024-06-20,heidi.ng,2024-06-07 12:57:38
+315,TCK-00315,Medium,Closed,Network,Network issue #315,Network ticket with medium priority; currently closed.,2024-08-05,2024-08-30,bob.jones,2024-08-05 09:19:20
+316,TCK-00316,Low,In Progress,Software,Software issue #316,Software ticket with low priority; currently in progress.,2024-09-27,,bob.jones,2024-09-27 13:26:06
+317,TCK-00317,Medium,Open,Security,Security issue #317,Security ticket with medium priority; currently open.,2024-05-22,,eve.owens,2024-05-22 16:54:53
+318,TCK-00318,Medium,Resolved,Other,Other issue #318,Other ticket with medium priority; currently resolved.,2024-12-13,2025-01-07,grace.patel,2024-12-13 08:39:28
+319,TCK-00319,High,In Progress,Security,Security issue #319,Security ticket with high priority; currently in progress.,2024-07-20,,charlie.khan,2024-07-20 17:32:37
+320,TCK-00320,Critical,Open,Hardware,Hardware issue #320,Hardware ticket with critical priority; currently open.,2024-06-03,,bob.jones,2024-06-03 18:18:47
+321,TCK-00321,High,In Progress,Software,Software issue #321,Software ticket with high priority; currently in progress.,2024-03-09,,judy.chen,2024-03-09 13:44:57
+322,TCK-00322,High,Closed,Network,Network issue #322,Network ticket with high priority; currently closed.,2024-10-02,2024-10-25,eve.owens,2024-10-02 18:41:58
+323,TCK-00323,Critical,Closed,Security,Security issue #323,Security ticket with critical priority; currently closed.,2024-12-11,2024-12-16,alice.smith,2024-12-11 18:35:14
+324,TCK-00324,Medium,Resolved,Hardware,Hardware issue #324,Hardware ticket with medium priority; currently resolved.,2024-12-16,2025-01-12,heidi.ng,2024-12-16 12:53:31
+325,TCK-00325,Medium,In Progress,Access,Access issue #325,Access ticket with medium priority; currently in progress.,2024-11-05,,diana.lee,2024-11-05 17:04:26
+326,TCK-00326,Medium,Closed,Network,Network issue #326,Network ticket with medium priority; currently closed.,2024-02-04,2024-02-11,heidi.ng,2024-02-04 15:22:10
+327,TCK-00327,High,In Progress,Network,Network issue #327,Network ticket with high priority; currently in progress.,2024-07-10,,ivan.ali,2024-07-10 15:29:22
+328,TCK-00328,Medium,In Progress,Network,Network issue #328,Network ticket with medium priority; currently in progress.,2024-08-30,,bob.jones,2024-08-30 15:28:17
+329,TCK-00329,Critical,Open,Access,Access issue #329,Access ticket with critical priority; currently open.,2024-12-27,,,2024-12-27 12:20:49
+330,TCK-00330,Medium,Resolved,Network,Network issue #330,Network ticket with medium priority; currently resolved.,2024-02-16,2024-02-27,frank.wong,2024-02-16 09:24:59
+331,TCK-00331,Low,In Progress,Software,Software issue #331,Software ticket with low priority; currently in progress.,2024-03-25,,ivan.ali,2024-03-25 10:30:29
+332,TCK-00332,Medium,Closed,Security,Security issue #332,Security ticket with medium priority; currently closed.,2024-07-13,2024-08-09,judy.chen,2024-07-13 12:16:13
+333,TCK-00333,Medium,Open,Hardware,Hardware issue #333,Hardware ticket with medium priority; currently open.,2024-09-13,,judy.chen,2024-09-13 08:33:43
+334,TCK-00334,High,Open,Security,Security issue #334,Security ticket with high priority; currently open.,2024-05-03,,ivan.ali,2024-05-03 13:42:04
+335,TCK-00335,Critical,Closed,Security,Security issue #335,Security ticket with critical priority; currently closed.,2024-05-22,2024-06-16,heidi.ng,2024-05-22 13:28:59
+336,TCK-00336,High,Closed,Other,Other issue #336,Other ticket with high priority; currently closed.,2024-09-06,2024-09-25,charlie.khan,2024-09-06 12:59:52
+337,TCK-00337,Medium,In Progress,Network,Network issue #337,Network ticket with medium priority; currently in progress.,2024-02-10,,bob.jones,2024-02-10 11:36:38
+338,TCK-00338,Critical,Open,Hardware,Hardware issue #338,Hardware ticket with critical priority; currently open.,2024-07-02,,eve.owens,2024-07-02 14:55:25
+339,TCK-00339,Medium,Closed,Hardware,Hardware issue #339,Hardware ticket with medium priority; currently closed.,2024-10-17,2024-11-14,diana.lee,2024-10-17 15:37:14
+340,TCK-00340,Medium,Open,Access,Access issue #340,Access ticket with medium priority; currently open.,2024-01-30,,diana.lee,2024-01-30 16:34:32
+341,TCK-00341,High,Resolved,Access,Access issue #341,Access ticket with high priority; currently resolved.,2024-05-20,2024-05-27,judy.chen,2024-05-20 16:12:24
+342,TCK-00342,Medium,Closed,Security,Security issue #342,Security ticket with medium priority; currently closed.,2024-08-30,2024-09-02,judy.chen,2024-08-30 09:41:20
+343,TCK-00343,High,In Progress,Hardware,Hardware issue #343,Hardware ticket with high priority; currently in progress.,2024-10-03,,charlie.khan,2024-10-03 17:59:28
+344,TCK-00344,Critical,Resolved,Access,Access issue #344,Access ticket with critical priority; currently resolved.,2024-06-03,2024-06-24,ivan.ali,2024-06-03 11:35:09
+345,TCK-00345,Low,In Progress,Network,Network issue #345,Network ticket with low priority; currently in progress.,2024-10-22,,bob.jones,2024-10-22 14:19:14
+346,TCK-00346,Low,Resolved,Hardware,Hardware issue #346,Hardware ticket with low priority; currently resolved.,2024-05-30,2024-06-29,frank.wong,2024-05-30 12:49:27
+347,TCK-00347,High,Open,Network,Network issue #347,Network ticket with high priority; currently open.,2024-05-29,,,2024-05-29 10:43:22
+348,TCK-00348,Critical,In Progress,Security,Security issue #348,Security ticket with critical priority; currently in progress.,2024-02-04,,charlie.khan,2024-02-04 09:03:49
+349,TCK-00349,Low,Open,Network,Network issue #349,Network ticket with low priority; currently open.,2024-04-20,,frank.wong,2024-04-20 13:26:16
+350,TCK-00350,High,On Hold,Network,Network issue #350,Network ticket with high priority; currently on hold.,2024-01-11,,bob.jones,2024-01-11 17:28:33
+351,TCK-00351,High,Resolved,Security,Security issue #351,Security ticket with high priority; currently resolved.,2024-01-30,2024-02-03,diana.lee,2024-01-30 15:44:48
+352,TCK-00352,High,Resolved,Software,Software issue #352,Software ticket with high priority; currently resolved.,2024-07-06,2024-07-29,heidi.ng,2024-07-06 09:38:44
+353,TCK-00353,Medium,On Hold,Security,Security issue #353,Security ticket with medium priority; currently on hold.,2024-12-07,,frank.wong,2024-12-07 11:15:07
+354,TCK-00354,High,In Progress,Other,Other issue #354,Other ticket with high priority; currently in progress.,2024-10-16,,grace.patel,2024-10-16 18:50:27
+355,TCK-00355,High,In Progress,Access,Access issue #355,Access ticket with high priority; currently in progress.,2024-08-15,,eve.owens,2024-08-15 16:09:56
+356,TCK-00356,Medium,Closed,Other,Other issue #356,Other ticket with medium priority; currently closed.,2024-12-07,2024-12-25,ivan.ali,2024-12-07 08:06:14
+357,TCK-00357,Medium,Resolved,Network,Network issue #357,Network ticket with medium priority; currently resolved.,2024-10-09,2024-11-04,charlie.khan,2024-10-09 18:03:46
+358,TCK-00358,High,Closed,Security,Security issue #358,Security ticket with high priority; currently closed.,2024-08-28,2024-09-22,diana.lee,2024-08-28 17:49:07
+359,TCK-00359,Medium,Closed,Other,Other issue #359,Other ticket with medium priority; currently closed.,2024-08-23,2024-09-05,diana.lee,2024-08-23 10:55:59
+360,TCK-00360,Critical,On Hold,Network,Network issue #360,Network ticket with critical priority; currently on hold.,2024-03-16,,eve.owens,2024-03-16 09:09:32
+361,TCK-00361,High,Open,Hardware,Hardware issue #361,Hardware ticket with high priority; currently open.,2024-07-26,,heidi.ng,2024-07-26 17:30:02
+362,TCK-00362,Critical,In Progress,Access,Access issue #362,Access ticket with critical priority; currently in progress.,2024-05-06,,eve.owens,2024-05-06 13:08:57
+363,TCK-00363,Medium,In Progress,Network,Network issue #363,Network ticket with medium priority; currently in progress.,2024-08-06,,eve.owens,2024-08-06 10:01:10
+364,TCK-00364,Critical,Open,Other,Other issue #364,Other ticket with critical priority; currently open.,2024-09-30,,ivan.ali,2024-09-30 13:11:47
+365,TCK-00365,High,Closed,Software,Software issue #365,Software ticket with high priority; currently closed.,2024-05-15,2024-05-24,heidi.ng,2024-05-15 14:18:17
+366,TCK-00366,Critical,In Progress,Other,Other issue #366,Other ticket with critical priority; currently in progress.,2024-01-27,,diana.lee,2024-01-27 11:38:42
+367,TCK-00367,Medium,Open,Software,Software issue #367,Software ticket with medium priority; currently open.,2024-02-23,,ivan.ali,2024-02-23 13:03:52
+368,TCK-00368,Medium,In Progress,Network,Network issue #368,Network ticket with medium priority; currently in progress.,2024-05-31,,eve.owens,2024-05-31 11:41:09
+369,TCK-00369,Critical,Closed,Other,Other issue #369,Other ticket with critical priority; currently closed.,2024-10-14,2024-11-08,ivan.ali,2024-10-14 10:48:38
+370,TCK-00370,High,In Progress,Software,Software issue #370,Software ticket with high priority; currently in progress.,2024-10-04,,heidi.ng,2024-10-04 17:28:38
+371,TCK-00371,Medium,In Progress,Security,Security issue #371,Security ticket with medium priority; currently in progress.,2024-10-03,,heidi.ng,2024-10-03 16:36:40
+372,TCK-00372,High,Open,Software,Software issue #372,Software ticket with high priority; currently open.,2024-06-07,,judy.chen,2024-06-07 16:40:15
+373,TCK-00373,High,Open,Network,Network issue #373,Network ticket with high priority; currently open.,2024-07-02,,heidi.ng,2024-07-02 08:58:34
+374,TCK-00374,Medium,Resolved,Security,Security issue #374,Security ticket with medium priority; currently resolved.,2024-03-13,2024-03-25,grace.patel,2024-03-13 17:02:14
+375,TCK-00375,Medium,Open,Security,Security issue #375,Security ticket with medium priority; currently open.,2024-08-04,,,2024-08-04 09:11:51
+376,TCK-00376,Medium,In Progress,Access,Access issue #376,Access ticket with medium priority; currently in progress.,2024-09-17,,judy.chen,2024-09-17 17:27:29
+377,TCK-00377,Medium,Resolved,Hardware,Hardware issue #377,Hardware ticket with medium priority; currently resolved.,2024-05-17,2024-06-11,diana.lee,2024-05-17 14:57:32
+378,TCK-00378,High,Closed,Hardware,Hardware issue #378,Hardware ticket with high priority; currently closed.,2024-09-24,2024-10-23,eve.owens,2024-09-24 12:05:55
+379,TCK-00379,Medium,Closed,Hardware,Hardware issue #379,Hardware ticket with medium priority; currently closed.,2024-05-04,2024-05-21,diana.lee,2024-05-04 14:18:32
+380,TCK-00380,High,In Progress,Other,Other issue #380,Other ticket with high priority; currently in progress.,2024-07-02,,diana.lee,2024-07-02 16:29:45
+381,TCK-00381,High,Resolved,Other,Other issue #381,Other ticket with high priority; currently resolved.,2024-04-20,2024-05-08,ivan.ali,2024-04-20 15:03:47
+382,TCK-00382,Low,Closed,Software,Software issue #382,Software ticket with low priority; currently closed.,2024-09-15,2024-09-16,grace.patel,2024-09-15 08:30:44
+383,TCK-00383,Low,In Progress,Other,Other issue #383,Other ticket with low priority; currently in progress.,2024-01-11,,ivan.ali,2024-01-11 13:00:48
+384,TCK-00384,Medium,Closed,Access,Access issue #384,Access ticket with medium priority; currently closed.,2024-04-01,2024-04-26,frank.wong,2024-04-01 11:43:37
+385,TCK-00385,Low,Closed,Security,Security issue #385,Security ticket with low priority; currently closed.,2024-10-14,2024-10-17,grace.patel,2024-10-14 18:31:26
+386,TCK-00386,High,Closed,Security,Security issue #386,Security ticket with high priority; currently closed.,2024-04-19,2024-04-19,charlie.khan,2024-04-19 17:57:00
+387,TCK-00387,Low,Open,Hardware,Hardware issue #387,Hardware ticket with low priority; currently open.,2024-12-02,,,2024-12-02 09:43:32
+388,TCK-00388,Medium,Closed,Network,Network issue #388,Network ticket with medium priority; currently closed.,2024-09-19,2024-10-13,grace.patel,2024-09-19 08:40:06
+389,TCK-00389,High,Closed,Security,Security issue #389,Security ticket with high priority; currently closed.,2024-04-14,2024-04-24,charlie.khan,2024-04-14 16:02:58
+390,TCK-00390,Medium,Resolved,Access,Access issue #390,Access ticket with medium priority; currently resolved.,2024-01-23,2024-02-01,bob.jones,2024-01-23 11:27:25
+391,TCK-00391,Medium,Resolved,Security,Security issue #391,Security ticket with medium priority; currently resolved.,2024-04-02,2024-05-01,eve.owens,2024-04-02 10:32:26
+392,TCK-00392,Medium,Resolved,Security,Security issue #392,Security ticket with medium priority; currently resolved.,2024-04-18,2024-05-08,diana.lee,2024-04-18 09:42:45
+393,TCK-00393,Low,Open,Access,Access issue #393,Access ticket with low priority; currently open.,2024-01-26,,grace.patel,2024-01-26 15:04:16
+394,TCK-00394,Medium,Resolved,Network,Network issue #394,Network ticket with medium priority; currently resolved.,2024-05-27,2024-06-24,heidi.ng,2024-05-27 16:06:18
+395,TCK-00395,Medium,Closed,Network,Network issue #395,Network ticket with medium priority; currently closed.,2024-11-19,2024-12-10,judy.chen,2024-11-19 16:56:58
+396,TCK-00396,High,In Progress,Security,Security issue #396,Security ticket with high priority; currently in progress.,2024-03-22,,bob.jones,2024-03-22 11:59:14
+397,TCK-00397,Critical,Closed,Other,Other issue #397,Other ticket with critical priority; currently closed.,2024-11-27,2024-12-12,charlie.khan,2024-11-27 08:03:23
+398,TCK-00398,Medium,In Progress,Network,Network issue #398,Network ticket with medium priority; currently in progress.,2024-01-14,,charlie.khan,2024-01-14 15:15:57
+399,TCK-00399,Medium,Open,Other,Other issue #399,Other ticket with medium priority; currently open.,2024-05-30,,,2024-05-30 16:27:37
+400,TCK-00400,Medium,Closed,Access,Access issue #400,Access ticket with medium priority; currently closed.,2024-09-22,2024-10-02,heidi.ng,2024-09-22 17:39:58
+401,TCK-00401,Medium,Closed,Software,Software issue #401,Software ticket with medium priority; currently closed.,2024-03-24,2024-04-22,diana.lee,2024-03-24 16:03:30
+402,TCK-00402,High,Closed,Network,Network issue #402,Network ticket with high priority; currently closed.,2024-02-06,2024-02-26,charlie.khan,2024-02-06 11:39:02
+403,TCK-00403,Medium,Resolved,Security,Security issue #403,Security ticket with medium priority; currently resolved.,2024-06-27,2024-07-23,eve.owens,2024-06-27 11:20:49
+404,TCK-00404,High,Resolved,Network,Network issue #404,Network ticket with high priority; currently resolved.,2024-10-13,2024-10-21,bob.jones,2024-10-13 13:59:08
+405,TCK-00405,Medium,Closed,Access,Access issue #405,Access ticket with medium priority; currently closed.,2024-02-17,2024-03-11,alice.smith,2024-02-17 13:12:31
+406,TCK-00406,High,Closed,Network,Network issue #406,Network ticket with high priority; currently closed.,2024-02-08,2024-02-18,bob.jones,2024-02-08 18:29:03
+407,TCK-00407,High,In Progress,Software,Software issue #407,Software ticket with high priority; currently in progress.,2024-02-17,,charlie.khan,2024-02-17 16:56:52
+408,TCK-00408,High,In Progress,Other,Other issue #408,Other ticket with high priority; currently in progress.,2024-09-11,,bob.jones,2024-09-11 11:34:02
+409,TCK-00409,High,In Progress,Other,Other issue #409,Other ticket with high priority; currently in progress.,2024-02-01,,alice.smith,2024-02-01 17:17:06
+410,TCK-00410,Low,Closed,Hardware,Hardware issue #410,Hardware ticket with low priority; currently closed.,2024-04-10,2024-05-07,heidi.ng,2024-04-10 18:24:49
+411,TCK-00411,Medium,Resolved,Security,Security issue #411,Security ticket with medium priority; currently resolved.,2024-09-28,2024-09-30,charlie.khan,2024-09-28 13:34:18
+412,TCK-00412,High,Open,Security,Security issue #412,Security ticket with high priority; currently open.,2024-03-12,,bob.jones,2024-03-12 16:14:57
+413,TCK-00413,Critical,Closed,Network,Network issue #413,Network ticket with critical priority; currently closed.,2024-10-21,2024-11-19,charlie.khan,2024-10-21 09:09:50
+414,TCK-00414,Medium,Resolved,Network,Network issue #414,Network ticket with medium priority; currently resolved.,2024-11-25,2024-12-09,charlie.khan,2024-11-25 17:17:50
+415,TCK-00415,Medium,Closed,Hardware,Hardware issue #415,Hardware ticket with medium priority; currently closed.,2024-04-01,2024-04-15,ivan.ali,2024-04-01 17:59:27
+416,TCK-00416,Medium,Open,Hardware,Hardware issue #416,Hardware ticket with medium priority; currently open.,2024-04-20,,,2024-04-20 08:59:23
+417,TCK-00417,Low,Closed,Software,Software issue #417,Software ticket with low priority; currently closed.,2024-11-25,2024-12-16,bob.jones,2024-11-25 14:52:37
+418,TCK-00418,Low,On Hold,Other,Other issue #418,Other ticket with low priority; currently on hold.,2024-10-28,,bob.jones,2024-10-28 16:52:45
+419,TCK-00419,Medium,Resolved,Software,Software issue #419,Software ticket with medium priority; currently resolved.,2024-09-07,2024-10-05,ivan.ali,2024-09-07 18:23:17
+420,TCK-00420,High,Closed,Security,Security issue #420,Security ticket with high priority; currently closed.,2024-01-15,2024-01-29,eve.owens,2024-01-15 17:23:18
+421,TCK-00421,Low,Resolved,Security,Security issue #421,Security ticket with low priority; currently resolved.,2024-01-20,2024-02-14,grace.patel,2024-01-20 16:07:16
+422,TCK-00422,Low,Closed,Network,Network issue #422,Network ticket with low priority; currently closed.,2024-03-25,2024-04-11,judy.chen,2024-03-25 14:17:10
+423,TCK-00423,Critical,Closed,Network,Network issue #423,Network ticket with critical priority; currently closed.,2024-10-25,2024-11-03,charlie.khan,2024-10-25 16:43:01
+424,TCK-00424,Medium,Open,Other,Other issue #424,Other ticket with medium priority; currently open.,2024-02-15,,diana.lee,2024-02-15 15:47:23
+425,TCK-00425,Medium,Closed,Other,Other issue #425,Other ticket with medium priority; currently closed.,2024-03-09,2024-03-18,bob.jones,2024-03-09 10:24:51
+426,TCK-00426,High,Resolved,Network,Network issue #426,Network ticket with high priority; currently resolved.,2024-03-28,2024-04-18,ivan.ali,2024-03-28 10:14:58
+427,TCK-00427,Medium,Closed,Hardware,Hardware issue #427,Hardware ticket with medium priority; currently closed.,2024-03-25,2024-04-03,judy.chen,2024-03-25 13:14:36
+428,TCK-00428,Low,On Hold,Access,Access issue #428,Access ticket with low priority; currently on hold.,2024-11-10,,bob.jones,2024-11-10 09:36:45
+429,TCK-00429,High,In Progress,Access,Access issue #429,Access ticket with high priority; currently in progress.,2024-06-05,,judy.chen,2024-06-05 17:17:42
+430,TCK-00430,Medium,Resolved,Other,Other issue #430,Other ticket with medium priority; currently resolved.,2024-10-26,2024-11-11,judy.chen,2024-10-26 13:53:09
+431,TCK-00431,High,In Progress,Security,Security issue #431,Security ticket with high priority; currently in progress.,2024-05-26,,bob.jones,2024-05-26 13:22:15
+432,TCK-00432,Low,In Progress,Access,Access issue #432,Access ticket with low priority; currently in progress.,2024-10-24,,alice.smith,2024-10-24 16:00:59
+433,TCK-00433,Critical,In Progress,Network,Network issue #433,Network ticket with critical priority; currently in progress.,2024-12-05,,charlie.khan,2024-12-05 09:50:53
+434,TCK-00434,Low,Resolved,Security,Security issue #434,Security ticket with low priority; currently resolved.,2024-11-23,2024-12-18,charlie.khan,2024-11-23 08:28:47
+435,TCK-00435,Medium,Closed,Access,Access issue #435,Access ticket with medium priority; currently closed.,2024-08-13,2024-09-01,heidi.ng,2024-08-13 18:23:24
+436,TCK-00436,Medium,In Progress,Other,Other issue #436,Other ticket with medium priority; currently in progress.,2024-08-26,,eve.owens,2024-08-26 08:39:50
+437,TCK-00437,Low,Resolved,Access,Access issue #437,Access ticket with low priority; currently resolved.,2024-06-14,2024-06-15,eve.owens,2024-06-14 08:59:15
+438,TCK-00438,High,Resolved,Other,Other issue #438,Other ticket with high priority; currently resolved.,2024-11-18,2024-11-20,bob.jones,2024-11-18 16:32:41
+439,TCK-00439,High,Closed,Security,Security issue #439,Security ticket with high priority; currently closed.,2024-07-29,2024-08-19,ivan.ali,2024-07-29 17:04:36
+440,TCK-00440,Low,Resolved,Network,Network issue #440,Network ticket with low priority; currently resolved.,2024-04-14,2024-05-12,diana.lee,2024-04-14 13:27:45
+441,TCK-00441,Medium,Closed,Network,Network issue #441,Network ticket with medium priority; currently closed.,2024-06-19,2024-07-13,ivan.ali,2024-06-19 15:40:56
+442,TCK-00442,Medium,Closed,Access,Access issue #442,Access ticket with medium priority; currently closed.,2024-03-10,2024-03-21,frank.wong,2024-03-10 12:38:17
+443,TCK-00443,Critical,Resolved,Security,Security issue #443,Security ticket with critical priority; currently resolved.,2024-03-12,2024-04-06,frank.wong,2024-03-12 09:07:00
+444,TCK-00444,Medium,Resolved,Software,Software issue #444,Software ticket with medium priority; currently resolved.,2024-02-10,2024-02-10,charlie.khan,2024-02-10 16:36:58
+445,TCK-00445,High,On Hold,Security,Security issue #445,Security ticket with high priority; currently on hold.,2024-06-10,,judy.chen,2024-06-10 16:13:07
+446,TCK-00446,High,On Hold,Security,Security issue #446,Security ticket with high priority; currently on hold.,2024-03-12,,ivan.ali,2024-03-12 14:13:35
+447,TCK-00447,Medium,On Hold,Hardware,Hardware issue #447,Hardware ticket with medium priority; currently on hold.,2024-08-25,,grace.patel,2024-08-25 10:31:52
+448,TCK-00448,Medium,In Progress,Other,Other issue #448,Other ticket with medium priority; currently in progress.,2024-11-18,,frank.wong,2024-11-18 12:01:06
+449,TCK-00449,Critical,In Progress,Hardware,Hardware issue #449,Hardware ticket with critical priority; currently in progress.,2024-10-02,,ivan.ali,2024-10-02 18:49:34
+450,TCK-00450,Medium,Open,Security,Security issue #450,Security ticket with medium priority; currently open.,2024-06-19,,,2024-06-19 12:51:18
+451,TCK-00451,Critical,In Progress,Other,Other issue #451,Other ticket with critical priority; currently in progress.,2024-10-04,,diana.lee,2024-10-04 13:43:22
+452,TCK-00452,High,Resolved,Other,Other issue #452,Other ticket with high priority; currently resolved.,2024-06-10,2024-06-30,grace.patel,2024-06-10 10:30:53
+453,TCK-00453,High,In Progress,Network,Network issue #453,Network ticket with high priority; currently in progress.,2024-05-07,,alice.smith,2024-05-07 14:03:28
+454,TCK-00454,High,In Progress,Access,Access issue #454,Access ticket with high priority; currently in progress.,2024-08-01,,diana.lee,2024-08-01 08:34:17
+455,TCK-00455,Medium,Open,Software,Software issue #455,Software ticket with medium priority; currently open.,2024-03-21,,,2024-03-21 16:48:41
+456,TCK-00456,Critical,Closed,Software,Software issue #456,Software ticket with critical priority; currently closed.,2024-09-17,2024-09-17,alice.smith,2024-09-17 10:00:16
+457,TCK-00457,Low,In Progress,Security,Security issue #457,Security ticket with low priority; currently in progress.,2024-12-25,,diana.lee,2024-12-25 17:28:40
+458,TCK-00458,Medium,Closed,Security,Security issue #458,Security ticket with medium priority; currently closed.,2024-03-20,2024-04-02,eve.owens,2024-03-20 15:24:38
+459,TCK-00459,Medium,In Progress,Hardware,Hardware issue #459,Hardware ticket with medium priority; currently in progress.,2024-03-18,,bob.jones,2024-03-18 13:54:22
+460,TCK-00460,Medium,Resolved,Access,Access issue #460,Access ticket with medium priority; currently resolved.,2024-10-30,2024-11-08,heidi.ng,2024-10-30 12:16:41
+461,TCK-00461,Critical,In Progress,Security,Security issue #461,Security ticket with critical priority; currently in progress.,2024-05-28,,grace.patel,2024-05-28 14:39:25
+462,TCK-00462,Low,Resolved,Hardware,Hardware issue #462,Hardware ticket with low priority; currently resolved.,2024-05-22,2024-05-31,charlie.khan,2024-05-22 09:47:28
+463,TCK-00463,High,Resolved,Other,Other issue #463,Other ticket with high priority; currently resolved.,2024-10-20,2024-11-17,diana.lee,2024-10-20 10:01:11
+464,TCK-00464,Medium,Open,Hardware,Hardware issue #464,Hardware ticket with medium priority; currently open.,2024-12-09,,alice.smith,2024-12-09 14:37:30
+465,TCK-00465,High,Open,Access,Access issue #465,Access ticket with high priority; currently open.,2024-06-07,,,2024-06-07 08:04:01
+466,TCK-00466,High,Resolved,Hardware,Hardware issue #466,Hardware ticket with high priority; currently resolved.,2024-11-04,2024-12-04,eve.owens,2024-11-04 09:33:49
+467,TCK-00467,Medium,Closed,Software,Software issue #467,Software ticket with medium priority; currently closed.,2024-08-09,2024-08-24,eve.owens,2024-08-09 17:10:00
+468,TCK-00468,High,In Progress,Other,Other issue #468,Other ticket with high priority; currently in progress.,2024-11-25,,heidi.ng,2024-11-25 08:55:25
+469,TCK-00469,High,Open,Hardware,Hardware issue #469,Hardware ticket with high priority; currently open.,2024-10-22,,heidi.ng,2024-10-22 18:59:02
+470,TCK-00470,Medium,Resolved,Hardware,Hardware issue #470,Hardware ticket with medium priority; currently resolved.,2024-08-09,2024-08-27,grace.patel,2024-08-09 09:38:51
+471,TCK-00471,Critical,Open,Security,Security issue #471,Security ticket with critical priority; currently open.,2024-05-27,,diana.lee,2024-05-27 08:47:45
+472,TCK-00472,Low,Open,Security,Security issue #472,Security ticket with low priority; currently open.,2024-09-29,,charlie.khan,2024-09-29 17:36:29
+473,TCK-00473,Low,In Progress,Hardware,Hardware issue #473,Hardware ticket with low priority; currently in progress.,2024-11-27,,diana.lee,2024-11-27 17:22:59
+474,TCK-00474,Critical,Closed,Access,Access issue #474,Access ticket with critical priority; currently closed.,2024-01-04,2024-02-02,diana.lee,2024-01-04 12:05:46
+475,TCK-00475,High,On Hold,Access,Access issue #475,Access ticket with high priority; currently on hold.,2024-05-27,,bob.jones,2024-05-27 18:23:43
+476,TCK-00476,High,Closed,Access,Access issue #476,Access ticket with high priority; currently closed.,2024-07-07,2024-08-03,judy.chen,2024-07-07 10:06:48
+477,TCK-00477,Medium,Closed,Network,Network issue #477,Network ticket with medium priority; currently closed.,2024-07-15,2024-07-16,heidi.ng,2024-07-15 17:14:51
+478,TCK-00478,Medium,Open,Security,Security issue #478,Security ticket with medium priority; currently open.,2024-10-03,,,2024-10-03 11:59:58
+479,TCK-00479,High,On Hold,Software,Software issue #479,Software ticket with high priority; currently on hold.,2024-01-05,,charlie.khan,2024-01-05 13:56:26
+480,TCK-00480,High,In Progress,Hardware,Hardware issue #480,Hardware ticket with high priority; currently in progress.,2024-07-29,,alice.smith,2024-07-29 09:35:28
+481,TCK-00481,High,Open,Network,Network issue #481,Network ticket with high priority; currently open.,2024-05-29,,frank.wong,2024-05-29 08:51:48
+482,TCK-00482,Low,Closed,Network,Network issue #482,Network ticket with low priority; currently closed.,2024-06-03,2024-07-03,grace.patel,2024-06-03 11:30:23
+483,TCK-00483,Medium,In Progress,Access,Access issue #483,Access ticket with medium priority; currently in progress.,2024-07-22,,judy.chen,2024-07-22 17:23:53
+484,TCK-00484,Medium,Resolved,Other,Other issue #484,Other ticket with medium priority; currently resolved.,2024-11-26,2024-11-30,alice.smith,2024-11-26 08:38:29
+485,TCK-00485,Medium,In Progress,Security,Security issue #485,Security ticket with medium priority; currently in progress.,2024-06-19,,judy.chen,2024-06-19 09:38:37
+486,TCK-00486,Low,Open,Hardware,Hardware issue #486,Hardware ticket with low priority; currently open.,2024-09-20,,diana.lee,2024-09-20 10:25:56
+487,TCK-00487,Low,Open,Access,Access issue #487,Access ticket with low priority; currently open.,2024-08-20,,bob.jones,2024-08-20 08:22:17
+488,TCK-00488,High,On Hold,Security,Security issue #488,Security ticket with high priority; currently on hold.,2024-04-05,,bob.jones,2024-04-05 11:03:10
+489,TCK-00489,Low,Open,Network,Network issue #489,Network ticket with low priority; currently open.,2024-05-21,,,2024-05-21 14:36:52
+490,TCK-00490,High,Open,Security,Security issue #490,Security ticket with high priority; currently open.,2024-04-29,,ivan.ali,2024-04-29 14:52:14
+491,TCK-00491,High,On Hold,Network,Network issue #491,Network ticket with high priority; currently on hold.,2024-02-05,,heidi.ng,2024-02-05 10:03:31
+492,TCK-00492,High,Closed,Other,Other issue #492,Other ticket with high priority; currently closed.,2024-01-08,2024-02-03,ivan.ali,2024-01-08 17:38:30
+493,TCK-00493,Low,Closed,Security,Security issue #493,Security ticket with low priority; currently closed.,2024-06-06,2024-06-28,diana.lee,2024-06-06 09:45:00
+494,TCK-00494,High,In Progress,Other,Other issue #494,Other ticket with high priority; currently in progress.,2024-02-21,,alice.smith,2024-02-21 17:56:23
+495,TCK-00495,Medium,Closed,Network,Network issue #495,Network ticket with medium priority; currently closed.,2024-05-17,2024-06-14,alice.smith,2024-05-17 17:16:29
+496,TCK-00496,Medium,Resolved,Other,Other issue #496,Other ticket with medium priority; currently resolved.,2024-01-20,2024-01-21,diana.lee,2024-01-20 17:14:08
+497,TCK-00497,Medium,Open,Security,Security issue #497,Security ticket with medium priority; currently open.,2024-07-04,,bob.jones,2024-07-04 12:05:00
+498,TCK-00498,Medium,Resolved,Other,Other issue #498,Other ticket with medium priority; currently resolved.,2024-03-24,2024-03-29,ivan.ali,2024-03-24 18:30:00
+499,TCK-00499,Medium,In Progress,Other,Other issue #499,Other ticket with medium priority; currently in progress.,2024-09-18,,eve.owens,2024-09-18 09:03:46
+500,TCK-00500,Low,Resolved,Software,Software issue #500,Software ticket with low priority; currently resolved.,2024-06-27,2024-06-29,frank.wong,2024-06-27 15:07:21
+501,TCK-00501,Critical,On Hold,Network,Network issue #501,Network ticket with critical priority; currently on hold.,2024-02-03,,bob.jones,2024-02-03 16:33:15
+502,TCK-00502,Critical,Open,Security,Security issue #502,Security ticket with critical priority; currently open.,2024-03-15,,judy.chen,2024-03-15 08:26:38
+503,TCK-00503,Medium,Open,Hardware,Hardware issue #503,Hardware ticket with medium priority; currently open.,2024-10-24,,,2024-10-24 11:36:46
+504,TCK-00504,High,Closed,Access,Access issue #504,Access ticket with high priority; currently closed.,2024-07-26,2024-08-23,diana.lee,2024-07-26 18:49:35
+505,TCK-00505,High,Open,Software,Software issue #505,Software ticket with high priority; currently open.,2024-08-02,,alice.smith,2024-08-02 12:27:49
+506,TCK-00506,High,Resolved,Access,Access issue #506,Access ticket with high priority; currently resolved.,2024-06-25,2024-07-13,alice.smith,2024-06-25 13:14:24
+507,TCK-00507,Critical,Open,Hardware,Hardware issue #507,Hardware ticket with critical priority; currently open.,2024-05-07,,grace.patel,2024-05-07 09:31:07
+508,TCK-00508,Critical,In Progress,Other,Other issue #508,Other ticket with critical priority; currently in progress.,2024-10-16,,diana.lee,2024-10-16 17:28:59
+509,TCK-00509,Low,Closed,Security,Security issue #509,Security ticket with low priority; currently closed.,2024-03-27,2024-04-11,heidi.ng,2024-03-27 16:05:26
+510,TCK-00510,High,Resolved,Access,Access issue #510,Access ticket with high priority; currently resolved.,2024-04-21,2024-04-29,diana.lee,2024-04-21 10:32:12
+511,TCK-00511,Low,Closed,Other,Other issue #511,Other ticket with low priority; currently closed.,2024-11-05,2024-11-11,grace.patel,2024-11-05 17:59:24
+512,TCK-00512,Medium,Open,Security,Security issue #512,Security ticket with medium priority; currently open.,2024-11-03,,judy.chen,2024-11-03 14:20:50
+513,TCK-00513,Low,Resolved,Security,Security issue #513,Security ticket with low priority; currently resolved.,2024-08-04,2024-08-17,bob.jones,2024-08-04 08:54:12
+514,TCK-00514,High,In Progress,Other,Other issue #514,Other ticket with high priority; currently in progress.,2024-01-08,,eve.owens,2024-01-08 17:12:51
+515,TCK-00515,High,Resolved,Hardware,Hardware issue #515,Hardware ticket with high priority; currently resolved.,2024-10-16,2024-10-27,grace.patel,2024-10-16 11:09:07
+516,TCK-00516,Medium,On Hold,Other,Other issue #516,Other ticket with medium priority; currently on hold.,2024-07-30,,diana.lee,2024-07-30 08:05:09
+517,TCK-00517,High,Resolved,Network,Network issue #517,Network ticket with high priority; currently resolved.,2024-01-26,2024-02-22,heidi.ng,2024-01-26 13:51:44
+518,TCK-00518,Critical,On Hold,Network,Network issue #518,Network ticket with critical priority; currently on hold.,2024-04-10,,bob.jones,2024-04-10 14:04:09
+519,TCK-00519,High,Resolved,Network,Network issue #519,Network ticket with high priority; currently resolved.,2024-01-20,2024-01-27,diana.lee,2024-01-20 16:41:39
+520,TCK-00520,Medium,Resolved,Network,Network issue #520,Network ticket with medium priority; currently resolved.,2024-01-31,2024-02-26,charlie.khan,2024-01-31 14:41:23
+521,TCK-00521,Low,Closed,Other,Other issue #521,Other ticket with low priority; currently closed.,2024-01-23,2024-01-28,frank.wong,2024-01-23 14:50:25
+522,TCK-00522,High,Closed,Access,Access issue #522,Access ticket with high priority; currently closed.,2024-06-19,2024-07-01,alice.smith,2024-06-19 10:01:11
+523,TCK-00523,Critical,Closed,Access,Access issue #523,Access ticket with critical priority; currently closed.,2024-07-20,2024-08-09,grace.patel,2024-07-20 08:03:27
+524,TCK-00524,Medium,On Hold,Software,Software issue #524,Software ticket with medium priority; currently on hold.,2024-05-15,,bob.jones,2024-05-15 10:59:41
+525,TCK-00525,Medium,Open,Network,Network issue #525,Network ticket with medium priority; currently open.,2024-07-12,,frank.wong,2024-07-12 10:36:34
+526,TCK-00526,Low,Closed,Hardware,Hardware issue #526,Hardware ticket with low priority; currently closed.,2024-08-01,2024-08-17,grace.patel,2024-08-01 10:31:28
+527,TCK-00527,Low,In Progress,Access,Access issue #527,Access ticket with low priority; currently in progress.,2024-05-13,,bob.jones,2024-05-13 11:09:24
+528,TCK-00528,High,Closed,Other,Other issue #528,Other ticket with high priority; currently closed.,2024-08-25,2024-08-26,grace.patel,2024-08-25 17:03:58
+529,TCK-00529,Medium,In Progress,Other,Other issue #529,Other ticket with medium priority; currently in progress.,2024-12-15,,judy.chen,2024-12-15 09:25:13
+530,TCK-00530,Medium,Resolved,Security,Security issue #530,Security ticket with medium priority; currently resolved.,2024-07-25,2024-08-11,eve.owens,2024-07-25 15:44:45
+531,TCK-00531,Medium,Resolved,Hardware,Hardware issue #531,Hardware ticket with medium priority; currently resolved.,2024-06-30,2024-07-10,frank.wong,2024-06-30 17:45:08
+532,TCK-00532,High,Resolved,Software,Software issue #532,Software ticket with high priority; currently resolved.,2024-01-20,2024-01-28,heidi.ng,2024-01-20 12:10:35
+533,TCK-00533,Medium,Closed,Hardware,Hardware issue #533,Hardware ticket with medium priority; currently closed.,2024-07-27,2024-08-14,heidi.ng,2024-07-27 10:02:22
+534,TCK-00534,Low,Closed,Access,Access issue #534,Access ticket with low priority; currently closed.,2024-05-12,2024-05-15,frank.wong,2024-05-12 16:06:22
+535,TCK-00535,Medium,Closed,Hardware,Hardware issue #535,Hardware ticket with medium priority; currently closed.,2024-06-22,2024-06-26,frank.wong,2024-06-22 17:47:08
+536,TCK-00536,Medium,On Hold,Security,Security issue #536,Security ticket with medium priority; currently on hold.,2024-02-27,,diana.lee,2024-02-27 12:58:14
+537,TCK-00537,Medium,Resolved,Access,Access issue #537,Access ticket with medium priority; currently resolved.,2024-03-10,2024-04-01,grace.patel,2024-03-10 16:48:50
+538,TCK-00538,Medium,Open,Other,Other issue #538,Other ticket with medium priority; currently open.,2024-04-07,,heidi.ng,2024-04-07 11:14:40
+539,TCK-00539,High,Open,Access,Access issue #539,Access ticket with high priority; currently open.,2024-12-27,,,2024-12-27 09:31:14
+540,TCK-00540,Low,Resolved,Network,Network issue #540,Network ticket with low priority; currently resolved.,2024-02-28,2024-03-16,ivan.ali,2024-02-28 11:45:56
+541,TCK-00541,Low,Resolved,Other,Other issue #541,Other ticket with low priority; currently resolved.,2024-08-06,2024-08-26,heidi.ng,2024-08-06 13:42:44
+542,TCK-00542,Medium,Resolved,Network,Network issue #542,Network ticket with medium priority; currently resolved.,2024-03-10,2024-03-30,bob.jones,2024-03-10 15:27:04
+543,TCK-00543,High,Resolved,Access,Access issue #543,Access ticket with high priority; currently resolved.,2024-12-29,2025-01-18,heidi.ng,2024-12-29 08:07:03
+544,TCK-00544,High,In Progress,Access,Access issue #544,Access ticket with high priority; currently in progress.,2024-01-26,,frank.wong,2024-01-26 15:00:48
+545,TCK-00545,Critical,Closed,Access,Access issue #545,Access ticket with critical priority; currently closed.,2024-01-20,2024-02-09,frank.wong,2024-01-20 18:40:20
+546,TCK-00546,Low,Closed,Software,Software issue #546,Software ticket with low priority; currently closed.,2024-05-21,2024-05-21,grace.patel,2024-05-21 16:21:29
+547,TCK-00547,Medium,Resolved,Software,Software issue #547,Software ticket with medium priority; currently resolved.,2024-07-31,2024-08-14,frank.wong,2024-07-31 12:35:02
+548,TCK-00548,Low,Resolved,Access,Access issue #548,Access ticket with low priority; currently resolved.,2024-07-25,2024-07-25,judy.chen,2024-07-25 16:19:44
+549,TCK-00549,Low,In Progress,Software,Software issue #549,Software ticket with low priority; currently in progress.,2024-09-12,,bob.jones,2024-09-12 15:30:21
+550,TCK-00550,Low,Closed,Network,Network issue #550,Network ticket with low priority; currently closed.,2024-08-28,2024-09-04,bob.jones,2024-08-28 08:18:43
+551,TCK-00551,High,Closed,Software,Software issue #551,Software ticket with high priority; currently closed.,2024-03-19,2024-04-03,grace.patel,2024-03-19 18:54:20
+552,TCK-00552,High,Resolved,Other,Other issue #552,Other ticket with high priority; currently resolved.,2024-09-26,2024-09-28,judy.chen,2024-09-26 18:48:47
+553,TCK-00553,Low,Open,Software,Software issue #553,Software ticket with low priority; currently open.,2024-09-12,,diana.lee,2024-09-12 12:03:15
+554,TCK-00554,Medium,Resolved,Network,Network issue #554,Network ticket with medium priority; currently resolved.,2024-12-21,2024-12-26,eve.owens,2024-12-21 12:26:28
+555,TCK-00555,Medium,Open,Security,Security issue #555,Security ticket with medium priority; currently open.,2024-11-11,,,2024-11-11 13:22:24
+556,TCK-00556,Low,Open,Access,Access issue #556,Access ticket with low priority; currently open.,2024-02-06,,frank.wong,2024-02-06 11:13:19
+557,TCK-00557,Medium,In Progress,Other,Other issue #557,Other ticket with medium priority; currently in progress.,2024-12-09,,ivan.ali,2024-12-09 10:10:40
+558,TCK-00558,High,In Progress,Hardware,Hardware issue #558,Hardware ticket with high priority; currently in progress.,2024-03-14,,frank.wong,2024-03-14 12:45:25
+559,TCK-00559,High,Resolved,Network,Network issue #559,Network ticket with high priority; currently resolved.,2024-05-29,2024-06-20,judy.chen,2024-05-29 14:42:12
+560,TCK-00560,High,Open,Other,Other issue #560,Other ticket with high priority; currently open.,2024-06-13,,diana.lee,2024-06-13 14:52:23
+561,TCK-00561,High,Open,Hardware,Hardware issue #561,Hardware ticket with high priority; currently open.,2024-07-23,,,2024-07-23 15:04:09
+562,TCK-00562,Critical,Closed,Security,Security issue #562,Security ticket with critical priority; currently closed.,2024-01-14,2024-01-27,charlie.khan,2024-01-14 14:12:22
+563,TCK-00563,Low,Open,Hardware,Hardware issue #563,Hardware ticket with low priority; currently open.,2024-02-13,,alice.smith,2024-02-13 15:16:42
+564,TCK-00564,Medium,In Progress,Security,Security issue #564,Security ticket with medium priority; currently in progress.,2024-03-27,,charlie.khan,2024-03-27 15:37:50
+565,TCK-00565,Low,Open,Hardware,Hardware issue #565,Hardware ticket with low priority; currently open.,2024-09-14,,ivan.ali,2024-09-14 13:16:21
+566,TCK-00566,High,Closed,Access,Access issue #566,Access ticket with high priority; currently closed.,2024-07-02,2024-07-06,frank.wong,2024-07-02 15:46:06
+567,TCK-00567,High,Closed,Software,Software issue #567,Software ticket with high priority; currently closed.,2024-04-26,2024-04-28,charlie.khan,2024-04-26 16:27:41
+568,TCK-00568,Critical,Resolved,Software,Software issue #568,Software ticket with critical priority; currently resolved.,2024-05-13,2024-05-17,charlie.khan,2024-05-13 16:31:22
+569,TCK-00569,High,Open,Network,Network issue #569,Network ticket with high priority; currently open.,2024-08-26,,alice.smith,2024-08-26 08:13:55
+570,TCK-00570,Medium,Open,Network,Network issue #570,Network ticket with medium priority; currently open.,2024-06-03,,diana.lee,2024-06-03 13:30:36
+571,TCK-00571,High,In Progress,Other,Other issue #571,Other ticket with high priority; currently in progress.,2024-05-17,,heidi.ng,2024-05-17 11:57:00
+572,TCK-00572,Low,Closed,Software,Software issue #572,Software ticket with low priority; currently closed.,2024-10-15,2024-10-28,alice.smith,2024-10-15 14:42:43
+573,TCK-00573,Medium,On Hold,Access,Access issue #573,Access ticket with medium priority; currently on hold.,2024-10-09,,grace.patel,2024-10-09 16:38:24
+574,TCK-00574,Medium,Closed,Access,Access issue #574,Access ticket with medium priority; currently closed.,2024-09-11,2024-09-18,heidi.ng,2024-09-11 17:26:42
+575,TCK-00575,Medium,Closed,Access,Access issue #575,Access ticket with medium priority; currently closed.,2024-05-10,2024-05-13,frank.wong,2024-05-10 11:20:58
+576,TCK-00576,Critical,Open,Security,Security issue #576,Security ticket with critical priority; currently open.,2024-06-09,,grace.patel,2024-06-09 13:55:56
+577,TCK-00577,High,Closed,Hardware,Hardware issue #577,Hardware ticket with high priority; currently closed.,2024-06-30,2024-07-29,diana.lee,2024-06-30 09:28:52
+578,TCK-00578,Medium,Closed,Hardware,Hardware issue #578,Hardware ticket with medium priority; currently closed.,2024-03-10,2024-03-18,alice.smith,2024-03-10 15:42:54
+579,TCK-00579,High,Resolved,Security,Security issue #579,Security ticket with high priority; currently resolved.,2024-10-12,2024-10-18,grace.patel,2024-10-12 10:40:14
+580,TCK-00580,High,Open,Other,Other issue #580,Other ticket with high priority; currently open.,2024-12-23,,grace.patel,2024-12-23 18:45:08
+581,TCK-00581,Medium,Closed,Other,Other issue #581,Other ticket with medium priority; currently closed.,2024-12-21,2025-01-17,ivan.ali,2024-12-21 11:36:12
+582,TCK-00582,Low,Open,Security,Security issue #582,Security ticket with low priority; currently open.,2024-05-06,,,2024-05-06 17:44:13
+583,TCK-00583,High,Open,Security,Security issue #583,Security ticket with high priority; currently open.,2024-06-26,,grace.patel,2024-06-26 14:49:13
+584,TCK-00584,Critical,Closed,Hardware,Hardware issue #584,Hardware ticket with critical priority; currently closed.,2024-10-10,2024-10-29,ivan.ali,2024-10-10 12:10:44
+585,TCK-00585,Low,Resolved,Security,Security issue #585,Security ticket with low priority; currently resolved.,2024-12-14,2024-12-30,diana.lee,2024-12-14 10:25:36
+586,TCK-00586,Critical,Closed,Access,Access issue #586,Access ticket with critical priority; currently closed.,2024-07-18,2024-07-25,ivan.ali,2024-07-18 15:34:30
+587,TCK-00587,Medium,Open,Software,Software issue #587,Software ticket with medium priority; currently open.,2024-02-21,,eve.owens,2024-02-21 18:47:27
+588,TCK-00588,Medium,In Progress,Access,Access issue #588,Access ticket with medium priority; currently in progress.,2024-04-20,,grace.patel,2024-04-20 17:08:35
+589,TCK-00589,Medium,Closed,Hardware,Hardware issue #589,Hardware ticket with medium priority; currently closed.,2024-09-13,2024-09-30,eve.owens,2024-09-13 17:01:49
+590,TCK-00590,High,Resolved,Security,Security issue #590,Security ticket with high priority; currently resolved.,2024-05-05,2024-05-19,judy.chen,2024-05-05 11:15:34
+591,TCK-00591,Medium,Closed,Security,Security issue #591,Security ticket with medium priority; currently closed.,2024-05-11,2024-05-11,eve.owens,2024-05-11 16:31:30
+592,TCK-00592,High,Closed,Other,Other issue #592,Other ticket with high priority; currently closed.,2024-02-18,2024-02-27,frank.wong,2024-02-18 18:46:51
+593,TCK-00593,High,On Hold,Network,Network issue #593,Network ticket with high priority; currently on hold.,2024-02-22,,diana.lee,2024-02-22 13:30:28
+594,TCK-00594,Critical,Resolved,Network,Network issue #594,Network ticket with critical priority; currently resolved.,2024-08-28,2024-09-02,frank.wong,2024-08-28 12:40:26
+595,TCK-00595,Low,Closed,Network,Network issue #595,Network ticket with low priority; currently closed.,2024-01-27,2024-02-25,heidi.ng,2024-01-27 12:18:42
+596,TCK-00596,Critical,Open,Access,Access issue #596,Access ticket with critical priority; currently open.,2024-01-12,,eve.owens,2024-01-12 18:10:08
+597,TCK-00597,High,In Progress,Other,Other issue #597,Other ticket with high priority; currently in progress.,2024-04-26,,eve.owens,2024-04-26 18:24:10
+598,TCK-00598,Low,Closed,Access,Access issue #598,Access ticket with low priority; currently closed.,2024-07-08,2024-07-18,alice.smith,2024-07-08 13:34:19
+599,TCK-00599,Medium,Open,Network,Network issue #599,Network ticket with medium priority; currently open.,2024-10-06,,heidi.ng,2024-10-06 18:28:32
+600,TCK-00600,Low,Open,Other,Other issue #600,Other ticket with low priority; currently open.,2024-04-23,,diana.lee,2024-04-23 08:34:35
+601,TCK-00601,Medium,Open,Security,Security issue #601,Security ticket with medium priority; currently open.,2024-12-19,,frank.wong,2024-12-19 18:18:05
+602,TCK-00602,Critical,Resolved,Security,Security issue #602,Security ticket with critical priority; currently resolved.,2024-09-19,2024-10-05,bob.jones,2024-09-19 17:31:25
+603,TCK-00603,Low,Closed,Hardware,Hardware issue #603,Hardware ticket with low priority; currently closed.,2024-01-16,2024-01-17,charlie.khan,2024-01-16 09:19:30
+604,TCK-00604,Medium,Open,Security,Security issue #604,Security ticket with medium priority; currently open.,2024-02-13,,charlie.khan,2024-02-13 15:10:22
+605,TCK-00605,High,In Progress,Hardware,Hardware issue #605,Hardware ticket with high priority; currently in progress.,2024-05-07,,ivan.ali,2024-05-07 12:36:30
+606,TCK-00606,Medium,Resolved,Other,Other issue #606,Other ticket with medium priority; currently resolved.,2024-04-06,2024-04-13,bob.jones,2024-04-06 12:44:10
+607,TCK-00607,Medium,Open,Network,Network issue #607,Network ticket with medium priority; currently open.,2024-12-17,,eve.owens,2024-12-17 16:43:09
+608,TCK-00608,Low,Resolved,Access,Access issue #608,Access ticket with low priority; currently resolved.,2024-05-07,2024-05-13,charlie.khan,2024-05-07 10:51:37
+609,TCK-00609,Low,Closed,Software,Software issue #609,Software ticket with low priority; currently closed.,2024-12-28,2025-01-01,alice.smith,2024-12-28 11:28:24
+610,TCK-00610,Low,Closed,Other,Other issue #610,Other ticket with low priority; currently closed.,2024-05-24,2024-05-28,eve.owens,2024-05-24 13:10:15
+611,TCK-00611,High,Resolved,Hardware,Hardware issue #611,Hardware ticket with high priority; currently resolved.,2024-07-26,2024-08-16,grace.patel,2024-07-26 09:22:35
+612,TCK-00612,Critical,In Progress,Software,Software issue #612,Software ticket with critical priority; currently in progress.,2024-11-01,,eve.owens,2024-11-01 11:37:57
+613,TCK-00613,High,In Progress,Security,Security issue #613,Security ticket with high priority; currently in progress.,2024-01-03,,judy.chen,2024-01-03 08:10:38
+614,TCK-00614,Medium,Resolved,Other,Other issue #614,Other ticket with medium priority; currently resolved.,2024-05-01,2024-05-30,bob.jones,2024-05-01 13:37:35
+615,TCK-00615,Critical,Closed,Network,Network issue #615,Network ticket with critical priority; currently closed.,2024-04-12,2024-04-28,bob.jones,2024-04-12 13:47:14
+616,TCK-00616,Medium,Open,Hardware,Hardware issue #616,Hardware ticket with medium priority; currently open.,2024-03-31,,frank.wong,2024-03-31 18:42:29
+617,TCK-00617,High,Closed,Security,Security issue #617,Security ticket with high priority; currently closed.,2024-09-20,2024-10-03,alice.smith,2024-09-20 13:33:27
+618,TCK-00618,Medium,Resolved,Software,Software issue #618,Software ticket with medium priority; currently resolved.,2024-05-06,2024-05-14,bob.jones,2024-05-06 08:27:09
+619,TCK-00619,High,Closed,Access,Access issue #619,Access ticket with high priority; currently closed.,2024-08-31,2024-09-01,frank.wong,2024-08-31 08:44:38
+620,TCK-00620,Low,In Progress,Software,Software issue #620,Software ticket with low priority; currently in progress.,2024-02-15,,frank.wong,2024-02-15 15:39:41
+621,TCK-00621,Medium,Open,Security,Security issue #621,Security ticket with medium priority; currently open.,2024-12-04,,,2024-12-04 15:39:38
+622,TCK-00622,Medium,Resolved,Hardware,Hardware issue #622,Hardware ticket with medium priority; currently resolved.,2024-01-17,2024-02-05,judy.chen,2024-01-17 18:51:41
+623,TCK-00623,Critical,Open,Security,Security issue #623,Security ticket with critical priority; currently open.,2024-04-14,,alice.smith,2024-04-14 08:06:14
+624,TCK-00624,Medium,Open,Software,Software issue #624,Software ticket with medium priority; currently open.,2024-06-07,,alice.smith,2024-06-07 09:13:07
+625,TCK-00625,Medium,Closed,Software,Software issue #625,Software ticket with medium priority; currently closed.,2024-07-19,2024-07-26,eve.owens,2024-07-19 11:40:14
+626,TCK-00626,High,Open,Access,Access issue #626,Access ticket with high priority; currently open.,2024-03-12,,frank.wong,2024-03-12 16:05:41
+627,TCK-00627,Medium,In Progress,Security,Security issue #627,Security ticket with medium priority; currently in progress.,2024-04-11,,judy.chen,2024-04-11 13:13:15
+628,TCK-00628,Medium,Resolved,Network,Network issue #628,Network ticket with medium priority; currently resolved.,2024-06-22,2024-07-22,diana.lee,2024-06-22 17:16:43
+629,TCK-00629,Medium,Closed,Hardware,Hardware issue #629,Hardware ticket with medium priority; currently closed.,2024-07-13,2024-07-18,charlie.khan,2024-07-13 11:25:59
+630,TCK-00630,Critical,In Progress,Security,Security issue #630,Security ticket with critical priority; currently in progress.,2024-06-30,,judy.chen,2024-06-30 13:46:46
+631,TCK-00631,High,Resolved,Other,Other issue #631,Other ticket with high priority; currently resolved.,2024-02-23,2024-03-09,bob.jones,2024-02-23 17:21:23
+632,TCK-00632,High,Closed,Network,Network issue #632,Network ticket with high priority; currently closed.,2024-04-16,2024-05-12,bob.jones,2024-04-16 18:21:25
+633,TCK-00633,Medium,Closed,Other,Other issue #633,Other ticket with medium priority; currently closed.,2024-11-11,2024-12-03,eve.owens,2024-11-11 17:06:45
+634,TCK-00634,Medium,Resolved,Access,Access issue #634,Access ticket with medium priority; currently resolved.,2024-08-14,2024-09-09,grace.patel,2024-08-14 14:05:46
+635,TCK-00635,High,Resolved,Access,Access issue #635,Access ticket with high priority; currently resolved.,2024-10-07,2024-10-30,frank.wong,2024-10-07 15:05:05
+636,TCK-00636,Medium,Resolved,Hardware,Hardware issue #636,Hardware ticket with medium priority; currently resolved.,2024-07-16,2024-07-22,judy.chen,2024-07-16 15:02:15
+637,TCK-00637,Critical,In Progress,Other,Other issue #637,Other ticket with critical priority; currently in progress.,2024-04-14,,alice.smith,2024-04-14 16:49:55
+638,TCK-00638,Low,Open,Security,Security issue #638,Security ticket with low priority; currently open.,2024-06-02,,ivan.ali,2024-06-02 14:38:21
+639,TCK-00639,Medium,Open,Software,Software issue #639,Software ticket with medium priority; currently open.,2024-02-06,,,2024-02-06 15:36:05
+640,TCK-00640,Medium,Open,Hardware,Hardware issue #640,Hardware ticket with medium priority; currently open.,2024-02-28,,judy.chen,2024-02-28 14:48:43
+641,TCK-00641,Medium,Closed,Other,Other issue #641,Other ticket with medium priority; currently closed.,2024-11-08,2024-11-23,judy.chen,2024-11-08 10:03:02
+642,TCK-00642,High,Resolved,Other,Other issue #642,Other ticket with high priority; currently resolved.,2024-06-26,2024-07-21,ivan.ali,2024-06-26 16:00:07
+643,TCK-00643,High,Closed,Access,Access issue #643,Access ticket with high priority; currently closed.,2024-08-04,2024-08-11,grace.patel,2024-08-04 13:33:21
+644,TCK-00644,Low,In Progress,Software,Software issue #644,Software ticket with low priority; currently in progress.,2024-11-03,,diana.lee,2024-11-03 13:21:29
+645,TCK-00645,High,In Progress,Software,Software issue #645,Software ticket with high priority; currently in progress.,2024-02-20,,bob.jones,2024-02-20 10:01:32
+646,TCK-00646,High,Closed,Other,Other issue #646,Other ticket with high priority; currently closed.,2024-04-16,2024-05-12,diana.lee,2024-04-16 17:11:59
+647,TCK-00647,Medium,Resolved,Software,Software issue #647,Software ticket with medium priority; currently resolved.,2024-02-14,2024-03-12,diana.lee,2024-02-14 15:51:04
+648,TCK-00648,High,Closed,Network,Network issue #648,Network ticket with high priority; currently closed.,2024-02-02,2024-02-28,charlie.khan,2024-02-02 12:20:45
+649,TCK-00649,Medium,On Hold,Hardware,Hardware issue #649,Hardware ticket with medium priority; currently on hold.,2024-11-03,,ivan.ali,2024-11-03 18:34:59
+650,TCK-00650,Medium,Closed,Access,Access issue #650,Access ticket with medium priority; currently closed.,2024-09-04,2024-09-18,ivan.ali,2024-09-04 13:02:31
+651,TCK-00651,Medium,Resolved,Other,Other issue #651,Other ticket with medium priority; currently resolved.,2024-09-06,2024-09-11,alice.smith,2024-09-06 09:05:39
+652,TCK-00652,Low,In Progress,Security,Security issue #652,Security ticket with low priority; currently in progress.,2024-05-24,,heidi.ng,2024-05-24 08:33:16
+653,TCK-00653,Low,Closed,Software,Software issue #653,Software ticket with low priority; currently closed.,2024-11-16,2024-12-01,eve.owens,2024-11-16 08:39:21
+654,TCK-00654,Low,Resolved,Access,Access issue #654,Access ticket with low priority; currently resolved.,2024-02-22,2024-02-23,frank.wong,2024-02-22 16:25:57
+655,TCK-00655,High,Closed,Other,Other issue #655,Other ticket with high priority; currently closed.,2024-06-05,2024-06-14,charlie.khan,2024-06-05 15:24:17
+656,TCK-00656,Medium,On Hold,Security,Security issue #656,Security ticket with medium priority; currently on hold.,2024-11-26,,alice.smith,2024-11-26 15:31:59
+657,TCK-00657,Critical,Closed,Access,Access issue #657,Access ticket with critical priority; currently closed.,2024-03-22,2024-04-08,ivan.ali,2024-03-22 09:10:38
+658,TCK-00658,High,In Progress,Software,Software issue #658,Software ticket with high priority; currently in progress.,2024-11-18,,bob.jones,2024-11-18 15:58:21
+659,TCK-00659,Medium,Open,Software,Software issue #659,Software ticket with medium priority; currently open.,2024-03-01,,,2024-03-01 10:21:34
+660,TCK-00660,High,On Hold,Security,Security issue #660,Security ticket with high priority; currently on hold.,2024-06-10,,diana.lee,2024-06-10 15:18:51
+661,TCK-00661,Critical,Open,Network,Network issue #661,Network ticket with critical priority; currently open.,2024-10-27,,frank.wong,2024-10-27 11:32:39
+662,TCK-00662,Low,In Progress,Software,Software issue #662,Software ticket with low priority; currently in progress.,2024-07-17,,alice.smith,2024-07-17 16:15:49
+663,TCK-00663,Medium,Closed,Network,Network issue #663,Network ticket with medium priority; currently closed.,2024-04-08,2024-05-03,bob.jones,2024-04-08 12:50:34
+664,TCK-00664,Low,Resolved,Hardware,Hardware issue #664,Hardware ticket with low priority; currently resolved.,2024-01-06,2024-01-22,judy.chen,2024-01-06 11:54:15
+665,TCK-00665,Medium,Open,Access,Access issue #665,Access ticket with medium priority; currently open.,2024-10-27,,,2024-10-27 16:53:21
+666,TCK-00666,Low,Closed,Hardware,Hardware issue #666,Hardware ticket with low priority; currently closed.,2024-11-08,2024-11-28,bob.jones,2024-11-08 11:33:30
+667,TCK-00667,Medium,In Progress,Software,Software issue #667,Software ticket with medium priority; currently in progress.,2024-04-18,,ivan.ali,2024-04-18 15:17:43
+668,TCK-00668,High,Resolved,Access,Access issue #668,Access ticket with high priority; currently resolved.,2024-09-14,2024-09-17,frank.wong,2024-09-14 11:00:54
+669,TCK-00669,High,In Progress,Access,Access issue #669,Access ticket with high priority; currently in progress.,2024-04-24,,bob.jones,2024-04-24 15:18:24
+670,TCK-00670,High,Closed,Hardware,Hardware issue #670,Hardware ticket with high priority; currently closed.,2024-02-01,2024-02-14,bob.jones,2024-02-01 16:08:43
+671,TCK-00671,Medium,In Progress,Hardware,Hardware issue #671,Hardware ticket with medium priority; currently in progress.,2024-04-25,,ivan.ali,2024-04-25 18:54:56
+672,TCK-00672,High,Resolved,Software,Software issue #672,Software ticket with high priority; currently resolved.,2024-06-27,2024-07-09,frank.wong,2024-06-27 11:14:08
+673,TCK-00673,High,Resolved,Hardware,Hardware issue #673,Hardware ticket with high priority; currently resolved.,2024-12-07,2025-01-03,heidi.ng,2024-12-07 16:05:30
+674,TCK-00674,Critical,Resolved,Security,Security issue #674,Security ticket with critical priority; currently resolved.,2024-12-31,2025-01-03,diana.lee,2024-12-31 13:56:10
+675,TCK-00675,High,Closed,Network,Network issue #675,Network ticket with high priority; currently closed.,2024-11-24,2024-12-04,heidi.ng,2024-11-24 18:29:01
+676,TCK-00676,High,Closed,Security,Security issue #676,Security ticket with high priority; currently closed.,2024-06-24,2024-07-16,frank.wong,2024-06-24 15:11:54
+677,TCK-00677,Low,Resolved,Hardware,Hardware issue #677,Hardware ticket with low priority; currently resolved.,2024-07-19,2024-07-22,frank.wong,2024-07-19 10:00:37
+678,TCK-00678,Medium,Closed,Other,Other issue #678,Other ticket with medium priority; currently closed.,2024-12-01,2024-12-04,charlie.khan,2024-12-01 14:48:37
+679,TCK-00679,Low,Open,Software,Software issue #679,Software ticket with low priority; currently open.,2024-09-14,,frank.wong,2024-09-14 16:27:44
+680,TCK-00680,Low,Resolved,Security,Security issue #680,Security ticket with low priority; currently resolved.,2024-08-15,2024-08-16,charlie.khan,2024-08-15 10:49:19
+681,TCK-00681,Medium,Resolved,Other,Other issue #681,Other ticket with medium priority; currently resolved.,2024-01-27,2024-02-24,eve.owens,2024-01-27 16:34:07
+682,TCK-00682,High,On Hold,Other,Other issue #682,Other ticket with high priority; currently on hold.,2024-05-02,,charlie.khan,2024-05-02 13:19:05
+683,TCK-00683,Critical,Closed,Hardware,Hardware issue #683,Hardware ticket with critical priority; currently closed.,2024-10-12,2024-10-24,heidi.ng,2024-10-12 14:51:54
+684,TCK-00684,Medium,On Hold,Security,Security issue #684,Security ticket with medium priority; currently on hold.,2024-09-22,,ivan.ali,2024-09-22 18:12:12
+685,TCK-00685,Medium,In Progress,Security,Security issue #685,Security ticket with medium priority; currently in progress.,2024-01-30,,alice.smith,2024-01-30 08:52:37
+686,TCK-00686,Medium,In Progress,Security,Security issue #686,Security ticket with medium priority; currently in progress.,2024-05-20,,eve.owens,2024-05-20 16:55:41
+687,TCK-00687,Medium,Resolved,Access,Access issue #687,Access ticket with medium priority; currently resolved.,2024-07-04,2024-07-18,charlie.khan,2024-07-04 12:45:04
+688,TCK-00688,High,Open,Access,Access issue #688,Access ticket with high priority; currently open.,2024-01-27,,heidi.ng,2024-01-27 14:36:38
+689,TCK-00689,Medium,Open,Software,Software issue #689,Software ticket with medium priority; currently open.,2024-06-14,,ivan.ali,2024-06-14 14:31:43
+690,TCK-00690,High,Closed,Access,Access issue #690,Access ticket with high priority; currently closed.,2024-10-21,2024-11-04,frank.wong,2024-10-21 08:54:53
+691,TCK-00691,Low,Open,Software,Software issue #691,Software ticket with low priority; currently open.,2024-04-30,,,2024-04-30 18:30:35
+692,TCK-00692,Medium,Resolved,Access,Access issue #692,Access ticket with medium priority; currently resolved.,2024-10-11,2024-11-04,ivan.ali,2024-10-11 17:17:53
+693,TCK-00693,High,Open,Hardware,Hardware issue #693,Hardware ticket with high priority; currently open.,2024-08-13,,,2024-08-13 11:46:49
+694,TCK-00694,Low,In Progress,Other,Other issue #694,Other ticket with low priority; currently in progress.,2024-02-02,,charlie.khan,2024-02-02 13:12:50
+695,TCK-00695,Critical,On Hold,Software,Software issue #695,Software ticket with critical priority; currently on hold.,2024-08-09,,frank.wong,2024-08-09 14:04:55
+696,TCK-00696,Critical,Resolved,Security,Security issue #696,Security ticket with critical priority; currently resolved.,2024-11-16,2024-12-08,eve.owens,2024-11-16 12:48:40
+697,TCK-00697,High,Resolved,Network,Network issue #697,Network ticket with high priority; currently resolved.,2024-03-26,2024-04-20,eve.owens,2024-03-26 18:37:50
+698,TCK-00698,Medium,On Hold,Security,Security issue #698,Security ticket with medium priority; currently on hold.,2024-04-21,,heidi.ng,2024-04-21 18:16:02
+699,TCK-00699,Critical,In Progress,Software,Software issue #699,Software ticket with critical priority; currently in progress.,2024-02-18,,judy.chen,2024-02-18 13:36:14
+700,TCK-00700,Low,Resolved,Security,Security issue #700,Security ticket with low priority; currently resolved.,2024-10-15,2024-11-08,alice.smith,2024-10-15 08:35:00
+701,TCK-00701,High,Closed,Network,Network issue #701,Network ticket with high priority; currently closed.,2024-03-01,2024-03-04,heidi.ng,2024-03-01 10:05:56
+702,TCK-00702,Medium,Resolved,Hardware,Hardware issue #702,Hardware ticket with medium priority; currently resolved.,2024-01-28,2024-02-14,grace.patel,2024-01-28 11:20:49
+703,TCK-00703,Low,In Progress,Network,Network issue #703,Network ticket with low priority; currently in progress.,2024-07-21,,frank.wong,2024-07-21 08:25:43
+704,TCK-00704,Medium,In Progress,Other,Other issue #704,Other ticket with medium priority; currently in progress.,2024-07-08,,frank.wong,2024-07-08 11:19:11
+705,TCK-00705,Low,Resolved,Hardware,Hardware issue #705,Hardware ticket with low priority; currently resolved.,2024-09-21,2024-10-14,charlie.khan,2024-09-21 08:36:00
+706,TCK-00706,Low,In Progress,Other,Other issue #706,Other ticket with low priority; currently in progress.,2024-05-06,,bob.jones,2024-05-06 11:02:23
+707,TCK-00707,Medium,Open,Other,Other issue #707,Other ticket with medium priority; currently open.,2024-10-16,,frank.wong,2024-10-16 10:57:32
+708,TCK-00708,Medium,Open,Hardware,Hardware issue #708,Hardware ticket with medium priority; currently open.,2024-04-12,,,2024-04-12 18:38:00
+709,TCK-00709,Critical,Closed,Security,Security issue #709,Security ticket with critical priority; currently closed.,2024-01-23,2024-02-14,charlie.khan,2024-01-23 14:55:54
+710,TCK-00710,Critical,Closed,Access,Access issue #710,Access ticket with critical priority; currently closed.,2024-06-23,2024-07-07,ivan.ali,2024-06-23 09:05:51
+711,TCK-00711,High,Open,Access,Access issue #711,Access ticket with high priority; currently open.,2024-06-20,,charlie.khan,2024-06-20 14:11:15
+712,TCK-00712,Medium,In Progress,Other,Other issue #712,Other ticket with medium priority; currently in progress.,2024-10-08,,heidi.ng,2024-10-08 14:12:18
+713,TCK-00713,High,In Progress,Other,Other issue #713,Other ticket with high priority; currently in progress.,2024-04-14,,eve.owens,2024-04-14 18:33:44
+714,TCK-00714,High,Resolved,Other,Other issue #714,Other ticket with high priority; currently resolved.,2024-05-22,2024-06-07,alice.smith,2024-05-22 11:41:56
+715,TCK-00715,High,Resolved,Other,Other issue #715,Other ticket with high priority; currently resolved.,2024-12-23,2025-01-15,ivan.ali,2024-12-23 12:38:05
+716,TCK-00716,Medium,Open,Access,Access issue #716,Access ticket with medium priority; currently open.,2024-05-11,,charlie.khan,2024-05-11 15:17:57
+717,TCK-00717,Medium,Closed,Hardware,Hardware issue #717,Hardware ticket with medium priority; currently closed.,2024-01-24,2024-01-28,alice.smith,2024-01-24 12:54:39
+718,TCK-00718,Medium,Resolved,Hardware,Hardware issue #718,Hardware ticket with medium priority; currently resolved.,2024-08-02,2024-08-03,alice.smith,2024-08-02 17:08:00
+719,TCK-00719,Medium,Resolved,Hardware,Hardware issue #719,Hardware ticket with medium priority; currently resolved.,2024-07-26,2024-07-31,ivan.ali,2024-07-26 16:16:31
+720,TCK-00720,Medium,In Progress,Access,Access issue #720,Access ticket with medium priority; currently in progress.,2024-03-03,,diana.lee,2024-03-03 10:58:19
+721,TCK-00721,Medium,Resolved,Software,Software issue #721,Software ticket with medium priority; currently resolved.,2024-07-29,2024-08-23,heidi.ng,2024-07-29 18:41:13
+722,TCK-00722,Medium,In Progress,Security,Security issue #722,Security ticket with medium priority; currently in progress.,2024-03-08,,grace.patel,2024-03-08 08:12:06
+723,TCK-00723,Medium,Closed,Access,Access issue #723,Access ticket with medium priority; currently closed.,2024-03-12,2024-04-08,charlie.khan,2024-03-12 09:16:31
+724,TCK-00724,Critical,On Hold,Network,Network issue #724,Network ticket with critical priority; currently on hold.,2024-08-05,,bob.jones,2024-08-05 13:06:23
+725,TCK-00725,Critical,Closed,Other,Other issue #725,Other ticket with critical priority; currently closed.,2024-09-09,2024-09-15,frank.wong,2024-09-09 08:20:30
+726,TCK-00726,Critical,Open,Security,Security issue #726,Security ticket with critical priority; currently open.,2024-09-09,,eve.owens,2024-09-09 15:22:49
+727,TCK-00727,Medium,Closed,Network,Network issue #727,Network ticket with medium priority; currently closed.,2024-06-10,2024-07-05,heidi.ng,2024-06-10 15:33:56
+728,TCK-00728,High,On Hold,Network,Network issue #728,Network ticket with high priority; currently on hold.,2024-10-29,,grace.patel,2024-10-29 15:46:00
+729,TCK-00729,Medium,Resolved,Other,Other issue #729,Other ticket with medium priority; currently resolved.,2024-03-27,2024-04-21,alice.smith,2024-03-27 09:58:03
+730,TCK-00730,High,In Progress,Hardware,Hardware issue #730,Hardware ticket with high priority; currently in progress.,2024-10-04,,ivan.ali,2024-10-04 10:03:30
+731,TCK-00731,Critical,Resolved,Software,Software issue #731,Software ticket with critical priority; currently resolved.,2024-06-20,2024-07-14,frank.wong,2024-06-20 18:53:32
+732,TCK-00732,High,Closed,Hardware,Hardware issue #732,Hardware ticket with high priority; currently closed.,2024-04-08,2024-05-01,alice.smith,2024-04-08 12:23:58
+733,TCK-00733,Medium,Resolved,Security,Security issue #733,Security ticket with medium priority; currently resolved.,2024-02-01,2024-02-27,charlie.khan,2024-02-01 17:34:39
+734,TCK-00734,Medium,Resolved,Access,Access issue #734,Access ticket with medium priority; currently resolved.,2024-07-07,2024-08-06,eve.owens,2024-07-07 08:09:07
+735,TCK-00735,High,Closed,Security,Security issue #735,Security ticket with high priority; currently closed.,2024-07-07,2024-07-08,frank.wong,2024-07-07 11:43:23
+736,TCK-00736,Medium,On Hold,Security,Security issue #736,Security ticket with medium priority; currently on hold.,2024-09-11,,judy.chen,2024-09-11 17:42:41
+737,TCK-00737,Medium,Resolved,Access,Access issue #737,Access ticket with medium priority; currently resolved.,2024-10-24,2024-11-21,diana.lee,2024-10-24 18:41:47
+738,TCK-00738,Medium,Resolved,Security,Security issue #738,Security ticket with medium priority; currently resolved.,2024-11-04,2024-11-29,frank.wong,2024-11-04 10:45:22
+739,TCK-00739,High,On Hold,Access,Access issue #739,Access ticket with high priority; currently on hold.,2024-04-27,,bob.jones,2024-04-27 08:06:55
+740,TCK-00740,Medium,Resolved,Security,Security issue #740,Security ticket with medium priority; currently resolved.,2024-10-08,2024-10-24,charlie.khan,2024-10-08 14:53:37
+741,TCK-00741,High,On Hold,Software,Software issue #741,Software ticket with high priority; currently on hold.,2024-04-01,,diana.lee,2024-04-01 15:23:37
+742,TCK-00742,Low,Closed,Security,Security issue #742,Security ticket with low priority; currently closed.,2024-01-30,2024-02-01,charlie.khan,2024-01-30 08:31:02
+743,TCK-00743,Medium,Closed,Other,Other issue #743,Other ticket with medium priority; currently closed.,2024-03-21,2024-04-13,frank.wong,2024-03-21 17:50:20
+744,TCK-00744,Medium,Open,Hardware,Hardware issue #744,Hardware ticket with medium priority; currently open.,2024-05-16,,,2024-05-16 13:05:53
+745,TCK-00745,Low,In Progress,Security,Security issue #745,Security ticket with low priority; currently in progress.,2024-04-24,,charlie.khan,2024-04-24 18:35:54
+746,TCK-00746,Medium,Closed,Software,Software issue #746,Software ticket with medium priority; currently closed.,2024-11-15,2024-11-28,heidi.ng,2024-11-15 09:30:40
+747,TCK-00747,Low,In Progress,Access,Access issue #747,Access ticket with low priority; currently in progress.,2024-01-18,,judy.chen,2024-01-18 15:09:24
+748,TCK-00748,High,Resolved,Security,Security issue #748,Security ticket with high priority; currently resolved.,2024-06-12,2024-06-30,bob.jones,2024-06-12 13:23:14
+749,TCK-00749,Medium,In Progress,Other,Other issue #749,Other ticket with medium priority; currently in progress.,2024-06-08,,heidi.ng,2024-06-08 08:54:29
+750,TCK-00750,High,In Progress,Security,Security issue #750,Security ticket with high priority; currently in progress.,2024-03-10,,bob.jones,2024-03-10 08:33:14
+751,TCK-00751,High,Open,Other,Other issue #751,Other ticket with high priority; currently open.,2024-10-30,,ivan.ali,2024-10-30 08:10:54
+752,TCK-00752,Critical,Resolved,Hardware,Hardware issue #752,Hardware ticket with critical priority; currently resolved.,2024-02-28,2024-02-28,diana.lee,2024-02-28 15:36:57
+753,TCK-00753,Critical,Resolved,Access,Access issue #753,Access ticket with critical priority; currently resolved.,2024-08-18,2024-09-15,diana.lee,2024-08-18 08:14:42
+754,TCK-00754,Medium,In Progress,Hardware,Hardware issue #754,Hardware ticket with medium priority; currently in progress.,2024-07-30,,charlie.khan,2024-07-30 13:13:12
+755,TCK-00755,Critical,In Progress,Software,Software issue #755,Software ticket with critical priority; currently in progress.,2024-07-02,,grace.patel,2024-07-02 16:36:08
+756,TCK-00756,Medium,In Progress,Network,Network issue #756,Network ticket with medium priority; currently in progress.,2024-11-01,,eve.owens,2024-11-01 08:50:05
+757,TCK-00757,High,Resolved,Access,Access issue #757,Access ticket with high priority; currently resolved.,2024-12-27,2025-01-19,grace.patel,2024-12-27 18:56:07
+758,TCK-00758,High,Open,Security,Security issue #758,Security ticket with high priority; currently open.,2024-07-15,,charlie.khan,2024-07-15 11:56:20
+759,TCK-00759,Medium,In Progress,Security,Security issue #759,Security ticket with medium priority; currently in progress.,2024-02-06,,ivan.ali,2024-02-06 14:54:53
+760,TCK-00760,Low,In Progress,Access,Access issue #760,Access ticket with low priority; currently in progress.,2024-06-02,,judy.chen,2024-06-02 11:49:03
+761,TCK-00761,High,Closed,Security,Security issue #761,Security ticket with high priority; currently closed.,2024-09-18,2024-09-18,grace.patel,2024-09-18 14:54:15
+762,TCK-00762,Medium,Open,Access,Access issue #762,Access ticket with medium priority; currently open.,2024-02-23,,judy.chen,2024-02-23 09:08:53
+763,TCK-00763,Low,Resolved,Other,Other issue #763,Other ticket with low priority; currently resolved.,2024-07-02,2024-07-11,charlie.khan,2024-07-02 18:49:15
+764,TCK-00764,Medium,Closed,Hardware,Hardware issue #764,Hardware ticket with medium priority; currently closed.,2024-03-16,2024-04-05,frank.wong,2024-03-16 10:01:17
+765,TCK-00765,Critical,Open,Security,Security issue #765,Security ticket with critical priority; currently open.,2024-10-26,,bob.jones,2024-10-26 14:36:13
+766,TCK-00766,High,In Progress,Network,Network issue #766,Network ticket with high priority; currently in progress.,2024-07-04,,charlie.khan,2024-07-04 14:33:15
+767,TCK-00767,High,In Progress,Hardware,Hardware issue #767,Hardware ticket with high priority; currently in progress.,2024-01-16,,ivan.ali,2024-01-16 11:55:11
+768,TCK-00768,Medium,Resolved,Other,Other issue #768,Other ticket with medium priority; currently resolved.,2024-10-25,2024-11-14,charlie.khan,2024-10-25 10:16:48
+769,TCK-00769,Medium,Closed,Software,Software issue #769,Software ticket with medium priority; currently closed.,2024-01-01,2024-01-11,diana.lee,2024-01-01 13:37:38
+770,TCK-00770,High,Resolved,Network,Network issue #770,Network ticket with high priority; currently resolved.,2024-04-07,2024-04-11,grace.patel,2024-04-07 15:39:53
+771,TCK-00771,Medium,Open,Hardware,Hardware issue #771,Hardware ticket with medium priority; currently open.,2024-03-08,,judy.chen,2024-03-08 10:34:49
+772,TCK-00772,High,Closed,Other,Other issue #772,Other ticket with high priority; currently closed.,2024-01-24,2024-01-25,charlie.khan,2024-01-24 16:07:22
+773,TCK-00773,Low,Closed,Access,Access issue #773,Access ticket with low priority; currently closed.,2024-07-07,2024-07-09,ivan.ali,2024-07-07 11:33:32
+774,TCK-00774,Medium,Closed,Access,Access issue #774,Access ticket with medium priority; currently closed.,2024-01-17,2024-02-14,judy.chen,2024-01-17 08:38:07
+775,TCK-00775,Low,Resolved,Access,Access issue #775,Access ticket with low priority; currently resolved.,2024-02-13,2024-02-26,charlie.khan,2024-02-13 11:30:33
+776,TCK-00776,Medium,Open,Other,Other issue #776,Other ticket with medium priority; currently open.,2024-04-19,,alice.smith,2024-04-19 14:09:30
+777,TCK-00777,High,Open,Hardware,Hardware issue #777,Hardware ticket with high priority; currently open.,2024-05-19,,eve.owens,2024-05-19 14:36:58
+778,TCK-00778,Medium,In Progress,Access,Access issue #778,Access ticket with medium priority; currently in progress.,2024-07-02,,bob.jones,2024-07-02 15:07:49
+779,TCK-00779,High,Closed,Other,Other issue #779,Other ticket with high priority; currently closed.,2024-10-08,2024-10-12,heidi.ng,2024-10-08 08:26:14
+780,TCK-00780,Critical,Resolved,Security,Security issue #780,Security ticket with critical priority; currently resolved.,2024-08-28,2024-08-28,alice.smith,2024-08-28 09:03:53
+781,TCK-00781,Medium,On Hold,Security,Security issue #781,Security ticket with medium priority; currently on hold.,2024-07-28,,grace.patel,2024-07-28 11:39:24
+782,TCK-00782,Medium,Open,Hardware,Hardware issue #782,Hardware ticket with medium priority; currently open.,2024-03-22,,eve.owens,2024-03-22 08:03:39
+783,TCK-00783,High,In Progress,Software,Software issue #783,Software ticket with high priority; currently in progress.,2024-10-15,,frank.wong,2024-10-15 09:57:53
+784,TCK-00784,Low,On Hold,Access,Access issue #784,Access ticket with low priority; currently on hold.,2024-05-14,,grace.patel,2024-05-14 14:41:23
+785,TCK-00785,High,In Progress,Hardware,Hardware issue #785,Hardware ticket with high priority; currently in progress.,2024-08-23,,ivan.ali,2024-08-23 10:31:31
+786,TCK-00786,High,In Progress,Network,Network issue #786,Network ticket with high priority; currently in progress.,2024-03-29,,eve.owens,2024-03-29 08:04:52
+787,TCK-00787,High,Resolved,Hardware,Hardware issue #787,Hardware ticket with high priority; currently resolved.,2024-11-17,2024-11-17,ivan.ali,2024-11-17 14:46:51
+788,TCK-00788,High,In Progress,Hardware,Hardware issue #788,Hardware ticket with high priority; currently in progress.,2024-05-08,,alice.smith,2024-05-08 16:53:58
+789,TCK-00789,Low,Closed,Hardware,Hardware issue #789,Hardware ticket with low priority; currently closed.,2024-02-09,2024-03-05,judy.chen,2024-02-09 10:18:10
+790,TCK-00790,High,On Hold,Software,Software issue #790,Software ticket with high priority; currently on hold.,2024-10-11,,judy.chen,2024-10-11 11:56:55
+791,TCK-00791,High,On Hold,Access,Access issue #791,Access ticket with high priority; currently on hold.,2024-09-09,,eve.owens,2024-09-09 15:18:55
+792,TCK-00792,Medium,Closed,Security,Security issue #792,Security ticket with medium priority; currently closed.,2024-12-13,2024-12-18,alice.smith,2024-12-13 18:28:07
+793,TCK-00793,High,In Progress,Network,Network issue #793,Network ticket with high priority; currently in progress.,2024-01-10,,frank.wong,2024-01-10 11:28:21
+794,TCK-00794,Low,Closed,Software,Software issue #794,Software ticket with low priority; currently closed.,2024-12-25,2024-12-30,frank.wong,2024-12-25 13:52:19
+795,TCK-00795,Low,Resolved,Software,Software issue #795,Software ticket with low priority; currently resolved.,2024-02-14,2024-03-08,bob.jones,2024-02-14 08:37:29
+796,TCK-00796,High,In Progress,Software,Software issue #796,Software ticket with high priority; currently in progress.,2024-01-29,,grace.patel,2024-01-29 10:44:58
+797,TCK-00797,Medium,Resolved,Hardware,Hardware issue #797,Hardware ticket with medium priority; currently resolved.,2024-09-01,2024-09-14,judy.chen,2024-09-01 14:19:16
+798,TCK-00798,Low,Resolved,Software,Software issue #798,Software ticket with low priority; currently resolved.,2024-01-15,2024-02-03,alice.smith,2024-01-15 16:28:30
+799,TCK-00799,Medium,Resolved,Security,Security issue #799,Security ticket with medium priority; currently resolved.,2024-08-09,2024-08-10,heidi.ng,2024-08-09 18:41:28
+800,TCK-00800,High,Resolved,Network,Network issue #800,Network ticket with high priority; currently resolved.,2024-08-19,2024-08-27,heidi.ng,2024-08-19 12:51:48
+801,TCK-00801,Critical,On Hold,Hardware,Hardware issue #801,Hardware ticket with critical priority; currently on hold.,2024-08-25,,charlie.khan,2024-08-25 17:33:31
+802,TCK-00802,Medium,Resolved,Network,Network issue #802,Network ticket with medium priority; currently resolved.,2024-06-30,2024-07-27,alice.smith,2024-06-30 08:21:28
+803,TCK-00803,Medium,In Progress,Network,Network issue #803,Network ticket with medium priority; currently in progress.,2024-05-06,,frank.wong,2024-05-06 17:04:39
+804,TCK-00804,Medium,Resolved,Network,Network issue #804,Network ticket with medium priority; currently resolved.,2024-07-21,2024-08-19,grace.patel,2024-07-21 12:50:34
+805,TCK-00805,Medium,Open,Other,Other issue #805,Other ticket with medium priority; currently open.,2024-10-04,,,2024-10-04 16:07:58
+806,TCK-00806,High,In Progress,Software,Software issue #806,Software ticket with high priority; currently in progress.,2024-04-04,,frank.wong,2024-04-04 16:20:38
+807,TCK-00807,Low,Resolved,Access,Access issue #807,Access ticket with low priority; currently resolved.,2024-09-26,2024-10-02,heidi.ng,2024-09-26 12:17:12
+808,TCK-00808,Medium,Closed,Other,Other issue #808,Other ticket with medium priority; currently closed.,2024-06-09,2024-07-09,ivan.ali,2024-06-09 09:32:54
+809,TCK-00809,High,Resolved,Network,Network issue #809,Network ticket with high priority; currently resolved.,2024-04-25,2024-05-13,grace.patel,2024-04-25 09:28:53
+810,TCK-00810,Low,Resolved,Software,Software issue #810,Software ticket with low priority; currently resolved.,2024-04-22,2024-04-28,frank.wong,2024-04-22 08:52:17
+811,TCK-00811,Low,Resolved,Network,Network issue #811,Network ticket with low priority; currently resolved.,2024-06-08,2024-07-08,alice.smith,2024-06-08 15:57:19
+812,TCK-00812,Medium,In Progress,Software,Software issue #812,Software ticket with medium priority; currently in progress.,2024-01-01,,frank.wong,2024-01-01 10:31:04
+813,TCK-00813,High,Open,Software,Software issue #813,Software ticket with high priority; currently open.,2024-11-05,,eve.owens,2024-11-05 13:05:58
+814,TCK-00814,Low,Open,Network,Network issue #814,Network ticket with low priority; currently open.,2024-09-29,,heidi.ng,2024-09-29 16:58:38
+815,TCK-00815,Medium,Closed,Network,Network issue #815,Network ticket with medium priority; currently closed.,2024-11-26,2024-12-09,charlie.khan,2024-11-26 10:24:44
+816,TCK-00816,Medium,Resolved,Hardware,Hardware issue #816,Hardware ticket with medium priority; currently resolved.,2024-11-01,2024-11-28,alice.smith,2024-11-01 10:22:44
+817,TCK-00817,High,Resolved,Security,Security issue #817,Security ticket with high priority; currently resolved.,2024-03-05,2024-03-29,bob.jones,2024-03-05 18:29:31
+818,TCK-00818,High,Resolved,Network,Network issue #818,Network ticket with high priority; currently resolved.,2024-01-12,2024-01-23,bob.jones,2024-01-12 12:03:17
+819,TCK-00819,Medium,Resolved,Hardware,Hardware issue #819,Hardware ticket with medium priority; currently resolved.,2024-11-18,2024-11-21,judy.chen,2024-11-18 12:59:30
+820,TCK-00820,Medium,Open,Access,Access issue #820,Access ticket with medium priority; currently open.,2024-05-04,,alice.smith,2024-05-04 08:25:19
+821,TCK-00821,Medium,Open,Hardware,Hardware issue #821,Hardware ticket with medium priority; currently open.,2024-09-22,,alice.smith,2024-09-22 09:42:18
+822,TCK-00822,High,Resolved,Software,Software issue #822,Software ticket with high priority; currently resolved.,2024-01-01,2024-01-04,eve.owens,2024-01-01 18:48:45
+823,TCK-00823,High,Open,Other,Other issue #823,Other ticket with high priority; currently open.,2024-09-09,,eve.owens,2024-09-09 13:18:22
+824,TCK-00824,Medium,Resolved,Access,Access issue #824,Access ticket with medium priority; currently resolved.,2024-07-17,2024-08-01,alice.smith,2024-07-17 15:22:31
+825,TCK-00825,Medium,In Progress,Other,Other issue #825,Other ticket with medium priority; currently in progress.,2024-03-19,,frank.wong,2024-03-19 17:25:01
+826,TCK-00826,Medium,In Progress,Access,Access issue #826,Access ticket with medium priority; currently in progress.,2024-02-19,,charlie.khan,2024-02-19 15:47:03
+827,TCK-00827,Low,Open,Other,Other issue #827,Other ticket with low priority; currently open.,2024-12-11,,,2024-12-11 15:42:03
+828,TCK-00828,High,Resolved,Security,Security issue #828,Security ticket with high priority; currently resolved.,2024-10-15,2024-10-24,frank.wong,2024-10-15 12:46:04
+829,TCK-00829,Medium,Closed,Hardware,Hardware issue #829,Hardware ticket with medium priority; currently closed.,2024-08-01,2024-08-02,charlie.khan,2024-08-01 10:42:48
+830,TCK-00830,High,Resolved,Security,Security issue #830,Security ticket with high priority; currently resolved.,2024-10-10,2024-10-21,alice.smith,2024-10-10 17:55:14
+831,TCK-00831,Medium,Open,Access,Access issue #831,Access ticket with medium priority; currently open.,2024-04-18,,diana.lee,2024-04-18 15:13:11
+832,TCK-00832,High,Resolved,Network,Network issue #832,Network ticket with high priority; currently resolved.,2024-09-21,2024-10-07,alice.smith,2024-09-21 10:19:32
+833,TCK-00833,Medium,Open,Software,Software issue #833,Software ticket with medium priority; currently open.,2024-09-30,,,2024-09-30 15:44:30
+834,TCK-00834,Medium,In Progress,Software,Software issue #834,Software ticket with medium priority; currently in progress.,2024-12-30,,alice.smith,2024-12-30 12:43:13
+835,TCK-00835,Medium,Closed,Access,Access issue #835,Access ticket with medium priority; currently closed.,2024-10-18,2024-10-30,eve.owens,2024-10-18 14:11:35
+836,TCK-00836,Medium,In Progress,Other,Other issue #836,Other ticket with medium priority; currently in progress.,2024-12-10,,eve.owens,2024-12-10 12:43:59
+837,TCK-00837,Critical,Closed,Network,Network issue #837,Network ticket with critical priority; currently closed.,2024-10-14,2024-10-29,frank.wong,2024-10-14 11:58:38
+838,TCK-00838,Critical,Open,Access,Access issue #838,Access ticket with critical priority; currently open.,2024-11-08,,ivan.ali,2024-11-08 15:30:02
+839,TCK-00839,Critical,Resolved,Security,Security issue #839,Security ticket with critical priority; currently resolved.,2024-06-23,2024-07-10,eve.owens,2024-06-23 11:43:00
+840,TCK-00840,Medium,Open,Access,Access issue #840,Access ticket with medium priority; currently open.,2024-04-22,,charlie.khan,2024-04-22 13:05:34
+841,TCK-00841,Low,Resolved,Software,Software issue #841,Software ticket with low priority; currently resolved.,2024-04-09,2024-04-22,judy.chen,2024-04-09 15:43:57
+842,TCK-00842,High,Closed,Other,Other issue #842,Other ticket with high priority; currently closed.,2024-06-16,2024-06-29,judy.chen,2024-06-16 16:23:57
+843,TCK-00843,Medium,Open,Network,Network issue #843,Network ticket with medium priority; currently open.,2024-11-01,,,2024-11-01 16:11:17
+844,TCK-00844,Low,Open,Hardware,Hardware issue #844,Hardware ticket with low priority; currently open.,2024-06-25,,,2024-06-25 11:28:53
+845,TCK-00845,Medium,Closed,Other,Other issue #845,Other ticket with medium priority; currently closed.,2024-06-13,2024-07-04,frank.wong,2024-06-13 13:53:08
+846,TCK-00846,Medium,In Progress,Network,Network issue #846,Network ticket with medium priority; currently in progress.,2024-06-21,,frank.wong,2024-06-21 15:59:05
+847,TCK-00847,High,Closed,Security,Security issue #847,Security ticket with high priority; currently closed.,2024-01-29,2024-02-16,heidi.ng,2024-01-29 16:41:02
+848,TCK-00848,Medium,Open,Other,Other issue #848,Other ticket with medium priority; currently open.,2024-11-25,,,2024-11-25 11:48:48
+849,TCK-00849,Low,Closed,Software,Software issue #849,Software ticket with low priority; currently closed.,2024-09-16,2024-10-10,judy.chen,2024-09-16 18:17:04
+850,TCK-00850,Medium,In Progress,Access,Access issue #850,Access ticket with medium priority; currently in progress.,2024-05-22,,ivan.ali,2024-05-22 11:35:50
+851,TCK-00851,Medium,In Progress,Software,Software issue #851,Software ticket with medium priority; currently in progress.,2024-03-08,,heidi.ng,2024-03-08 09:08:53
+852,TCK-00852,Medium,Closed,Software,Software issue #852,Software ticket with medium priority; currently closed.,2024-08-03,2024-08-17,grace.patel,2024-08-03 16:52:40
+853,TCK-00853,Medium,Resolved,Network,Network issue #853,Network ticket with medium priority; currently resolved.,2024-03-24,2024-04-18,grace.patel,2024-03-24 11:29:13
+854,TCK-00854,Medium,On Hold,Software,Software issue #854,Software ticket with medium priority; currently on hold.,2024-12-26,,eve.owens,2024-12-26 08:47:30
+855,TCK-00855,Medium,Resolved,Network,Network issue #855,Network ticket with medium priority; currently resolved.,2024-03-14,2024-04-08,eve.owens,2024-03-14 10:10:14
+856,TCK-00856,Low,Resolved,Software,Software issue #856,Software ticket with low priority; currently resolved.,2024-05-13,2024-05-16,charlie.khan,2024-05-13 09:55:19
+857,TCK-00857,Medium,Resolved,Hardware,Hardware issue #857,Hardware ticket with medium priority; currently resolved.,2024-05-09,2024-05-18,judy.chen,2024-05-09 13:00:40
+858,TCK-00858,High,In Progress,Software,Software issue #858,Software ticket with high priority; currently in progress.,2024-07-09,,diana.lee,2024-07-09 16:14:25
+859,TCK-00859,High,Resolved,Other,Other issue #859,Other ticket with high priority; currently resolved.,2024-04-20,2024-05-10,grace.patel,2024-04-20 09:45:08
+860,TCK-00860,High,Resolved,Software,Software issue #860,Software ticket with high priority; currently resolved.,2024-01-01,2024-01-11,alice.smith,2024-01-01 15:42:05
+861,TCK-00861,Low,Resolved,Security,Security issue #861,Security ticket with low priority; currently resolved.,2024-09-23,2024-10-04,bob.jones,2024-09-23 15:18:32
+862,TCK-00862,Low,Resolved,Access,Access issue #862,Access ticket with low priority; currently resolved.,2024-10-30,2024-11-22,ivan.ali,2024-10-30 12:02:48
+863,TCK-00863,Critical,Open,Other,Other issue #863,Other ticket with critical priority; currently open.,2024-07-01,,,2024-07-01 09:08:00
+864,TCK-00864,Medium,Closed,Hardware,Hardware issue #864,Hardware ticket with medium priority; currently closed.,2024-02-19,2024-03-06,ivan.ali,2024-02-19 12:45:37
+865,TCK-00865,Low,Open,Network,Network issue #865,Network ticket with low priority; currently open.,2024-06-29,,bob.jones,2024-06-29 09:23:40
+866,TCK-00866,High,Resolved,Security,Security issue #866,Security ticket with high priority; currently resolved.,2024-05-14,2024-06-06,heidi.ng,2024-05-14 18:06:00
+867,TCK-00867,Low,Closed,Hardware,Hardware issue #867,Hardware ticket with low priority; currently closed.,2024-01-24,2024-01-24,alice.smith,2024-01-24 15:05:42
+868,TCK-00868,High,Closed,Hardware,Hardware issue #868,Hardware ticket with high priority; currently closed.,2024-08-08,2024-08-08,grace.patel,2024-08-08 14:40:41
+869,TCK-00869,Medium,Closed,Security,Security issue #869,Security ticket with medium priority; currently closed.,2024-01-19,2024-01-20,diana.lee,2024-01-19 09:44:01
+870,TCK-00870,Medium,Resolved,Network,Network issue #870,Network ticket with medium priority; currently resolved.,2024-01-02,2024-01-21,ivan.ali,2024-01-02 09:45:38
+871,TCK-00871,High,Closed,Network,Network issue #871,Network ticket with high priority; currently closed.,2024-11-29,2024-12-23,alice.smith,2024-11-29 14:07:46
+872,TCK-00872,Medium,Resolved,Other,Other issue #872,Other ticket with medium priority; currently resolved.,2024-05-08,2024-05-29,heidi.ng,2024-05-08 09:17:21
+873,TCK-00873,Low,In Progress,Access,Access issue #873,Access ticket with low priority; currently in progress.,2024-03-17,,bob.jones,2024-03-17 08:16:55
+874,TCK-00874,Critical,Resolved,Security,Security issue #874,Security ticket with critical priority; currently resolved.,2024-06-16,2024-06-18,charlie.khan,2024-06-16 14:35:37
+875,TCK-00875,Medium,Closed,Hardware,Hardware issue #875,Hardware ticket with medium priority; currently closed.,2024-11-21,2024-12-09,alice.smith,2024-11-21 14:22:43
+876,TCK-00876,High,Resolved,Access,Access issue #876,Access ticket with high priority; currently resolved.,2024-02-24,2024-03-22,heidi.ng,2024-02-24 10:49:38
+877,TCK-00877,High,Closed,Other,Other issue #877,Other ticket with high priority; currently closed.,2024-11-16,2024-11-18,judy.chen,2024-11-16 10:37:44
+878,TCK-00878,Medium,Resolved,Security,Security issue #878,Security ticket with medium priority; currently resolved.,2024-11-16,2024-12-08,frank.wong,2024-11-16 09:53:16
+879,TCK-00879,Medium,Open,Network,Network issue #879,Network ticket with medium priority; currently open.,2024-01-06,,bob.jones,2024-01-06 18:38:57
+880,TCK-00880,Medium,In Progress,Network,Network issue #880,Network ticket with medium priority; currently in progress.,2024-04-02,,bob.jones,2024-04-02 11:17:31
+881,TCK-00881,Low,Closed,Software,Software issue #881,Software ticket with low priority; currently closed.,2024-11-10,2024-12-06,diana.lee,2024-11-10 09:17:21
+882,TCK-00882,Medium,In Progress,Hardware,Hardware issue #882,Hardware ticket with medium priority; currently in progress.,2024-08-28,,heidi.ng,2024-08-28 13:27:05
+883,TCK-00883,High,On Hold,Other,Other issue #883,Other ticket with high priority; currently on hold.,2024-01-21,,eve.owens,2024-01-21 13:37:46
+884,TCK-00884,High,Open,Security,Security issue #884,Security ticket with high priority; currently open.,2024-03-08,,,2024-03-08 18:22:42
+885,TCK-00885,Medium,Resolved,Software,Software issue #885,Software ticket with medium priority; currently resolved.,2024-07-26,2024-08-23,ivan.ali,2024-07-26 08:45:04
+886,TCK-00886,Critical,Open,Access,Access issue #886,Access ticket with critical priority; currently open.,2024-11-07,,,2024-11-07 15:48:32
+887,TCK-00887,Medium,Open,Network,Network issue #887,Network ticket with medium priority; currently open.,2024-06-21,,charlie.khan,2024-06-21 14:24:14
+888,TCK-00888,High,Resolved,Access,Access issue #888,Access ticket with high priority; currently resolved.,2024-08-02,2024-08-17,charlie.khan,2024-08-02 10:53:56
+889,TCK-00889,Medium,In Progress,Software,Software issue #889,Software ticket with medium priority; currently in progress.,2024-04-24,,bob.jones,2024-04-24 17:55:43
+890,TCK-00890,High,In Progress,Network,Network issue #890,Network ticket with high priority; currently in progress.,2024-12-18,,grace.patel,2024-12-18 15:57:10
+891,TCK-00891,Medium,Closed,Hardware,Hardware issue #891,Hardware ticket with medium priority; currently closed.,2024-02-25,2024-02-29,diana.lee,2024-02-25 17:16:14
+892,TCK-00892,High,Resolved,Other,Other issue #892,Other ticket with high priority; currently resolved.,2024-12-16,2024-12-19,eve.owens,2024-12-16 08:37:38
+893,TCK-00893,Low,Closed,Access,Access issue #893,Access ticket with low priority; currently closed.,2024-05-28,2024-06-08,charlie.khan,2024-05-28 11:51:30
+894,TCK-00894,Medium,In Progress,Network,Network issue #894,Network ticket with medium priority; currently in progress.,2024-09-21,,grace.patel,2024-09-21 12:35:23
+895,TCK-00895,Medium,On Hold,Other,Other issue #895,Other ticket with medium priority; currently on hold.,2024-03-13,,eve.owens,2024-03-13 11:10:13
+896,TCK-00896,Medium,Resolved,Software,Software issue #896,Software ticket with medium priority; currently resolved.,2024-01-19,2024-01-24,frank.wong,2024-01-19 13:37:31
+897,TCK-00897,Medium,Resolved,Access,Access issue #897,Access ticket with medium priority; currently resolved.,2024-04-22,2024-04-23,ivan.ali,2024-04-22 14:07:15
+898,TCK-00898,High,Closed,Hardware,Hardware issue #898,Hardware ticket with high priority; currently closed.,2024-02-28,2024-02-28,diana.lee,2024-02-28 16:48:01
+899,TCK-00899,Medium,Closed,Access,Access issue #899,Access ticket with medium priority; currently closed.,2024-09-19,2024-10-11,heidi.ng,2024-09-19 14:28:06
+900,TCK-00900,Medium,Open,Hardware,Hardware issue #900,Hardware ticket with medium priority; currently open.,2024-08-09,,alice.smith,2024-08-09 10:24:14
+901,TCK-00901,Critical,In Progress,Security,Security issue #901,Security ticket with critical priority; currently in progress.,2024-09-05,,bob.jones,2024-09-05 15:17:45
+902,TCK-00902,Medium,In Progress,Access,Access issue #902,Access ticket with medium priority; currently in progress.,2024-03-11,,bob.jones,2024-03-11 17:04:23
+903,TCK-00903,High,On Hold,Security,Security issue #903,Security ticket with high priority; currently on hold.,2024-08-10,,alice.smith,2024-08-10 16:52:46
+904,TCK-00904,Medium,In Progress,Other,Other issue #904,Other ticket with medium priority; currently in progress.,2024-03-14,,bob.jones,2024-03-14 18:54:56
+905,TCK-00905,High,Closed,Hardware,Hardware issue #905,Hardware ticket with high priority; currently closed.,2024-06-11,2024-06-29,alice.smith,2024-06-11 14:22:34
+906,TCK-00906,Medium,In Progress,Security,Security issue #906,Security ticket with medium priority; currently in progress.,2024-05-22,,charlie.khan,2024-05-22 09:04:07
+907,TCK-00907,Low,In Progress,Access,Access issue #907,Access ticket with low priority; currently in progress.,2024-05-10,,bob.jones,2024-05-10 16:04:08
+908,TCK-00908,Critical,Resolved,Security,Security issue #908,Security ticket with critical priority; currently resolved.,2024-01-04,2024-01-20,alice.smith,2024-01-04 08:11:51
+909,TCK-00909,Low,Closed,Hardware,Hardware issue #909,Hardware ticket with low priority; currently closed.,2024-07-21,2024-08-20,charlie.khan,2024-07-21 09:33:29
+910,TCK-00910,Medium,Resolved,Hardware,Hardware issue #910,Hardware ticket with medium priority; currently resolved.,2024-09-15,2024-09-26,judy.chen,2024-09-15 15:35:06
+911,TCK-00911,High,Resolved,Access,Access issue #911,Access ticket with high priority; currently resolved.,2024-03-29,2024-04-05,heidi.ng,2024-03-29 11:49:36
+912,TCK-00912,Medium,On Hold,Network,Network issue #912,Network ticket with medium priority; currently on hold.,2024-01-03,,grace.patel,2024-01-03 18:05:48
+913,TCK-00913,Medium,Open,Network,Network issue #913,Network ticket with medium priority; currently open.,2024-04-18,,,2024-04-18 17:12:43
+914,TCK-00914,Medium,Open,Software,Software issue #914,Software ticket with medium priority; currently open.,2024-09-06,,ivan.ali,2024-09-06 18:33:28
+915,TCK-00915,High,On Hold,Network,Network issue #915,Network ticket with high priority; currently on hold.,2024-12-14,,alice.smith,2024-12-14 18:23:08
+916,TCK-00916,Medium,Open,Software,Software issue #916,Software ticket with medium priority; currently open.,2024-01-14,,,2024-01-14 10:01:28
+917,TCK-00917,High,Resolved,Access,Access issue #917,Access ticket with high priority; currently resolved.,2024-06-19,2024-06-24,frank.wong,2024-06-19 12:31:00
+918,TCK-00918,Medium,Open,Hardware,Hardware issue #918,Hardware ticket with medium priority; currently open.,2024-02-09,,bob.jones,2024-02-09 17:23:02
+919,TCK-00919,Medium,Closed,Security,Security issue #919,Security ticket with medium priority; currently closed.,2024-05-11,2024-05-25,diana.lee,2024-05-11 10:33:38
+920,TCK-00920,Low,Closed,Other,Other issue #920,Other ticket with low priority; currently closed.,2024-12-05,2024-12-22,alice.smith,2024-12-05 14:17:10
+921,TCK-00921,High,Resolved,Security,Security issue #921,Security ticket with high priority; currently resolved.,2024-04-25,2024-05-17,heidi.ng,2024-04-25 14:21:38
+922,TCK-00922,High,Closed,Security,Security issue #922,Security ticket with high priority; currently closed.,2024-03-04,2024-03-23,judy.chen,2024-03-04 17:03:54
+923,TCK-00923,Medium,Resolved,Network,Network issue #923,Network ticket with medium priority; currently resolved.,2024-11-22,2024-11-28,diana.lee,2024-11-22 12:26:16
+924,TCK-00924,Medium,Open,Security,Security issue #924,Security ticket with medium priority; currently open.,2024-06-19,,,2024-06-19 18:29:52
+925,TCK-00925,High,In Progress,Network,Network issue #925,Network ticket with high priority; currently in progress.,2024-12-29,,bob.jones,2024-12-29 15:00:44
+926,TCK-00926,High,Resolved,Network,Network issue #926,Network ticket with high priority; currently resolved.,2024-07-28,2024-07-30,ivan.ali,2024-07-28 17:46:03
+927,TCK-00927,Low,Resolved,Other,Other issue #927,Other ticket with low priority; currently resolved.,2024-08-29,2024-09-03,eve.owens,2024-08-29 18:42:16
+928,TCK-00928,Medium,Open,Hardware,Hardware issue #928,Hardware ticket with medium priority; currently open.,2024-05-23,,frank.wong,2024-05-23 08:41:32
+929,TCK-00929,Low,Resolved,Other,Other issue #929,Other ticket with low priority; currently resolved.,2024-07-26,2024-08-25,ivan.ali,2024-07-26 10:21:53
+930,TCK-00930,Medium,Closed,Software,Software issue #930,Software ticket with medium priority; currently closed.,2024-03-05,2024-03-29,eve.owens,2024-03-05 10:50:52
+931,TCK-00931,Critical,Open,Software,Software issue #931,Software ticket with critical priority; currently open.,2024-06-14,,,2024-06-14 18:36:47
+932,TCK-00932,Medium,Closed,Other,Other issue #932,Other ticket with medium priority; currently closed.,2024-09-26,2024-10-16,charlie.khan,2024-09-26 16:18:55
+933,TCK-00933,Medium,Open,Other,Other issue #933,Other ticket with medium priority; currently open.,2024-08-14,,alice.smith,2024-08-14 14:40:46
+934,TCK-00934,Critical,Resolved,Other,Other issue #934,Other ticket with critical priority; currently resolved.,2024-04-08,2024-04-11,frank.wong,2024-04-08 09:40:58
+935,TCK-00935,High,Open,Hardware,Hardware issue #935,Hardware ticket with high priority; currently open.,2024-07-10,,frank.wong,2024-07-10 13:05:03
+936,TCK-00936,High,Resolved,Access,Access issue #936,Access ticket with high priority; currently resolved.,2024-09-29,2024-10-20,eve.owens,2024-09-29 18:19:31
+937,TCK-00937,Critical,On Hold,Network,Network issue #937,Network ticket with critical priority; currently on hold.,2024-05-26,,charlie.khan,2024-05-26 11:48:11
+938,TCK-00938,Low,Closed,Access,Access issue #938,Access ticket with low priority; currently closed.,2024-05-15,2024-06-03,eve.owens,2024-05-15 16:24:15
+939,TCK-00939,Low,Resolved,Access,Access issue #939,Access ticket with low priority; currently resolved.,2024-01-29,2024-01-30,diana.lee,2024-01-29 16:02:17
+940,TCK-00940,Low,Open,Security,Security issue #940,Security ticket with low priority; currently open.,2024-11-03,,charlie.khan,2024-11-03 15:30:16
+941,TCK-00941,High,Resolved,Security,Security issue #941,Security ticket with high priority; currently resolved.,2024-11-05,2024-11-12,judy.chen,2024-11-05 08:32:28
+942,TCK-00942,Critical,On Hold,Software,Software issue #942,Software ticket with critical priority; currently on hold.,2024-07-22,,frank.wong,2024-07-22 12:46:15
+943,TCK-00943,Low,Resolved,Security,Security issue #943,Security ticket with low priority; currently resolved.,2024-04-14,2024-05-05,charlie.khan,2024-04-14 14:24:26
+944,TCK-00944,Medium,Closed,Software,Software issue #944,Software ticket with medium priority; currently closed.,2024-03-16,2024-03-26,ivan.ali,2024-03-16 11:06:12
+945,TCK-00945,Low,Closed,Security,Security issue #945,Security ticket with low priority; currently closed.,2024-01-18,2024-01-23,judy.chen,2024-01-18 08:52:43
+946,TCK-00946,Critical,Closed,Software,Software issue #946,Software ticket with critical priority; currently closed.,2024-07-06,2024-07-25,grace.patel,2024-07-06 16:05:24
+947,TCK-00947,High,Closed,Other,Other issue #947,Other ticket with high priority; currently closed.,2024-01-18,2024-02-01,judy.chen,2024-01-18 12:33:24
+948,TCK-00948,High,In Progress,Security,Security issue #948,Security ticket with high priority; currently in progress.,2024-11-01,,ivan.ali,2024-11-01 18:15:27
+949,TCK-00949,Critical,Resolved,Other,Other issue #949,Other ticket with critical priority; currently resolved.,2024-06-29,2024-07-27,alice.smith,2024-06-29 15:49:20
+950,TCK-00950,Medium,Resolved,Network,Network issue #950,Network ticket with medium priority; currently resolved.,2024-05-27,2024-06-07,diana.lee,2024-05-27 16:53:40
+951,TCK-00951,High,Closed,Network,Network issue #951,Network ticket with high priority; currently closed.,2024-03-12,2024-04-04,heidi.ng,2024-03-12 13:44:06
+952,TCK-00952,High,Resolved,Software,Software issue #952,Software ticket with high priority; currently resolved.,2024-12-14,2024-12-16,ivan.ali,2024-12-14 16:08:57
+953,TCK-00953,High,Resolved,Access,Access issue #953,Access ticket with high priority; currently resolved.,2024-01-26,2024-02-04,judy.chen,2024-01-26 14:43:11
+954,TCK-00954,High,Resolved,Access,Access issue #954,Access ticket with high priority; currently resolved.,2024-07-15,2024-07-28,charlie.khan,2024-07-15 08:02:28
+955,TCK-00955,Medium,On Hold,Hardware,Hardware issue #955,Hardware ticket with medium priority; currently on hold.,2024-08-15,,grace.patel,2024-08-15 10:24:56
+956,TCK-00956,High,Closed,Hardware,Hardware issue #956,Hardware ticket with high priority; currently closed.,2024-02-18,2024-02-24,ivan.ali,2024-02-18 10:12:41
+957,TCK-00957,Low,Closed,Hardware,Hardware issue #957,Hardware ticket with low priority; currently closed.,2024-06-11,2024-06-22,frank.wong,2024-06-11 08:40:46
+958,TCK-00958,Medium,Open,Hardware,Hardware issue #958,Hardware ticket with medium priority; currently open.,2024-08-29,,,2024-08-29 18:59:38
+959,TCK-00959,Medium,Open,Access,Access issue #959,Access ticket with medium priority; currently open.,2024-12-19,,heidi.ng,2024-12-19 12:45:43
+960,TCK-00960,High,Open,Access,Access issue #960,Access ticket with high priority; currently open.,2024-03-05,,grace.patel,2024-03-05 15:47:13
+961,TCK-00961,Medium,On Hold,Security,Security issue #961,Security ticket with medium priority; currently on hold.,2024-10-06,,bob.jones,2024-10-06 09:51:56
+962,TCK-00962,Medium,Open,Network,Network issue #962,Network ticket with medium priority; currently open.,2024-07-06,,alice.smith,2024-07-06 17:26:27
+963,TCK-00963,Low,Resolved,Other,Other issue #963,Other ticket with low priority; currently resolved.,2024-05-13,2024-05-25,grace.patel,2024-05-13 17:20:44
+964,TCK-00964,Low,Resolved,Security,Security issue #964,Security ticket with low priority; currently resolved.,2024-10-22,2024-10-26,bob.jones,2024-10-22 12:24:28
+965,TCK-00965,High,Closed,Access,Access issue #965,Access ticket with high priority; currently closed.,2024-01-18,2024-01-21,eve.owens,2024-01-18 18:28:43
+966,TCK-00966,Low,Closed,Hardware,Hardware issue #966,Hardware ticket with low priority; currently closed.,2024-11-11,2024-11-22,frank.wong,2024-11-11 16:41:17
+967,TCK-00967,High,Closed,Hardware,Hardware issue #967,Hardware ticket with high priority; currently closed.,2024-12-09,2024-12-21,bob.jones,2024-12-09 14:22:01
+968,TCK-00968,Medium,In Progress,Other,Other issue #968,Other ticket with medium priority; currently in progress.,2024-02-15,,charlie.khan,2024-02-15 12:16:44
+969,TCK-00969,Medium,Closed,Network,Network issue #969,Network ticket with medium priority; currently closed.,2024-05-10,2024-05-18,diana.lee,2024-05-10 11:58:21
+970,TCK-00970,Medium,Open,Network,Network issue #970,Network ticket with medium priority; currently open.,2024-02-17,,alice.smith,2024-02-17 11:14:29
+971,TCK-00971,High,Open,Access,Access issue #971,Access ticket with high priority; currently open.,2024-09-24,,grace.patel,2024-09-24 13:15:35
+972,TCK-00972,Low,In Progress,Security,Security issue #972,Security ticket with low priority; currently in progress.,2024-11-17,,diana.lee,2024-11-17 14:39:36
+973,TCK-00973,Medium,Resolved,Other,Other issue #973,Other ticket with medium priority; currently resolved.,2024-10-01,2024-10-05,heidi.ng,2024-10-01 12:55:38
+974,TCK-00974,Low,Closed,Security,Security issue #974,Security ticket with low priority; currently closed.,2024-06-10,2024-07-04,heidi.ng,2024-06-10 17:22:52
+975,TCK-00975,Low,Resolved,Access,Access issue #975,Access ticket with low priority; currently resolved.,2024-08-10,2024-08-20,bob.jones,2024-08-10 15:02:50
+976,TCK-00976,High,Resolved,Access,Access issue #976,Access ticket with high priority; currently resolved.,2024-06-17,2024-07-10,alice.smith,2024-06-17 11:59:40
+977,TCK-00977,High,Closed,Access,Access issue #977,Access ticket with high priority; currently closed.,2024-06-10,2024-07-06,judy.chen,2024-06-10 10:15:51
+978,TCK-00978,Medium,In Progress,Software,Software issue #978,Software ticket with medium priority; currently in progress.,2024-05-04,,diana.lee,2024-05-04 18:21:32
+979,TCK-00979,Medium,Open,Software,Software issue #979,Software ticket with medium priority; currently open.,2024-11-18,,,2024-11-18 17:12:36
+980,TCK-00980,High,Resolved,Access,Access issue #980,Access ticket with high priority; currently resolved.,2024-01-18,2024-02-07,heidi.ng,2024-01-18 17:34:15
+981,TCK-00981,Low,In Progress,Network,Network issue #981,Network ticket with low priority; currently in progress.,2024-03-14,,eve.owens,2024-03-14 15:13:34
+982,TCK-00982,High,Open,Access,Access issue #982,Access ticket with high priority; currently open.,2024-04-11,,heidi.ng,2024-04-11 18:24:37
+983,TCK-00983,Medium,Open,Network,Network issue #983,Network ticket with medium priority; currently open.,2024-06-07,,alice.smith,2024-06-07 17:32:48
+984,TCK-00984,Medium,In Progress,Security,Security issue #984,Security ticket with medium priority; currently in progress.,2024-04-14,,diana.lee,2024-04-14 11:42:26
+985,TCK-00985,High,In Progress,Access,Access issue #985,Access ticket with high priority; currently in progress.,2024-03-06,,eve.owens,2024-03-06 16:22:56
+986,TCK-00986,High,Open,Access,Access issue #986,Access ticket with high priority; currently open.,2024-02-26,,diana.lee,2024-02-26 12:58:40
+987,TCK-00987,High,In Progress,Other,Other issue #987,Other ticket with high priority; currently in progress.,2024-05-27,,alice.smith,2024-05-27 08:55:56
+988,TCK-00988,High,Resolved,Security,Security issue #988,Security ticket with high priority; currently resolved.,2024-05-20,2024-06-17,judy.chen,2024-05-20 15:35:55
+989,TCK-00989,High,Open,Access,Access issue #989,Access ticket with high priority; currently open.,2024-10-03,,,2024-10-03 16:25:58
+990,TCK-00990,Medium,Closed,Access,Access issue #990,Access ticket with medium priority; currently closed.,2024-09-10,2024-09-27,bob.jones,2024-09-10 18:04:04
+991,TCK-00991,Medium,Resolved,Access,Access issue #991,Access ticket with medium priority; currently resolved.,2024-10-07,2024-11-04,alice.smith,2024-10-07 14:58:16
+992,TCK-00992,Low,Closed,Security,Security issue #992,Security ticket with low priority; currently closed.,2024-05-03,2024-05-17,charlie.khan,2024-05-03 08:51:04
+993,TCK-00993,High,Closed,Hardware,Hardware issue #993,Hardware ticket with high priority; currently closed.,2024-05-23,2024-06-12,eve.owens,2024-05-23 14:50:59
+994,TCK-00994,High,Closed,Network,Network issue #994,Network ticket with high priority; currently closed.,2024-03-05,2024-03-19,grace.patel,2024-03-05 16:06:33
+995,TCK-00995,Low,Closed,Software,Software issue #995,Software ticket with low priority; currently closed.,2024-07-30,2024-08-21,charlie.khan,2024-07-30 16:01:52
+996,TCK-00996,Low,In Progress,Security,Security issue #996,Security ticket with low priority; currently in progress.,2024-03-21,,alice.smith,2024-03-21 18:58:44
+997,TCK-00997,Medium,In Progress,Other,Other issue #997,Other ticket with medium priority; currently in progress.,2024-02-20,,judy.chen,2024-02-20 09:43:57
+998,TCK-00998,Critical,In Progress,Software,Software issue #998,Software ticket with critical priority; currently in progress.,2024-05-20,,frank.wong,2024-05-20 16:23:03
+999,TCK-00999,High,Closed,Network,Network issue #999,Network ticket with high priority; currently closed.,2024-02-04,2024-02-10,charlie.khan,2024-02-04 18:26:10
+1000,TCK-01000,High,Open,Security,Security issue #1000,Security ticket with high priority; currently open.,2024-11-20,,heidi.ng,2024-11-20 16:56:50

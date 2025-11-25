@@ -1,5 +1,1001 @@
-dataset_name,category,source,last_updated,record_count,file_size_mb
-Network Logs,Security Logs,Firewall System,2024-10-01,100000,12.5
-User Activity,Authentication Logs,Active Directory,2024-10-02,50000,8.2
-Threat Feeds,Threat Intelligence,Open Threat Exchange,2024-10-03,20000,5.7
-Incident Archive,Historical Incidents,Internal SOC,2024-10-05,1500,1.3
+id,dataset_name,category,source,last_updated,record_count,file_size_mb,created_at
+1,user_accounts_0001,User Accounts,Manual Entry,2023-06-01,90416,294.98,2023-05-25 12:40:18
+2,system_metrics_0002,System Metrics,Third-party Vendor,2023-02-08,181138,755.08,2023-01-01 09:09:45
+3,security_incidents_0003,Security Incidents,API Ingestion,2023-09-12,459720,4171.84,2023-09-05 15:38:24
+4,threat_intelligence_0004,Threat Intelligence,Internal ETL,2024-06-23,153952,563.64,2024-06-09 05:44:29
+5,operations_0005,Operations,API Ingestion,2024-07-02,94027,793.44,2024-05-09 06:46:58
+6,marketing_analytics_0006,Marketing Analytics,CSV Upload,2023-10-24,39461,347.11,2023-10-03 23:18:49
+7,web_traffic_0007,Web Traffic,Manual Entry,2024-09-30,163732,1250.91,2024-08-08 18:38:33
+8,security_incidents_0008,Security Incidents,Data Warehouse,2024-08-22,370019,835.18,2024-06-24 15:57:11
+9,security_incidents_0009,Security Incidents,Third-party Vendor,2024-04-22,335858,560.26,2024-04-03 23:39:19
+10,hr_0010,HR,Internal ETL,2024-04-06,33469,37.4,2024-03-21 17:42:14
+11,user_accounts_0011,User Accounts,CSV Upload,2023-10-11,124264,1236.77,2023-10-06 18:16:46
+12,web_traffic_0012,Web Traffic,SIEM Export,2023-10-18,35463,38.75,2023-09-14 08:21:58
+13,system_metrics_0013,System Metrics,Internal ETL,2024-11-10,135997,946.96,2024-10-09 05:33:25
+14,customer_support_0014,Customer Support,API Ingestion,2024-01-14,380890,3235.6,2023-11-27 18:47:04
+15,user_accounts_0015,User Accounts,SIEM Export,2023-12-20,283956,1967.7,2023-11-15 14:32:15
+16,security_incidents_0016,Security Incidents,API Ingestion,2023-12-23,301626,949.73,2023-11-08 13:18:06
+17,system_metrics_0017,System Metrics,Data Warehouse,2023-09-24,178160,465.99,2023-08-28 01:33:14
+18,threat_intelligence_0018,Threat Intelligence,Third-party Vendor,2024-11-07,338217,3166.53,2024-09-15 00:09:13
+19,web_traffic_0019,Web Traffic,Data Warehouse,2024-06-09,341242,823.77,2024-04-17 10:34:57
+20,threat_intelligence_0020,Threat Intelligence,Internal ETL,2024-05-13,24701,77.97,2024-03-26 14:53:57
+21,user_accounts_0021,User Accounts,CSV Upload,2024-08-19,343565,201.57,2024-06-28 19:05:12
+22,system_metrics_0022,System Metrics,SIEM Export,2023-01-03,100375,336.64,2023-01-01 03:11:52
+23,user_accounts_0023,User Accounts,API Ingestion,2024-03-31,102582,546.26,2024-02-06 16:03:15
+24,web_traffic_0024,Web Traffic,API Ingestion,2024-10-18,410532,2098.24,2024-10-08 09:20:37
+25,web_traffic_0025,Web Traffic,Internal ETL,2023-10-13,87479,520.37,2023-09-13 22:54:06
+26,system_metrics_0026,System Metrics,Data Warehouse,2023-10-31,113882,303.06,2023-10-09 21:02:04
+27,web_traffic_0027,Web Traffic,Manual Entry,2024-06-21,225386,1797.03,2024-06-04 02:53:00
+28,security_incidents_0028,Security Incidents,Internal ETL,2023-04-09,289623,1386.64,2023-03-27 04:37:55
+29,operations_0029,Operations,SIEM Export,2023-08-16,63683,575.91,2023-08-08 18:48:45
+30,marketing_analytics_0030,Marketing Analytics,CSV Upload,2024-09-21,189864,1622.82,2024-09-04 16:36:33
+31,system_metrics_0031,System Metrics,Manual Entry,2023-12-06,389347,3189.98,2023-12-06 13:46:18
+32,web_traffic_0032,Web Traffic,CSV Upload,2023-08-04,365519,1884.15,2023-07-22 07:23:07
+33,finance_0033,Finance,Third-party Vendor,2023-10-26,42828,258.72,2023-09-19 00:21:55
+34,it_tickets_0034,IT Tickets,Manual Entry,2023-11-16,85157,848.24,2023-10-14 22:59:41
+35,it_tickets_0035,IT Tickets,SIEM Export,2023-04-11,170484,124.42,2023-03-04 07:22:12
+36,hr_0036,HR,Data Warehouse,2024-06-29,316311,2837.4,2024-05-24 14:05:15
+37,customer_support_0037,Customer Support,API Ingestion,2024-10-11,406944,2112.8,2024-08-13 14:27:54
+38,web_traffic_0038,Web Traffic,Manual Entry,2024-02-20,316853,2310.32,2024-02-10 19:34:10
+39,web_traffic_0039,Web Traffic,CSV Upload,2024-04-18,302093,1739.99,2024-03-17 08:05:35
+40,finance_0040,Finance,Third-party Vendor,2023-04-30,173442,273.13,2023-04-06 21:13:40
+41,hr_0041,HR,CSV Upload,2024-12-16,460704,735.2,2024-10-30 10:37:40
+42,threat_intelligence_0042,Threat Intelligence,API Ingestion,2023-04-30,286175,2225.49,2023-04-30 05:26:55
+43,operations_0043,Operations,Internal ETL,2024-08-28,336356,275.59,2024-08-15 01:21:57
+44,marketing_analytics_0044,Marketing Analytics,API Ingestion,2023-05-09,484630,2897.79,2023-05-09 12:30:46
+45,finance_0045,Finance,Third-party Vendor,2023-11-21,332244,1873.31,2023-10-29 15:38:52
+46,system_metrics_0046,System Metrics,API Ingestion,2023-05-11,3766,33.02,2023-04-25 19:17:44
+47,customer_support_0047,Customer Support,CSV Upload,2024-04-25,166584,1258.09,2024-03-07 04:25:58
+48,marketing_analytics_0048,Marketing Analytics,SIEM Export,2023-01-09,277771,1294.55,2023-01-01 06:15:54
+49,operations_0049,Operations,SIEM Export,2024-01-28,96943,798.05,2024-01-23 19:20:27
+50,finance_0050,Finance,Internal ETL,2024-04-22,309893,1520.84,2024-03-29 10:46:18
+51,hr_0051,HR,Data Warehouse,2023-02-06,112950,196.37,2023-01-30 01:26:07
+52,hr_0052,HR,Data Warehouse,2024-05-27,449680,3881.21,2024-04-23 10:10:51
+53,security_incidents_0053,Security Incidents,Manual Entry,2023-01-22,186511,1619.38,2023-01-01 10:40:56
+54,network_logs_0054,Network Logs,Third-party Vendor,2023-12-25,416255,378.19,2023-10-27 06:41:50
+55,operations_0055,Operations,SIEM Export,2023-12-22,268820,1572.95,2023-12-21 03:58:37
+56,customer_support_0056,Customer Support,Internal ETL,2023-08-01,390884,2683.46,2023-07-09 23:40:51
+57,hr_0057,HR,Manual Entry,2023-08-25,233092,1855.18,2023-07-19 10:15:38
+58,network_logs_0058,Network Logs,Internal ETL,2024-01-27,188347,266.6,2023-12-15 12:15:01
+59,system_metrics_0059,System Metrics,Manual Entry,2024-09-26,57002,130.16,2024-07-28 03:34:02
+60,marketing_analytics_0060,Marketing Analytics,API Ingestion,2023-04-17,497580,1306.14,2023-04-11 18:11:40
+61,customer_support_0061,Customer Support,Data Warehouse,2024-09-24,90881,781.69,2024-09-22 18:10:48
+62,hr_0062,HR,API Ingestion,2023-01-14,272517,1007.35,2023-01-01 03:31:30
+63,network_logs_0063,Network Logs,Internal ETL,2023-03-24,94956,336.58,2023-03-04 09:00:44
+64,finance_0064,Finance,Manual Entry,2023-02-19,408090,2642.04,2023-01-01 23:59:15
+65,web_traffic_0065,Web Traffic,Data Warehouse,2024-03-25,360465,665.66,2024-03-17 04:59:30
+66,threat_intelligence_0066,Threat Intelligence,Internal ETL,2023-07-28,89053,52.67,2023-06-05 09:39:21
+67,network_logs_0067,Network Logs,API Ingestion,2023-11-06,283459,154.73,2023-10-01 16:43:16
+68,network_logs_0068,Network Logs,Third-party Vendor,2024-02-08,124687,857.57,2023-12-13 05:30:52
+69,threat_intelligence_0069,Threat Intelligence,Third-party Vendor,2024-03-11,67807,518.87,2024-02-20 11:26:25
+70,finance_0070,Finance,CSV Upload,2024-12-08,147594,143.32,2024-11-12 17:39:07
+71,network_logs_0071,Network Logs,CSV Upload,2024-06-24,166721,551.63,2024-06-21 20:40:42
+72,web_traffic_0072,Web Traffic,CSV Upload,2024-05-30,57663,214.41,2024-05-03 06:56:06
+73,security_incidents_0073,Security Incidents,Data Warehouse,2023-10-06,158399,1232.19,2023-09-15 16:50:09
+74,marketing_analytics_0074,Marketing Analytics,API Ingestion,2024-06-25,110509,69.05,2024-06-22 20:55:52
+75,operations_0075,Operations,Data Warehouse,2023-07-10,397618,2128.04,2023-06-12 15:03:17
+76,threat_intelligence_0076,Threat Intelligence,Manual Entry,2023-05-29,69924,601.3,2023-05-09 09:04:30
+77,system_metrics_0077,System Metrics,Data Warehouse,2023-04-28,68571,641.61,2023-04-14 00:37:29
+78,hr_0078,HR,API Ingestion,2023-09-29,183832,1178.27,2023-08-03 13:13:46
+79,operations_0079,Operations,Data Warehouse,2023-02-20,208576,295.03,2023-02-04 04:39:41
+80,threat_intelligence_0080,Threat Intelligence,API Ingestion,2024-05-24,412227,3047.28,2024-05-11 11:43:36
+81,finance_0081,Finance,Manual Entry,2024-12-13,352413,1126.7,2024-12-09 14:36:25
+82,operations_0082,Operations,SIEM Export,2023-07-29,151476,784.04,2023-07-04 20:24:57
+83,it_tickets_0083,IT Tickets,API Ingestion,2023-03-14,428882,3689.85,2023-01-15 02:50:49
+84,security_incidents_0084,Security Incidents,Data Warehouse,2023-04-05,260143,1942.65,2023-03-08 22:38:10
+85,operations_0085,Operations,Internal ETL,2023-07-05,158326,1171.66,2023-06-22 00:20:28
+86,marketing_analytics_0086,Marketing Analytics,Data Warehouse,2023-06-06,262547,215.19,2023-05-25 14:14:41
+87,customer_support_0087,Customer Support,API Ingestion,2024-03-15,85333,68.47,2024-01-19 12:56:47
+88,it_tickets_0088,IT Tickets,API Ingestion,2023-11-14,103779,79.99,2023-11-05 01:22:19
+89,network_logs_0089,Network Logs,CSV Upload,2024-04-14,387423,3202.71,2024-03-28 10:51:24
+90,operations_0090,Operations,CSV Upload,2024-10-15,27713,129.46,2024-09-23 00:22:11
+91,system_metrics_0091,System Metrics,Manual Entry,2024-02-22,164909,449.49,2023-12-27 08:39:59
+92,hr_0092,HR,Third-party Vendor,2024-09-11,314055,1780.93,2024-09-09 04:19:25
+93,web_traffic_0093,Web Traffic,Internal ETL,2024-02-09,437555,4342.47,2024-02-08 20:29:47
+94,finance_0094,Finance,Data Warehouse,2024-11-09,467134,2611.75,2024-10-17 11:28:31
+95,marketing_analytics_0095,Marketing Analytics,API Ingestion,2024-04-25,322731,565.65,2024-04-15 20:32:57
+96,operations_0096,Operations,Manual Entry,2024-03-06,466310,3165.36,2024-02-13 23:39:34
+97,it_tickets_0097,IT Tickets,Data Warehouse,2024-04-25,225107,347.53,2024-03-14 02:08:12
+98,customer_support_0098,Customer Support,API Ingestion,2024-11-13,361519,1992.06,2024-11-12 14:06:20
+99,web_traffic_0099,Web Traffic,Third-party Vendor,2024-07-27,126056,1231.99,2024-06-16 22:07:10
+100,customer_support_0100,Customer Support,Data Warehouse,2023-01-08,7553,24.45,2023-01-01 00:16:40
+101,threat_intelligence_0101,Threat Intelligence,CSV Upload,2024-08-03,24305,134.96,2024-06-21 22:41:35
+102,hr_0102,HR,CSV Upload,2024-01-28,401106,502.18,2024-01-13 10:10:12
+103,marketing_analytics_0103,Marketing Analytics,Manual Entry,2024-01-21,358560,425.49,2024-01-20 11:19:33
+104,security_incidents_0104,Security Incidents,Third-party Vendor,2023-08-18,361026,3297.72,2023-07-02 13:09:05
+105,hr_0105,HR,API Ingestion,2024-01-21,124209,103.91,2023-11-23 01:49:00
+106,marketing_analytics_0106,Marketing Analytics,API Ingestion,2023-03-13,109220,811.21,2023-01-30 11:23:52
+107,it_tickets_0107,IT Tickets,CSV Upload,2023-02-12,37921,84.25,2023-01-01 12:55:37
+108,it_tickets_0108,IT Tickets,Internal ETL,2024-05-31,475929,4058.8,2024-04-22 14:54:20
+109,customer_support_0109,Customer Support,CSV Upload,2023-03-29,49744,188.38,2023-01-31 04:56:57
+110,hr_0110,HR,API Ingestion,2024-03-07,132156,250.95,2024-01-20 00:34:36
+111,user_accounts_0111,User Accounts,Internal ETL,2024-04-03,258474,2402.35,2024-02-05 19:33:18
+112,finance_0112,Finance,Data Warehouse,2023-05-20,337055,2762.94,2023-05-08 20:31:55
+113,operations_0113,Operations,API Ingestion,2023-09-10,335634,1403.22,2023-09-10 18:33:08
+114,system_metrics_0114,System Metrics,API Ingestion,2024-10-06,240466,2213.81,2024-08-12 23:45:35
+115,user_accounts_0115,User Accounts,Manual Entry,2023-09-07,380564,985.74,2023-09-06 02:43:07
+116,marketing_analytics_0116,Marketing Analytics,Data Warehouse,2023-04-12,193925,290.65,2023-03-06 09:01:46
+117,system_metrics_0117,System Metrics,Third-party Vendor,2024-03-20,58415,240.16,2024-02-06 01:24:56
+118,system_metrics_0118,System Metrics,Third-party Vendor,2023-08-06,32690,303.24,2023-08-01 10:36:56
+119,system_metrics_0119,System Metrics,API Ingestion,2024-05-18,159499,1008.8,2024-03-24 00:58:21
+120,customer_support_0120,Customer Support,SIEM Export,2023-09-29,277151,2155.03,2023-09-13 01:30:59
+121,threat_intelligence_0121,Threat Intelligence,Internal ETL,2023-08-23,42546,124.38,2023-07-05 15:00:22
+122,threat_intelligence_0122,Threat Intelligence,Third-party Vendor,2024-08-19,151162,441.71,2024-07-01 13:10:29
+123,marketing_analytics_0123,Marketing Analytics,API Ingestion,2024-09-25,179743,341.98,2024-08-07 17:03:01
+124,threat_intelligence_0124,Threat Intelligence,Internal ETL,2024-05-29,89247,189.43,2024-04-02 15:27:05
+125,finance_0125,Finance,SIEM Export,2024-06-08,214953,755.54,2024-06-08 23:48:30
+126,operations_0126,Operations,CSV Upload,2023-07-12,337676,1162.8,2023-05-29 13:18:04
+127,hr_0127,HR,Manual Entry,2024-08-15,365995,1733.52,2024-06-29 20:49:39
+128,security_incidents_0128,Security Incidents,Internal ETL,2024-04-05,235552,2124.55,2024-03-10 07:47:50
+129,user_accounts_0129,User Accounts,API Ingestion,2024-06-19,324028,654.44,2024-05-22 09:03:15
+130,customer_support_0130,Customer Support,Third-party Vendor,2024-01-14,157612,773.62,2023-11-26 05:02:06
+131,marketing_analytics_0131,Marketing Analytics,API Ingestion,2023-01-12,156667,573.07,2023-01-01 10:58:16
+132,user_accounts_0132,User Accounts,API Ingestion,2023-07-15,57977,468.15,2023-06-30 06:26:10
+133,threat_intelligence_0133,Threat Intelligence,API Ingestion,2023-05-04,283510,537.61,2023-03-10 16:02:50
+134,system_metrics_0134,System Metrics,API Ingestion,2023-03-16,384266,3224.47,2023-03-08 12:36:36
+135,network_logs_0135,Network Logs,Internal ETL,2023-08-26,374061,2956.29,2023-07-06 06:38:11
+136,web_traffic_0136,Web Traffic,CSV Upload,2023-10-09,111083,516.37,2023-09-09 14:18:11
+137,it_tickets_0137,IT Tickets,Manual Entry,2023-04-29,178428,258.8,2023-04-07 05:45:16
+138,network_logs_0138,Network Logs,API Ingestion,2024-07-01,423847,4127.52,2024-06-18 22:43:19
+139,user_accounts_0139,User Accounts,SIEM Export,2024-03-05,98780,125.16,2024-01-08 05:09:32
+140,threat_intelligence_0140,Threat Intelligence,SIEM Export,2024-12-12,156576,539.53,2024-11-11 06:57:33
+141,customer_support_0141,Customer Support,Third-party Vendor,2024-02-07,40736,290.58,2023-12-10 15:16:01
+142,customer_support_0142,Customer Support,Data Warehouse,2023-01-07,298467,1903.9,2023-01-01 17:52:47
+143,web_traffic_0143,Web Traffic,API Ingestion,2024-04-23,89010,308.09,2024-03-23 16:45:25
+144,customer_support_0144,Customer Support,CSV Upload,2024-10-27,479046,4307.18,2024-09-20 23:21:10
+145,network_logs_0145,Network Logs,API Ingestion,2023-05-07,97667,488.92,2023-04-21 06:37:51
+146,user_accounts_0146,User Accounts,Third-party Vendor,2024-05-16,298516,821.04,2024-03-17 19:38:51
+147,it_tickets_0147,IT Tickets,Manual Entry,2023-08-15,294196,2528.19,2023-07-01 09:16:24
+148,it_tickets_0148,IT Tickets,SIEM Export,2023-03-07,4337,24.19,2023-03-03 21:01:44
+149,web_traffic_0149,Web Traffic,Internal ETL,2024-10-21,198118,1013.59,2024-09-14 13:23:37
+150,it_tickets_0150,IT Tickets,Third-party Vendor,2024-08-30,203424,1936.74,2024-08-27 02:53:35
+151,operations_0151,Operations,CSV Upload,2023-05-22,68002,171.5,2023-05-11 02:52:50
+152,user_accounts_0152,User Accounts,API Ingestion,2024-12-09,251457,380.9,2024-11-07 15:45:00
+153,marketing_analytics_0153,Marketing Analytics,SIEM Export,2023-05-17,88720,483.66,2023-04-09 09:18:20
+154,finance_0154,Finance,Third-party Vendor,2023-12-06,45344,243.57,2023-11-01 18:45:04
+155,security_incidents_0155,Security Incidents,Manual Entry,2023-08-19,186230,285.59,2023-07-18 04:50:38
+156,threat_intelligence_0156,Threat Intelligence,CSV Upload,2023-02-18,351100,1953.28,2023-01-01 21:45:43
+157,security_incidents_0157,Security Incidents,Data Warehouse,2023-08-10,320024,1831.54,2023-06-30 15:24:50
+158,operations_0158,Operations,Manual Entry,2024-07-31,270873,1009.17,2024-07-26 02:51:18
+159,network_logs_0159,Network Logs,Third-party Vendor,2024-07-18,132759,332.65,2024-06-11 10:35:07
+160,security_incidents_0160,Security Incidents,Data Warehouse,2023-03-31,68429,555.47,2023-03-14 11:03:39
+161,marketing_analytics_0161,Marketing Analytics,Data Warehouse,2024-02-26,410514,2734.33,2024-01-06 08:36:29
+162,security_incidents_0162,Security Incidents,CSV Upload,2023-06-11,28449,155.73,2023-06-09 23:56:27
+163,hr_0163,HR,Internal ETL,2023-09-04,260939,194.39,2023-07-18 07:51:39
+164,operations_0164,Operations,API Ingestion,2023-12-11,459165,3969.64,2023-10-27 10:13:36
+165,network_logs_0165,Network Logs,Internal ETL,2024-03-30,45312,345.53,2024-02-14 12:04:25
+166,web_traffic_0166,Web Traffic,SIEM Export,2024-06-11,470020,685.16,2024-04-25 20:47:20
+167,finance_0167,Finance,Data Warehouse,2024-09-11,463146,1732.65,2024-07-26 22:51:07
+168,user_accounts_0168,User Accounts,Manual Entry,2023-04-24,36726,237.22,2023-03-23 08:41:04
+169,operations_0169,Operations,API Ingestion,2024-09-15,149620,1041.68,2024-07-29 11:30:25
+170,marketing_analytics_0170,Marketing Analytics,Internal ETL,2024-05-20,184141,1004.62,2024-04-27 01:16:47
+171,security_incidents_0171,Security Incidents,SIEM Export,2024-09-17,190666,782.24,2024-08-01 02:20:07
+172,finance_0172,Finance,Third-party Vendor,2023-04-23,220968,1519.74,2023-03-16 07:09:14
+173,marketing_analytics_0173,Marketing Analytics,Internal ETL,2023-11-04,96036,660.33,2023-10-04 06:11:38
+174,system_metrics_0174,System Metrics,Data Warehouse,2023-03-17,9027,41.16,2023-03-11 15:55:33
+175,hr_0175,HR,Data Warehouse,2024-05-07,151081,411.98,2024-03-08 03:48:38
+176,operations_0176,Operations,Internal ETL,2023-06-21,402855,3810.18,2023-06-12 02:40:46
+177,customer_support_0177,Customer Support,Data Warehouse,2024-02-19,429430,1300.87,2024-02-10 17:57:27
+178,network_logs_0178,Network Logs,Third-party Vendor,2024-06-13,484789,3698.1,2024-05-09 02:48:44
+179,operations_0179,Operations,SIEM Export,2024-03-27,314609,2981.08,2024-03-17 21:28:27
+180,hr_0180,HR,SIEM Export,2024-11-09,145312,555.02,2024-10-31 15:31:45
+181,system_metrics_0181,System Metrics,SIEM Export,2023-12-07,490141,4689.61,2023-10-13 07:34:02
+182,user_accounts_0182,User Accounts,API Ingestion,2024-01-30,106404,828.1,2023-12-18 09:14:12
+183,network_logs_0183,Network Logs,CSV Upload,2024-12-12,381696,3053.05,2024-11-01 13:34:49
+184,security_incidents_0184,Security Incidents,API Ingestion,2024-11-07,226919,211.51,2024-11-01 18:29:57
+185,system_metrics_0185,System Metrics,Data Warehouse,2024-12-03,222328,1836.46,2024-12-02 14:06:19
+186,marketing_analytics_0186,Marketing Analytics,Internal ETL,2024-03-03,261263,853.6,2024-01-05 09:44:20
+187,threat_intelligence_0187,Threat Intelligence,Data Warehouse,2023-06-25,249174,2151.63,2023-06-16 03:35:46
+188,hr_0188,HR,Data Warehouse,2023-10-06,302354,838.15,2023-08-15 22:20:38
+189,operations_0189,Operations,Internal ETL,2024-02-13,376519,1643.27,2023-12-19 01:26:58
+190,network_logs_0190,Network Logs,Data Warehouse,2024-12-11,142058,862.04,2024-11-27 15:35:19
+191,hr_0191,HR,Third-party Vendor,2024-02-29,36930,269.41,2024-02-11 15:52:33
+192,it_tickets_0192,IT Tickets,Data Warehouse,2024-03-23,392054,2864.35,2024-03-11 04:58:36
+193,system_metrics_0193,System Metrics,Third-party Vendor,2023-03-02,130783,1044.96,2023-02-11 05:47:42
+194,network_logs_0194,Network Logs,Internal ETL,2024-04-25,309646,1867.47,2024-03-07 01:43:02
+195,threat_intelligence_0195,Threat Intelligence,Manual Entry,2023-03-26,172584,1652.15,2023-03-02 07:59:19
+196,threat_intelligence_0196,Threat Intelligence,API Ingestion,2023-09-23,218657,1122.81,2023-08-19 22:46:43
+197,it_tickets_0197,IT Tickets,Third-party Vendor,2023-04-18,185038,1512.0,2023-04-15 08:56:59
+198,network_logs_0198,Network Logs,Data Warehouse,2024-10-30,109488,368.27,2024-10-05 06:18:55
+199,operations_0199,Operations,Data Warehouse,2023-05-14,152116,213.42,2023-04-26 11:39:00
+200,network_logs_0200,Network Logs,SIEM Export,2024-06-24,206433,1633.37,2024-06-06 19:52:22
+201,operations_0201,Operations,Third-party Vendor,2023-07-01,302455,2465.82,2023-06-16 22:23:01
+202,threat_intelligence_0202,Threat Intelligence,Internal ETL,2024-03-15,345546,2780.28,2024-01-30 23:08:01
+203,system_metrics_0203,System Metrics,Third-party Vendor,2024-03-27,241976,893.91,2024-02-05 06:40:20
+204,web_traffic_0204,Web Traffic,SIEM Export,2024-03-25,11155,101.6,2024-02-28 12:25:58
+205,it_tickets_0205,IT Tickets,CSV Upload,2023-08-19,257537,775.19,2023-08-16 13:38:29
+206,user_accounts_0206,User Accounts,Third-party Vendor,2024-11-21,306040,1562.29,2024-11-10 16:30:55
+207,customer_support_0207,Customer Support,Third-party Vendor,2023-04-01,17425,43.47,2023-03-15 00:43:48
+208,security_incidents_0208,Security Incidents,Manual Entry,2023-03-31,140932,1269.62,2023-03-12 07:07:06
+209,customer_support_0209,Customer Support,CSV Upload,2024-02-01,221935,2168.92,2024-01-18 23:48:35
+210,web_traffic_0210,Web Traffic,API Ingestion,2023-04-06,74574,475.57,2023-02-10 17:28:54
+211,threat_intelligence_0211,Threat Intelligence,Third-party Vendor,2023-09-19,474742,2241.48,2023-08-06 00:27:35
+212,threat_intelligence_0212,Threat Intelligence,Data Warehouse,2024-07-29,371626,3466.3,2024-07-03 17:24:32
+213,hr_0213,HR,Manual Entry,2023-01-12,426635,2084.65,2023-01-01 12:45:49
+214,user_accounts_0214,User Accounts,Third-party Vendor,2024-07-31,499864,4121.51,2024-06-04 21:38:07
+215,threat_intelligence_0215,Threat Intelligence,Data Warehouse,2024-11-14,220001,1691.0,2024-09-30 02:56:02
+216,it_tickets_0216,IT Tickets,Data Warehouse,2024-10-12,124788,639.3,2024-09-21 17:13:48
+217,system_metrics_0217,System Metrics,CSV Upload,2023-05-13,88507,560.48,2023-03-30 12:33:53
+218,network_logs_0218,Network Logs,Manual Entry,2024-03-14,211492,609.84,2024-02-19 17:36:15
+219,marketing_analytics_0219,Marketing Analytics,Internal ETL,2024-11-01,309287,1945.8,2024-10-02 14:35:57
+220,marketing_analytics_0220,Marketing Analytics,Manual Entry,2024-02-28,172873,968.76,2024-01-24 07:54:20
+221,threat_intelligence_0221,Threat Intelligence,Internal ETL,2023-10-23,88608,779.1,2023-10-18 03:26:53
+222,web_traffic_0222,Web Traffic,API Ingestion,2023-11-19,372145,2012.02,2023-10-16 11:42:32
+223,user_accounts_0223,User Accounts,Data Warehouse,2023-05-12,391403,3009.16,2023-04-14 13:25:44
+224,finance_0224,Finance,SIEM Export,2024-10-19,116807,65.06,2024-09-04 20:24:57
+225,security_incidents_0225,Security Incidents,Internal ETL,2024-04-25,38175,69.79,2024-02-25 22:42:32
+226,customer_support_0226,Customer Support,Third-party Vendor,2023-05-20,121387,500.24,2023-03-30 09:17:07
+227,web_traffic_0227,Web Traffic,SIEM Export,2023-10-22,108273,904.07,2023-08-30 06:44:48
+228,user_accounts_0228,User Accounts,Manual Entry,2023-10-11,225302,1347.75,2023-08-26 19:56:43
+229,web_traffic_0229,Web Traffic,Internal ETL,2024-09-05,172441,197.95,2024-08-12 13:45:02
+230,user_accounts_0230,User Accounts,SIEM Export,2024-07-04,410744,2176.41,2024-05-17 07:06:15
+231,it_tickets_0231,IT Tickets,Third-party Vendor,2024-01-03,274219,1808.04,2023-11-30 01:29:43
+232,marketing_analytics_0232,Marketing Analytics,CSV Upload,2023-01-22,440093,2678.26,2023-01-01 04:44:01
+233,security_incidents_0233,Security Incidents,Data Warehouse,2023-04-22,363770,1508.77,2023-03-27 11:08:59
+234,customer_support_0234,Customer Support,Internal ETL,2023-05-12,9742,41.91,2023-04-08 01:18:11
+235,security_incidents_0235,Security Incidents,SIEM Export,2024-05-09,406190,4006.74,2024-04-21 07:14:14
+236,threat_intelligence_0236,Threat Intelligence,Data Warehouse,2024-08-04,360046,3372.52,2024-06-19 02:48:02
+237,web_traffic_0237,Web Traffic,CSV Upload,2024-08-06,208785,294.28,2024-06-15 22:17:52
+238,customer_support_0238,Customer Support,API Ingestion,2024-03-21,253501,1021.55,2024-02-24 18:33:01
+239,customer_support_0239,Customer Support,Third-party Vendor,2023-02-02,265094,1714.97,2023-01-23 09:33:06
+240,threat_intelligence_0240,Threat Intelligence,Data Warehouse,2023-12-10,481823,2125.94,2023-11-12 20:45:07
+241,it_tickets_0241,IT Tickets,CSV Upload,2023-06-09,216507,1690.69,2023-04-12 17:31:28
+242,it_tickets_0242,IT Tickets,Data Warehouse,2024-02-09,436213,1979.77,2024-01-15 14:59:07
+243,customer_support_0243,Customer Support,API Ingestion,2023-11-04,231100,593.54,2023-09-18 04:01:57
+244,user_accounts_0244,User Accounts,Data Warehouse,2024-01-27,259242,1558.28,2023-12-10 18:54:03
+245,web_traffic_0245,Web Traffic,Data Warehouse,2024-10-24,225382,2121.02,2024-09-05 20:05:55
+246,marketing_analytics_0246,Marketing Analytics,API Ingestion,2024-09-05,319007,2915.27,2024-07-17 11:09:33
+247,it_tickets_0247,IT Tickets,Internal ETL,2023-11-19,364489,1121.57,2023-10-25 21:18:25
+248,marketing_analytics_0248,Marketing Analytics,Data Warehouse,2024-07-24,289252,1684.03,2024-06-21 12:40:04
+249,threat_intelligence_0249,Threat Intelligence,Third-party Vendor,2024-11-10,470236,3023.26,2024-10-17 21:38:45
+250,threat_intelligence_0250,Threat Intelligence,Manual Entry,2023-10-21,391848,1119.49,2023-09-11 07:39:16
+251,security_incidents_0251,Security Incidents,API Ingestion,2023-01-17,101883,700.33,2023-01-17 21:46:41
+252,user_accounts_0252,User Accounts,Data Warehouse,2023-07-16,377082,2353.61,2023-07-12 19:42:13
+253,marketing_analytics_0253,Marketing Analytics,CSV Upload,2024-05-17,264328,1396.96,2024-04-15 03:30:44
+254,user_accounts_0254,User Accounts,Manual Entry,2024-04-28,282353,301.08,2024-02-28 00:30:30
+255,finance_0255,Finance,Manual Entry,2024-07-29,254303,1595.37,2024-06-07 09:39:12
+256,operations_0256,Operations,API Ingestion,2024-07-23,321567,256.23,2024-06-07 03:48:37
+257,marketing_analytics_0257,Marketing Analytics,Third-party Vendor,2024-02-20,204327,1027.82,2024-01-22 02:42:44
+258,network_logs_0258,Network Logs,Data Warehouse,2024-12-06,388617,471.04,2024-11-12 19:38:36
+259,it_tickets_0259,IT Tickets,Data Warehouse,2023-10-03,155840,90.06,2023-09-24 22:34:49
+260,security_incidents_0260,Security Incidents,Manual Entry,2024-09-20,31456,152.98,2024-08-10 06:47:33
+261,hr_0261,HR,Manual Entry,2024-06-15,163363,360.79,2024-05-20 07:18:53
+262,hr_0262,HR,CSV Upload,2024-11-16,604,3.48,2024-10-05 05:04:33
+263,user_accounts_0263,User Accounts,SIEM Export,2024-08-30,309023,2892.28,2024-07-29 08:58:02
+264,marketing_analytics_0264,Marketing Analytics,CSV Upload,2024-06-28,393196,3727.52,2024-05-25 07:03:06
+265,network_logs_0265,Network Logs,Data Warehouse,2023-04-23,388673,2594.83,2023-03-03 11:29:22
+266,system_metrics_0266,System Metrics,API Ingestion,2023-06-02,287532,2389.76,2023-05-11 18:52:48
+267,hr_0267,HR,Third-party Vendor,2023-11-07,228068,1234.83,2023-10-15 21:08:21
+268,customer_support_0268,Customer Support,Internal ETL,2024-12-29,354968,2641.6,2024-11-29 12:54:42
+269,finance_0269,Finance,SIEM Export,2024-09-29,476305,3410.53,2024-08-09 06:22:47
+270,user_accounts_0270,User Accounts,Data Warehouse,2024-09-27,275572,816.24,2024-08-26 15:01:48
+271,threat_intelligence_0271,Threat Intelligence,Data Warehouse,2023-09-24,160852,873.52,2023-08-23 12:59:49
+272,hr_0272,HR,SIEM Export,2023-12-11,356100,2380.28,2023-10-31 00:33:29
+273,security_incidents_0273,Security Incidents,Third-party Vendor,2023-01-13,371202,2342.12,2023-01-04 07:25:28
+274,marketing_analytics_0274,Marketing Analytics,Internal ETL,2024-07-03,333698,1391.26,2024-06-19 08:17:43
+275,user_accounts_0275,User Accounts,Data Warehouse,2024-12-01,272977,996.46,2024-10-24 11:30:00
+276,customer_support_0276,Customer Support,Third-party Vendor,2024-06-05,203513,874.31,2024-05-08 22:54:45
+277,operations_0277,Operations,API Ingestion,2023-08-15,220226,646.22,2023-08-11 07:56:18
+278,web_traffic_0278,Web Traffic,Manual Entry,2023-03-20,140628,891.65,2023-02-21 17:34:11
+279,hr_0279,HR,Manual Entry,2024-07-31,97858,811.47,2024-06-01 03:07:35
+280,hr_0280,HR,SIEM Export,2023-05-12,306902,2210.81,2023-03-13 03:16:05
+281,marketing_analytics_0281,Marketing Analytics,Internal ETL,2024-12-16,80254,361.82,2024-10-22 00:18:33
+282,it_tickets_0282,IT Tickets,Manual Entry,2023-09-27,381777,2068.81,2023-08-01 02:24:59
+283,user_accounts_0283,User Accounts,Third-party Vendor,2024-06-14,263519,1990.01,2024-06-07 06:09:57
+284,system_metrics_0284,System Metrics,Data Warehouse,2023-06-29,193171,222.1,2023-06-12 23:13:26
+285,web_traffic_0285,Web Traffic,Data Warehouse,2023-03-30,659,2.23,2023-03-05 19:01:33
+286,system_metrics_0286,System Metrics,Internal ETL,2024-03-19,266830,496.29,2024-02-11 06:13:02
+287,marketing_analytics_0287,Marketing Analytics,Manual Entry,2024-09-23,210457,364.31,2024-07-28 05:59:02
+288,security_incidents_0288,Security Incidents,Third-party Vendor,2024-10-08,67039,118.05,2024-08-31 17:01:50
+289,hr_0289,HR,SIEM Export,2024-02-10,202290,1242.98,2023-12-15 07:42:32
+290,finance_0290,Finance,API Ingestion,2024-05-19,405474,2077.08,2024-03-30 14:07:58
+291,web_traffic_0291,Web Traffic,Manual Entry,2023-12-27,82387,756.23,2023-12-26 17:06:38
+292,threat_intelligence_0292,Threat Intelligence,Manual Entry,2023-11-18,445041,3700.95,2023-10-06 07:52:30
+293,finance_0293,Finance,CSV Upload,2023-04-23,335927,2999.87,2023-04-07 20:53:01
+294,marketing_analytics_0294,Marketing Analytics,API Ingestion,2023-10-21,474170,1001.72,2023-08-23 00:05:47
+295,network_logs_0295,Network Logs,Data Warehouse,2023-01-01,219619,674.94,2023-01-01 23:07:31
+296,security_incidents_0296,Security Incidents,CSV Upload,2023-05-08,24206,24.39,2023-03-24 03:36:14
+297,marketing_analytics_0297,Marketing Analytics,Third-party Vendor,2023-05-30,145041,702.92,2023-04-02 12:05:50
+298,marketing_analytics_0298,Marketing Analytics,Data Warehouse,2023-06-04,374942,335.09,2023-04-11 18:10:05
+299,web_traffic_0299,Web Traffic,Third-party Vendor,2023-05-12,98645,510.35,2023-04-15 07:38:14
+300,threat_intelligence_0300,Threat Intelligence,CSV Upload,2023-01-04,54948,32.69,2023-01-01 23:28:04
+301,user_accounts_0301,User Accounts,SIEM Export,2023-04-29,61317,98.98,2023-03-24 01:50:37
+302,hr_0302,HR,SIEM Export,2023-06-19,46808,160.87,2023-05-14 23:59:29
+303,customer_support_0303,Customer Support,Data Warehouse,2024-06-24,78100,636.35,2024-06-15 08:48:20
+304,hr_0304,HR,SIEM Export,2023-11-26,299609,471.72,2023-10-27 21:50:35
+305,hr_0305,HR,Manual Entry,2023-03-21,112656,725.01,2023-02-17 10:12:02
+306,finance_0306,Finance,CSV Upload,2024-04-23,184555,378.09,2024-04-21 01:17:31
+307,threat_intelligence_0307,Threat Intelligence,CSV Upload,2023-02-27,22992,229.79,2023-02-12 09:36:37
+308,it_tickets_0308,IT Tickets,API Ingestion,2023-05-31,449626,1020.49,2023-04-01 09:32:40
+309,hr_0309,HR,CSV Upload,2024-08-24,415317,852.33,2024-08-12 06:14:16
+310,web_traffic_0310,Web Traffic,API Ingestion,2023-12-26,59701,61.18,2023-12-18 18:53:54
+311,web_traffic_0311,Web Traffic,API Ingestion,2023-07-29,222353,645.04,2023-07-12 12:03:22
+312,threat_intelligence_0312,Threat Intelligence,SIEM Export,2023-01-16,266415,900.4,2023-01-04 02:59:34
+313,web_traffic_0313,Web Traffic,Manual Entry,2023-07-29,204341,1239.48,2023-07-26 18:49:33
+314,it_tickets_0314,IT Tickets,Data Warehouse,2023-04-13,126864,482.59,2023-03-21 15:23:15
+315,security_incidents_0315,Security Incidents,API Ingestion,2023-05-23,7907,7.65,2023-03-28 17:02:26
+316,operations_0316,Operations,Internal ETL,2023-04-18,117118,579.98,2023-02-26 05:46:44
+317,system_metrics_0317,System Metrics,Data Warehouse,2023-11-19,62352,482.33,2023-09-26 05:28:23
+318,operations_0318,Operations,Third-party Vendor,2023-06-04,212655,1785.44,2023-04-20 09:04:46
+319,finance_0319,Finance,Internal ETL,2024-07-17,45646,291.82,2024-06-24 20:31:35
+320,network_logs_0320,Network Logs,Third-party Vendor,2023-12-07,279144,2726.95,2023-11-28 08:05:59
+321,system_metrics_0321,System Metrics,SIEM Export,2024-05-09,438427,624.31,2024-04-29 13:13:59
+322,hr_0322,HR,Third-party Vendor,2023-09-09,62501,513.21,2023-07-20 00:39:31
+323,hr_0323,HR,Third-party Vendor,2024-05-27,360558,1798.59,2024-04-10 18:45:36
+324,security_incidents_0324,Security Incidents,Manual Entry,2023-08-04,450341,1035.89,2023-06-20 14:35:17
+325,hr_0325,HR,API Ingestion,2023-04-01,354350,1351.22,2023-02-25 18:09:55
+326,marketing_analytics_0326,Marketing Analytics,Internal ETL,2023-01-02,433399,323.96,2023-01-01 12:11:59
+327,user_accounts_0327,User Accounts,CSV Upload,2024-12-30,210992,906.74,2024-12-28 12:58:21
+328,user_accounts_0328,User Accounts,Data Warehouse,2024-11-07,441633,2710.59,2024-11-06 05:24:56
+329,network_logs_0329,Network Logs,API Ingestion,2023-09-17,124834,1206.4,2023-07-26 11:54:02
+330,hr_0330,HR,Third-party Vendor,2023-05-20,469607,2965.15,2023-03-24 00:06:45
+331,threat_intelligence_0331,Threat Intelligence,Third-party Vendor,2024-12-24,278122,1311.71,2024-12-04 06:07:44
+332,customer_support_0332,Customer Support,API Ingestion,2024-07-11,144115,1208.03,2024-06-13 05:52:16
+333,marketing_analytics_0333,Marketing Analytics,CSV Upload,2023-06-18,216387,1417.46,2023-05-14 04:47:03
+334,threat_intelligence_0334,Threat Intelligence,API Ingestion,2023-02-28,235620,1366.89,2023-02-08 10:03:58
+335,operations_0335,Operations,Manual Entry,2024-12-25,268519,1220.36,2024-10-26 16:55:29
+336,security_incidents_0336,Security Incidents,CSV Upload,2023-07-29,337649,406.96,2023-07-07 10:24:23
+337,finance_0337,Finance,Data Warehouse,2023-10-09,202351,826.14,2023-08-20 02:29:14
+338,it_tickets_0338,IT Tickets,SIEM Export,2024-05-18,134208,895.35,2024-04-12 23:57:24
+339,web_traffic_0339,Web Traffic,CSV Upload,2024-07-31,427527,987.86,2024-06-29 22:15:42
+340,threat_intelligence_0340,Threat Intelligence,CSV Upload,2023-06-01,325111,653.22,2023-04-30 18:11:16
+341,hr_0341,HR,Manual Entry,2024-02-23,372486,1081.81,2024-01-28 15:28:00
+342,threat_intelligence_0342,Threat Intelligence,Data Warehouse,2023-09-12,245642,882.41,2023-08-01 13:29:25
+343,hr_0343,HR,Third-party Vendor,2024-08-11,28832,203.47,2024-07-15 23:07:47
+344,network_logs_0344,Network Logs,Manual Entry,2023-07-04,49679,85.43,2023-06-18 21:39:16
+345,security_incidents_0345,Security Incidents,CSV Upload,2024-08-17,84143,722.43,2024-07-30 08:49:22
+346,customer_support_0346,Customer Support,CSV Upload,2023-01-08,321014,2466.15,2023-01-01 20:36:16
+347,marketing_analytics_0347,Marketing Analytics,Third-party Vendor,2023-03-02,112815,854.43,2023-02-10 16:38:14
+348,hr_0348,HR,SIEM Export,2024-03-22,305197,259.38,2024-03-04 07:27:29
+349,security_incidents_0349,Security Incidents,Data Warehouse,2023-01-08,423096,819.1,2023-01-01 13:38:40
+350,system_metrics_0350,System Metrics,API Ingestion,2024-07-11,377434,1357.79,2024-06-08 22:11:05
+351,operations_0351,Operations,CSV Upload,2024-05-07,41872,85.72,2024-03-19 23:01:38
+352,operations_0352,Operations,Internal ETL,2023-12-29,498930,1012.61,2023-11-29 04:06:04
+353,hr_0353,HR,Third-party Vendor,2024-01-20,102573,881.75,2023-12-10 20:22:52
+354,it_tickets_0354,IT Tickets,API Ingestion,2024-10-26,133558,1224.48,2024-10-16 08:09:36
+355,operations_0355,Operations,CSV Upload,2024-03-07,178816,1759.28,2024-02-12 05:26:33
+356,network_logs_0356,Network Logs,Data Warehouse,2023-05-01,488632,4095.72,2023-03-07 11:45:40
+357,network_logs_0357,Network Logs,SIEM Export,2024-12-04,332990,1919.08,2024-10-17 11:11:47
+358,finance_0358,Finance,Third-party Vendor,2024-07-26,204479,171.6,2024-07-01 14:00:40
+359,user_accounts_0359,User Accounts,CSV Upload,2023-08-07,139706,942.46,2023-06-27 18:14:35
+360,user_accounts_0360,User Accounts,Third-party Vendor,2023-11-22,119251,569.96,2023-10-21 19:02:48
+361,user_accounts_0361,User Accounts,API Ingestion,2024-08-27,70004,290.76,2024-06-28 17:18:56
+362,customer_support_0362,Customer Support,SIEM Export,2024-12-16,458105,3257.86,2024-11-15 20:12:09
+363,customer_support_0363,Customer Support,CSV Upload,2024-11-25,268761,1789.18,2024-11-16 15:55:22
+364,web_traffic_0364,Web Traffic,Manual Entry,2023-08-16,328170,3003.89,2023-08-09 20:15:56
+365,finance_0365,Finance,Internal ETL,2023-05-07,75472,528.58,2023-03-12 09:27:43
+366,it_tickets_0366,IT Tickets,Manual Entry,2024-01-27,383739,3607.38,2023-12-21 22:21:41
+367,finance_0367,Finance,Data Warehouse,2023-06-25,483206,2138.58,2023-06-01 02:14:33
+368,web_traffic_0368,Web Traffic,SIEM Export,2023-10-24,231428,1085.9,2023-08-26 09:37:48
+369,customer_support_0369,Customer Support,Manual Entry,2024-01-23,46176,260.8,2023-12-11 03:37:30
+370,system_metrics_0370,System Metrics,Internal ETL,2024-12-05,115775,559.23,2024-11-20 17:24:44
+371,web_traffic_0371,Web Traffic,Internal ETL,2023-10-16,299807,879.19,2023-09-08 22:05:46
+372,marketing_analytics_0372,Marketing Analytics,SIEM Export,2024-01-15,479363,3670.09,2024-01-10 08:15:45
+373,network_logs_0373,Network Logs,Data Warehouse,2023-05-23,261309,1054.09,2023-05-05 17:59:08
+374,security_incidents_0374,Security Incidents,Data Warehouse,2024-03-01,325709,724.34,2024-01-11 12:38:14
+375,it_tickets_0375,IT Tickets,CSV Upload,2024-08-24,369229,3565.2,2024-07-21 12:12:19
+376,customer_support_0376,Customer Support,Third-party Vendor,2023-04-04,304800,1977.88,2023-03-30 12:27:31
+377,hr_0377,HR,Data Warehouse,2023-11-25,470282,2590.71,2023-10-26 02:45:45
+378,security_incidents_0378,Security Incidents,CSV Upload,2024-09-25,212284,1448.53,2024-08-27 20:29:31
+379,security_incidents_0379,Security Incidents,API Ingestion,2023-04-25,211403,267.2,2023-04-10 00:21:59
+380,web_traffic_0380,Web Traffic,Data Warehouse,2024-05-24,357512,3398.64,2024-04-24 23:47:27
+381,threat_intelligence_0381,Threat Intelligence,SIEM Export,2023-02-26,351100,2400.2,2023-02-02 01:47:49
+382,web_traffic_0382,Web Traffic,CSV Upload,2023-05-24,282854,2701.74,2023-05-16 15:05:01
+383,system_metrics_0383,System Metrics,CSV Upload,2024-02-15,435652,1264.78,2024-02-09 22:46:30
+384,customer_support_0384,Customer Support,Internal ETL,2024-06-19,303231,1241.21,2024-05-08 18:15:59
+385,hr_0385,HR,SIEM Export,2024-01-16,357923,2224.27,2024-01-13 16:33:08
+386,user_accounts_0386,User Accounts,Data Warehouse,2023-03-18,449140,277.93,2023-01-25 09:03:52
+387,operations_0387,Operations,SIEM Export,2024-02-15,370556,3285.82,2024-01-26 06:48:44
+388,threat_intelligence_0388,Threat Intelligence,Internal ETL,2024-03-10,35796,263.29,2024-01-28 04:45:18
+389,system_metrics_0389,System Metrics,Third-party Vendor,2024-09-01,279591,2703.97,2024-07-22 12:55:07
+390,finance_0390,Finance,SIEM Export,2024-10-02,281542,2772.07,2024-08-23 16:19:26
+391,system_metrics_0391,System Metrics,SIEM Export,2024-09-17,79743,182.75,2024-09-06 10:58:46
+392,customer_support_0392,Customer Support,Internal ETL,2023-10-09,278750,2552.81,2023-09-26 08:52:30
+393,threat_intelligence_0393,Threat Intelligence,Data Warehouse,2024-03-18,353490,2636.33,2024-02-24 19:31:35
+394,marketing_analytics_0394,Marketing Analytics,Internal ETL,2024-04-25,367061,1566.59,2024-04-12 04:32:27
+395,customer_support_0395,Customer Support,Manual Entry,2024-10-10,401397,818.85,2024-08-21 05:32:16
+396,finance_0396,Finance,API Ingestion,2024-03-13,71693,373.3,2024-03-07 05:25:01
+397,finance_0397,Finance,Third-party Vendor,2024-06-11,412060,594.59,2024-05-03 13:39:41
+398,customer_support_0398,Customer Support,Manual Entry,2024-07-09,209270,1067.52,2024-05-24 08:19:29
+399,finance_0399,Finance,Internal ETL,2024-09-10,291163,2018.24,2024-09-01 02:22:31
+400,finance_0400,Finance,Manual Entry,2024-09-08,372226,3231.97,2024-07-22 04:21:21
+401,security_incidents_0401,Security Incidents,CSV Upload,2023-08-18,488807,2846.62,2023-08-16 00:04:06
+402,hr_0402,HR,API Ingestion,2023-08-09,379796,2964.22,2023-07-26 13:04:01
+403,threat_intelligence_0403,Threat Intelligence,Third-party Vendor,2023-07-05,56774,200.39,2023-05-18 15:47:10
+404,operations_0404,Operations,SIEM Export,2023-03-07,119239,258.24,2023-02-03 01:47:10
+405,security_incidents_0405,Security Incidents,Third-party Vendor,2023-08-01,356235,3548.03,2023-07-26 08:15:26
+406,hr_0406,HR,Internal ETL,2023-01-16,255053,1041.55,2023-01-15 23:45:31
+407,operations_0407,Operations,Third-party Vendor,2024-04-19,302407,1763.19,2024-02-21 15:07:45
+408,hr_0408,HR,CSV Upload,2024-08-11,309786,1167.18,2024-07-09 13:46:07
+409,finance_0409,Finance,Internal ETL,2023-04-14,88255,182.84,2023-04-12 13:21:47
+410,system_metrics_0410,System Metrics,CSV Upload,2024-06-30,55101,237.96,2024-05-12 07:13:54
+411,marketing_analytics_0411,Marketing Analytics,SIEM Export,2023-08-01,234865,1671.55,2023-06-15 08:38:43
+412,system_metrics_0412,System Metrics,CSV Upload,2024-10-11,213813,672.43,2024-10-08 12:11:01
+413,system_metrics_0413,System Metrics,API Ingestion,2024-10-12,306123,2011.22,2024-10-01 16:59:18
+414,finance_0414,Finance,Manual Entry,2024-01-04,24498,101.95,2023-11-25 02:38:08
+415,hr_0415,HR,Manual Entry,2024-08-06,253266,1789.89,2024-06-17 15:28:29
+416,user_accounts_0416,User Accounts,SIEM Export,2024-09-01,109330,301.43,2024-08-16 09:13:44
+417,security_incidents_0417,Security Incidents,SIEM Export,2024-02-01,212850,606.85,2023-12-04 02:52:39
+418,finance_0418,Finance,Internal ETL,2024-05-27,490570,4221.02,2024-04-06 18:43:25
+419,web_traffic_0419,Web Traffic,CSV Upload,2024-05-01,467942,2678.4,2024-03-13 16:55:43
+420,web_traffic_0420,Web Traffic,SIEM Export,2024-01-03,263000,2075.82,2023-11-14 11:00:34
+421,threat_intelligence_0421,Threat Intelligence,Data Warehouse,2023-12-05,339775,1279.96,2023-11-17 10:52:08
+422,network_logs_0422,Network Logs,Third-party Vendor,2023-03-25,462869,4397.95,2023-02-27 05:42:25
+423,marketing_analytics_0423,Marketing Analytics,Internal ETL,2023-06-30,369253,2918.32,2023-06-13 17:22:32
+424,system_metrics_0424,System Metrics,CSV Upload,2024-11-17,497523,483.0,2024-10-15 11:29:52
+425,customer_support_0425,Customer Support,API Ingestion,2023-02-19,300889,737.61,2023-01-05 22:01:46
+426,it_tickets_0426,IT Tickets,API Ingestion,2024-12-09,328625,697.79,2024-10-19 07:48:48
+427,network_logs_0427,Network Logs,Third-party Vendor,2023-08-05,473521,527.72,2023-07-15 07:31:38
+428,system_metrics_0428,System Metrics,API Ingestion,2023-11-09,202929,1387.36,2023-10-03 11:56:57
+429,threat_intelligence_0429,Threat Intelligence,CSV Upload,2024-05-16,300175,874.84,2024-04-08 14:17:05
+430,security_incidents_0430,Security Incidents,Internal ETL,2023-11-10,249408,329.54,2023-10-17 22:20:37
+431,threat_intelligence_0431,Threat Intelligence,Data Warehouse,2024-08-24,64139,208.37,2024-08-01 03:08:23
+432,user_accounts_0432,User Accounts,SIEM Export,2024-09-14,396055,1064.22,2024-09-12 14:33:14
+433,hr_0433,HR,API Ingestion,2023-02-24,339430,2340.36,2023-01-01 18:17:50
+434,user_accounts_0434,User Accounts,Data Warehouse,2024-04-19,364399,3358.49,2024-04-07 13:51:09
+435,hr_0435,HR,SIEM Export,2023-10-13,398032,3612.01,2023-09-28 16:00:54
+436,hr_0436,HR,Third-party Vendor,2024-03-03,301543,2781.75,2024-02-17 09:41:21
+437,customer_support_0437,Customer Support,SIEM Export,2024-04-29,176450,402.04,2024-04-06 05:48:20
+438,operations_0438,Operations,Internal ETL,2023-07-12,78401,502.46,2023-06-15 11:47:47
+439,system_metrics_0439,System Metrics,Data Warehouse,2024-12-25,474339,874.71,2024-12-14 21:16:09
+440,threat_intelligence_0440,Threat Intelligence,Internal ETL,2024-10-12,28839,130.64,2024-09-30 18:31:21
+441,network_logs_0441,Network Logs,SIEM Export,2024-11-30,328523,542.57,2024-11-07 06:57:58
+442,it_tickets_0442,IT Tickets,Manual Entry,2023-11-08,389563,321.44,2023-09-21 03:49:31
+443,threat_intelligence_0443,Threat Intelligence,Third-party Vendor,2024-09-27,148683,334.62,2024-09-09 20:22:21
+444,customer_support_0444,Customer Support,SIEM Export,2023-10-10,70315,530.06,2023-08-29 16:18:38
+445,operations_0445,Operations,API Ingestion,2024-12-18,351677,2963.2,2024-11-13 02:18:50
+446,operations_0446,Operations,CSV Upload,2023-07-23,331040,2747.86,2023-07-17 23:32:59
+447,finance_0447,Finance,SIEM Export,2023-04-16,281756,2235.57,2023-03-26 17:02:28
+448,it_tickets_0448,IT Tickets,Manual Entry,2023-06-07,199204,752.98,2023-04-14 16:54:36
+449,finance_0449,Finance,Internal ETL,2024-06-23,301049,2005.53,2024-06-23 03:37:04
+450,network_logs_0450,Network Logs,Internal ETL,2023-08-14,226727,1708.8,2023-07-02 12:15:08
+451,hr_0451,HR,API Ingestion,2023-08-04,141694,836.16,2023-07-19 18:17:08
+452,security_incidents_0452,Security Incidents,SIEM Export,2024-06-18,317761,1793.47,2024-05-30 22:10:26
+453,network_logs_0453,Network Logs,CSV Upload,2024-09-02,70865,708.57,2024-08-20 08:41:13
+454,hr_0454,HR,Internal ETL,2024-10-28,299881,1084.72,2024-09-05 11:16:43
+455,security_incidents_0455,Security Incidents,SIEM Export,2023-02-27,420256,1450.48,2023-01-10 13:57:16
+456,web_traffic_0456,Web Traffic,SIEM Export,2024-12-05,206880,205.23,2024-10-16 23:38:21
+457,security_incidents_0457,Security Incidents,SIEM Export,2024-06-24,410912,859.1,2024-06-11 13:08:58
+458,security_incidents_0458,Security Incidents,CSV Upload,2023-05-20,389311,597.86,2023-03-28 13:00:58
+459,security_incidents_0459,Security Incidents,SIEM Export,2024-11-30,233690,2286.65,2024-10-08 12:15:04
+460,network_logs_0460,Network Logs,Manual Entry,2023-02-12,44214,166.28,2023-02-02 20:43:10
+461,it_tickets_0461,IT Tickets,SIEM Export,2023-07-02,59041,362.45,2023-05-23 14:40:25
+462,finance_0462,Finance,SIEM Export,2023-09-09,442158,2572.16,2023-08-04 09:39:27
+463,web_traffic_0463,Web Traffic,Manual Entry,2023-01-04,493665,4803.5,2023-01-01 10:50:33
+464,marketing_analytics_0464,Marketing Analytics,SIEM Export,2023-04-11,117658,436.49,2023-02-14 03:27:51
+465,user_accounts_0465,User Accounts,SIEM Export,2024-11-18,91501,375.97,2024-10-02 18:56:05
+466,system_metrics_0466,System Metrics,Third-party Vendor,2023-02-03,45972,377.6,2023-01-03 02:20:16
+467,web_traffic_0467,Web Traffic,CSV Upload,2024-07-07,166208,606.97,2024-06-19 07:28:33
+468,security_incidents_0468,Security Incidents,Third-party Vendor,2024-12-31,22274,72.32,2024-11-24 22:10:52
+469,marketing_analytics_0469,Marketing Analytics,CSV Upload,2023-05-14,233955,2081.46,2023-03-24 18:34:15
+470,web_traffic_0470,Web Traffic,Internal ETL,2023-01-25,340843,1365.31,2023-01-01 19:29:58
+471,marketing_analytics_0471,Marketing Analytics,Data Warehouse,2024-04-04,130390,444.07,2024-02-10 03:13:14
+472,user_accounts_0472,User Accounts,Data Warehouse,2024-02-26,453299,1241.55,2024-01-30 23:32:17
+473,threat_intelligence_0473,Threat Intelligence,CSV Upload,2024-05-09,296459,244.08,2024-04-04 03:24:03
+474,operations_0474,Operations,CSV Upload,2024-01-13,125672,845.7,2023-12-30 14:30:05
+475,threat_intelligence_0475,Threat Intelligence,Internal ETL,2024-01-06,49276,271.29,2023-12-26 02:27:49
+476,marketing_analytics_0476,Marketing Analytics,SIEM Export,2024-01-19,102238,488.83,2023-12-15 21:29:02
+477,security_incidents_0477,Security Incidents,Third-party Vendor,2024-04-01,131802,443.79,2024-03-21 08:40:31
+478,hr_0478,HR,SIEM Export,2024-10-02,483860,1678.85,2024-08-21 00:52:53
+479,security_incidents_0479,Security Incidents,Third-party Vendor,2024-05-09,100238,271.77,2024-03-12 20:24:42
+480,security_incidents_0480,Security Incidents,Internal ETL,2024-11-14,305862,526.76,2024-10-17 16:43:04
+481,marketing_analytics_0481,Marketing Analytics,Manual Entry,2023-07-05,439532,2212.58,2023-05-19 18:58:56
+482,customer_support_0482,Customer Support,Data Warehouse,2023-11-30,324351,1537.39,2023-10-15 06:42:52
+483,operations_0483,Operations,Third-party Vendor,2024-04-29,342801,2175.48,2024-03-01 03:48:15
+484,hr_0484,HR,Manual Entry,2024-10-20,231677,1588.24,2024-09-19 17:07:58
+485,threat_intelligence_0485,Threat Intelligence,Data Warehouse,2023-08-01,182340,822.34,2023-07-28 11:45:08
+486,finance_0486,Finance,Data Warehouse,2023-05-24,4710,22.01,2023-05-14 15:00:06
+487,system_metrics_0487,System Metrics,Data Warehouse,2024-12-04,432836,2245.64,2024-10-31 14:25:27
+488,marketing_analytics_0488,Marketing Analytics,SIEM Export,2023-07-01,97613,317.03,2023-06-02 13:36:50
+489,finance_0489,Finance,Data Warehouse,2023-12-19,294203,2507.71,2023-11-01 00:53:30
+490,user_accounts_0490,User Accounts,SIEM Export,2024-11-24,134160,1245.19,2024-10-01 06:44:53
+491,system_metrics_0491,System Metrics,CSV Upload,2023-12-22,140939,1237.64,2023-11-23 01:44:15
+492,marketing_analytics_0492,Marketing Analytics,Internal ETL,2024-04-11,346890,1995.41,2024-02-14 17:58:22
+493,customer_support_0493,Customer Support,API Ingestion,2023-09-09,240221,741.48,2023-09-06 01:29:21
+494,finance_0494,Finance,Third-party Vendor,2024-03-20,292806,2118.4,2024-02-24 16:20:38
+495,operations_0495,Operations,Internal ETL,2023-09-10,214029,1249.06,2023-08-05 22:51:23
+496,security_incidents_0496,Security Incidents,API Ingestion,2024-01-31,377285,679.58,2024-01-10 15:58:45
+497,threat_intelligence_0497,Threat Intelligence,SIEM Export,2024-03-20,324453,2082.16,2024-02-08 19:39:01
+498,operations_0498,Operations,API Ingestion,2023-01-21,139749,751.12,2023-01-01 15:38:23
+499,web_traffic_0499,Web Traffic,Third-party Vendor,2024-12-07,50412,96.49,2024-12-02 02:21:02
+500,hr_0500,HR,CSV Upload,2024-10-21,342577,832.48,2024-09-15 02:19:08
+501,network_logs_0501,Network Logs,Data Warehouse,2024-09-12,257481,1745.86,2024-09-07 01:20:30
+502,it_tickets_0502,IT Tickets,Internal ETL,2023-07-15,125102,593.35,2023-06-28 08:36:09
+503,marketing_analytics_0503,Marketing Analytics,Manual Entry,2023-10-03,1836,7.14,2023-09-16 05:09:53
+504,it_tickets_0504,IT Tickets,Manual Entry,2024-03-21,59872,102.68,2024-01-29 09:49:53
+505,web_traffic_0505,Web Traffic,Manual Entry,2024-09-04,30008,85.31,2024-07-07 14:28:44
+506,system_metrics_0506,System Metrics,API Ingestion,2023-06-22,389317,3481.79,2023-05-12 03:04:24
+507,marketing_analytics_0507,Marketing Analytics,API Ingestion,2024-06-12,85929,854.28,2024-06-10 12:19:03
+508,finance_0508,Finance,Data Warehouse,2024-05-03,297793,2016.48,2024-04-24 05:38:01
+509,customer_support_0509,Customer Support,Internal ETL,2024-06-14,334726,641.18,2024-05-16 12:45:15
+510,it_tickets_0510,IT Tickets,Third-party Vendor,2023-01-06,464370,1779.82,2023-01-01 06:50:11
+511,marketing_analytics_0511,Marketing Analytics,Third-party Vendor,2023-10-24,299359,2110.86,2023-10-15 05:14:35
+512,system_metrics_0512,System Metrics,CSV Upload,2024-01-24,369882,2709.94,2023-11-26 20:22:54
+513,customer_support_0513,Customer Support,CSV Upload,2023-04-23,96828,331.17,2023-03-10 18:48:19
+514,marketing_analytics_0514,Marketing Analytics,Third-party Vendor,2024-03-03,275059,1680.96,2024-02-01 21:07:59
+515,system_metrics_0515,System Metrics,CSV Upload,2023-09-24,428951,318.84,2023-09-12 09:34:49
+516,web_traffic_0516,Web Traffic,API Ingestion,2024-07-15,43343,57.97,2024-06-11 09:39:30
+517,it_tickets_0517,IT Tickets,Internal ETL,2024-05-23,303913,1977.85,2024-03-28 16:03:28
+518,threat_intelligence_0518,Threat Intelligence,Manual Entry,2024-01-02,272617,370.33,2023-12-19 01:39:56
+519,it_tickets_0519,IT Tickets,Internal ETL,2024-09-23,240632,691.73,2024-09-21 22:33:51
+520,user_accounts_0520,User Accounts,Manual Entry,2023-04-22,21416,108.5,2023-03-18 14:14:17
+521,it_tickets_0521,IT Tickets,CSV Upload,2024-11-29,466345,1195.13,2024-11-13 00:10:50
+522,finance_0522,Finance,API Ingestion,2023-01-03,321056,1951.69,2023-01-01 21:22:21
+523,it_tickets_0523,IT Tickets,CSV Upload,2023-05-28,223138,892.31,2023-05-10 01:07:48
+524,security_incidents_0524,Security Incidents,API Ingestion,2023-04-01,272737,1662.2,2023-02-16 03:14:42
+525,system_metrics_0525,System Metrics,Third-party Vendor,2024-04-18,449480,1979.3,2024-03-04 12:01:02
+526,hr_0526,HR,API Ingestion,2023-07-25,55665,483.6,2023-05-30 02:03:15
+527,threat_intelligence_0527,Threat Intelligence,Internal ETL,2024-07-19,166447,375.77,2024-07-14 12:28:43
+528,customer_support_0528,Customer Support,API Ingestion,2024-03-08,316375,702.27,2024-03-03 23:30:27
+529,customer_support_0529,Customer Support,Third-party Vendor,2023-11-17,268487,2612.72,2023-10-24 02:48:14
+530,system_metrics_0530,System Metrics,SIEM Export,2023-09-30,40242,274.42,2023-08-31 13:49:40
+531,security_incidents_0531,Security Incidents,Data Warehouse,2023-10-15,293217,389.79,2023-09-07 07:03:20
+532,customer_support_0532,Customer Support,Data Warehouse,2023-04-24,337353,734.67,2023-04-07 23:36:10
+533,security_incidents_0533,Security Incidents,CSV Upload,2024-02-07,499176,4458.9,2024-01-30 12:29:17
+534,web_traffic_0534,Web Traffic,CSV Upload,2023-09-13,208994,1252.13,2023-07-26 13:08:53
+535,security_incidents_0535,Security Incidents,Third-party Vendor,2024-03-30,478533,1008.45,2024-03-20 07:52:28
+536,threat_intelligence_0536,Threat Intelligence,Data Warehouse,2023-07-20,137573,860.11,2023-05-28 04:02:49
+537,security_incidents_0537,Security Incidents,SIEM Export,2023-10-02,42494,80.7,2023-09-09 11:36:44
+538,user_accounts_0538,User Accounts,SIEM Export,2024-09-29,183802,170.07,2024-09-16 14:57:22
+539,user_accounts_0539,User Accounts,API Ingestion,2023-06-08,92958,310.03,2023-04-11 00:12:04
+540,hr_0540,HR,Internal ETL,2024-10-03,35841,259.38,2024-08-09 20:42:39
+541,it_tickets_0541,IT Tickets,Data Warehouse,2024-05-02,374066,2513.49,2024-03-31 21:23:51
+542,hr_0542,HR,Third-party Vendor,2024-01-28,406173,986.48,2024-01-11 20:20:55
+543,system_metrics_0543,System Metrics,Internal ETL,2023-04-07,70166,256.32,2023-03-21 15:48:59
+544,finance_0544,Finance,Data Warehouse,2023-07-20,342280,3313.24,2023-05-27 07:56:32
+545,operations_0545,Operations,Third-party Vendor,2024-04-22,261988,1361.19,2024-03-28 14:33:31
+546,web_traffic_0546,Web Traffic,CSV Upload,2023-08-05,290012,470.0,2023-06-13 13:33:10
+547,user_accounts_0547,User Accounts,Internal ETL,2024-06-09,200879,1335.23,2024-06-05 21:30:35
+548,finance_0548,Finance,Data Warehouse,2023-08-31,145007,813.81,2023-07-04 14:37:04
+549,marketing_analytics_0549,Marketing Analytics,SIEM Export,2023-05-02,445508,2590.06,2023-04-05 03:41:54
+550,it_tickets_0550,IT Tickets,Manual Entry,2023-10-15,179420,124.66,2023-10-12 04:32:41
+551,finance_0551,Finance,SIEM Export,2023-03-08,6321,62.25,2023-03-07 17:56:27
+552,threat_intelligence_0552,Threat Intelligence,Manual Entry,2023-06-11,269056,2372.22,2023-05-28 00:47:27
+553,marketing_analytics_0553,Marketing Analytics,Third-party Vendor,2023-04-15,86182,386.83,2023-03-09 12:28:57
+554,system_metrics_0554,System Metrics,API Ingestion,2024-05-28,455120,1801.03,2024-04-15 06:27:24
+555,operations_0555,Operations,Internal ETL,2023-03-10,64699,220.68,2023-02-18 12:19:09
+556,operations_0556,Operations,Internal ETL,2023-09-08,326365,2016.08,2023-07-14 09:17:21
+557,security_incidents_0557,Security Incidents,Manual Entry,2023-03-29,100750,640.57,2023-03-20 18:21:05
+558,it_tickets_0558,IT Tickets,Data Warehouse,2024-05-10,164666,946.92,2024-03-23 02:04:07
+559,marketing_analytics_0559,Marketing Analytics,API Ingestion,2024-05-24,300239,1282.03,2024-04-08 17:17:17
+560,marketing_analytics_0560,Marketing Analytics,Third-party Vendor,2024-05-23,485637,1085.9,2024-04-13 06:53:16
+561,network_logs_0561,Network Logs,Manual Entry,2023-03-31,86239,76.49,2023-03-12 15:52:15
+562,threat_intelligence_0562,Threat Intelligence,SIEM Export,2024-01-29,179628,1405.77,2023-11-30 05:01:40
+563,customer_support_0563,Customer Support,Manual Entry,2024-09-08,256433,2371.64,2024-09-05 15:15:19
+564,system_metrics_0564,System Metrics,API Ingestion,2024-02-05,275677,837.7,2024-01-27 23:07:56
+565,finance_0565,Finance,Third-party Vendor,2024-05-26,389468,2977.72,2024-05-13 20:46:07
+566,threat_intelligence_0566,Threat Intelligence,Manual Entry,2023-03-05,308392,1607.52,2023-01-23 12:48:14
+567,marketing_analytics_0567,Marketing Analytics,CSV Upload,2023-04-22,471514,1611.96,2023-02-23 06:56:01
+568,marketing_analytics_0568,Marketing Analytics,Third-party Vendor,2024-07-05,327826,1758.12,2024-06-21 01:22:33
+569,system_metrics_0569,System Metrics,Internal ETL,2024-04-10,198401,1180.64,2024-03-03 00:02:50
+570,security_incidents_0570,Security Incidents,Data Warehouse,2024-08-20,355466,2223.07,2024-08-07 00:41:24
+571,finance_0571,Finance,SIEM Export,2024-12-14,67482,513.49,2024-11-10 21:00:30
+572,security_incidents_0572,Security Incidents,SIEM Export,2024-09-24,337404,2746.83,2024-09-12 20:20:25
+573,user_accounts_0573,User Accounts,Manual Entry,2024-07-17,392723,2847.46,2024-06-30 12:57:29
+574,threat_intelligence_0574,Threat Intelligence,SIEM Export,2024-04-30,185594,559.59,2024-04-15 11:53:58
+575,customer_support_0575,Customer Support,API Ingestion,2023-01-14,409716,3232.08,2023-01-01 19:28:33
+576,threat_intelligence_0576,Threat Intelligence,Data Warehouse,2023-04-26,444118,1974.83,2023-04-16 11:12:16
+577,security_incidents_0577,Security Incidents,Manual Entry,2024-01-18,85668,199.16,2023-12-20 05:12:43
+578,marketing_analytics_0578,Marketing Analytics,Data Warehouse,2024-04-12,301063,2326.11,2024-03-17 18:36:58
+579,network_logs_0579,Network Logs,Third-party Vendor,2023-08-03,153563,1256.88,2023-06-14 11:03:05
+580,network_logs_0580,Network Logs,CSV Upload,2023-02-03,133219,822.98,2023-01-08 08:53:38
+581,marketing_analytics_0581,Marketing Analytics,CSV Upload,2023-07-10,127479,1101.02,2023-06-13 15:16:17
+582,customer_support_0582,Customer Support,Data Warehouse,2023-09-11,381475,229.52,2023-08-09 09:00:09
+583,system_metrics_0583,System Metrics,Data Warehouse,2023-11-01,381988,3431.42,2023-09-30 19:45:24
+584,operations_0584,Operations,SIEM Export,2024-03-20,78828,237.58,2024-01-29 09:51:24
+585,network_logs_0585,Network Logs,Data Warehouse,2023-11-13,219873,542.77,2023-10-08 04:39:56
+586,it_tickets_0586,IT Tickets,API Ingestion,2023-08-15,131577,529.06,2023-06-20 07:05:21
+587,marketing_analytics_0587,Marketing Analytics,Internal ETL,2024-09-17,453665,1119.77,2024-08-22 15:50:14
+588,it_tickets_0588,IT Tickets,SIEM Export,2023-09-05,312336,2256.27,2023-08-26 15:30:00
+589,system_metrics_0589,System Metrics,Internal ETL,2023-11-12,40827,192.51,2023-11-06 03:11:40
+590,web_traffic_0590,Web Traffic,Data Warehouse,2024-12-04,213386,405.92,2024-11-28 07:29:12
+591,web_traffic_0591,Web Traffic,CSV Upload,2023-11-03,110042,1010.74,2023-11-01 21:58:19
+592,security_incidents_0592,Security Incidents,Internal ETL,2023-08-02,172059,325.68,2023-07-19 04:17:31
+593,marketing_analytics_0593,Marketing Analytics,Data Warehouse,2023-12-11,191295,220.48,2023-10-12 23:30:18
+594,network_logs_0594,Network Logs,CSV Upload,2024-04-26,280000,933.17,2024-03-30 01:52:44
+595,hr_0595,HR,Manual Entry,2024-07-28,373032,410.3,2024-07-16 19:13:58
+596,customer_support_0596,Customer Support,API Ingestion,2023-08-15,27346,179.09,2023-07-26 04:06:12
+597,user_accounts_0597,User Accounts,Internal ETL,2024-12-28,428063,2537.5,2024-12-08 17:33:14
+598,user_accounts_0598,User Accounts,Data Warehouse,2024-04-27,82765,258.67,2024-03-19 04:18:57
+599,network_logs_0599,Network Logs,Internal ETL,2023-06-04,94743,325.1,2023-05-10 20:08:31
+600,operations_0600,Operations,Third-party Vendor,2023-04-02,280227,1812.54,2023-02-04 13:12:32
+601,operations_0601,Operations,API Ingestion,2024-01-01,11018,58.08,2023-11-28 18:23:35
+602,finance_0602,Finance,CSV Upload,2024-07-08,164577,853.62,2024-06-03 05:13:42
+603,security_incidents_0603,Security Incidents,CSV Upload,2024-11-08,302692,1166.36,2024-09-13 11:11:04
+604,operations_0604,Operations,Manual Entry,2024-09-06,83023,106.3,2024-08-13 15:55:16
+605,system_metrics_0605,System Metrics,Data Warehouse,2024-11-06,466629,3717.72,2024-10-23 08:18:28
+606,customer_support_0606,Customer Support,API Ingestion,2024-10-02,51715,499.0,2024-08-18 03:42:58
+607,web_traffic_0607,Web Traffic,SIEM Export,2024-03-29,245028,1450.21,2024-02-09 15:11:58
+608,it_tickets_0608,IT Tickets,Internal ETL,2024-03-17,137394,477.75,2024-03-07 21:57:51
+609,network_logs_0609,Network Logs,API Ingestion,2024-07-05,324414,2524.66,2024-05-28 02:26:29
+610,user_accounts_0610,User Accounts,SIEM Export,2024-05-20,25078,19.32,2024-04-11 16:58:20
+611,network_logs_0611,Network Logs,CSV Upload,2024-01-23,87433,858.08,2023-12-25 13:31:27
+612,it_tickets_0612,IT Tickets,CSV Upload,2024-03-12,57431,441.69,2024-03-08 15:02:38
+613,marketing_analytics_0613,Marketing Analytics,Manual Entry,2023-07-30,190284,1515.39,2023-07-17 22:18:01
+614,customer_support_0614,Customer Support,Data Warehouse,2023-03-16,21030,22.92,2023-01-24 16:12:05
+615,threat_intelligence_0615,Threat Intelligence,SIEM Export,2024-01-08,457197,1671.7,2023-11-22 16:07:33
+616,finance_0616,Finance,Data Warehouse,2023-03-19,251952,1393.65,2023-02-24 23:54:54
+617,finance_0617,Finance,Data Warehouse,2024-04-22,302433,1478.62,2024-03-13 11:40:00
+618,threat_intelligence_0618,Threat Intelligence,API Ingestion,2023-05-22,25243,155.45,2023-05-09 21:10:22
+619,marketing_analytics_0619,Marketing Analytics,Manual Entry,2023-04-25,160128,1117.46,2023-03-15 00:55:35
+620,security_incidents_0620,Security Incidents,Internal ETL,2023-07-16,42593,273.74,2023-06-12 01:34:23
+621,system_metrics_0621,System Metrics,SIEM Export,2024-09-14,388076,1283.34,2024-08-03 21:13:06
+622,user_accounts_0622,User Accounts,Third-party Vendor,2023-02-19,78719,662.19,2023-02-16 21:29:17
+623,customer_support_0623,Customer Support,Data Warehouse,2024-03-01,457063,2753.1,2024-01-03 12:19:05
+624,hr_0624,HR,SIEM Export,2024-11-06,189005,1660.84,2024-09-17 22:59:47
+625,system_metrics_0625,System Metrics,Internal ETL,2023-06-05,496793,2200.84,2023-04-17 07:40:00
+626,operations_0626,Operations,CSV Upload,2024-03-03,63263,71.94,2024-02-11 12:49:38
+627,it_tickets_0627,IT Tickets,Manual Entry,2024-03-22,214325,420.94,2024-02-06 06:20:32
+628,finance_0628,Finance,Manual Entry,2023-04-26,50643,183.55,2023-04-11 04:47:56
+629,threat_intelligence_0629,Threat Intelligence,CSV Upload,2024-10-12,239902,606.65,2024-10-03 09:28:00
+630,it_tickets_0630,IT Tickets,Internal ETL,2024-02-24,64975,143.99,2024-01-20 13:04:48
+631,threat_intelligence_0631,Threat Intelligence,SIEM Export,2023-05-24,61161,41.59,2023-05-08 13:00:15
+632,web_traffic_0632,Web Traffic,Third-party Vendor,2024-01-08,270332,2643.21,2023-12-20 10:44:11
+633,finance_0633,Finance,SIEM Export,2024-03-17,43914,95.77,2024-03-16 02:10:48
+634,web_traffic_0634,Web Traffic,API Ingestion,2023-11-18,186069,1385.15,2023-10-23 02:49:14
+635,it_tickets_0635,IT Tickets,Manual Entry,2024-11-05,483156,4723.84,2024-09-12 02:50:14
+636,user_accounts_0636,User Accounts,API Ingestion,2023-10-08,419346,2135.91,2023-08-21 22:50:08
+637,customer_support_0637,Customer Support,CSV Upload,2023-03-23,272359,1779.73,2023-02-11 10:22:03
+638,it_tickets_0638,IT Tickets,CSV Upload,2023-10-16,389128,520.45,2023-10-06 20:36:29
+639,hr_0639,HR,SIEM Export,2024-12-10,59005,389.82,2024-10-21 05:53:22
+640,user_accounts_0640,User Accounts,API Ingestion,2024-09-30,265624,2092.43,2024-08-24 15:41:45
+641,threat_intelligence_0641,Threat Intelligence,SIEM Export,2023-04-01,386421,2373.17,2023-03-03 03:39:58
+642,system_metrics_0642,System Metrics,Manual Entry,2023-12-04,413724,3190.0,2023-10-23 12:06:30
+643,security_incidents_0643,Security Incidents,API Ingestion,2023-01-07,440117,792.27,2023-01-01 14:36:36
+644,threat_intelligence_0644,Threat Intelligence,API Ingestion,2023-08-31,61236,499.45,2023-07-07 20:19:55
+645,user_accounts_0645,User Accounts,Third-party Vendor,2023-10-04,301756,2377.55,2023-09-14 12:46:20
+646,user_accounts_0646,User Accounts,Third-party Vendor,2023-08-08,369502,1938.34,2023-07-28 12:09:06
+647,threat_intelligence_0647,Threat Intelligence,API Ingestion,2024-05-06,387421,710.53,2024-03-29 07:44:00
+648,hr_0648,HR,API Ingestion,2023-07-26,473592,978.34,2023-07-18 04:05:35
+649,user_accounts_0649,User Accounts,Manual Entry,2023-11-24,168639,124.63,2023-10-15 21:48:46
+650,threat_intelligence_0650,Threat Intelligence,Third-party Vendor,2023-10-10,379410,1355.17,2023-08-21 00:28:57
+651,user_accounts_0651,User Accounts,Data Warehouse,2024-07-31,290611,1278.03,2024-06-29 17:01:07
+652,network_logs_0652,Network Logs,API Ingestion,2023-04-13,239222,1815.19,2023-03-19 09:01:53
+653,finance_0653,Finance,Manual Entry,2024-02-11,36757,210.57,2024-01-13 07:17:57
+654,marketing_analytics_0654,Marketing Analytics,Third-party Vendor,2024-10-08,26574,182.26,2024-08-19 10:39:34
+655,finance_0655,Finance,Internal ETL,2024-05-03,27946,233.64,2024-04-10 10:28:07
+656,finance_0656,Finance,API Ingestion,2024-10-18,426813,2721.56,2024-08-25 03:48:39
+657,finance_0657,Finance,SIEM Export,2024-01-31,256171,460.22,2023-12-12 23:13:01
+658,customer_support_0658,Customer Support,CSV Upload,2023-01-01,191126,684.31,2023-01-01 17:56:22
+659,marketing_analytics_0659,Marketing Analytics,Manual Entry,2024-11-30,102805,760.56,2024-10-20 12:12:46
+660,hr_0660,HR,Internal ETL,2024-11-03,82106,671.89,2024-09-22 05:06:41
+661,operations_0661,Operations,SIEM Export,2023-06-28,334470,2622.54,2023-06-01 15:52:42
+662,finance_0662,Finance,Data Warehouse,2023-11-21,48407,257.07,2023-10-04 04:01:30
+663,hr_0663,HR,API Ingestion,2023-09-02,353756,1990.27,2023-08-29 05:03:03
+664,system_metrics_0664,System Metrics,API Ingestion,2024-12-12,377472,1471.3,2024-11-27 16:05:53
+665,hr_0665,HR,Data Warehouse,2024-11-05,19964,45.2,2024-09-25 16:48:46
+666,it_tickets_0666,IT Tickets,Manual Entry,2024-07-11,256360,1530.07,2024-05-20 13:58:07
+667,operations_0667,Operations,SIEM Export,2024-06-20,451233,3837.24,2024-06-11 08:03:00
+668,threat_intelligence_0668,Threat Intelligence,CSV Upload,2023-04-23,433848,620.87,2023-03-05 08:17:05
+669,network_logs_0669,Network Logs,CSV Upload,2024-04-11,41098,191.35,2024-04-08 20:45:46
+670,customer_support_0670,Customer Support,Internal ETL,2024-04-14,194635,626.8,2024-03-11 02:33:40
+671,threat_intelligence_0671,Threat Intelligence,Data Warehouse,2024-01-03,307181,2873.07,2023-12-05 23:55:37
+672,system_metrics_0672,System Metrics,Data Warehouse,2023-07-30,296921,954.91,2023-07-06 23:26:54
+673,hr_0673,HR,API Ingestion,2024-08-03,290955,2635.92,2024-06-19 06:41:55
+674,security_incidents_0674,Security Incidents,Manual Entry,2024-01-12,179030,1592.96,2023-12-12 05:07:46
+675,user_accounts_0675,User Accounts,Manual Entry,2023-11-03,47305,396.43,2023-09-08 03:04:09
+676,hr_0676,HR,Third-party Vendor,2024-07-11,394024,3856.09,2024-06-09 04:29:59
+677,user_accounts_0677,User Accounts,API Ingestion,2023-04-10,172842,1525.57,2023-03-24 07:07:04
+678,customer_support_0678,Customer Support,SIEM Export,2023-12-17,175706,1257.1,2023-11-23 15:29:18
+679,web_traffic_0679,Web Traffic,API Ingestion,2024-09-02,398437,2458.91,2024-07-27 16:15:21
+680,user_accounts_0680,User Accounts,SIEM Export,2024-09-09,128891,619.52,2024-08-22 06:55:48
+681,finance_0681,Finance,Data Warehouse,2024-07-10,331385,1857.39,2024-07-01 02:40:18
+682,network_logs_0682,Network Logs,Internal ETL,2024-05-11,71046,61.6,2024-03-24 21:19:11
+683,finance_0683,Finance,Data Warehouse,2024-06-24,127930,374.45,2024-05-14 00:26:35
+684,security_incidents_0684,Security Incidents,Data Warehouse,2024-02-24,357561,354.5,2024-01-03 22:03:42
+685,finance_0685,Finance,Data Warehouse,2023-11-12,456663,378.31,2023-11-04 06:56:59
+686,system_metrics_0686,System Metrics,API Ingestion,2023-05-17,377687,2928.34,2023-04-19 00:34:33
+687,security_incidents_0687,Security Incidents,API Ingestion,2024-07-14,187263,702.13,2024-06-16 10:54:00
+688,security_incidents_0688,Security Incidents,Manual Entry,2023-01-02,289539,2227.55,2023-01-01 08:21:08
+689,operations_0689,Operations,CSV Upload,2024-03-06,283401,2652.3,2024-03-03 18:46:43
+690,security_incidents_0690,Security Incidents,Third-party Vendor,2023-03-23,112202,85.54,2023-03-13 17:34:37
+691,finance_0691,Finance,Third-party Vendor,2023-06-15,338641,1138.38,2023-04-20 04:08:10
+692,user_accounts_0692,User Accounts,API Ingestion,2023-08-10,265130,1941.53,2023-08-01 04:42:01
+693,marketing_analytics_0693,Marketing Analytics,Third-party Vendor,2023-05-04,469352,2945.91,2023-03-31 16:24:40
+694,finance_0694,Finance,Internal ETL,2023-07-18,187658,1546.55,2023-07-16 12:44:46
+695,network_logs_0695,Network Logs,Data Warehouse,2023-04-24,101690,774.39,2023-03-01 20:58:22
+696,hr_0696,HR,Data Warehouse,2023-12-05,373946,2300.22,2023-11-18 14:23:39
+697,hr_0697,HR,CSV Upload,2023-12-23,121922,642.31,2023-11-05 03:16:27
+698,finance_0698,Finance,SIEM Export,2023-08-10,362323,1971.17,2023-06-25 23:12:51
+699,web_traffic_0699,Web Traffic,CSV Upload,2024-11-14,333733,1078.49,2024-09-22 08:34:58
+700,system_metrics_0700,System Metrics,CSV Upload,2023-08-03,270217,2067.58,2023-06-16 01:16:03
+701,web_traffic_0701,Web Traffic,CSV Upload,2024-10-05,244122,1793.78,2024-09-27 20:02:02
+702,marketing_analytics_0702,Marketing Analytics,Internal ETL,2023-04-03,399184,3233.1,2023-03-25 18:31:12
+703,network_logs_0703,Network Logs,CSV Upload,2023-08-20,446101,4009.63,2023-08-13 10:26:54
+704,web_traffic_0704,Web Traffic,Third-party Vendor,2024-07-03,491765,2694.82,2024-06-08 18:13:36
+705,network_logs_0705,Network Logs,CSV Upload,2023-10-14,247653,1522.09,2023-09-25 12:13:41
+706,user_accounts_0706,User Accounts,Manual Entry,2023-02-15,403160,1740.87,2023-01-02 11:29:42
+707,it_tickets_0707,IT Tickets,API Ingestion,2023-06-20,14143,18.44,2023-06-20 03:13:02
+708,web_traffic_0708,Web Traffic,Internal ETL,2024-06-25,275007,2558.83,2024-04-29 06:01:42
+709,user_accounts_0709,User Accounts,API Ingestion,2024-02-17,134884,964.25,2024-02-17 17:19:35
+710,marketing_analytics_0710,Marketing Analytics,CSV Upload,2023-11-01,136722,211.99,2023-09-09 21:55:56
+711,marketing_analytics_0711,Marketing Analytics,API Ingestion,2023-07-08,293981,2747.34,2023-05-18 10:43:28
+712,user_accounts_0712,User Accounts,Data Warehouse,2024-08-27,337764,2532.64,2024-07-12 06:14:04
+713,operations_0713,Operations,Third-party Vendor,2023-08-21,270752,508.04,2023-07-01 10:22:53
+714,it_tickets_0714,IT Tickets,SIEM Export,2023-12-23,476468,780.12,2023-11-15 20:05:21
+715,web_traffic_0715,Web Traffic,Data Warehouse,2023-05-29,58633,462.4,2023-05-19 23:51:47
+716,customer_support_0716,Customer Support,SIEM Export,2024-04-27,371117,3438.75,2024-04-14 17:33:11
+717,it_tickets_0717,IT Tickets,Internal ETL,2023-01-08,331896,2501.22,2023-01-01 14:16:51
+718,web_traffic_0718,Web Traffic,SIEM Export,2024-07-02,429732,4180.69,2024-05-23 05:47:13
+719,user_accounts_0719,User Accounts,Manual Entry,2023-07-30,51814,284.6,2023-06-19 17:56:58
+720,hr_0720,HR,API Ingestion,2024-06-26,378161,2577.07,2024-06-20 12:58:25
+721,it_tickets_0721,IT Tickets,API Ingestion,2024-02-14,160136,1561.9,2023-12-19 01:05:07
+722,operations_0722,Operations,SIEM Export,2023-01-15,104696,431.64,2023-01-01 05:43:03
+723,it_tickets_0723,IT Tickets,CSV Upload,2024-06-02,266718,403.9,2024-05-03 02:05:16
+724,network_logs_0724,Network Logs,Data Warehouse,2024-10-07,33644,55.96,2024-09-21 17:23:19
+725,security_incidents_0725,Security Incidents,API Ingestion,2024-09-24,184866,1620.26,2024-08-27 14:29:09
+726,operations_0726,Operations,SIEM Export,2024-11-28,76175,209.25,2024-10-03 05:38:13
+727,finance_0727,Finance,Manual Entry,2024-12-23,218126,235.98,2024-11-30 14:00:48
+728,it_tickets_0728,IT Tickets,CSV Upload,2024-05-12,115108,285.47,2024-05-12 18:17:55
+729,network_logs_0729,Network Logs,Manual Entry,2023-02-13,354820,2132.64,2023-01-01 10:55:37
+730,operations_0730,Operations,Data Warehouse,2024-07-06,452315,1042.82,2024-06-10 02:53:21
+731,marketing_analytics_0731,Marketing Analytics,API Ingestion,2023-04-27,335994,2637.14,2023-04-01 01:34:12
+732,finance_0732,Finance,Data Warehouse,2023-01-08,479516,4339.42,2023-01-01 03:45:58
+733,threat_intelligence_0733,Threat Intelligence,Data Warehouse,2024-04-11,384492,889.41,2024-03-24 00:31:19
+734,threat_intelligence_0734,Threat Intelligence,CSV Upload,2023-05-27,214253,646.83,2023-04-16 17:22:19
+735,marketing_analytics_0735,Marketing Analytics,CSV Upload,2024-10-22,111926,533.65,2024-09-28 02:13:56
+736,threat_intelligence_0736,Threat Intelligence,Manual Entry,2023-10-11,45188,156.04,2023-08-19 08:13:01
+737,system_metrics_0737,System Metrics,SIEM Export,2023-02-19,414987,2618.05,2023-02-09 11:42:57
+738,customer_support_0738,Customer Support,Data Warehouse,2023-10-24,181426,175.09,2023-08-29 02:41:48
+739,network_logs_0739,Network Logs,CSV Upload,2023-02-21,429476,2757.35,2023-01-01 08:11:11
+740,hr_0740,HR,Internal ETL,2024-10-23,421361,1846.39,2024-10-13 13:46:14
+741,user_accounts_0741,User Accounts,API Ingestion,2023-04-18,30261,48.4,2023-04-18 12:03:37
+742,system_metrics_0742,System Metrics,Third-party Vendor,2024-04-25,278139,1033.14,2024-04-09 02:09:53
+743,system_metrics_0743,System Metrics,Third-party Vendor,2024-08-24,303618,2324.04,2024-07-30 04:51:00
+744,user_accounts_0744,User Accounts,Internal ETL,2024-08-02,100166,708.31,2024-07-21 16:07:08
+745,marketing_analytics_0745,Marketing Analytics,Data Warehouse,2023-10-26,194562,529.17,2023-09-21 16:02:23
+746,network_logs_0746,Network Logs,Third-party Vendor,2023-01-05,172579,1554.35,2023-01-01 17:38:36
+747,marketing_analytics_0747,Marketing Analytics,Manual Entry,2024-07-18,252423,1131.22,2024-06-08 23:02:17
+748,web_traffic_0748,Web Traffic,Third-party Vendor,2023-08-26,233939,425.74,2023-07-02 00:50:36
+749,network_logs_0749,Network Logs,Internal ETL,2023-09-10,135852,611.68,2023-08-02 04:19:34
+750,threat_intelligence_0750,Threat Intelligence,Third-party Vendor,2024-01-17,497700,1088.84,2024-01-09 19:33:53
+751,it_tickets_0751,IT Tickets,Third-party Vendor,2024-01-14,297687,2082.77,2023-12-24 23:24:42
+752,finance_0752,Finance,Third-party Vendor,2024-05-22,42687,203.54,2024-04-01 07:40:15
+753,user_accounts_0753,User Accounts,Manual Entry,2023-03-15,271859,1104.8,2023-02-20 00:56:56
+754,it_tickets_0754,IT Tickets,Internal ETL,2023-12-12,100224,890.48,2023-11-20 15:10:12
+755,user_accounts_0755,User Accounts,API Ingestion,2024-09-06,67859,165.19,2024-07-26 13:53:02
+756,system_metrics_0756,System Metrics,SIEM Export,2024-03-15,295442,2873.91,2024-03-06 22:42:08
+757,web_traffic_0757,Web Traffic,CSV Upload,2024-03-15,155299,89.78,2024-01-25 07:03:09
+758,customer_support_0758,Customer Support,Internal ETL,2024-05-12,138283,525.41,2024-04-07 02:55:11
+759,system_metrics_0759,System Metrics,API Ingestion,2024-06-13,106100,387.77,2024-04-21 17:01:58
+760,customer_support_0760,Customer Support,Data Warehouse,2024-08-26,482617,381.99,2024-06-28 22:36:12
+761,marketing_analytics_0761,Marketing Analytics,Manual Entry,2024-04-07,124628,465.06,2024-04-04 10:22:36
+762,user_accounts_0762,User Accounts,API Ingestion,2024-12-16,152527,653.92,2024-11-04 07:03:13
+763,network_logs_0763,Network Logs,API Ingestion,2023-12-07,203793,820.43,2023-10-08 14:46:48
+764,it_tickets_0764,IT Tickets,Manual Entry,2024-02-28,59246,486.36,2024-01-18 00:03:56
+765,operations_0765,Operations,CSV Upload,2023-04-23,256460,1399.05,2023-02-23 03:13:46
+766,security_incidents_0766,Security Incidents,CSV Upload,2024-09-09,314194,980.04,2024-07-16 16:57:15
+767,it_tickets_0767,IT Tickets,SIEM Export,2024-09-14,129802,345.06,2024-08-10 07:10:28
+768,web_traffic_0768,Web Traffic,Manual Entry,2023-06-17,409775,1160.15,2023-05-10 06:20:09
+769,user_accounts_0769,User Accounts,Data Warehouse,2024-04-13,450489,4028.26,2024-02-17 17:13:25
+770,web_traffic_0770,Web Traffic,Internal ETL,2024-04-26,251927,1429.01,2024-03-10 01:42:42
+771,marketing_analytics_0771,Marketing Analytics,CSV Upload,2023-02-12,189349,1037.41,2023-01-19 21:28:45
+772,customer_support_0772,Customer Support,Third-party Vendor,2024-05-20,40750,104.22,2024-04-23 10:47:20
+773,customer_support_0773,Customer Support,Third-party Vendor,2023-01-06,38203,329.63,2023-01-01 12:33:03
+774,operations_0774,Operations,CSV Upload,2024-02-17,442315,1247.54,2024-01-27 01:09:06
+775,operations_0775,Operations,CSV Upload,2024-03-21,438918,4219.65,2024-03-14 03:32:35
+776,hr_0776,HR,CSV Upload,2023-01-21,145233,137.16,2023-01-01 00:09:56
+777,customer_support_0777,Customer Support,Internal ETL,2023-11-15,374077,1959.63,2023-09-29 08:07:05
+778,system_metrics_0778,System Metrics,Internal ETL,2024-11-13,361650,378.06,2024-10-27 05:34:54
+779,it_tickets_0779,IT Tickets,Data Warehouse,2023-11-22,301964,2741.83,2023-10-05 16:45:52
+780,operations_0780,Operations,Manual Entry,2024-06-11,347564,2464.15,2024-05-05 23:52:07
+781,operations_0781,Operations,API Ingestion,2023-11-12,115961,719.99,2023-09-20 12:29:03
+782,user_accounts_0782,User Accounts,API Ingestion,2023-04-20,2566,3.27,2023-03-24 23:16:04
+783,operations_0783,Operations,Third-party Vendor,2023-11-08,183279,1277.73,2023-10-09 23:40:49
+784,operations_0784,Operations,SIEM Export,2024-10-21,206245,940.54,2024-09-19 18:10:50
+785,operations_0785,Operations,Third-party Vendor,2023-07-17,342704,1440.23,2023-06-11 15:14:15
+786,customer_support_0786,Customer Support,API Ingestion,2024-07-14,468568,3266.94,2024-05-25 05:34:34
+787,user_accounts_0787,User Accounts,API Ingestion,2024-08-29,451332,2015.76,2024-07-17 08:26:21
+788,finance_0788,Finance,Third-party Vendor,2023-02-13,158272,811.27,2023-01-22 07:34:01
+789,operations_0789,Operations,CSV Upload,2023-12-15,474008,2383.48,2023-10-24 19:22:43
+790,system_metrics_0790,System Metrics,Third-party Vendor,2023-12-24,312503,2895.4,2023-11-13 06:55:01
+791,network_logs_0791,Network Logs,API Ingestion,2023-03-16,69181,401.24,2023-02-23 03:51:40
+792,security_incidents_0792,Security Incidents,Manual Entry,2024-01-21,17357,149.64,2023-12-08 11:03:55
+793,web_traffic_0793,Web Traffic,Manual Entry,2023-07-29,148711,307.7,2023-07-06 16:54:40
+794,customer_support_0794,Customer Support,Data Warehouse,2024-11-25,332447,1414.06,2024-11-25 05:21:10
+795,hr_0795,HR,CSV Upload,2023-09-04,51317,30.05,2023-07-22 15:08:48
+796,security_incidents_0796,Security Incidents,CSV Upload,2023-06-25,163741,1043.56,2023-05-11 16:32:42
+797,threat_intelligence_0797,Threat Intelligence,Data Warehouse,2023-02-04,365128,1331.34,2023-01-03 20:49:41
+798,it_tickets_0798,IT Tickets,CSV Upload,2024-08-06,16414,130.06,2024-07-30 20:36:33
+799,hr_0799,HR,Manual Entry,2024-12-02,331313,215.41,2024-11-23 22:14:29
+800,marketing_analytics_0800,Marketing Analytics,CSV Upload,2023-12-16,82460,181.14,2023-11-27 12:48:58
+801,marketing_analytics_0801,Marketing Analytics,CSV Upload,2023-07-04,52110,495.34,2023-05-23 03:23:26
+802,marketing_analytics_0802,Marketing Analytics,Data Warehouse,2024-08-05,479301,1625.24,2024-06-19 18:37:23
+803,customer_support_0803,Customer Support,Internal ETL,2024-03-12,31584,204.97,2024-02-28 14:41:00
+804,it_tickets_0804,IT Tickets,Data Warehouse,2024-12-31,99277,434.37,2024-11-10 04:58:50
+805,hr_0805,HR,Manual Entry,2024-02-20,388206,1640.55,2024-01-18 11:32:26
+806,operations_0806,Operations,SIEM Export,2024-06-08,32249,294.92,2024-05-03 05:24:57
+807,network_logs_0807,Network Logs,Internal ETL,2024-11-02,59249,343.4,2024-10-11 05:45:53
+808,finance_0808,Finance,Third-party Vendor,2024-06-04,10167,33.09,2024-04-26 20:54:43
+809,web_traffic_0809,Web Traffic,CSV Upload,2024-05-20,231433,2165.11,2024-04-10 16:16:51
+810,marketing_analytics_0810,Marketing Analytics,Third-party Vendor,2024-02-14,362739,1721.91,2024-01-10 07:37:27
+811,system_metrics_0811,System Metrics,Data Warehouse,2024-07-19,446948,2867.15,2024-07-18 04:22:05
+812,threat_intelligence_0812,Threat Intelligence,Manual Entry,2023-04-16,218387,1716.29,2023-03-26 00:21:33
+813,customer_support_0813,Customer Support,Manual Entry,2023-10-21,433765,1717.04,2023-09-04 13:46:48
+814,finance_0814,Finance,API Ingestion,2024-10-31,470326,552.95,2024-10-30 11:33:01
+815,marketing_analytics_0815,Marketing Analytics,Manual Entry,2023-08-31,495216,1394.73,2023-08-11 03:00:59
+816,system_metrics_0816,System Metrics,API Ingestion,2023-06-21,462082,3258.1,2023-06-07 04:22:52
+817,marketing_analytics_0817,Marketing Analytics,CSV Upload,2024-05-22,123143,879.08,2024-04-16 09:40:14
+818,network_logs_0818,Network Logs,Third-party Vendor,2023-12-12,183439,1533.82,2023-11-17 16:13:04
+819,marketing_analytics_0819,Marketing Analytics,Internal ETL,2023-04-23,232918,1856.36,2023-04-13 16:39:48
+820,threat_intelligence_0820,Threat Intelligence,Third-party Vendor,2024-01-28,174052,808.39,2023-11-30 23:58:21
+821,customer_support_0821,Customer Support,CSV Upload,2024-10-19,323172,3084.83,2024-09-21 07:31:55
+822,operations_0822,Operations,Manual Entry,2023-02-11,61723,59.96,2023-01-01 14:27:32
+823,customer_support_0823,Customer Support,Data Warehouse,2024-09-24,345962,178.95,2024-09-21 10:42:53
+824,marketing_analytics_0824,Marketing Analytics,Internal ETL,2024-05-26,474640,3199.97,2024-04-21 06:11:06
+825,hr_0825,HR,Data Warehouse,2023-01-09,317882,982.45,2023-01-01 15:36:36
+826,system_metrics_0826,System Metrics,SIEM Export,2023-01-15,331174,1518.64,2023-01-01 14:26:24
+827,finance_0827,Finance,SIEM Export,2023-08-04,231757,2180.04,2023-06-18 20:17:21
+828,it_tickets_0828,IT Tickets,API Ingestion,2024-01-09,78303,155.36,2023-12-24 06:23:09
+829,operations_0829,Operations,Manual Entry,2023-12-31,394300,1344.1,2023-11-09 15:50:45
+830,user_accounts_0830,User Accounts,API Ingestion,2024-10-27,407768,3230.14,2024-10-10 03:27:29
+831,customer_support_0831,Customer Support,Manual Entry,2024-05-06,188555,1348.42,2024-04-10 02:03:50
+832,hr_0832,HR,Manual Entry,2024-09-17,260190,1443.46,2024-09-13 04:47:31
+833,user_accounts_0833,User Accounts,API Ingestion,2024-04-13,455394,618.8,2024-03-12 11:30:08
+834,user_accounts_0834,User Accounts,Internal ETL,2024-12-16,234921,404.2,2024-11-17 13:09:05
+835,system_metrics_0835,System Metrics,Internal ETL,2024-11-04,490979,2415.45,2024-09-10 07:23:06
+836,threat_intelligence_0836,Threat Intelligence,Internal ETL,2023-01-13,289349,2175.07,2023-01-01 21:53:48
+837,web_traffic_0837,Web Traffic,API Ingestion,2023-02-12,473688,522.73,2023-01-02 22:20:46
+838,user_accounts_0838,User Accounts,Third-party Vendor,2023-01-28,129061,446.44,2023-01-20 15:39:27
+839,network_logs_0839,Network Logs,SIEM Export,2023-10-09,153187,609.2,2023-08-31 06:15:53
+840,security_incidents_0840,Security Incidents,Manual Entry,2023-04-05,50125,274.02,2023-02-05 13:58:17
+841,operations_0841,Operations,CSV Upload,2023-08-16,393596,297.23,2023-08-03 10:53:50
+842,threat_intelligence_0842,Threat Intelligence,API Ingestion,2024-09-22,339744,1371.93,2024-09-22 22:04:05
+843,web_traffic_0843,Web Traffic,Manual Entry,2023-03-21,4920,47.0,2023-02-04 17:47:15
+844,finance_0844,Finance,Manual Entry,2024-03-13,480460,2069.99,2024-02-29 16:55:46
+845,system_metrics_0845,System Metrics,Internal ETL,2024-04-09,358547,638.52,2024-02-13 23:59:10
+846,finance_0846,Finance,Manual Entry,2024-04-24,457925,2487.99,2024-03-26 15:32:30
+847,finance_0847,Finance,Data Warehouse,2023-03-18,320341,2943.47,2023-03-13 09:13:07
+848,operations_0848,Operations,CSV Upload,2024-08-26,474379,1876.4,2024-07-17 18:45:02
+849,system_metrics_0849,System Metrics,SIEM Export,2023-09-15,2099,14.48,2023-08-28 05:59:25
+850,threat_intelligence_0850,Threat Intelligence,Data Warehouse,2024-08-22,449974,1507.78,2024-08-14 23:16:05
+851,hr_0851,HR,Internal ETL,2023-02-26,70788,128.41,2023-02-14 03:39:01
+852,web_traffic_0852,Web Traffic,API Ingestion,2024-02-16,175666,127.48,2024-01-24 06:47:43
+853,marketing_analytics_0853,Marketing Analytics,SIEM Export,2023-04-21,220791,2174.69,2023-04-18 13:03:10
+854,web_traffic_0854,Web Traffic,CSV Upload,2024-11-27,368749,2875.47,2024-10-07 14:45:21
+855,web_traffic_0855,Web Traffic,Data Warehouse,2023-05-18,376160,682.3,2023-05-06 12:55:42
+856,operations_0856,Operations,Internal ETL,2024-07-26,195408,199.35,2024-06-09 16:54:17
+857,web_traffic_0857,Web Traffic,Internal ETL,2023-05-18,69571,583.82,2023-03-30 23:45:44
+858,network_logs_0858,Network Logs,Internal ETL,2024-10-12,456107,3841.79,2024-09-26 09:10:53
+859,marketing_analytics_0859,Marketing Analytics,Data Warehouse,2023-07-29,348431,300.84,2023-06-06 01:42:17
+860,system_metrics_0860,System Metrics,Internal ETL,2024-10-12,70345,346.57,2024-08-14 23:03:46
+861,security_incidents_0861,Security Incidents,SIEM Export,2023-03-28,207596,1824.48,2023-03-19 02:54:06
+862,system_metrics_0862,System Metrics,Manual Entry,2023-12-15,106410,361.3,2023-11-10 04:44:12
+863,customer_support_0863,Customer Support,Manual Entry,2023-07-19,196206,1641.71,2023-06-25 15:53:43
+864,network_logs_0864,Network Logs,CSV Upload,2023-05-06,217917,1388.55,2023-04-01 21:12:20
+865,hr_0865,HR,CSV Upload,2024-08-05,358735,2745.24,2024-07-25 10:43:51
+866,user_accounts_0866,User Accounts,Manual Entry,2023-11-05,323703,649.61,2023-09-26 03:53:08
+867,network_logs_0867,Network Logs,Third-party Vendor,2023-12-27,16945,73.35,2023-12-15 07:34:16
+868,web_traffic_0868,Web Traffic,API Ingestion,2024-02-19,325457,3121.09,2024-01-03 16:47:40
+869,it_tickets_0869,IT Tickets,Data Warehouse,2023-12-28,278536,2771.24,2023-11-21 18:03:10
+870,operations_0870,Operations,API Ingestion,2024-05-06,69362,668.74,2024-04-19 17:21:46
+871,finance_0871,Finance,Manual Entry,2024-07-15,130662,269.09,2024-06-18 10:05:47
+872,network_logs_0872,Network Logs,API Ingestion,2024-10-18,179247,1149.03,2024-10-11 03:22:38
+873,threat_intelligence_0873,Threat Intelligence,CSV Upload,2024-12-22,309931,586.61,2024-11-04 23:29:00
+874,hr_0874,HR,Third-party Vendor,2023-08-25,17142,136.43,2023-08-02 13:08:55
+875,threat_intelligence_0875,Threat Intelligence,SIEM Export,2023-05-19,64202,494.87,2023-05-08 13:38:51
+876,marketing_analytics_0876,Marketing Analytics,Manual Entry,2024-05-23,28739,98.94,2024-05-18 13:10:41
+877,security_incidents_0877,Security Incidents,Third-party Vendor,2023-08-21,251699,757.75,2023-08-06 22:19:19
+878,threat_intelligence_0878,Threat Intelligence,CSV Upload,2024-09-27,227466,1421.52,2024-08-24 05:42:02
+879,marketing_analytics_0879,Marketing Analytics,API Ingestion,2023-07-22,316185,2172.52,2023-07-02 07:12:44
+880,network_logs_0880,Network Logs,SIEM Export,2024-08-09,312924,618.98,2024-07-14 06:46:34
+881,operations_0881,Operations,Internal ETL,2024-08-30,50559,91.97,2024-07-03 06:06:33
+882,system_metrics_0882,System Metrics,Manual Entry,2023-06-15,121093,158.97,2023-05-13 02:29:30
+883,security_incidents_0883,Security Incidents,SIEM Export,2023-03-23,198752,1079.88,2023-01-25 06:19:16
+884,threat_intelligence_0884,Threat Intelligence,SIEM Export,2023-04-12,462064,985.59,2023-02-12 08:17:50
+885,it_tickets_0885,IT Tickets,Manual Entry,2023-02-28,340642,1572.29,2023-02-27 03:09:31
+886,finance_0886,Finance,SIEM Export,2023-01-05,182415,682.24,2023-01-01 04:30:50
+887,threat_intelligence_0887,Threat Intelligence,Manual Entry,2023-01-07,457631,1427.2,2023-01-01 13:56:03
+888,web_traffic_0888,Web Traffic,CSV Upload,2023-04-15,9420,60.67,2023-03-11 01:14:56
+889,security_incidents_0889,Security Incidents,API Ingestion,2024-09-23,380842,235.15,2024-07-29 21:44:44
+890,marketing_analytics_0890,Marketing Analytics,SIEM Export,2024-06-22,363329,1215.43,2024-04-23 10:05:40
+891,marketing_analytics_0891,Marketing Analytics,Data Warehouse,2024-10-24,188624,442.9,2024-09-02 17:40:24
+892,system_metrics_0892,System Metrics,Manual Entry,2024-10-17,475058,3543.35,2024-09-05 23:24:52
+893,it_tickets_0893,IT Tickets,SIEM Export,2024-11-25,273560,2109.92,2024-11-07 13:43:17
+894,network_logs_0894,Network Logs,Internal ETL,2023-11-15,346792,2179.98,2023-09-30 06:48:08
+895,user_accounts_0895,User Accounts,Data Warehouse,2024-06-23,150005,385.67,2024-05-01 17:18:13
+896,customer_support_0896,Customer Support,Third-party Vendor,2024-04-27,390474,1368.27,2024-04-03 03:54:22
+897,hr_0897,HR,Data Warehouse,2023-03-12,68606,105.09,2023-01-27 01:19:26
+898,operations_0898,Operations,API Ingestion,2023-08-17,382008,627.81,2023-08-10 21:54:58
+899,web_traffic_0899,Web Traffic,Internal ETL,2024-06-19,495465,1965.33,2024-04-28 03:38:57
+900,user_accounts_0900,User Accounts,CSV Upload,2024-06-20,263167,2057.87,2024-04-28 02:01:46
+901,network_logs_0901,Network Logs,SIEM Export,2024-09-15,107283,432.51,2024-08-20 01:25:30
+902,security_incidents_0902,Security Incidents,Third-party Vendor,2023-04-09,348511,1436.27,2023-03-18 23:44:11
+903,security_incidents_0903,Security Incidents,Manual Entry,2023-11-18,395214,1298.58,2023-09-23 15:04:47
+904,system_metrics_0904,System Metrics,Data Warehouse,2024-07-24,403994,2559.68,2024-05-30 04:49:16
+905,security_incidents_0905,Security Incidents,SIEM Export,2023-06-16,199900,786.5,2023-05-14 00:29:33
+906,web_traffic_0906,Web Traffic,Manual Entry,2023-12-22,469351,2049.54,2023-12-10 11:17:22
+907,user_accounts_0907,User Accounts,Manual Entry,2023-07-28,475430,1159.81,2023-06-23 10:23:29
+908,security_incidents_0908,Security Incidents,CSV Upload,2023-01-23,45222,264.15,2023-01-18 18:33:50
+909,it_tickets_0909,IT Tickets,SIEM Export,2023-11-12,150730,157.07,2023-10-26 05:12:01
+910,customer_support_0910,Customer Support,API Ingestion,2024-11-01,71144,239.32,2024-11-01 18:04:12
+911,marketing_analytics_0911,Marketing Analytics,CSV Upload,2023-01-08,122435,1221.97,2023-01-01 03:13:49
+912,user_accounts_0912,User Accounts,CSV Upload,2023-01-01,134484,788.45,2023-01-01 13:37:58
+913,operations_0913,Operations,CSV Upload,2023-08-30,18266,176.97,2023-07-04 14:21:53
+914,web_traffic_0914,Web Traffic,Third-party Vendor,2023-08-21,341379,1353.54,2023-08-17 02:16:31
+915,marketing_analytics_0915,Marketing Analytics,Internal ETL,2023-09-27,211379,1314.58,2023-08-14 11:12:05
+916,operations_0916,Operations,SIEM Export,2023-11-13,315928,2053.94,2023-10-29 18:10:28
+917,web_traffic_0917,Web Traffic,Third-party Vendor,2023-07-20,65070,606.51,2023-07-12 08:31:46
+918,system_metrics_0918,System Metrics,Data Warehouse,2023-06-21,333921,2748.43,2023-06-18 00:06:51
+919,operations_0919,Operations,CSV Upload,2024-06-22,323854,831.71,2024-05-22 14:04:44
+920,hr_0920,HR,Manual Entry,2023-02-22,29705,35.24,2023-01-19 10:51:47
+921,it_tickets_0921,IT Tickets,Manual Entry,2024-03-06,480966,1908.23,2024-01-29 10:46:08
+922,web_traffic_0922,Web Traffic,CSV Upload,2023-05-27,463890,4145.43,2023-04-17 00:40:31
+923,system_metrics_0923,System Metrics,Internal ETL,2024-03-26,141601,1237.34,2024-02-06 18:21:18
+924,network_logs_0924,Network Logs,Manual Entry,2024-02-13,73237,98.4,2024-01-17 06:11:13
+925,customer_support_0925,Customer Support,Third-party Vendor,2023-12-14,457251,2894.15,2023-10-29 14:16:32
+926,user_accounts_0926,User Accounts,SIEM Export,2023-04-20,492978,3426.18,2023-03-16 06:41:19
+927,network_logs_0927,Network Logs,Internal ETL,2024-08-14,288342,147.85,2024-06-30 23:30:53
+928,system_metrics_0928,System Metrics,Internal ETL,2024-12-28,457272,2408.91,2024-12-08 21:39:44
+929,operations_0929,Operations,Manual Entry,2024-10-18,471258,2800.22,2024-09-16 09:32:26
+930,operations_0930,Operations,API Ingestion,2024-05-18,10483,103.82,2024-05-01 04:21:18
+931,operations_0931,Operations,Manual Entry,2023-01-02,439369,4269.29,2023-01-01 22:57:58
+932,security_incidents_0932,Security Incidents,Third-party Vendor,2024-10-08,290069,2321.84,2024-10-05 13:35:41
+933,network_logs_0933,Network Logs,Third-party Vendor,2023-06-20,281982,199.66,2023-05-23 06:32:26
+934,hr_0934,HR,CSV Upload,2024-06-17,59941,502.01,2024-05-02 12:56:18
+935,network_logs_0935,Network Logs,Internal ETL,2024-09-30,20756,171.36,2024-08-31 13:31:45
+936,customer_support_0936,Customer Support,CSV Upload,2024-07-27,47379,34.53,2024-05-29 07:29:08
+937,hr_0937,HR,SIEM Export,2024-11-17,353426,297.59,2024-09-19 09:51:52
+938,threat_intelligence_0938,Threat Intelligence,SIEM Export,2023-04-24,489532,2358.42,2023-04-20 06:06:59
+939,hr_0939,HR,Third-party Vendor,2024-01-05,20236,155.45,2023-11-15 08:40:43
+940,it_tickets_0940,IT Tickets,Data Warehouse,2024-10-17,70889,662.81,2024-10-15 08:03:41
+941,marketing_analytics_0941,Marketing Analytics,Third-party Vendor,2024-09-28,65169,402.36,2024-09-02 14:42:13
+942,threat_intelligence_0942,Threat Intelligence,Manual Entry,2023-11-17,39428,318.68,2023-11-13 16:24:26
+943,customer_support_0943,Customer Support,API Ingestion,2024-12-17,495193,4884.96,2024-12-01 03:04:22
+944,it_tickets_0944,IT Tickets,SIEM Export,2024-06-23,446390,2846.86,2024-05-23 13:50:25
+945,finance_0945,Finance,CSV Upload,2024-04-22,201020,1002.84,2024-03-15 07:57:12
+946,hr_0946,HR,Data Warehouse,2024-11-12,423319,2587.82,2024-09-26 11:33:38
+947,customer_support_0947,Customer Support,API Ingestion,2024-04-20,423741,3725.17,2024-03-21 13:50:47
+948,customer_support_0948,Customer Support,SIEM Export,2023-04-26,238262,682.2,2023-04-02 03:13:06
+949,it_tickets_0949,IT Tickets,Internal ETL,2023-04-30,150519,712.15,2023-03-18 04:32:41
+950,network_logs_0950,Network Logs,CSV Upload,2023-05-29,143758,1169.27,2023-03-30 22:45:11
+951,threat_intelligence_0951,Threat Intelligence,Internal ETL,2024-12-20,62290,611.63,2024-12-18 01:33:56
+952,network_logs_0952,Network Logs,Internal ETL,2023-06-18,179301,1286.14,2023-05-12 01:40:02
+953,hr_0953,HR,Internal ETL,2023-07-11,203504,1178.76,2023-05-14 02:00:48
+954,finance_0954,Finance,API Ingestion,2024-03-30,112134,779.24,2024-02-22 02:13:28
+955,it_tickets_0955,IT Tickets,Manual Entry,2024-05-31,55224,338.99,2024-05-07 03:55:10
+956,operations_0956,Operations,Data Warehouse,2023-05-07,279005,387.55,2023-05-01 03:56:37
+957,user_accounts_0957,User Accounts,Third-party Vendor,2024-07-06,301018,502.34,2024-05-20 18:48:57
+958,user_accounts_0958,User Accounts,Internal ETL,2023-08-01,69168,80.26,2023-06-11 12:31:09
+959,system_metrics_0959,System Metrics,SIEM Export,2024-07-01,492325,2130.84,2024-05-17 21:54:25
+960,operations_0960,Operations,API Ingestion,2023-03-24,83725,292.29,2023-03-04 14:43:13
+961,marketing_analytics_0961,Marketing Analytics,Third-party Vendor,2023-07-03,214330,1965.87,2023-05-16 12:11:59
+962,network_logs_0962,Network Logs,Manual Entry,2024-02-12,265688,627.8,2024-01-12 07:30:11
+963,operations_0963,Operations,SIEM Export,2023-05-05,143461,1361.51,2023-03-27 23:41:03
+964,network_logs_0964,Network Logs,Data Warehouse,2023-07-29,54578,278.44,2023-07-14 12:20:24
+965,threat_intelligence_0965,Threat Intelligence,Manual Entry,2023-01-30,399613,3796.12,2023-01-07 05:17:31
+966,user_accounts_0966,User Accounts,CSV Upload,2024-06-05,159352,298.82,2024-05-15 08:29:10
+967,web_traffic_0967,Web Traffic,Third-party Vendor,2023-01-03,186261,495.31,2023-01-01 08:33:38
+968,operations_0968,Operations,Third-party Vendor,2023-11-26,52734,493.71,2023-09-29 20:39:18
+969,it_tickets_0969,IT Tickets,Manual Entry,2023-10-03,159417,490.09,2023-09-18 18:44:41
+970,system_metrics_0970,System Metrics,Data Warehouse,2023-07-09,160107,449.63,2023-07-06 03:47:37
+971,hr_0971,HR,API Ingestion,2023-09-28,169370,561.92,2023-08-19 04:15:53
+972,operations_0972,Operations,Internal ETL,2023-05-27,360740,3206.25,2023-04-13 17:54:58
+973,security_incidents_0973,Security Incidents,CSV Upload,2024-10-02,344723,1432.98,2024-09-29 15:44:03
+974,user_accounts_0974,User Accounts,Manual Entry,2023-02-04,358243,836.88,2023-01-01 19:03:42
+975,web_traffic_0975,Web Traffic,API Ingestion,2024-03-03,302873,1105.13,2024-02-03 18:30:28
+976,marketing_analytics_0976,Marketing Analytics,CSV Upload,2023-12-14,443847,2663.7,2023-10-18 05:35:05
+977,marketing_analytics_0977,Marketing Analytics,SIEM Export,2024-08-21,23090,42.78,2024-06-23 07:53:13
+978,network_logs_0978,Network Logs,Data Warehouse,2024-05-02,312227,2285.09,2024-03-17 03:28:14
+979,threat_intelligence_0979,Threat Intelligence,Third-party Vendor,2023-08-14,88617,482.14,2023-07-15 08:52:57
+980,marketing_analytics_0980,Marketing Analytics,SIEM Export,2023-04-23,476536,640.42,2023-03-22 06:07:38
+981,hr_0981,HR,Third-party Vendor,2023-12-18,54754,132.59,2023-11-22 17:15:38
+982,system_metrics_0982,System Metrics,Internal ETL,2023-04-21,211959,140.17,2023-03-21 23:08:22
+983,threat_intelligence_0983,Threat Intelligence,Internal ETL,2023-02-11,155900,804.18,2023-01-01 02:50:25
+984,threat_intelligence_0984,Threat Intelligence,Manual Entry,2024-02-28,30469,110.64,2024-01-22 19:08:54
+985,system_metrics_0985,System Metrics,Third-party Vendor,2024-06-15,189581,1273.95,2024-04-16 07:22:40
+986,it_tickets_0986,IT Tickets,Data Warehouse,2024-08-06,85175,334.05,2024-06-20 21:25:01
+987,customer_support_0987,Customer Support,Internal ETL,2024-11-18,434306,3972.71,2024-11-12 19:36:30
+988,network_logs_0988,Network Logs,Internal ETL,2024-06-07,231718,2060.79,2024-06-06 13:04:08
+989,threat_intelligence_0989,Threat Intelligence,Internal ETL,2023-12-12,226231,1486.17,2023-11-24 07:58:25
+990,threat_intelligence_0990,Threat Intelligence,Data Warehouse,2023-04-04,491396,3498.68,2023-03-03 06:58:50
+991,finance_0991,Finance,Internal ETL,2024-07-06,391246,2479.73,2024-06-29 05:13:37
+992,system_metrics_0992,System Metrics,Internal ETL,2023-12-27,282088,1015.75,2023-11-23 08:01:59
+993,hr_0993,HR,Internal ETL,2024-01-25,60532,462.11,2023-12-31 16:24:01
+994,hr_0994,HR,SIEM Export,2023-05-10,347616,3171.1,2023-04-09 15:06:19
+995,operations_0995,Operations,API Ingestion,2024-08-25,227071,340.77,2024-08-01 00:40:40
+996,web_traffic_0996,Web Traffic,Third-party Vendor,2024-07-27,65385,641.14,2024-06-17 15:50:45
+997,customer_support_0997,Customer Support,Data Warehouse,2024-12-10,131505,167.91,2024-11-15 11:44:05
+998,user_accounts_0998,User Accounts,Third-party Vendor,2024-03-26,394671,3049.72,2024-02-09 19:57:44
+999,marketing_analytics_0999,Marketing Analytics,API Ingestion,2024-09-28,119391,884.36,2024-09-18 17:02:01
+1000,threat_intelligence_1000,Threat Intelligence,Manual Entry,2023-07-19,466533,3679.68,2023-07-12 04:24:35

@@ -26,6 +26,16 @@ def load_csv_to_table(csv_path, table_name):
 
     # Connect to database
     conn = connect_database()
+    cursor = conn.cursor()
+
+    # Check if table already has data
+    cursor.execute(f"SELECT COUNT(*) FROM {table_name}")
+    existing_rows = cursor.fetchone()[0]
+
+    # If table already contains data, DROP the CSV id column (if present)
+    # to prevent UNIQUE constraint errors when appending.
+    if existing_rows > 0 and "id" in df.columns:
+        df = df.drop(columns=["id"])
 
     # Load data
     df.to_sql(
