@@ -21,7 +21,7 @@ from app.data.tickets import get_all_tickets
 
 st.set_page_config(page_title="Dashboard", page_icon="📊", layout="wide")
 
-# Ensure state keys exist (in case user opens this page first)
+# Ensure state keys exist (in case user opens this page first)-
 if "logged_in" not in st.session_state:
     st.session_state.logged_in = False
 if "username" not in st.session_state:

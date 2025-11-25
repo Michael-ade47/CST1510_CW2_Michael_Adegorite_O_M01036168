@@ -24,7 +24,7 @@ if st.session_state.logged_in:
     st.stop()  # Don’t show login/register again
 
 
-# ---------- Tabs: Login / Register ----------
+# ---------- Tabs: Login / Register -----------
 tab_login, tab_register = st.tabs(["Login", "Register"])
 
 # ----- LOGIN TAB -----
