@@ -98,7 +98,7 @@ def migrate_users_from_file(filepath=DATA_DIR / "users.txt"):
     filepath = Path(filepath)
 
     if not filepath.exists():
-        print(f"⚠️  File not found: {filepath}")
+        print(f"  File not found: {filepath}")
         print("   No users to migrate.")
         return 0
 
@@ -130,5 +130,5 @@ def migrate_users_from_file(filepath=DATA_DIR / "users.txt"):
 
     conn.commit()
     conn.close()
-    print(f"✅ Migrated {migrated_count} users from {filepath.name}")
+    print(f"Migrated {migrated_count} users from {filepath.name}")
     return migrated_count

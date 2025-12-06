@@ -1,6 +1,48 @@
 from app.data.db import connect_database
 
 
+import bcrypt
+from .db import connect_database
+
+
+def verify_user(username: str, plain_password: str) -> bool:
+    
+    conn = connect_database()
+    cur = conn.cursor()
+
+    cur.execute(
+        "SELECT password_hash FROM users WHERE username = ?",
+        (username,),
+    )
+    row = cur.fetchone()
+    conn.close()
+
+    if row is None:
+        
+        return False
+
+    stored_hash = row[0] 
+
+    return bcrypt.checkpw(
+        plain_password.encode("utf-8"),
+        stored_hash.encode("utf-8"),
+    )
+
+
+def get_user_role(username: str) -> str | None:
+    conn = connect_database()
+    cur = conn.cursor()
+
+    cur.execute(
+        "SELECT role FROM users WHERE username = ?",
+        (username,),
+    )
+    row = cur.fetchone()
+    conn.close()
+
+    return row[0] if row else None
+
+
 def get_user_by_username(username: str):
     """Retrieve a single user row by username, or None."""
     conn = connect_database()

@@ -1,53 +1,90 @@
 import pandas as pd
-from pathlib import Path
 from app.data.db import connect_database
 
-
-def load_csv_to_table(csv_path, table_name):
+def create_dataset(**fields) -> int:
     """
-    Load a CSV file into a database table using pandas.
+    CREATE: Insert a new row into datasets_metadata.
 
-    Args:
-        csv_path: Path to CSV file
-        table_name: Name of the target table
-        
+    Usage:
+        create_dataset(name="Users CSV", source="users.csv", rows=1000)
     Returns:
-        int: Number of rows loaded into the table
+        int: ID of the newly inserted dataset.
     """
-    csv_path = Path(csv_path)
+    if not fields:
+        raise ValueError("No fields provided to create_dataset")
 
-    # Check CSV exists
-    if not csv_path.exists():
-        print(f" CSV file not found: {csv_path}")
-        return 0
+    columns = ", ".join(fields.keys())
+    placeholders = ", ".join(["?"] * len(fields))
+    values = list(fields.values())
 
-    # Read CSV
-    df = pd.read_csv(csv_path)
-
-    # Connect to database
     conn = connect_database()
     cursor = conn.cursor()
-
-    # Check if table already has data
-    cursor.execute(f"SELECT COUNT(*) FROM {table_name}")
-    existing_rows = cursor.fetchone()[0]
-
-    # If table already contains data, DROP the CSV id column (if present)
-    # to prevent UNIQUE constraint errors when appending.
-    if existing_rows > 0 and "id" in df.columns:
-        df = df.drop(columns=["id"])
-
-    # Load data
-    df.to_sql(
-        name=table_name,
-        con=conn,
-        if_exists="append",
-        index=False
+    cursor.execute(
+        f"INSERT INTO datasets_metadata ({columns}) VALUES ({placeholders})",
+        values,
     )
-
-    row_count = len(df)
-
+    conn.commit()
+    new_id = cursor.lastrowid
     conn.close()
+    return new_id
 
-    print(f" Loaded {row_count} rows from '{csv_path.name}' into '{table_name}'")
-    return row_count
+
+def read_all_datasets() -> pd.DataFrame:
+    """
+    READ: Return all rows from datasets_metadata as a DataFrame.
+    """
+    conn = connect_database()
+    df = pd.read_sql_query(
+        "SELECT * FROM datasets_metadata ORDER BY id DESC",
+        conn
+    )
+    conn.close()
+    return df
+
+
+def update_dataset(dataset_id: int, **fields) -> int:
+    """
+    UPDATE: Update one dataset row by ID.
+
+    Usage:
+        update_dataset(3, rows=1200, description="Updated row count")
+
+    Returns:
+        int: Number of rows updated (0 or 1).
+    """
+    if not fields:
+        raise ValueError("No fields provided to update_dataset")
+
+    set_clause = ", ".join([f"{col} = ?" for col in fields.keys()])
+    values = list(fields.values())
+    values.append(dataset_id)
+
+    conn = connect_database()
+    cursor = conn.cursor()
+    cursor.execute(
+        f"UPDATE datasets_metadata SET {set_clause} WHERE id = ?",
+        values,
+    )
+    conn.commit()
+    rows_updated = cursor.rowcount
+    conn.close()
+    return rows_updated
+
+
+def delete_dataset(dataset_id: int) -> int:
+    """
+    DELETE: Delete one dataset row by ID.
+
+    Returns:
+        int: Number of rows deleted (0 or 1).
+    """
+    conn = connect_database()
+    cursor = conn.cursor()
+    cursor.execute(
+        "DELETE FROM datasets_metadata WHERE id = ?",
+        (dataset_id,),
+    )
+    conn.commit()
+    rows_deleted = cursor.rowcount
+    conn.close()
+    return rows_deleted
