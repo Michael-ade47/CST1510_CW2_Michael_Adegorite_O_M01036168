@@ -1,7 +1,6 @@
 from pathlib import Path
 import sqlite3
 
-# Project root: CST1510/
 ROOT = Path(__file__).resolve().parents[2]
 
 DATA_DIR = ROOT / "DATA"

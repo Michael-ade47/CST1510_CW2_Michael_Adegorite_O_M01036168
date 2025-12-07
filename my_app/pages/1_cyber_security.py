@@ -1,24 +1,29 @@
+import os
 import sys
 from pathlib import Path
-from dotenv import load_dotenv
-import os
-from openai import OpenAI
-load_dotenv()
-api_key = os.getenv("OPENAI_API_KEY")
 
-client = None
-if api_key:
-    client = OpenAI(api_key=api_key)
-else:
-    print("WARNING: OPENAI_API_KEY not set. Cyber Security assistant will be disabled.")
+from dotenv import load_dotenv
+from openai import OpenAI
 
 ROOT = Path(__file__).resolve().parents[2]
+
+load_dotenv(ROOT / ".env")
+
+api_key = os.getenv("OPENAI_API_KEY")
+
+if api_key:
+    print("OPENAI_API_KEY loaded (last 6):", api_key[-6:])
+else:
+    print("OPENAI_API_KEY NOT loaded")
+
+client = OpenAI(api_key=api_key) if api_key else None
+
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))
 
 import streamlit as st
 import pandas as pd
-import plotly.express as px   
+import plotly.express as px
 
 from app.data.db import connect_database
 from app.data.users import verify_user, get_user_role
@@ -28,6 +33,7 @@ from app.data.incidents import (
     update_incident_status,
     delete_incident,
 )
+
 
 st.set_page_config(page_title="Cyber Incidents Dashboard", page_icon="📊", layout="wide")
 
@@ -45,6 +51,8 @@ if not st.session_state.logged_in:
 st.title("Cyber Incidents Dashboard")
 st.success(f"Hello, **{st.session_state.username}**! You are logged in.")
 st.caption("Manage and analyse cyber incidents, datasets, and IT tickets from your dashboard.")
+if "active_incident_form" not in st.session_state:
+    st.session_state.active_incident_form = None
 
 with st.sidebar:
     st.header("Filters")
@@ -175,184 +183,240 @@ if not filtered_incidents.empty:
     if "date" in filtered_incidents.columns:
         st.subheader("Incidents Over Time")
 
-        daily_counts = (
-            filtered_incidents
-            .dropna(subset=["date"])
-            .groupby(filtered_incidents["date"].dt.date)
-            .size()
-            .reset_index(name="Count")
+        view_choice = st.radio(
+            "Time aggregation",
+            ["Daily", "Monthly"],
+            horizontal=True,
         )
 
-        if not daily_counts.empty:
-            daily_counts = daily_counts.rename(columns={"date": "Date"})
-            fig_time = px.line(
-                daily_counts,
-                x="Date",
-                y="Count",
-                markers=True,
-                title="Incidents per Day",
-            )
-            fig_time.update_layout(yaxis_title="Number of Incidents")
-            st.plotly_chart(fig_time, use_container_width=True)
-        else:
+        base = filtered_incidents.dropna(subset=["date"]).copy()
+
+        if base.empty:
             st.info("No valid dates available to plot incident trends.")
+        else:
+            if view_choice == "Daily":
+                daily_counts = (
+                    base
+                    .groupby(base["date"].dt.date)
+                    .size()
+                    .reset_index(name="Count")
+                )
+                daily_counts = daily_counts.rename(columns={"date": "Date"})
+
+                fig_time = px.line(
+                    daily_counts,
+                    x="Date",
+                    y="Count",
+                    markers=True,
+                    title="Incidents per Day",
+                )
+                fig_time.update_layout(yaxis_title="Number of Incidents")
+                st.plotly_chart(fig_time, use_container_width=True)
+
+            else:  
+                monthly_counts = (
+                    base
+                    .groupby(base["date"].dt.to_period("M"))
+                    .size()
+                    .reset_index(name="Count")
+                )
+
+                monthly_counts["Month"] = monthly_counts["date"].dt.to_timestamp()
+
+                fig_monthly = px.line(
+                    monthly_counts,
+                    x="Month",
+                    y="Count",
+                    markers=True,
+                    title="Incidents per Month",
+                )
+                fig_monthly.update_layout(yaxis_title="Number of Incidents")
+                st.plotly_chart(fig_monthly, use_container_width=True)
     else:
         st.info("No 'date' column found to show incident timeline.")
 else:
     st.info("No incidents match the current filter selection.")
 
-st.subheader("Create New Incident")
+st.subheader("Incident Actions")
 
-with st.form("new_incident"):
-    date_input = st.date_input("Date")
-    incident_type = st.text_input("Incident Type / Title")
-    severity = st.selectbox("Severity", ["Low", "Medium", "High", "Critical"])
-    status = st.selectbox("Status", ["Open", "In Progress", "Resolved"])
-    description = st.text_area("Description")
+st.subheader("Incident Actions")
 
-    submitted_incident = st.form_submit_button("Add Incident")
+b1, b2, b3, b4 = st.columns(4)
+with b1:
+    if st.button(" Create Incident"):
+        st.session_state.active_incident_form = "create"
+with b2:
+    if st.button(" Delete Incident"):
+        st.session_state.active_incident_form = "delete"
+with b3:
+    if st.button(" Update Status"):
+        st.session_state.active_incident_form = "update"
+with b4:
+    if st.button(" View Details"):
+        st.session_state.active_incident_form = "view"
 
-    if submitted_incident:
-        if not incident_type:
-            st.error("Please enter a type/title for the incident.")
-        else:
-            incident_id = insert_incident(
-                date_input.strftime("%Y-%m-%d"),
-                incident_type,
-                severity,
-                status,
-                description,
-                reported_by=st.session_state.username or "dashboard_user",
-            )
-            st.success(f"Incident #{incident_id} added successfully!")
-            st.rerun()
+st.markdown("---")
 
-st.subheader("Delete Incident")
+if st.session_state.active_incident_form == "create":
+    st.subheader("Create New Incident")
 
-if filtered_incidents.empty or "id" not in filtered_incidents.columns:
-    st.info("No incidents available to delete.")
-else:
-    options = []
-    for _, row in filtered_incidents.iterrows():
-        inc_id = row["id"]
-        inc_type = row.get("incident_type", "N/A")
-        inc_sev = row.get("severity", "Unknown")
-        inc_status = row.get("status", "Unknown")
-        label = f"#{inc_id} – {inc_type} [{inc_sev}, {inc_status}]"
-        options.append((inc_id, label))
+    with st.form("new_incident"):
+        date_input = st.date_input("Date")
+        incident_type = st.text_input("Incident Type / Title")
+        severity = st.selectbox("Severity", ["Low", "Medium", "High", "Critical"])
+        status = st.selectbox("Status", ["Open", "In Progress", "Resolved"])
+        description = st.text_area("Description")
 
-    id_list = [item[0] for item in options]
-    label_map = {item[0]: item[1] for item in options}
+        submitted_incident = st.form_submit_button("Add Incident")
 
-    with st.form("delete_incident_form"):
-        selected_id = st.selectbox(
-            "Select incident to delete",
-            options=id_list,
-            format_func=lambda x: label_map.get(x, str(x)),
-        )
-
-        confirm = st.checkbox(
-            "I understand this will permanently delete the selected incident."
-        )
-
-        submitted_delete = st.form_submit_button("Delete incident")
-
-        if submitted_delete:
-            if not confirm:
-                st.warning("Please tick the confirmation box before deleting.")
+        if submitted_incident:
+            if not incident_type:
+                st.error("Please enter a type/title for the incident.")
             else:
-                delete_incident(selected_id)
-                st.success(f"Incident #{selected_id} deleted successfully.")
+                incident_id = insert_incident(
+                    date_input.strftime("%Y-%m-%d"),
+                    incident_type,
+                    severity,
+                    status,
+                    description,
+                    reported_by=st.session_state.username or "dashboard_user",
+                )
+                st.success(f"Incident #{incident_id} added successfully!")
                 st.rerun()
 
-st.subheader("Update Incident Status")
+elif st.session_state.active_incident_form == "delete":
+    st.subheader("Delete Incident")
 
-if filtered_incidents.empty or "id" not in filtered_incidents.columns:
-    st.info("No incidents available to update.")
-else:
-    options = []
-    for _, row in filtered_incidents.iterrows():
-        inc_id = row["id"]
-        inc_type = row.get("incident_type", "N/A")
-        inc_status = row.get("status", "Unknown")
-        label = f"#{inc_id} – {inc_type} [{inc_status}]"
-        options.append((inc_id, label))
+    if filtered_incidents.empty or "id" not in filtered_incidents.columns:
+        st.info("No incidents available to delete.")
+    else:
+        options = []
+        for _, row in filtered_incidents.iterrows():
+            inc_id = row["id"]
+            inc_type = row.get("incident_type", "N/A")
+            inc_sev = row.get("severity", "Unknown")
+            inc_status = row.get("status", "Unknown")
+            label = f"#{inc_id} – {inc_type} [{inc_sev}, {inc_status}]"
+            options.append((inc_id, label))
 
-    id_list = [item[0] for item in options]
-    label_map = {item[0]: item[1] for item in options}
+        id_list = [item[0] for item in options]
+        label_map = {item[0]: item[1] for item in options}
 
-    with st.form("update_incident_form"):
-        selected_id = st.selectbox(
-            "Select incident to update",
-            options=id_list,
-            format_func=lambda x: label_map.get(x, str(x)),
-        )
-
-        if "status" in filtered_incidents.columns:
-            current_status = (
-                filtered_incidents.loc[
-                    filtered_incidents["id"] == selected_id, "status"
-                ]
-                .iloc[0]
+        with st.form("delete_incident_form"):
+            selected_id = st.selectbox(
+                "Select incident to delete",
+                options=id_list,
+                format_func=lambda x: label_map.get(x, str(x)),
             )
-        else:
-            current_status = "Open"
 
-        status_options = ["Open", "In Progress", "Resolved"]
-        if current_status in status_options:
-            default_index = status_options.index(current_status)
-        else:
-            default_index = 0
+            confirm = st.checkbox(
+                "I understand this will permanently delete the selected incident."
+            )
 
-        new_status = st.selectbox(
-            "New status",
-            status_options,
-            index=default_index,
-        )
+            submitted_delete = st.form_submit_button("Delete incident")
 
-        submitted_update = st.form_submit_button("Update incident")
+            if submitted_delete:
+                if not confirm:
+                    st.warning("Please tick the confirmation box before deleting.")
+                else:
+                    delete_incident(selected_id)
+                    st.success(f"Incident #{selected_id} deleted successfully.")
+                    st.rerun()
 
-        if submitted_update:
-            update_incident_status(selected_id, new_status)
-            st.success(f"Incident #{selected_id} status updated to **{new_status}**.")
-            st.rerun()
-st.subheader("Read Incident Details")
+elif st.session_state.active_incident_form == "update":
+    st.subheader("Update Incident Status")
 
-if filtered_incidents.empty or "id" not in filtered_incidents.columns:
-    st.info("No incidents available to view.")
-else:
-    options = []
-    for _, row in filtered_incidents.iterrows():
-        inc_id = row["id"]
-        inc_type = row.get("incident_type", "N/A")
-        inc_sev = row.get("severity", "Unknown")
-        inc_status = row.get("status", "Unknown")
-        label = f"#{inc_id} – {inc_type} [{inc_sev}, {inc_status}]"
-        options.append((inc_id, label))
+    if filtered_incidents.empty or "id" not in filtered_incidents.columns:
+        st.info("No incidents available to update.")
+    else:
+        options = []
+        for _, row in filtered_incidents.iterrows():
+            inc_id = row["id"]
+            inc_type = row.get("incident_type", "N/A")
+            inc_status = row.get("status", "Unknown")
+            label = f"#{inc_id} – {inc_type} [{inc_status}]"
+            options.append((inc_id, label))
 
-    id_list = [item[0] for item in options]
-    label_map = {item[0]: item[1] for item in options}
+        id_list = [item[0] for item in options]
+        label_map = {item[0]: item[1] for item in options}
 
-    with st.form("view_incident_form"):
-        selected_id = st.selectbox(
-            "Select incident to view",
-            options=id_list,
-            format_func=lambda x: label_map.get(x, str(x)),
-        )
+        with st.form("update_incident_form"):
+            selected_id = st.selectbox(
+                "Select incident to update",
+                options=id_list,
+                format_func=lambda x: label_map.get(x, str(x)),
+            )
 
-        submitted_view = st.form_submit_button("Show details")
+            if "status" in filtered_incidents.columns:
+                current_status = (
+                    filtered_incidents.loc[
+                        filtered_incidents["id"] == selected_id, "status"
+                    ]
+                    .iloc[0]
+                )
+            else:
+                current_status = "Open"
 
-        if submitted_view:
-            row = filtered_incidents.loc[filtered_incidents["id"] == selected_id].iloc[0]
+            status_options = ["Open", "In Progress", "Resolved"]
+            if current_status in status_options:
+                default_index = status_options.index(current_status)
+            else:
+                default_index = 0
 
-            st.markdown(f"### Incident #{selected_id}")
-            st.write(f"**Type / Title:** {row.get('incident_type', 'N/A')}")
-            st.write(f"**Severity:** {row.get('severity', 'N/A')}")
-            st.write(f"**Status:** {row.get('status', 'N/A')}")
-            st.write(f"**Date:** {row.get('date', 'N/A')}")
-            st.write(f"**Reported by:** {row.get('reported_by', 'N/A')}")
-            st.write("**Description:**")
-            st.write(row.get("description", "N/A"))
+            new_status = st.selectbox(
+                "New status",
+                status_options,
+                index=default_index,
+            )
+
+            submitted_update = st.form_submit_button("Update incident")
+
+            if submitted_update:
+                update_incident_status(selected_id, new_status)
+                st.success(f"Incident #{selected_id} status updated to **{new_status}**.")
+                st.rerun()
+
+elif st.session_state.active_incident_form == "view":
+    st.subheader("Read Incident Details")
+
+    if filtered_incidents.empty or "id" not in filtered_incidents.columns:
+        st.info("No incidents available to view.")
+    else:
+        options = []
+        for _, row in filtered_incidents.iterrows():
+            inc_id = row["id"]
+            inc_type = row.get("incident_type", "N/A")
+            inc_sev = row.get("severity", "Unknown")
+            inc_status = row.get("status", "Unknown")
+            label = f"#{inc_id} – {inc_type} [{inc_sev}, {inc_status}]"
+            options.append((inc_id, label))
+
+        id_list = [item[0] for item in options]
+        label_map = {item[0]: item[1] for item in options}
+
+        with st.form("view_incident_form"):
+            selected_id = st.selectbox(
+                "Select incident to view",
+                options=id_list,
+                format_func=lambda x: label_map.get(x, str(x)),
+            )
+
+            submitted_view = st.form_submit_button("Show details")
+
+            if submitted_view:
+                row = filtered_incidents.loc[
+                    filtered_incidents["id"] == selected_id
+                ].iloc[0]
+
+                st.markdown(f"### Incident #{selected_id}")
+                st.write(f"**Type / Title:** {row.get('incident_type', 'N/A')}")
+                st.write(f"**Severity:** {row.get('severity', 'N/A')}")
+                st.write(f"**Status:** {row.get('status', 'N/A')}")
+                st.write(f"**Date:** {row.get('date', 'N/A')}")
+                st.write(f"**Reported by:** {row.get('reported_by', 'N/A')}")
+                st.write("**Description:**")
+                st.write(row.get("description", "N/A"))
+
 
 st.subheader(" Cyber Security AI Assistant")
 
