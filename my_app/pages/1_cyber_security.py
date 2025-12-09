@@ -73,6 +73,7 @@ with st.sidebar:
         help="Filter incidents between two dates (inclusive).",
     )
 
+
     search_text = st.text_input(
         "Search (type/description/reported by)",
         placeholder="e.g. phishing, malware, user123…",
@@ -237,7 +238,7 @@ if not filtered_incidents.empty:
 else:
     st.info("No incidents match the current filter selection.")
 
-st.subheader("Incident Actions")
+
 
 st.subheader("Incident Actions")
 
@@ -252,7 +253,7 @@ with b3:
     if st.button(" Update Status"):
         st.session_state.active_incident_form = "update"
 with b4:
-    if st.button(" View Details"):
+    if st.button(" Read Details"):
         st.session_state.active_incident_form = "view"
 
 st.markdown("---")
