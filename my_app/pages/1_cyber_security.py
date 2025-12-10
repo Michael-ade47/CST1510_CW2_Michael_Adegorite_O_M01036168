@@ -437,53 +437,116 @@ elif st.session_state.active_incident_form == "view":
                 st.write(row.get("description", "N/A"))
 
 
-st.subheader(" Cyber Security AI Assistant")
+st.subheader("AI Assistant")
+
+if "assistant_panel_open" not in st.session_state:
+    st.session_state.assistant_panel_open = False
+
+if "assistant_mode" not in st.session_state:
+    st.session_state.assistant_mode = "cyber"  
+
+if st.button(" Show / Hide AI Assistant Panel"):
+    st.session_state.assistant_panel_open = not st.session_state.assistant_panel_open
+
+if not st.session_state.assistant_panel_open:
+    st.stop()
+
+mode = st.radio(
+    "Choose which assistant you want to use:",
+    options=["Cyber Security", "IT Support", "Data Science"],
+    horizontal=True,
+)
+
+if mode == "Cyber Security":
+    st.session_state.assistant_mode = "cyber"
+elif mode == "IT Support":
+    st.session_state.assistant_mode = "it"
+else:
+    st.session_state.assistant_mode = "ds"
+
+mode = st.session_state.assistant_mode
+
+if mode == "cyber":
+    chat_key = "cyber_chat"
+    title = "Cyber Security AI Assistant "
+    placeholder = "Ask the Cyber Security Assistant about incidents, threats, or security concepts…"
+    spinner_text = "Thinking like a cyber security expert..."
+    system_prompt = (
+        "You are a cyber security expert. "
+        "You explain cyber security concepts clearly, provide practical examples, "
+        "and follow best security practices. "
+        "When relevant, relate your answers to incident response, SIEM, and threat detection."
+    )
+elif mode == "it":
+    chat_key = "it_chat"
+    title = "IT (Information Technology) AI Assistant "
+    placeholder = "Ask the IT Assistant about tickets, troubleshooting, or IT issues…"
+    spinner_text = "Thinking like an IT specialist..."
+    system_prompt = (
+        "You are an Information Technology (IT) expert. "
+        "You explain IT concepts clearly and practically, including networking, "
+        "operating systems, hardware, software, databases, and cloud computing. "
+        "You provide step-by-step troubleshooting guidance and follow industry best practices. "
+        "When relevant, relate your answers to system administration, IT support, "
+        "incident handling, and infrastructure management."
+    )
+else:  
+    chat_key = "ds_chat"
+    title = "Data Science AI Assistant "
+    placeholder = "Ask the Data Science Assistant about datasets, analysis, or machine learning…"
+    spinner_text = "Thinking like a Data Scientist..."
+    system_prompt = (
+        "You are a Data Science expert. "
+        "You explain data science concepts clearly and practically, including "
+        "data cleaning, exploratory data analysis (EDA), data visualization, "
+        "machine learning, statistics, feature engineering, and model evaluation. "
+        "You provide step-by-step guidance using real-world datasets and best practices. "
+        "When relevant, relate your answers to business analytics, predictive modeling, "
+        "and data-driven decision making."
+    )
+
+st.markdown(f"### {title}")
 
 if client is None:
-    st.warning(
-        "Cyber Security assistant is not available. "
-        "Please set the OPENAI_API_KEY environment variable."
-    )
+    st.warning(f"{title} is not available (missing API key).")
 else:
-    if "cyber_chat" not in st.session_state:
-        st.session_state.cyber_chat = [
+    if chat_key not in st.session_state:
+        st.session_state[chat_key] = [
             {
                 "role": "system",
-                "content": (
-                    "You are a cyber security expert. "
-                    "You explain cyber security concepts clearly, provide practical examples, "
-                    "and follow best security practices. "
-                    "When relevant, relate your answers to incident response, SIEM, and threat detection."
-                ),
+                "content": system_prompt,
             }
         ]
+    else:
+        if not st.session_state[chat_key] or st.session_state[chat_key][0]["role"] != "system":
+            st.session_state[chat_key].insert(0, {"role": "system", "content": system_prompt})
 
-    for msg in st.session_state.cyber_chat:
+    for msg in st.session_state[chat_key]:
         if msg["role"] == "system":
             continue
         with st.chat_message(msg["role"]):
             st.markdown(msg["content"])
 
-    user_prompt = st.chat_input("Ask the Cyber Security Assistant anything about these incidents…")
+    user_prompt = st.chat_input(placeholder)
 
     if user_prompt:
-        st.session_state.cyber_chat.append({"role": "user", "content": user_prompt})
+        st.session_state[chat_key].append({"role": "user", "content": user_prompt})
+
         with st.chat_message("user"):
             st.markdown(user_prompt)
 
         with st.chat_message("assistant"):
-            with st.spinner("Thinking like a cyber security expert..."):
+            with st.spinner(spinner_text):
                 response = client.chat.completions.create(
                     model="gpt-4o",
-                    messages=st.session_state.cyber_chat,
+                    messages=st.session_state[chat_key],
                 )
                 ai_message = response.choices[0].message.content
                 st.markdown(ai_message)
 
-        st.session_state.cyber_chat.append(
+        st.session_state[chat_key].append(
             {"role": "assistant", "content": ai_message}
         )
-
 
 st.divider()
 if st.button("Log out"):
