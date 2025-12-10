@@ -81,6 +81,12 @@ with st.sidebar:
 
     st.markdown("---")
     st.caption("Use the filters above to refine the incidents shown on the dashboard.")
+    if "active_incident_form" not in st.session_state:
+        st.session_state.active_incident_form = None
+
+if "show_incident_crud" not in st.session_state:
+    st.session_state.show_incident_crud = False
+
 
 incidents = get_all_incidents()
 
@@ -242,21 +248,33 @@ else:
 
 st.subheader("Incident Actions")
 
-b1, b2, b3, b4 = st.columns(4)
-with b1:
-    if st.button(" Create Incident"):
-        st.session_state.active_incident_form = "create"
-with b2:
-    if st.button(" Delete Incident"):
-        st.session_state.active_incident_form = "delete"
-with b3:
-    if st.button(" Update Status"):
-        st.session_state.active_incident_form = "update"
-with b4:
-    if st.button(" Read Details"):
-        st.session_state.active_incident_form = "view"
+if st.button(" Show / Hide Incident CRUD Tools"):
+    st.session_state.show_incident_crud = not st.session_state.show_incident_crud
+    if not st.session_state.show_incident_crud:
+        st.session_state.active_incident_form = None
+
+if st.session_state.show_incident_crud:
+    crud_choice = st.radio(
+        "Choose what you want to do:",
+        options=[
+            "Create incident",
+            "Read incident details",
+            "Update incident status",
+            "Delete incident",
+        ],
+        horizontal=True,
+    )
+
+    mapping = {
+        "Create incident": "create",
+        "Read incident details": "view",
+        "Update incident status": "update",
+        "Delete incident": "delete",
+    }
+    st.session_state.active_incident_form = mapping[crud_choice]
 
 st.markdown("---")
+
 
 if st.session_state.active_incident_form == "create":
     st.subheader("Create New Incident")
@@ -465,6 +483,7 @@ else:
         st.session_state.cyber_chat.append(
             {"role": "assistant", "content": ai_message}
         )
+
 
 st.divider()
 if st.button("Log out"):
