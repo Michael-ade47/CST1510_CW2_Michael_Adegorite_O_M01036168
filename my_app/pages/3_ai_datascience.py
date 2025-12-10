@@ -107,17 +107,38 @@ if "source" in filtered.columns:
     source_counts = filtered["source"].value_counts().reset_index()
     source_counts.columns = ["Source", "Count"]
 
-    fig_source = px.bar(
+    fig_source = px.pie(
         source_counts,
-        x="Source",
-        y="Count",
+        names="Source",
+        values="Count",
         title="Datasets by Source",
-        text="Count",
+        hole=0.4,
+        color="Source",
+        color_discrete_sequence=px.colors.qualitative.Set3,
     )
-    fig_source.update_traces(textposition="outside")
-    fig_source.update_layout(yaxis_title="Number of Datasets")
 
+    fig_source.update_traces(textposition="inside", textinfo="percent+label")
     st.plotly_chart(fig_source, use_container_width=True)
+
+if "category" in filtered.columns and "record_count" in filtered.columns:
+    st.subheader("Category Radar – Total Record Count")
+
+    radar_df = (
+        filtered.groupby("category", as_index=False)["record_count"]
+        .sum()
+        .sort_values("record_count", ascending=False)
+    )
+
+    fig_radar = px.line_polar(
+        radar_df,
+        r="record_count",
+        theta="category",
+        line_close=True,
+        title="Total Record Count by Category (Radar View)",
+    )
+    fig_radar.update_traces(fill="toself")
+    st.plotly_chart(fig_radar, use_container_width=True)
+
 
     st.subheader("Dataset Actions")
 

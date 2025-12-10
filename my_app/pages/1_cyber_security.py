@@ -180,10 +180,18 @@ if not filtered_incidents.empty:
             y="Count",
             title="Incidents by Severity",
             text="Count",
+            color="Severity",
+            color_discrete_map={
+                "Low": "#2ecc71",
+                "Medium": "#f1c40f",
+                "High": "#e67e22",
+                "Critical": "#e74c3c",
+            },
         )
         fig_severity.update_traces(textposition="outside")
         fig_severity.update_layout(yaxis_title="Number of Incidents")
         st.plotly_chart(fig_severity, use_container_width=True)
+
     else:
         st.info("No 'severity' column found in incidents data.")
 

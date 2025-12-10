@@ -29,17 +29,14 @@ import streamlit as st
 import pandas as pd
 import plotly.express as px
 
-from app.data.db import connect_database  
-from app.data.users import verify_user, get_user_role  
-from app.data.tickets import get_all_tickets, insert_ticket
-from app.data.tickets import get_all_tickets, insert_ticket, delete_ticket
+from app.data.db import connect_database
+from app.data.users import verify_user, get_user_role
 from app.data.tickets import (
     get_all_tickets,
     insert_ticket,
     delete_ticket,
     update_ticket_status,
 )
-
 
 st.set_page_config(page_title="IT Tickets", page_icon="💻", layout="wide")
 
@@ -129,12 +126,6 @@ if "age_days" in filtered.columns and min_age > 0:
 st.subheader("IT Tickets Table (Filtered)")
 st.caption(f"Showing **{len(filtered)}** of {len(it_tickets)} total tickets.")
 st.dataframe(filtered, use_container_width=True)
-if "active_ticket_form" not in st.session_state:
-    st.session_state.active_ticket_form = None
-
-if "show_ticket_crud" not in st.session_state:
-    st.session_state.show_ticket_crud = False
-
 
 if "age_days" in filtered.columns and filtered["age_days"].notna().any():
     st.subheader("Tickets with Greatest Delays")
@@ -163,14 +154,19 @@ if "age_days" in filtered.columns and filtered["age_days"].notna().any():
 
             fig_delay = px.bar(
                 delay_by_assignee,
-                x="assigned_to",
-                y="Average days open",
+                x="Average days open",
+                y="assigned_to",
+                orientation="h",
                 title="Delayed Tickets by Assignee",
                 text="Average days open",
+                color="Average days open",
+                color_continuous_scale="Turbo",
             )
+
             fig_delay.update_traces(textposition="outside")
             fig_delay.update_layout(
-                xaxis_title="Assignee", yaxis_title="Average days open"
+                xaxis_title="Average days open",
+                yaxis_title="Assignee",
             )
             st.plotly_chart(fig_delay, use_container_width=True)
     else:
@@ -183,15 +179,14 @@ if "status" in filtered.columns:
     status_counts = filtered["status"].value_counts().reset_index()
     status_counts.columns = ["Status", "Count"]
 
-    fig_status = px.bar(
+    fig_status = px.pie(
         status_counts,
-        x="Status",
-        y="Count",
+        names="Status",
+        values="Count",
         title="Tickets by Status",
-        text="Count",
+        hole=0.4,
     )
-    fig_status.update_traces(textposition="outside")
-    fig_status.update_layout(yaxis_title="Number of tickets")
+    fig_status.update_traces(textposition="inside", textinfo="percent+label")
     st.plotly_chart(fig_status, use_container_width=True)
 else:
     st.info("No 'status' column found to show tickets by status.")
@@ -201,20 +196,23 @@ if "priority" in filtered.columns:
     priority_counts = filtered["priority"].value_counts().reset_index()
     priority_counts.columns = ["Priority", "Count"]
 
-    fig_priority = px.bar(
+    fig_priority = px.bar_polar(
         priority_counts,
-        x="Priority",
-        y="Count",
+        r="Count",
+        theta="Priority",
         title="Tickets by Priority",
-        text="Count",
     )
-    fig_priority.update_traces(textposition="outside")
-    fig_priority.update_layout(yaxis_title="Number of tickets")
     st.plotly_chart(fig_priority, use_container_width=True)
 else:
     st.info("No 'priority' column found to show tickets by priority.")
 
 st.subheader("Ticket Actions")
+
+if "active_ticket_form" not in st.session_state:
+    st.session_state.active_ticket_form = None
+
+if "show_ticket_crud" not in st.session_state:
+    st.session_state.show_ticket_crud = False
 
 if st.button(" Show / Hide Ticket CRUD Tools"):
     st.session_state.show_ticket_crud = not st.session_state.show_ticket_crud
@@ -243,7 +241,6 @@ if st.session_state.show_ticket_crud:
             st.session_state.active_ticket_form = "view"
 
 st.markdown("---")
-
 
 if st.session_state.active_ticket_form == "create":
     st.subheader("Create New IT Ticket")
@@ -415,16 +412,13 @@ elif st.session_state.active_ticket_form == "view":
             height=120,
         )
 
-
-
-
 st.subheader("AI Assistant")
 
 if "assistant_panel_open" not in st.session_state:
     st.session_state.assistant_panel_open = False
 
 if "assistant_mode" not in st.session_state:
-    st.session_state.assistant_mode = "cyber"  
+    st.session_state.assistant_mode = "cyber"
 
 if st.button(" Show / Hide AI Assistant Panel"):
     st.session_state.assistant_panel_open = not st.session_state.assistant_panel_open
@@ -471,7 +465,7 @@ elif mode == "it":
         "When relevant, relate your answers to system administration, IT support, "
         "incident handling, and infrastructure management."
     )
-else:  
+else:
     chat_key = "ds_chat"
     title = "Data Science AI Assistant "
     placeholder = "Ask the Data Science Assistant about datasets, analysis, or machine learning…"
@@ -528,8 +522,6 @@ else:
         st.session_state[chat_key].append(
             {"role": "assistant", "content": ai_message}
         )
-
-
 
 st.divider()
 if st.button("Log out"):
