@@ -1,0 +1,4 @@
+alice,$2b$12$4GE2fq2tM8m1/vDs39apsOBcf32rZeVI2aVHL//TBHkIiLMZPnnEC
+kenny,$2b$12$rP0W1eC.UNnTPlTwI42GouF4hIbwsug8P3lb1j9ptbUYxohpaVCVG
+.Mike,$2b$12$HELDHE35Like9TI/SYjF3OCH40rSkxfuM0PHs5m6UijQQf8mjwBLm
+Mike,$2b$12$Um.plvI018QilPQ6o2Z5OOg.rX4OSRA54tqSGdzTo4CAauFcucrIK

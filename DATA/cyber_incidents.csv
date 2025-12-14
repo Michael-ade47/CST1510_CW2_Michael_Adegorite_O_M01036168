@@ -1,0 +1,1001 @@
+id,date,incident_type,severity,status,description,reported_by,created_at
+1,2024-12-04,DDoS,Medium,Open,DDoS incident with medium severity; status currently open.,eve,2024-12-04 00:18:49
+2,2025-07-15,Insider Threat,Low,Closed,Insider Threat incident with low severity; status currently closed.,ivan,2025-07-15 02:56:56
+3,2025-11-22,Password Spray,Low,Mitigated,Password Spray incident with low severity; status currently mitigated.,frank,2025-11-22 02:02:16
+4,2025-12-08,Insider Threat,High,Open,Insider Threat incident with high severity; status currently open.,frank,2025-12-08 07:01:19
+5,2024-05-09,Insider Threat,High,Open,Insider Threat incident with high severity; status currently open.,oscar,2024-05-09 05:12:07
+6,2025-06-06,Ransomware,Critical,Monitoring,Ransomware incident with critical severity; status currently monitoring.,heidi,2025-06-06 05:58:55
+7,2025-02-08,Password Spray,Low,Investigating,Password Spray incident with low severity; status currently investigating.,heidi,2025-02-08 19:30:37
+8,2025-08-05,Vulnerability Exploit,High,Closed,Vulnerability Exploit incident with high severity; status currently closed.,frank,2025-08-05 04:16:29
+9,2025-04-23,Malware,High,Closed,Malware incident with high severity; status currently closed.,ivan,2025-04-23 12:54:27
+10,2025-09-22,Ransomware,Medium,Open,Ransomware incident with medium severity; status currently open.,alice,2025-09-22 12:45:51
+11,2024-05-08,Unauthorized Access,Low,Investigating,Unauthorized Access incident with low severity; status currently investigating.,grace,2024-05-08 22:37:13
+12,2024-06-08,Vulnerability Exploit,Low,Closed,Vulnerability Exploit incident with low severity; status currently closed.,alice,2024-06-08 06:11:54
+13,2025-06-26,Data Breach,Medium,Mitigated,Data Breach incident with medium severity; status currently mitigated.,alice,2025-06-26 02:29:35
+14,2024-05-01,Vulnerability Exploit,High,Mitigated,Vulnerability Exploit incident with high severity; status currently mitigated.,eve,2024-05-01 07:13:29
+15,2025-04-21,Ransomware,Medium,Closed,Ransomware incident with medium severity; status currently closed.,diana,2025-04-21 16:16:11
+16,2024-12-23,Insider Threat,Low,Closed,Insider Threat incident with low severity; status currently closed.,bob,2024-12-23 04:18:15
+17,2025-11-15,DDoS,Critical,Open,DDoS incident with critical severity; status currently open.,heidi,2025-11-15 13:36:31
+18,2025-11-29,Brute Force,Critical,Open,Brute Force incident with critical severity; status currently open.,oscar,2025-11-29 01:33:45
+19,2024-02-02,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,oscar,2024-02-02 03:27:42
+20,2025-01-21,Ransomware,High,Open,Ransomware incident with high severity; status currently open.,mallory,2025-01-21 00:16:49
+21,2025-04-14,Data Breach,High,Mitigated,Data Breach incident with high severity; status currently mitigated.,bob,2025-04-14 11:07:46
+22,2024-07-22,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,alice,2024-07-22 01:39:59
+23,2024-03-16,Phishing,Low,Monitoring,Phishing incident with low severity; status currently monitoring.,frank,2024-03-16 00:18:43
+24,2025-07-07,Phishing,High,Open,Phishing incident with high severity; status currently open.,oscar,2025-07-07 20:47:28
+25,2025-07-25,Brute Force,High,Open,Brute Force incident with high severity; status currently open.,oscar,2025-07-25 12:54:11
+26,2024-05-05,Brute Force,Critical,Mitigated,Brute Force incident with critical severity; status currently mitigated.,charlie,2024-05-05 22:11:14
+27,2025-12-31,Data Breach,Medium,Open,Data Breach incident with medium severity; status currently open.,oscar,2025-12-31 11:39:59
+28,2024-07-19,Phishing,High,Investigating,Phishing incident with high severity; status currently investigating.,bob,2024-07-19 17:56:06
+29,2025-03-15,Insider Threat,Medium,Closed,Insider Threat incident with medium severity; status currently closed.,judy,2025-03-15 16:17:26
+30,2025-04-24,DDoS,Low,Closed,DDoS incident with low severity; status currently closed.,oscar,2025-04-24 12:36:40
+31,2025-01-25,Phishing,Low,Mitigated,Phishing incident with low severity; status currently mitigated.,frank,2025-01-25 05:42:09
+32,2025-12-26,Phishing,Medium,Investigating,Phishing incident with medium severity; status currently investigating.,bob,2025-12-26 09:58:21
+33,2025-04-12,Insider Threat,Critical,Monitoring,Insider Threat incident with critical severity; status currently monitoring.,grace,2025-04-12 17:06:53
+34,2025-05-08,Brute Force,Medium,Monitoring,Brute Force incident with medium severity; status currently monitoring.,alice,2025-05-08 19:27:24
+35,2025-12-05,Brute Force,Medium,Closed,Brute Force incident with medium severity; status currently closed.,diana,2025-12-05 22:38:38
+36,2025-03-06,Phishing,Low,Closed,Phishing incident with low severity; status currently closed.,diana,2025-03-06 11:56:11
+37,2024-01-27,DDoS,High,Open,DDoS incident with high severity; status currently open.,charlie,2024-01-27 17:38:11
+38,2025-11-26,DDoS,Low,Open,DDoS incident with low severity; status currently open.,alice,2025-11-26 00:04:49
+39,2024-09-12,Brute Force,Medium,Mitigated,Brute Force incident with medium severity; status currently mitigated.,grace,2024-09-12 09:06:26
+40,2025-12-26,Unauthorized Access,Medium,Investigating,Unauthorized Access incident with medium severity; status currently investigating.,diana,2025-12-26 08:22:10
+41,2024-03-10,Insider Threat,Medium,Open,Insider Threat incident with medium severity; status currently open.,grace,2024-03-10 11:14:32
+42,2025-02-04,Phishing,Low,Monitoring,Phishing incident with low severity; status currently monitoring.,bob,2025-02-04 07:57:41
+43,2024-06-29,Insider Threat,High,Open,Insider Threat incident with high severity; status currently open.,diana,2024-06-29 12:11:25
+44,2025-01-30,Data Breach,Medium,Investigating,Data Breach incident with medium severity; status currently investigating.,mallory,2025-01-30 02:49:11
+45,2025-10-15,Phishing,High,Open,Phishing incident with high severity; status currently open.,ivan,2025-10-15 14:49:37
+46,2025-09-20,DDoS,Critical,Closed,DDoS incident with critical severity; status currently closed.,oscar,2025-09-20 10:10:18
+47,2025-04-02,Insider Threat,Critical,Investigating,Insider Threat incident with critical severity; status currently investigating.,bob,2025-04-02 11:49:04
+48,2025-03-17,Unauthorized Access,Critical,Closed,Unauthorized Access incident with critical severity; status currently closed.,mallory,2025-03-17 22:24:10
+49,2025-06-03,Insider Threat,High,Investigating,Insider Threat incident with high severity; status currently investigating.,heidi,2025-06-03 11:19:01
+50,2025-11-06,Phishing,Low,Closed,Phishing incident with low severity; status currently closed.,bob,2025-11-06 23:45:11
+51,2024-01-01,DDoS,High,Closed,DDoS incident with high severity; status currently closed.,heidi,2024-01-01 01:55:22
+52,2025-08-15,Vulnerability Exploit,High,Open,Vulnerability Exploit incident with high severity; status currently open.,bob,2025-08-15 17:32:48
+53,2025-07-27,Unauthorized Access,Low,Investigating,Unauthorized Access incident with low severity; status currently investigating.,oscar,2025-07-27 21:47:58
+54,2024-02-26,Unauthorized Access,Medium,Mitigated,Unauthorized Access incident with medium severity; status currently mitigated.,ivan,2024-02-26 11:59:27
+55,2025-02-10,Insider Threat,High,Investigating,Insider Threat incident with high severity; status currently investigating.,ivan,2025-02-10 06:51:34
+56,2024-06-09,Brute Force,Critical,Closed,Brute Force incident with critical severity; status currently closed.,mallory,2024-06-09 12:18:47
+57,2024-02-25,Unauthorized Access,High,Investigating,Unauthorized Access incident with high severity; status currently investigating.,bob,2024-02-25 16:26:02
+58,2025-06-26,Insider Threat,High,Open,Insider Threat incident with high severity; status currently open.,charlie,2025-06-26 16:00:01
+59,2025-08-26,Phishing,High,Monitoring,Phishing incident with high severity; status currently monitoring.,frank,2025-08-26 00:44:26
+60,2024-10-06,Password Spray,Medium,Mitigated,Password Spray incident with medium severity; status currently mitigated.,mallory,2024-10-06 06:43:24
+61,2024-09-21,Password Spray,High,Monitoring,Password Spray incident with high severity; status currently monitoring.,alice,2024-09-21 07:48:43
+62,2025-02-05,DDoS,High,Investigating,DDoS incident with high severity; status currently investigating.,diana,2025-02-05 15:29:16
+63,2024-01-13,Ransomware,Low,Mitigated,Ransomware incident with low severity; status currently mitigated.,frank,2024-01-13 01:54:38
+64,2024-02-16,Insider Threat,Low,Closed,Insider Threat incident with low severity; status currently closed.,mallory,2024-02-16 17:01:58
+65,2025-11-12,Phishing,High,Monitoring,Phishing incident with high severity; status currently monitoring.,mallory,2025-11-12 05:40:26
+66,2025-08-01,Password Spray,High,Mitigated,Password Spray incident with high severity; status currently mitigated.,charlie,2025-08-01 16:20:18
+67,2025-08-20,Insider Threat,High,Closed,Insider Threat incident with high severity; status currently closed.,alice,2025-08-20 11:04:39
+68,2024-08-02,Malware,High,Closed,Malware incident with high severity; status currently closed.,diana,2024-08-02 14:15:24
+69,2025-07-31,DDoS,Critical,Mitigated,DDoS incident with critical severity; status currently mitigated.,mallory,2025-07-31 10:12:28
+70,2024-02-04,Password Spray,Medium,Open,Password Spray incident with medium severity; status currently open.,eve,2024-02-04 15:31:53
+71,2024-08-01,Unauthorized Access,High,Mitigated,Unauthorized Access incident with high severity; status currently mitigated.,charlie,2024-08-01 13:07:38
+72,2024-10-08,Vulnerability Exploit,High,Mitigated,Vulnerability Exploit incident with high severity; status currently mitigated.,diana,2024-10-08 06:42:35
+73,2025-06-15,Brute Force,High,Mitigated,Brute Force incident with high severity; status currently mitigated.,ivan,2025-06-15 01:38:19
+74,2024-01-21,Malware,Medium,Investigating,Malware incident with medium severity; status currently investigating.,bob,2024-01-21 03:49:52
+75,2025-09-09,Vulnerability Exploit,Low,Closed,Vulnerability Exploit incident with low severity; status currently closed.,oscar,2025-09-09 05:55:58
+76,2025-08-31,Password Spray,Medium,Monitoring,Password Spray incident with medium severity; status currently monitoring.,judy,2025-08-31 03:03:55
+77,2024-12-22,Ransomware,Critical,Investigating,Ransomware incident with critical severity; status currently investigating.,grace,2024-12-22 00:36:51
+78,2025-04-15,Password Spray,Medium,Open,Password Spray incident with medium severity; status currently open.,diana,2025-04-15 07:22:04
+79,2024-09-18,Insider Threat,High,Mitigated,Insider Threat incident with high severity; status currently mitigated.,ivan,2024-09-18 21:46:44
+80,2024-03-27,Ransomware,Low,Closed,Ransomware incident with low severity; status currently closed.,heidi,2024-03-27 16:11:11
+81,2025-09-24,Data Breach,Low,Open,Data Breach incident with low severity; status currently open.,eve,2025-09-24 19:03:27
+82,2025-12-09,Unauthorized Access,Medium,Closed,Unauthorized Access incident with medium severity; status currently closed.,bob,2025-12-09 19:08:27
+83,2024-03-05,Data Breach,High,Investigating,Data Breach incident with high severity; status currently investigating.,alice,2024-03-05 10:04:38
+84,2024-04-27,Brute Force,Medium,Mitigated,Brute Force incident with medium severity; status currently mitigated.,eve,2024-04-27 14:42:16
+85,2025-05-14,Insider Threat,High,Open,Insider Threat incident with high severity; status currently open.,frank,2025-05-14 23:47:41
+86,2025-01-22,Brute Force,Medium,Investigating,Brute Force incident with medium severity; status currently investigating.,diana,2025-01-22 14:30:39
+87,2025-10-06,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,eve,2025-10-06 05:08:56
+88,2024-08-26,Ransomware,High,Open,Ransomware incident with high severity; status currently open.,mallory,2024-08-26 08:03:02
+89,2024-05-24,Data Breach,Critical,Investigating,Data Breach incident with critical severity; status currently investigating.,mallory,2024-05-24 10:32:39
+90,2025-08-24,Ransomware,Medium,Investigating,Ransomware incident with medium severity; status currently investigating.,charlie,2025-08-24 04:53:23
+91,2024-05-06,Phishing,Critical,Monitoring,Phishing incident with critical severity; status currently monitoring.,alice,2024-05-06 12:36:25
+92,2025-09-19,Insider Threat,High,Mitigated,Insider Threat incident with high severity; status currently mitigated.,ivan,2025-09-19 19:42:56
+93,2025-07-14,Malware,Low,Closed,Malware incident with low severity; status currently closed.,heidi,2025-07-14 03:29:24
+94,2025-08-26,Malware,Medium,Closed,Malware incident with medium severity; status currently closed.,bob,2025-08-26 15:50:10
+95,2025-02-23,Password Spray,Medium,Open,Password Spray incident with medium severity; status currently open.,oscar,2025-02-23 01:50:49
+96,2024-04-17,Phishing,Medium,Mitigated,Phishing incident with medium severity; status currently mitigated.,alice,2024-04-17 12:10:01
+97,2024-08-06,Brute Force,Medium,Mitigated,Brute Force incident with medium severity; status currently mitigated.,judy,2024-08-06 05:17:37
+98,2025-04-19,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,bob,2025-04-19 01:15:02
+99,2025-10-21,Ransomware,Medium,Investigating,Ransomware incident with medium severity; status currently investigating.,ivan,2025-10-21 14:22:11
+100,2025-10-15,Malware,Low,Investigating,Malware incident with low severity; status currently investigating.,charlie,2025-10-15 23:22:52
+101,2025-05-03,Password Spray,Low,Investigating,Password Spray incident with low severity; status currently investigating.,ivan,2025-05-03 09:36:16
+102,2025-10-21,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,mallory,2025-10-21 00:11:47
+103,2024-03-30,Malware,Medium,Mitigated,Malware incident with medium severity; status currently mitigated.,frank,2024-03-30 22:04:15
+104,2025-03-29,Unauthorized Access,Medium,Investigating,Unauthorized Access incident with medium severity; status currently investigating.,frank,2025-03-29 04:56:14
+105,2025-11-07,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,grace,2025-11-07 12:42:25
+106,2024-09-09,Malware,Medium,Mitigated,Malware incident with medium severity; status currently mitigated.,frank,2024-09-09 06:54:56
+107,2024-07-07,Malware,Medium,Closed,Malware incident with medium severity; status currently closed.,alice,2024-07-07 09:33:42
+108,2025-04-18,Insider Threat,High,Open,Insider Threat incident with high severity; status currently open.,grace,2025-04-18 02:37:49
+109,2025-06-30,Phishing,Medium,Open,Phishing incident with medium severity; status currently open.,bob,2025-06-30 22:52:32
+110,2025-01-27,Ransomware,Medium,Closed,Ransomware incident with medium severity; status currently closed.,mallory,2025-01-27 15:08:37
+111,2025-10-24,Phishing,High,Investigating,Phishing incident with high severity; status currently investigating.,grace,2025-10-24 02:04:52
+112,2024-07-27,Brute Force,Low,Closed,Brute Force incident with low severity; status currently closed.,bob,2024-07-27 05:49:05
+113,2024-10-24,Malware,High,Closed,Malware incident with high severity; status currently closed.,eve,2024-10-24 16:37:51
+114,2025-10-09,DDoS,Medium,Closed,DDoS incident with medium severity; status currently closed.,mallory,2025-10-09 02:20:29
+115,2025-12-17,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,oscar,2025-12-17 03:24:18
+116,2025-03-13,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,grace,2025-03-13 21:46:28
+117,2025-07-01,Data Breach,Medium,Closed,Data Breach incident with medium severity; status currently closed.,diana,2025-07-01 14:53:02
+118,2024-10-28,Vulnerability Exploit,Low,Mitigated,Vulnerability Exploit incident with low severity; status currently mitigated.,charlie,2024-10-28 10:51:12
+119,2025-01-03,Brute Force,Medium,Closed,Brute Force incident with medium severity; status currently closed.,frank,2025-01-03 15:22:13
+120,2024-12-19,Brute Force,High,Mitigated,Brute Force incident with high severity; status currently mitigated.,judy,2024-12-19 15:25:47
+121,2024-03-31,Phishing,Medium,Mitigated,Phishing incident with medium severity; status currently mitigated.,grace,2024-03-31 11:31:20
+122,2025-01-18,Brute Force,Medium,Open,Brute Force incident with medium severity; status currently open.,ivan,2025-01-18 05:39:50
+123,2025-08-08,Malware,Medium,Closed,Malware incident with medium severity; status currently closed.,frank,2025-08-08 10:29:11
+124,2024-06-19,Password Spray,Low,Open,Password Spray incident with low severity; status currently open.,grace,2024-06-19 14:40:51
+125,2024-11-30,Malware,High,Mitigated,Malware incident with high severity; status currently mitigated.,alice,2024-11-30 16:39:15
+126,2024-09-05,Insider Threat,High,Investigating,Insider Threat incident with high severity; status currently investigating.,frank,2024-09-05 14:09:17
+127,2025-01-14,Data Breach,High,Closed,Data Breach incident with high severity; status currently closed.,oscar,2025-01-14 23:58:25
+128,2025-12-02,Ransomware,Low,Closed,Ransomware incident with low severity; status currently closed.,alice,2025-12-02 02:47:53
+129,2024-01-09,Unauthorized Access,Medium,Closed,Unauthorized Access incident with medium severity; status currently closed.,diana,2024-01-09 10:08:01
+130,2024-01-21,Data Breach,High,Closed,Data Breach incident with high severity; status currently closed.,charlie,2024-01-21 01:13:45
+131,2024-06-07,Phishing,High,Investigating,Phishing incident with high severity; status currently investigating.,diana,2024-06-07 22:42:49
+132,2025-08-09,Malware,Critical,Closed,Malware incident with critical severity; status currently closed.,frank,2025-08-09 16:14:57
+133,2025-04-04,Brute Force,Low,Monitoring,Brute Force incident with low severity; status currently monitoring.,eve,2025-04-04 15:24:07
+134,2024-04-18,DDoS,Low,Mitigated,DDoS incident with low severity; status currently mitigated.,frank,2024-04-18 03:58:35
+135,2025-01-07,Malware,Low,Mitigated,Malware incident with low severity; status currently mitigated.,oscar,2025-01-07 13:10:54
+136,2024-02-22,Malware,Low,Investigating,Malware incident with low severity; status currently investigating.,mallory,2024-02-22 08:07:16
+137,2025-04-06,DDoS,Medium,Investigating,DDoS incident with medium severity; status currently investigating.,judy,2025-04-06 07:56:01
+138,2025-10-17,Password Spray,High,Mitigated,Password Spray incident with high severity; status currently mitigated.,heidi,2025-10-17 10:32:47
+139,2024-06-13,Phishing,Medium,Mitigated,Phishing incident with medium severity; status currently mitigated.,judy,2024-06-13 17:45:51
+140,2024-02-15,Phishing,Low,Closed,Phishing incident with low severity; status currently closed.,grace,2024-02-15 10:31:47
+141,2025-07-29,Unauthorized Access,Critical,Open,Unauthorized Access incident with critical severity; status currently open.,charlie,2025-07-29 01:11:13
+142,2025-02-25,Brute Force,High,Monitoring,Brute Force incident with high severity; status currently monitoring.,alice,2025-02-25 17:12:26
+143,2025-08-28,Vulnerability Exploit,Low,Investigating,Vulnerability Exploit incident with low severity; status currently investigating.,grace,2025-08-28 12:58:06
+144,2024-01-30,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,frank,2024-01-30 01:01:39
+145,2024-03-01,Brute Force,High,Investigating,Brute Force incident with high severity; status currently investigating.,judy,2024-03-01 20:19:01
+146,2025-05-20,Phishing,High,Closed,Phishing incident with high severity; status currently closed.,bob,2025-05-20 20:51:50
+147,2024-05-30,Vulnerability Exploit,Medium,Open,Vulnerability Exploit incident with medium severity; status currently open.,alice,2024-05-30 15:31:57
+148,2025-07-27,Malware,Low,Mitigated,Malware incident with low severity; status currently mitigated.,heidi,2025-07-27 17:51:31
+149,2024-02-24,Brute Force,Low,Investigating,Brute Force incident with low severity; status currently investigating.,charlie,2024-02-24 21:08:37
+150,2024-06-18,Brute Force,High,Monitoring,Brute Force incident with high severity; status currently monitoring.,mallory,2024-06-18 14:47:35
+151,2024-10-29,Ransomware,High,Open,Ransomware incident with high severity; status currently open.,frank,2024-10-29 15:11:59
+152,2025-08-26,Malware,Low,Investigating,Malware incident with low severity; status currently investigating.,heidi,2025-08-26 18:45:22
+153,2024-09-10,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,charlie,2024-09-10 22:24:20
+154,2024-11-12,DDoS,Medium,Closed,DDoS incident with medium severity; status currently closed.,mallory,2024-11-12 21:39:50
+155,2025-06-06,Data Breach,Medium,Investigating,Data Breach incident with medium severity; status currently investigating.,diana,2025-06-06 05:09:13
+156,2024-10-12,Brute Force,Medium,Investigating,Brute Force incident with medium severity; status currently investigating.,judy,2024-10-12 02:07:28
+157,2025-07-08,Phishing,High,Mitigated,Phishing incident with high severity; status currently mitigated.,heidi,2025-07-08 17:17:22
+158,2024-07-29,DDoS,High,Investigating,DDoS incident with high severity; status currently investigating.,judy,2024-07-29 17:56:01
+159,2024-08-04,Insider Threat,Low,Mitigated,Insider Threat incident with low severity; status currently mitigated.,grace,2024-08-04 18:44:22
+160,2024-05-19,Data Breach,Medium,Closed,Data Breach incident with medium severity; status currently closed.,heidi,2024-05-19 09:08:00
+161,2024-02-03,Ransomware,Medium,Closed,Ransomware incident with medium severity; status currently closed.,ivan,2024-02-03 02:20:48
+162,2025-06-08,Unauthorized Access,High,Closed,Unauthorized Access incident with high severity; status currently closed.,frank,2025-06-08 20:23:22
+163,2025-09-02,Vulnerability Exploit,High,Closed,Vulnerability Exploit incident with high severity; status currently closed.,eve,2025-09-02 22:48:43
+164,2024-11-14,Data Breach,Medium,Investigating,Data Breach incident with medium severity; status currently investigating.,alice,2024-11-14 09:02:35
+165,2025-02-11,Malware,Medium,Investigating,Malware incident with medium severity; status currently investigating.,diana,2025-02-11 18:26:56
+166,2024-07-15,Data Breach,Critical,Closed,Data Breach incident with critical severity; status currently closed.,heidi,2024-07-15 01:44:30
+167,2025-12-09,Brute Force,Medium,Closed,Brute Force incident with medium severity; status currently closed.,heidi,2025-12-09 13:48:40
+168,2024-11-26,Data Breach,Medium,Closed,Data Breach incident with medium severity; status currently closed.,judy,2024-11-26 05:32:29
+169,2024-04-19,Brute Force,High,Mitigated,Brute Force incident with high severity; status currently mitigated.,frank,2024-04-19 10:09:45
+170,2025-05-04,Data Breach,High,Open,Data Breach incident with high severity; status currently open.,alice,2025-05-04 04:23:59
+171,2024-03-12,Vulnerability Exploit,Medium,Open,Vulnerability Exploit incident with medium severity; status currently open.,bob,2024-03-12 12:43:53
+172,2024-08-27,Brute Force,Medium,Closed,Brute Force incident with medium severity; status currently closed.,grace,2024-08-27 21:01:23
+173,2024-01-24,Insider Threat,Medium,Closed,Insider Threat incident with medium severity; status currently closed.,charlie,2024-01-24 08:17:29
+174,2025-06-19,Data Breach,Medium,Investigating,Data Breach incident with medium severity; status currently investigating.,ivan,2025-06-19 12:09:53
+175,2025-07-09,Malware,Low,Mitigated,Malware incident with low severity; status currently mitigated.,grace,2025-07-09 18:15:11
+176,2025-01-05,Password Spray,Critical,Closed,Password Spray incident with critical severity; status currently closed.,ivan,2025-01-05 07:06:50
+177,2024-07-20,Malware,Medium,Closed,Malware incident with medium severity; status currently closed.,heidi,2024-07-20 07:50:37
+178,2025-11-16,Unauthorized Access,High,Monitoring,Unauthorized Access incident with high severity; status currently monitoring.,judy,2025-11-16 04:58:15
+179,2024-03-12,Vulnerability Exploit,Low,Mitigated,Vulnerability Exploit incident with low severity; status currently mitigated.,oscar,2024-03-12 02:28:44
+180,2024-07-23,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,heidi,2024-07-23 11:26:51
+181,2024-09-06,Phishing,Low,Investigating,Phishing incident with low severity; status currently investigating.,diana,2024-09-06 22:54:51
+182,2024-05-05,Malware,Low,Closed,Malware incident with low severity; status currently closed.,charlie,2024-05-05 11:19:23
+183,2025-09-24,Malware,High,Closed,Malware incident with high severity; status currently closed.,mallory,2025-09-24 19:05:35
+184,2025-08-25,Data Breach,High,Open,Data Breach incident with high severity; status currently open.,bob,2025-08-25 19:02:09
+185,2024-08-24,Brute Force,Low,Closed,Brute Force incident with low severity; status currently closed.,diana,2024-08-24 07:28:10
+186,2025-11-30,Ransomware,High,Mitigated,Ransomware incident with high severity; status currently mitigated.,frank,2025-11-30 18:22:25
+187,2025-02-17,Brute Force,High,Closed,Brute Force incident with high severity; status currently closed.,heidi,2025-02-17 19:36:16
+188,2025-02-28,Malware,Low,Investigating,Malware incident with low severity; status currently investigating.,bob,2025-02-28 07:29:09
+189,2025-06-30,Brute Force,High,Mitigated,Brute Force incident with high severity; status currently mitigated.,oscar,2025-06-30 07:15:20
+190,2024-09-22,Password Spray,High,Closed,Password Spray incident with high severity; status currently closed.,charlie,2024-09-22 02:57:30
+191,2024-02-16,Unauthorized Access,Medium,Mitigated,Unauthorized Access incident with medium severity; status currently mitigated.,judy,2024-02-16 16:20:22
+192,2024-02-11,Unauthorized Access,Medium,Closed,Unauthorized Access incident with medium severity; status currently closed.,eve,2024-02-11 13:32:09
+193,2024-10-27,Insider Threat,High,Closed,Insider Threat incident with high severity; status currently closed.,bob,2024-10-27 21:45:52
+194,2024-12-19,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,eve,2024-12-19 13:43:57
+195,2025-07-08,Password Spray,Medium,Open,Password Spray incident with medium severity; status currently open.,mallory,2025-07-08 08:21:52
+196,2025-05-15,Ransomware,Medium,Mitigated,Ransomware incident with medium severity; status currently mitigated.,eve,2025-05-15 17:22:48
+197,2024-11-30,DDoS,Critical,Closed,DDoS incident with critical severity; status currently closed.,bob,2024-11-30 01:36:28
+198,2025-09-11,Insider Threat,Critical,Investigating,Insider Threat incident with critical severity; status currently investigating.,heidi,2025-09-11 07:50:40
+199,2025-10-02,Password Spray,High,Closed,Password Spray incident with high severity; status currently closed.,ivan,2025-10-02 07:36:28
+200,2024-04-17,Insider Threat,Medium,Investigating,Insider Threat incident with medium severity; status currently investigating.,oscar,2024-04-17 10:13:28
+201,2024-10-01,Ransomware,Medium,Open,Ransomware incident with medium severity; status currently open.,ivan,2024-10-01 22:30:44
+202,2024-07-14,DDoS,Medium,Closed,DDoS incident with medium severity; status currently closed.,alice,2024-07-14 01:33:07
+203,2025-08-18,Brute Force,Medium,Closed,Brute Force incident with medium severity; status currently closed.,judy,2025-08-18 01:21:28
+204,2025-02-22,Ransomware,Medium,Closed,Ransomware incident with medium severity; status currently closed.,grace,2025-02-22 12:33:35
+205,2024-04-07,Vulnerability Exploit,Medium,Closed,Vulnerability Exploit incident with medium severity; status currently closed.,heidi,2024-04-07 20:16:56
+206,2024-02-10,Vulnerability Exploit,High,Mitigated,Vulnerability Exploit incident with high severity; status currently mitigated.,frank,2024-02-10 00:19:39
+207,2024-02-05,Password Spray,Medium,Open,Password Spray incident with medium severity; status currently open.,oscar,2024-02-05 08:32:19
+208,2024-11-03,Insider Threat,High,Open,Insider Threat incident with high severity; status currently open.,ivan,2024-11-03 05:53:16
+209,2025-02-06,DDoS,Low,Closed,DDoS incident with low severity; status currently closed.,charlie,2025-02-06 22:27:44
+210,2024-09-07,Malware,Critical,Mitigated,Malware incident with critical severity; status currently mitigated.,judy,2024-09-07 03:56:13
+211,2025-06-10,Brute Force,Medium,Mitigated,Brute Force incident with medium severity; status currently mitigated.,grace,2025-06-10 21:00:14
+212,2025-09-25,Brute Force,Medium,Investigating,Brute Force incident with medium severity; status currently investigating.,ivan,2025-09-25 05:54:23
+213,2025-09-07,DDoS,Low,Investigating,DDoS incident with low severity; status currently investigating.,oscar,2025-09-07 01:04:12
+214,2024-07-28,Brute Force,High,Mitigated,Brute Force incident with high severity; status currently mitigated.,heidi,2024-07-28 20:11:54
+215,2025-09-16,Ransomware,Medium,Open,Ransomware incident with medium severity; status currently open.,grace,2025-09-16 14:20:38
+216,2024-08-06,Brute Force,Medium,Closed,Brute Force incident with medium severity; status currently closed.,heidi,2024-08-06 11:41:56
+217,2024-07-24,Data Breach,High,Closed,Data Breach incident with high severity; status currently closed.,alice,2024-07-24 07:45:24
+218,2025-06-03,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,judy,2025-06-03 06:40:17
+219,2024-03-06,Unauthorized Access,High,Investigating,Unauthorized Access incident with high severity; status currently investigating.,frank,2024-03-06 11:08:05
+220,2025-05-14,Unauthorized Access,Medium,Open,Unauthorized Access incident with medium severity; status currently open.,heidi,2025-05-14 00:35:34
+221,2025-01-09,Vulnerability Exploit,Medium,Closed,Vulnerability Exploit incident with medium severity; status currently closed.,mallory,2025-01-09 20:08:55
+222,2024-02-12,Vulnerability Exploit,Critical,Open,Vulnerability Exploit incident with critical severity; status currently open.,grace,2024-02-12 14:12:23
+223,2024-12-07,Insider Threat,Medium,Open,Insider Threat incident with medium severity; status currently open.,frank,2024-12-07 16:56:02
+224,2025-10-16,Phishing,Low,Mitigated,Phishing incident with low severity; status currently mitigated.,grace,2025-10-16 15:20:25
+225,2024-10-29,Insider Threat,Medium,Closed,Insider Threat incident with medium severity; status currently closed.,alice,2024-10-29 11:31:10
+226,2025-10-26,Vulnerability Exploit,Medium,Open,Vulnerability Exploit incident with medium severity; status currently open.,bob,2025-10-26 08:38:05
+227,2025-12-09,Unauthorized Access,Critical,Closed,Unauthorized Access incident with critical severity; status currently closed.,bob,2025-12-09 22:51:57
+228,2024-01-07,Phishing,Medium,Investigating,Phishing incident with medium severity; status currently investigating.,charlie,2024-01-07 06:51:26
+229,2025-07-17,DDoS,Medium,Investigating,DDoS incident with medium severity; status currently investigating.,alice,2025-07-17 10:47:23
+230,2025-11-07,Brute Force,High,Closed,Brute Force incident with high severity; status currently closed.,ivan,2025-11-07 08:26:18
+231,2025-10-05,Password Spray,Low,Closed,Password Spray incident with low severity; status currently closed.,grace,2025-10-05 12:38:47
+232,2024-06-23,Unauthorized Access,High,Open,Unauthorized Access incident with high severity; status currently open.,oscar,2024-06-23 03:26:48
+233,2024-11-08,Unauthorized Access,Medium,Closed,Unauthorized Access incident with medium severity; status currently closed.,eve,2024-11-08 10:43:55
+234,2024-09-16,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,charlie,2024-09-16 02:12:51
+235,2024-04-03,DDoS,Critical,Investigating,DDoS incident with critical severity; status currently investigating.,heidi,2024-04-03 22:51:20
+236,2024-04-17,Malware,High,Mitigated,Malware incident with high severity; status currently mitigated.,eve,2024-04-17 10:12:30
+237,2025-04-20,DDoS,Critical,Investigating,DDoS incident with critical severity; status currently investigating.,charlie,2025-04-20 18:48:27
+238,2025-05-30,Password Spray,High,Mitigated,Password Spray incident with high severity; status currently mitigated.,ivan,2025-05-30 05:41:27
+239,2025-11-16,Malware,Critical,Open,Malware incident with critical severity; status currently open.,charlie,2025-11-16 01:49:32
+240,2025-11-06,Insider Threat,Low,Mitigated,Insider Threat incident with low severity; status currently mitigated.,ivan,2025-11-06 21:25:18
+241,2025-12-03,Ransomware,High,Open,Ransomware incident with high severity; status currently open.,bob,2025-12-03 17:45:44
+242,2025-10-01,Brute Force,Critical,Investigating,Brute Force incident with critical severity; status currently investigating.,ivan,2025-10-01 21:21:04
+243,2024-08-15,Ransomware,Low,Investigating,Ransomware incident with low severity; status currently investigating.,alice,2024-08-15 13:09:42
+244,2024-05-15,Phishing,High,Closed,Phishing incident with high severity; status currently closed.,frank,2024-05-15 11:43:06
+245,2024-12-04,Brute Force,Low,Open,Brute Force incident with low severity; status currently open.,eve,2024-12-04 04:43:51
+246,2025-02-19,Unauthorized Access,Medium,Monitoring,Unauthorized Access incident with medium severity; status currently monitoring.,diana,2025-02-19 03:17:46
+247,2024-10-20,Malware,High,Closed,Malware incident with high severity; status currently closed.,heidi,2024-10-20 17:27:10
+248,2025-02-26,Brute Force,High,Investigating,Brute Force incident with high severity; status currently investigating.,oscar,2025-02-26 19:13:38
+249,2025-10-02,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,alice,2025-10-02 21:24:07
+250,2024-10-02,Ransomware,Medium,Mitigated,Ransomware incident with medium severity; status currently mitigated.,heidi,2024-10-02 12:19:35
+251,2025-07-23,Insider Threat,High,Mitigated,Insider Threat incident with high severity; status currently mitigated.,frank,2025-07-23 15:12:31
+252,2025-09-06,Phishing,High,Investigating,Phishing incident with high severity; status currently investigating.,grace,2025-09-06 10:00:30
+253,2025-05-19,Data Breach,Low,Open,Data Breach incident with low severity; status currently open.,eve,2025-05-19 05:38:16
+254,2024-11-15,Vulnerability Exploit,Medium,Mitigated,Vulnerability Exploit incident with medium severity; status currently mitigated.,ivan,2024-11-15 07:49:31
+255,2024-06-14,DDoS,Critical,Mitigated,DDoS incident with critical severity; status currently mitigated.,ivan,2024-06-14 15:25:30
+256,2024-05-02,DDoS,Low,Open,DDoS incident with low severity; status currently open.,mallory,2024-05-02 18:19:38
+257,2024-01-14,Brute Force,Critical,Investigating,Brute Force incident with critical severity; status currently investigating.,eve,2024-01-14 14:20:57
+258,2025-02-10,Unauthorized Access,High,Closed,Unauthorized Access incident with high severity; status currently closed.,ivan,2025-02-10 12:34:18
+259,2025-10-01,Phishing,Medium,Closed,Phishing incident with medium severity; status currently closed.,ivan,2025-10-01 09:37:59
+260,2024-10-24,Insider Threat,Low,Open,Insider Threat incident with low severity; status currently open.,frank,2024-10-24 16:31:05
+261,2025-01-18,Data Breach,Medium,Mitigated,Data Breach incident with medium severity; status currently mitigated.,grace,2025-01-18 17:20:04
+262,2025-08-15,DDoS,Low,Investigating,DDoS incident with low severity; status currently investigating.,eve,2025-08-15 06:23:01
+263,2025-10-25,Ransomware,Medium,Mitigated,Ransomware incident with medium severity; status currently mitigated.,diana,2025-10-25 16:15:06
+264,2024-08-05,Unauthorized Access,Low,Closed,Unauthorized Access incident with low severity; status currently closed.,grace,2024-08-05 11:31:59
+265,2025-02-05,Vulnerability Exploit,High,Investigating,Vulnerability Exploit incident with high severity; status currently investigating.,judy,2025-02-05 06:38:30
+266,2025-03-26,Data Breach,High,Open,Data Breach incident with high severity; status currently open.,eve,2025-03-26 18:48:44
+267,2025-06-08,Insider Threat,High,Closed,Insider Threat incident with high severity; status currently closed.,alice,2025-06-08 20:37:50
+268,2024-05-18,Brute Force,Low,Closed,Brute Force incident with low severity; status currently closed.,heidi,2024-05-18 08:14:15
+269,2025-03-06,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,diana,2025-03-06 17:37:33
+270,2024-03-27,Vulnerability Exploit,Medium,Mitigated,Vulnerability Exploit incident with medium severity; status currently mitigated.,frank,2024-03-27 14:02:46
+271,2024-06-09,Unauthorized Access,Low,Monitoring,Unauthorized Access incident with low severity; status currently monitoring.,judy,2024-06-09 18:06:00
+272,2025-12-10,Vulnerability Exploit,Medium,Closed,Vulnerability Exploit incident with medium severity; status currently closed.,heidi,2025-12-10 16:02:20
+273,2025-11-07,Phishing,High,Investigating,Phishing incident with high severity; status currently investigating.,mallory,2025-11-07 09:26:10
+274,2024-09-21,Password Spray,Low,Mitigated,Password Spray incident with low severity; status currently mitigated.,eve,2024-09-21 12:05:05
+275,2024-05-21,Malware,Medium,Open,Malware incident with medium severity; status currently open.,bob,2024-05-21 04:17:15
+276,2025-02-24,Insider Threat,Medium,Open,Insider Threat incident with medium severity; status currently open.,oscar,2025-02-24 17:36:35
+277,2024-05-28,Ransomware,High,Open,Ransomware incident with high severity; status currently open.,diana,2024-05-28 14:06:20
+278,2024-01-01,Malware,High,Closed,Malware incident with high severity; status currently closed.,oscar,2024-01-01 10:37:10
+279,2025-12-31,Brute Force,Medium,Investigating,Brute Force incident with medium severity; status currently investigating.,grace,2025-12-31 17:16:23
+280,2025-07-18,Unauthorized Access,Medium,Closed,Unauthorized Access incident with medium severity; status currently closed.,bob,2025-07-18 09:18:10
+281,2024-10-28,Password Spray,Medium,Monitoring,Password Spray incident with medium severity; status currently monitoring.,mallory,2024-10-28 04:58:31
+282,2024-06-23,Ransomware,Medium,Mitigated,Ransomware incident with medium severity; status currently mitigated.,mallory,2024-06-23 06:44:39
+283,2025-09-13,Insider Threat,Medium,Investigating,Insider Threat incident with medium severity; status currently investigating.,ivan,2025-09-13 11:55:41
+284,2025-08-25,Vulnerability Exploit,Medium,Open,Vulnerability Exploit incident with medium severity; status currently open.,ivan,2025-08-25 16:35:23
+285,2024-03-24,Data Breach,High,Mitigated,Data Breach incident with high severity; status currently mitigated.,grace,2024-03-24 10:31:03
+286,2025-03-03,Brute Force,High,Open,Brute Force incident with high severity; status currently open.,eve,2025-03-03 23:44:05
+287,2024-07-01,Malware,Medium,Open,Malware incident with medium severity; status currently open.,ivan,2024-07-01 14:57:34
+288,2024-03-19,Phishing,Medium,Mitigated,Phishing incident with medium severity; status currently mitigated.,eve,2024-03-19 22:28:03
+289,2025-06-01,Malware,Critical,Monitoring,Malware incident with critical severity; status currently monitoring.,heidi,2025-06-01 02:32:08
+290,2024-07-04,Brute Force,High,Investigating,Brute Force incident with high severity; status currently investigating.,mallory,2024-07-04 19:52:17
+291,2024-10-01,DDoS,High,Investigating,DDoS incident with high severity; status currently investigating.,frank,2024-10-01 01:17:43
+292,2024-10-31,DDoS,Medium,Closed,DDoS incident with medium severity; status currently closed.,mallory,2024-10-31 18:23:40
+293,2025-02-15,Data Breach,Low,Open,Data Breach incident with low severity; status currently open.,judy,2025-02-15 14:22:04
+294,2024-08-31,Unauthorized Access,Medium,Closed,Unauthorized Access incident with medium severity; status currently closed.,grace,2024-08-31 18:31:48
+295,2024-08-28,Malware,Medium,Mitigated,Malware incident with medium severity; status currently mitigated.,ivan,2024-08-28 22:25:21
+296,2025-01-20,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,ivan,2025-01-20 02:57:05
+297,2024-06-11,DDoS,Medium,Closed,DDoS incident with medium severity; status currently closed.,heidi,2024-06-11 16:32:15
+298,2025-01-29,Ransomware,Medium,Open,Ransomware incident with medium severity; status currently open.,alice,2025-01-29 16:02:04
+299,2024-10-18,Insider Threat,High,Investigating,Insider Threat incident with high severity; status currently investigating.,judy,2024-10-18 19:59:36
+300,2024-07-15,Unauthorized Access,Medium,Monitoring,Unauthorized Access incident with medium severity; status currently monitoring.,bob,2024-07-15 21:36:55
+301,2025-10-16,Insider Threat,High,Open,Insider Threat incident with high severity; status currently open.,judy,2025-10-16 10:05:19
+302,2024-07-18,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,oscar,2024-07-18 06:17:07
+303,2025-06-08,Data Breach,Medium,Mitigated,Data Breach incident with medium severity; status currently mitigated.,mallory,2025-06-08 00:56:03
+304,2025-01-06,DDoS,Medium,Mitigated,DDoS incident with medium severity; status currently mitigated.,eve,2025-01-06 03:54:50
+305,2025-01-24,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,diana,2025-01-24 00:38:18
+306,2025-11-12,Data Breach,High,Closed,Data Breach incident with high severity; status currently closed.,eve,2025-11-12 07:00:26
+307,2024-07-13,Brute Force,Medium,Open,Brute Force incident with medium severity; status currently open.,heidi,2024-07-13 06:19:35
+308,2024-10-07,Insider Threat,Medium,Investigating,Insider Threat incident with medium severity; status currently investigating.,diana,2024-10-07 03:44:51
+309,2025-11-26,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,charlie,2025-11-26 23:23:39
+310,2025-11-06,DDoS,High,Mitigated,DDoS incident with high severity; status currently mitigated.,alice,2025-11-06 20:32:00
+311,2024-02-11,Password Spray,High,Open,Password Spray incident with high severity; status currently open.,grace,2024-02-11 23:52:14
+312,2024-08-05,DDoS,Low,Closed,DDoS incident with low severity; status currently closed.,oscar,2024-08-05 10:10:30
+313,2025-10-06,Insider Threat,High,Closed,Insider Threat incident with high severity; status currently closed.,bob,2025-10-06 17:20:46
+314,2025-08-02,Password Spray,Medium,Monitoring,Password Spray incident with medium severity; status currently monitoring.,grace,2025-08-02 10:22:08
+315,2025-08-02,Ransomware,Low,Open,Ransomware incident with low severity; status currently open.,eve,2025-08-02 06:45:23
+316,2025-12-23,Insider Threat,Medium,Mitigated,Insider Threat incident with medium severity; status currently mitigated.,oscar,2025-12-23 00:54:36
+317,2025-05-18,Password Spray,High,Closed,Password Spray incident with high severity; status currently closed.,judy,2025-05-18 16:12:26
+318,2025-03-14,Password Spray,High,Closed,Password Spray incident with high severity; status currently closed.,mallory,2025-03-14 00:36:31
+319,2025-08-19,Insider Threat,High,Open,Insider Threat incident with high severity; status currently open.,alice,2025-08-19 06:30:17
+320,2024-08-22,Malware,Medium,Mitigated,Malware incident with medium severity; status currently mitigated.,bob,2024-08-22 20:52:20
+321,2025-10-10,Vulnerability Exploit,High,Open,Vulnerability Exploit incident with high severity; status currently open.,frank,2025-10-10 13:29:25
+322,2024-07-02,Vulnerability Exploit,High,Mitigated,Vulnerability Exploit incident with high severity; status currently mitigated.,diana,2024-07-02 13:50:00
+323,2025-03-21,Malware,Medium,Open,Malware incident with medium severity; status currently open.,diana,2025-03-21 00:01:00
+324,2025-01-09,Data Breach,High,Monitoring,Data Breach incident with high severity; status currently monitoring.,judy,2025-01-09 17:22:38
+325,2024-06-02,Data Breach,Medium,Mitigated,Data Breach incident with medium severity; status currently mitigated.,grace,2024-06-02 16:33:47
+326,2025-03-12,Ransomware,High,Investigating,Ransomware incident with high severity; status currently investigating.,oscar,2025-03-12 04:49:49
+327,2025-12-16,Ransomware,High,Mitigated,Ransomware incident with high severity; status currently mitigated.,bob,2025-12-16 03:41:55
+328,2025-04-26,DDoS,High,Mitigated,DDoS incident with high severity; status currently mitigated.,judy,2025-04-26 01:00:02
+329,2025-09-20,Data Breach,Medium,Closed,Data Breach incident with medium severity; status currently closed.,heidi,2025-09-20 18:30:44
+330,2025-07-05,DDoS,Low,Closed,DDoS incident with low severity; status currently closed.,mallory,2025-07-05 17:34:18
+331,2024-04-15,Insider Threat,Critical,Investigating,Insider Threat incident with critical severity; status currently investigating.,heidi,2024-04-15 07:35:48
+332,2025-04-09,Vulnerability Exploit,Medium,Mitigated,Vulnerability Exploit incident with medium severity; status currently mitigated.,frank,2025-04-09 10:59:34
+333,2024-01-22,Insider Threat,Low,Investigating,Insider Threat incident with low severity; status currently investigating.,judy,2024-01-22 20:37:58
+334,2025-02-24,Data Breach,Medium,Investigating,Data Breach incident with medium severity; status currently investigating.,heidi,2025-02-24 23:46:44
+335,2024-04-02,Malware,Low,Closed,Malware incident with low severity; status currently closed.,judy,2024-04-02 03:33:46
+336,2024-03-28,Data Breach,High,Mitigated,Data Breach incident with high severity; status currently mitigated.,ivan,2024-03-28 12:14:51
+337,2025-08-14,Ransomware,Low,Investigating,Ransomware incident with low severity; status currently investigating.,bob,2025-08-14 00:43:54
+338,2024-09-05,Brute Force,Critical,Investigating,Brute Force incident with critical severity; status currently investigating.,diana,2024-09-05 19:52:11
+339,2025-01-22,Insider Threat,Medium,Closed,Insider Threat incident with medium severity; status currently closed.,eve,2025-01-22 07:05:29
+340,2025-02-05,Data Breach,High,Open,Data Breach incident with high severity; status currently open.,grace,2025-02-05 15:17:59
+341,2024-06-11,Data Breach,Medium,Closed,Data Breach incident with medium severity; status currently closed.,ivan,2024-06-11 10:26:38
+342,2024-08-19,Password Spray,Critical,Investigating,Password Spray incident with critical severity; status currently investigating.,oscar,2024-08-19 13:04:10
+343,2024-08-27,Ransomware,High,Closed,Ransomware incident with high severity; status currently closed.,eve,2024-08-27 10:24:55
+344,2025-09-19,Password Spray,High,Investigating,Password Spray incident with high severity; status currently investigating.,bob,2025-09-19 09:27:13
+345,2024-11-29,Insider Threat,Low,Mitigated,Insider Threat incident with low severity; status currently mitigated.,grace,2024-11-29 20:22:00
+346,2024-11-10,Unauthorized Access,Medium,Investigating,Unauthorized Access incident with medium severity; status currently investigating.,oscar,2024-11-10 15:11:41
+347,2025-11-19,Data Breach,High,Investigating,Data Breach incident with high severity; status currently investigating.,grace,2025-11-19 06:01:40
+348,2025-04-09,Insider Threat,Medium,Open,Insider Threat incident with medium severity; status currently open.,mallory,2025-04-09 00:14:20
+349,2024-09-19,Brute Force,High,Mitigated,Brute Force incident with high severity; status currently mitigated.,diana,2024-09-19 10:09:15
+350,2024-04-22,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,diana,2024-04-22 08:59:30
+351,2024-06-09,Phishing,Critical,Closed,Phishing incident with critical severity; status currently closed.,mallory,2024-06-09 02:41:30
+352,2024-01-16,Malware,High,Closed,Malware incident with high severity; status currently closed.,diana,2024-01-16 11:26:08
+353,2025-06-05,Ransomware,High,Investigating,Ransomware incident with high severity; status currently investigating.,frank,2025-06-05 04:56:21
+354,2025-10-23,Phishing,High,Monitoring,Phishing incident with high severity; status currently monitoring.,diana,2025-10-23 02:27:29
+355,2025-06-30,Ransomware,Medium,Closed,Ransomware incident with medium severity; status currently closed.,ivan,2025-06-30 16:41:52
+356,2025-05-17,Ransomware,Medium,Closed,Ransomware incident with medium severity; status currently closed.,mallory,2025-05-17 05:03:17
+357,2025-02-17,DDoS,Medium,Investigating,DDoS incident with medium severity; status currently investigating.,charlie,2025-02-17 08:15:44
+358,2025-02-23,Brute Force,High,Mitigated,Brute Force incident with high severity; status currently mitigated.,diana,2025-02-23 20:56:37
+359,2025-10-02,Password Spray,Low,Open,Password Spray incident with low severity; status currently open.,alice,2025-10-02 00:37:22
+360,2025-05-13,Phishing,High,Closed,Phishing incident with high severity; status currently closed.,heidi,2025-05-13 07:52:52
+361,2025-03-16,Unauthorized Access,Medium,Closed,Unauthorized Access incident with medium severity; status currently closed.,diana,2025-03-16 12:18:27
+362,2024-04-26,Malware,High,Open,Malware incident with high severity; status currently open.,frank,2024-04-26 17:58:18
+363,2025-01-08,DDoS,High,Investigating,DDoS incident with high severity; status currently investigating.,diana,2025-01-08 07:24:09
+364,2025-02-13,Insider Threat,Medium,Open,Insider Threat incident with medium severity; status currently open.,judy,2025-02-13 20:13:47
+365,2025-08-01,Password Spray,High,Open,Password Spray incident with high severity; status currently open.,eve,2025-08-01 06:58:20
+366,2025-04-21,Brute Force,High,Open,Brute Force incident with high severity; status currently open.,heidi,2025-04-21 01:31:46
+367,2024-06-17,Phishing,Medium,Investigating,Phishing incident with medium severity; status currently investigating.,bob,2024-06-17 19:08:26
+368,2024-10-04,Unauthorized Access,High,Closed,Unauthorized Access incident with high severity; status currently closed.,oscar,2024-10-04 23:29:54
+369,2025-02-15,Malware,Low,Monitoring,Malware incident with low severity; status currently monitoring.,grace,2025-02-15 13:38:29
+370,2024-05-26,Vulnerability Exploit,Low,Closed,Vulnerability Exploit incident with low severity; status currently closed.,eve,2024-05-26 16:38:45
+371,2025-10-02,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,bob,2025-10-02 07:08:59
+372,2025-01-05,Malware,High,Mitigated,Malware incident with high severity; status currently mitigated.,alice,2025-01-05 19:05:59
+373,2025-12-17,Vulnerability Exploit,Medium,Closed,Vulnerability Exploit incident with medium severity; status currently closed.,judy,2025-12-17 15:55:41
+374,2024-11-10,Unauthorized Access,Low,Open,Unauthorized Access incident with low severity; status currently open.,diana,2024-11-10 20:37:07
+375,2024-08-12,Malware,Critical,Investigating,Malware incident with critical severity; status currently investigating.,mallory,2024-08-12 01:12:37
+376,2025-08-02,Data Breach,Medium,Closed,Data Breach incident with medium severity; status currently closed.,eve,2025-08-02 23:47:15
+377,2024-07-06,Ransomware,Low,Investigating,Ransomware incident with low severity; status currently investigating.,charlie,2024-07-06 14:58:51
+378,2025-04-03,Phishing,High,Monitoring,Phishing incident with high severity; status currently monitoring.,diana,2025-04-03 08:58:59
+379,2024-02-08,Password Spray,High,Investigating,Password Spray incident with high severity; status currently investigating.,frank,2024-02-08 15:57:24
+380,2024-09-15,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,eve,2024-09-15 23:18:18
+381,2025-11-25,Malware,High,Mitigated,Malware incident with high severity; status currently mitigated.,heidi,2025-11-25 07:21:16
+382,2025-01-02,DDoS,Low,Investigating,DDoS incident with low severity; status currently investigating.,judy,2025-01-02 13:46:37
+383,2025-10-12,Data Breach,Low,Mitigated,Data Breach incident with low severity; status currently mitigated.,heidi,2025-10-12 19:58:33
+384,2025-05-16,DDoS,High,Open,DDoS incident with high severity; status currently open.,charlie,2025-05-16 01:30:30
+385,2025-05-18,Malware,Medium,Mitigated,Malware incident with medium severity; status currently mitigated.,judy,2025-05-18 12:54:40
+386,2024-12-13,Password Spray,High,Closed,Password Spray incident with high severity; status currently closed.,ivan,2024-12-13 01:31:58
+387,2024-12-07,Brute Force,Low,Open,Brute Force incident with low severity; status currently open.,heidi,2024-12-07 18:59:17
+388,2024-01-18,Unauthorized Access,Medium,Closed,Unauthorized Access incident with medium severity; status currently closed.,ivan,2024-01-18 19:50:09
+389,2025-07-15,Unauthorized Access,High,Investigating,Unauthorized Access incident with high severity; status currently investigating.,charlie,2025-07-15 03:28:45
+390,2024-03-01,Brute Force,Medium,Investigating,Brute Force incident with medium severity; status currently investigating.,heidi,2024-03-01 14:28:09
+391,2025-10-18,Unauthorized Access,Medium,Open,Unauthorized Access incident with medium severity; status currently open.,eve,2025-10-18 01:34:41
+392,2024-10-07,Unauthorized Access,Low,Mitigated,Unauthorized Access incident with low severity; status currently mitigated.,alice,2024-10-07 14:20:44
+393,2025-05-01,Unauthorized Access,Medium,Closed,Unauthorized Access incident with medium severity; status currently closed.,judy,2025-05-01 20:28:28
+394,2024-02-15,Unauthorized Access,High,Closed,Unauthorized Access incident with high severity; status currently closed.,diana,2024-02-15 23:17:02
+395,2024-08-08,Malware,Medium,Mitigated,Malware incident with medium severity; status currently mitigated.,alice,2024-08-08 11:42:26
+396,2025-06-03,Password Spray,High,Mitigated,Password Spray incident with high severity; status currently mitigated.,eve,2025-06-03 13:34:21
+397,2025-05-12,Malware,Medium,Closed,Malware incident with medium severity; status currently closed.,frank,2025-05-12 13:00:12
+398,2025-03-23,DDoS,Medium,Investigating,DDoS incident with medium severity; status currently investigating.,ivan,2025-03-23 18:06:27
+399,2025-07-05,Brute Force,Low,Open,Brute Force incident with low severity; status currently open.,frank,2025-07-05 20:57:20
+400,2025-01-08,Insider Threat,High,Mitigated,Insider Threat incident with high severity; status currently mitigated.,diana,2025-01-08 03:24:27
+401,2024-12-08,Data Breach,Medium,Open,Data Breach incident with medium severity; status currently open.,frank,2024-12-08 10:41:27
+402,2025-08-13,Unauthorized Access,Low,Mitigated,Unauthorized Access incident with low severity; status currently mitigated.,judy,2025-08-13 18:08:43
+403,2024-05-13,Vulnerability Exploit,High,Mitigated,Vulnerability Exploit incident with high severity; status currently mitigated.,alice,2024-05-13 04:09:41
+404,2025-12-11,Ransomware,Low,Mitigated,Ransomware incident with low severity; status currently mitigated.,bob,2025-12-11 14:08:45
+405,2024-03-15,Brute Force,High,Monitoring,Brute Force incident with high severity; status currently monitoring.,diana,2024-03-15 07:44:08
+406,2024-05-01,Brute Force,Medium,Closed,Brute Force incident with medium severity; status currently closed.,alice,2024-05-01 08:45:44
+407,2025-10-04,Ransomware,Low,Investigating,Ransomware incident with low severity; status currently investigating.,judy,2025-10-04 03:26:29
+408,2024-07-23,Unauthorized Access,Low,Open,Unauthorized Access incident with low severity; status currently open.,frank,2024-07-23 10:46:25
+409,2025-07-06,Vulnerability Exploit,Low,Mitigated,Vulnerability Exploit incident with low severity; status currently mitigated.,charlie,2025-07-06 16:43:34
+410,2024-10-02,Vulnerability Exploit,Low,Mitigated,Vulnerability Exploit incident with low severity; status currently mitigated.,ivan,2024-10-02 19:10:27
+411,2025-01-25,Insider Threat,High,Mitigated,Insider Threat incident with high severity; status currently mitigated.,eve,2025-01-25 23:09:35
+412,2025-02-07,Brute Force,Medium,Investigating,Brute Force incident with medium severity; status currently investigating.,alice,2025-02-07 12:39:24
+413,2024-06-02,Insider Threat,Medium,Monitoring,Insider Threat incident with medium severity; status currently monitoring.,oscar,2024-06-02 04:43:49
+414,2025-10-27,Ransomware,Medium,Open,Ransomware incident with medium severity; status currently open.,ivan,2025-10-27 22:17:40
+415,2025-09-18,Password Spray,Critical,Closed,Password Spray incident with critical severity; status currently closed.,ivan,2025-09-18 00:19:34
+416,2025-04-23,Data Breach,Medium,Closed,Data Breach incident with medium severity; status currently closed.,eve,2025-04-23 18:28:10
+417,2025-05-13,Malware,High,Closed,Malware incident with high severity; status currently closed.,ivan,2025-05-13 13:27:19
+418,2024-09-28,Phishing,Low,Monitoring,Phishing incident with low severity; status currently monitoring.,oscar,2024-09-28 00:45:49
+419,2024-08-18,DDoS,Critical,Open,DDoS incident with critical severity; status currently open.,heidi,2024-08-18 08:33:27
+420,2025-07-14,Password Spray,High,Investigating,Password Spray incident with high severity; status currently investigating.,diana,2025-07-14 14:55:49
+421,2024-07-17,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,alice,2024-07-17 12:14:55
+422,2025-08-12,Password Spray,Medium,Mitigated,Password Spray incident with medium severity; status currently mitigated.,alice,2025-08-12 12:00:36
+423,2025-09-17,Vulnerability Exploit,Critical,Open,Vulnerability Exploit incident with critical severity; status currently open.,frank,2025-09-17 08:58:38
+424,2024-01-03,Vulnerability Exploit,Low,Closed,Vulnerability Exploit incident with low severity; status currently closed.,eve,2024-01-03 03:06:32
+425,2024-03-22,Vulnerability Exploit,High,Mitigated,Vulnerability Exploit incident with high severity; status currently mitigated.,judy,2024-03-22 02:20:16
+426,2024-04-24,Ransomware,Low,Investigating,Ransomware incident with low severity; status currently investigating.,ivan,2024-04-24 12:28:19
+427,2024-01-24,Malware,High,Mitigated,Malware incident with high severity; status currently mitigated.,bob,2024-01-24 17:09:14
+428,2025-11-22,Unauthorized Access,Medium,Closed,Unauthorized Access incident with medium severity; status currently closed.,oscar,2025-11-22 04:52:26
+429,2024-12-03,Password Spray,Medium,Open,Password Spray incident with medium severity; status currently open.,diana,2024-12-03 05:04:07
+430,2025-01-01,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,alice,2025-01-01 22:44:00
+431,2024-03-28,Password Spray,Medium,Open,Password Spray incident with medium severity; status currently open.,charlie,2024-03-28 18:00:17
+432,2024-11-27,Password Spray,Low,Mitigated,Password Spray incident with low severity; status currently mitigated.,judy,2024-11-27 23:55:54
+433,2024-11-01,Unauthorized Access,High,Mitigated,Unauthorized Access incident with high severity; status currently mitigated.,heidi,2024-11-01 18:32:55
+434,2025-08-09,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,mallory,2025-08-09 23:26:54
+435,2024-03-19,Malware,High,Mitigated,Malware incident with high severity; status currently mitigated.,diana,2024-03-19 22:08:33
+436,2025-07-06,Ransomware,Medium,Open,Ransomware incident with medium severity; status currently open.,bob,2025-07-06 07:49:14
+437,2025-01-17,Password Spray,Low,Investigating,Password Spray incident with low severity; status currently investigating.,oscar,2025-01-17 22:15:10
+438,2025-04-29,Password Spray,High,Monitoring,Password Spray incident with high severity; status currently monitoring.,frank,2025-04-29 00:06:52
+439,2025-09-14,Data Breach,Low,Investigating,Data Breach incident with low severity; status currently investigating.,charlie,2025-09-14 04:48:11
+440,2024-03-13,Vulnerability Exploit,Medium,Open,Vulnerability Exploit incident with medium severity; status currently open.,mallory,2024-03-13 19:41:37
+441,2024-05-17,Brute Force,Low,Closed,Brute Force incident with low severity; status currently closed.,ivan,2024-05-17 17:37:54
+442,2025-02-10,Vulnerability Exploit,Low,Mitigated,Vulnerability Exploit incident with low severity; status currently mitigated.,diana,2025-02-10 02:17:32
+443,2024-09-30,Unauthorized Access,Medium,Investigating,Unauthorized Access incident with medium severity; status currently investigating.,diana,2024-09-30 22:20:46
+444,2025-09-05,Unauthorized Access,Low,Closed,Unauthorized Access incident with low severity; status currently closed.,oscar,2025-09-05 04:15:26
+445,2024-02-01,Unauthorized Access,High,Investigating,Unauthorized Access incident with high severity; status currently investigating.,judy,2024-02-01 01:08:20
+446,2025-11-23,Unauthorized Access,Medium,Investigating,Unauthorized Access incident with medium severity; status currently investigating.,bob,2025-11-23 08:23:07
+447,2024-11-21,Malware,High,Investigating,Malware incident with high severity; status currently investigating.,mallory,2024-11-21 20:18:16
+448,2024-02-27,Phishing,High,Investigating,Phishing incident with high severity; status currently investigating.,judy,2024-02-27 10:53:13
+449,2025-10-01,Insider Threat,Medium,Open,Insider Threat incident with medium severity; status currently open.,frank,2025-10-01 02:39:15
+450,2024-03-19,DDoS,Medium,Mitigated,DDoS incident with medium severity; status currently mitigated.,diana,2024-03-19 16:29:55
+451,2024-10-03,Ransomware,Medium,Open,Ransomware incident with medium severity; status currently open.,judy,2024-10-03 11:00:27
+452,2024-12-05,Ransomware,Medium,Investigating,Ransomware incident with medium severity; status currently investigating.,heidi,2024-12-05 21:33:22
+453,2024-07-05,Unauthorized Access,Low,Closed,Unauthorized Access incident with low severity; status currently closed.,judy,2024-07-05 22:45:45
+454,2024-07-04,Insider Threat,Medium,Investigating,Insider Threat incident with medium severity; status currently investigating.,judy,2024-07-04 12:08:29
+455,2025-12-30,Data Breach,Medium,Closed,Data Breach incident with medium severity; status currently closed.,ivan,2025-12-30 18:47:12
+456,2025-02-01,Insider Threat,High,Mitigated,Insider Threat incident with high severity; status currently mitigated.,mallory,2025-02-01 19:23:04
+457,2025-08-13,Brute Force,High,Closed,Brute Force incident with high severity; status currently closed.,mallory,2025-08-13 06:06:03
+458,2025-02-08,Password Spray,Medium,Mitigated,Password Spray incident with medium severity; status currently mitigated.,heidi,2025-02-08 01:23:34
+459,2024-04-18,DDoS,Medium,Investigating,DDoS incident with medium severity; status currently investigating.,judy,2024-04-18 03:23:15
+460,2025-03-21,Brute Force,Medium,Investigating,Brute Force incident with medium severity; status currently investigating.,grace,2025-03-21 11:38:15
+461,2025-12-16,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,charlie,2025-12-16 02:37:55
+462,2024-04-16,Ransomware,High,Open,Ransomware incident with high severity; status currently open.,mallory,2024-04-16 16:27:29
+463,2024-07-12,Ransomware,Medium,Mitigated,Ransomware incident with medium severity; status currently mitigated.,charlie,2024-07-12 21:10:32
+464,2025-08-21,Insider Threat,Low,Mitigated,Insider Threat incident with low severity; status currently mitigated.,eve,2025-08-21 14:50:00
+465,2024-03-27,Malware,Low,Closed,Malware incident with low severity; status currently closed.,charlie,2024-03-27 03:53:17
+466,2024-05-18,Vulnerability Exploit,High,Mitigated,Vulnerability Exploit incident with high severity; status currently mitigated.,eve,2024-05-18 20:59:01
+467,2025-12-15,Insider Threat,Low,Investigating,Insider Threat incident with low severity; status currently investigating.,charlie,2025-12-15 17:58:25
+468,2025-04-09,Vulnerability Exploit,Medium,Mitigated,Vulnerability Exploit incident with medium severity; status currently mitigated.,heidi,2025-04-09 15:59:22
+469,2024-08-12,Ransomware,Low,Closed,Ransomware incident with low severity; status currently closed.,bob,2024-08-12 01:25:44
+470,2025-06-23,Malware,High,Closed,Malware incident with high severity; status currently closed.,oscar,2025-06-23 05:26:01
+471,2025-06-28,Brute Force,High,Closed,Brute Force incident with high severity; status currently closed.,diana,2025-06-28 01:33:24
+472,2024-01-16,Malware,Medium,Mitigated,Malware incident with medium severity; status currently mitigated.,eve,2024-01-16 08:09:00
+473,2025-01-08,DDoS,Medium,Investigating,DDoS incident with medium severity; status currently investigating.,charlie,2025-01-08 04:58:55
+474,2025-01-24,Insider Threat,Medium,Investigating,Insider Threat incident with medium severity; status currently investigating.,eve,2025-01-24 12:35:24
+475,2025-01-12,Brute Force,Medium,Closed,Brute Force incident with medium severity; status currently closed.,charlie,2025-01-12 04:46:46
+476,2024-02-14,DDoS,Low,Investigating,DDoS incident with low severity; status currently investigating.,eve,2024-02-14 08:59:28
+477,2024-06-07,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,mallory,2024-06-07 05:27:36
+478,2024-08-19,Insider Threat,Low,Closed,Insider Threat incident with low severity; status currently closed.,judy,2024-08-19 19:43:11
+479,2025-12-19,Vulnerability Exploit,High,Investigating,Vulnerability Exploit incident with high severity; status currently investigating.,alice,2025-12-19 20:11:30
+480,2024-04-04,Insider Threat,High,Closed,Insider Threat incident with high severity; status currently closed.,bob,2024-04-04 16:52:45
+481,2024-05-27,Insider Threat,Medium,Open,Insider Threat incident with medium severity; status currently open.,judy,2024-05-27 23:19:43
+482,2024-09-30,Ransomware,Medium,Open,Ransomware incident with medium severity; status currently open.,diana,2024-09-30 22:52:32
+483,2025-02-09,Insider Threat,High,Mitigated,Insider Threat incident with high severity; status currently mitigated.,bob,2025-02-09 03:23:48
+484,2024-07-01,Data Breach,Medium,Mitigated,Data Breach incident with medium severity; status currently mitigated.,bob,2024-07-01 10:12:00
+485,2024-10-29,Vulnerability Exploit,High,Mitigated,Vulnerability Exploit incident with high severity; status currently mitigated.,eve,2024-10-29 08:42:32
+486,2025-01-06,Insider Threat,Medium,Open,Insider Threat incident with medium severity; status currently open.,charlie,2025-01-06 18:02:51
+487,2025-12-22,DDoS,High,Investigating,DDoS incident with high severity; status currently investigating.,diana,2025-12-22 15:35:20
+488,2025-05-22,Brute Force,Medium,Open,Brute Force incident with medium severity; status currently open.,judy,2025-05-22 03:41:10
+489,2025-11-15,Malware,Medium,Investigating,Malware incident with medium severity; status currently investigating.,oscar,2025-11-15 11:08:08
+490,2024-07-20,Data Breach,Medium,Open,Data Breach incident with medium severity; status currently open.,judy,2024-07-20 16:41:39
+491,2025-03-28,Phishing,High,Closed,Phishing incident with high severity; status currently closed.,mallory,2025-03-28 21:50:34
+492,2024-04-01,Data Breach,High,Investigating,Data Breach incident with high severity; status currently investigating.,bob,2024-04-01 23:05:37
+493,2025-02-27,DDoS,High,Mitigated,DDoS incident with high severity; status currently mitigated.,judy,2025-02-27 01:15:08
+494,2025-09-05,Data Breach,High,Investigating,Data Breach incident with high severity; status currently investigating.,mallory,2025-09-05 14:54:31
+495,2025-10-14,Insider Threat,Medium,Closed,Insider Threat incident with medium severity; status currently closed.,heidi,2025-10-14 06:21:58
+496,2024-05-08,Phishing,High,Investigating,Phishing incident with high severity; status currently investigating.,eve,2024-05-08 12:16:21
+497,2025-09-01,Data Breach,High,Investigating,Data Breach incident with high severity; status currently investigating.,oscar,2025-09-01 13:37:42
+498,2025-01-13,Data Breach,Low,Mitigated,Data Breach incident with low severity; status currently mitigated.,heidi,2025-01-13 04:50:08
+499,2024-05-07,Insider Threat,Low,Investigating,Insider Threat incident with low severity; status currently investigating.,mallory,2024-05-07 20:58:56
+500,2025-05-21,Brute Force,Medium,Mitigated,Brute Force incident with medium severity; status currently mitigated.,judy,2025-05-21 11:58:46
+501,2024-12-07,DDoS,Medium,Monitoring,DDoS incident with medium severity; status currently monitoring.,oscar,2024-12-07 06:22:15
+502,2025-11-25,Unauthorized Access,Low,Monitoring,Unauthorized Access incident with low severity; status currently monitoring.,ivan,2025-11-25 07:59:54
+503,2025-12-06,Insider Threat,Low,Mitigated,Insider Threat incident with low severity; status currently mitigated.,grace,2025-12-06 10:41:01
+504,2025-11-15,Password Spray,Medium,Mitigated,Password Spray incident with medium severity; status currently mitigated.,ivan,2025-11-15 00:06:04
+505,2024-10-20,Insider Threat,Critical,Open,Insider Threat incident with critical severity; status currently open.,eve,2024-10-20 09:15:14
+506,2025-11-22,Data Breach,Medium,Mitigated,Data Breach incident with medium severity; status currently mitigated.,grace,2025-11-22 15:15:48
+507,2024-12-13,DDoS,Medium,Investigating,DDoS incident with medium severity; status currently investigating.,frank,2024-12-13 09:06:50
+508,2025-04-16,Password Spray,Low,Closed,Password Spray incident with low severity; status currently closed.,frank,2025-04-16 16:31:33
+509,2025-05-05,Vulnerability Exploit,Medium,Closed,Vulnerability Exploit incident with medium severity; status currently closed.,oscar,2025-05-05 20:58:12
+510,2024-08-04,DDoS,High,Open,DDoS incident with high severity; status currently open.,judy,2024-08-04 03:38:19
+511,2024-12-18,Malware,Medium,Investigating,Malware incident with medium severity; status currently investigating.,eve,2024-12-18 22:10:20
+512,2025-08-17,Brute Force,Medium,Mitigated,Brute Force incident with medium severity; status currently mitigated.,bob,2025-08-17 17:01:43
+513,2025-02-16,Vulnerability Exploit,Low,Closed,Vulnerability Exploit incident with low severity; status currently closed.,eve,2025-02-16 18:35:33
+514,2024-05-18,Ransomware,Critical,Closed,Ransomware incident with critical severity; status currently closed.,heidi,2024-05-18 07:08:57
+515,2024-02-11,Vulnerability Exploit,Medium,Closed,Vulnerability Exploit incident with medium severity; status currently closed.,mallory,2024-02-11 19:23:30
+516,2025-11-12,Password Spray,Critical,Investigating,Password Spray incident with critical severity; status currently investigating.,oscar,2025-11-12 12:01:27
+517,2024-07-20,Unauthorized Access,Critical,Investigating,Unauthorized Access incident with critical severity; status currently investigating.,eve,2024-07-20 20:38:22
+518,2024-06-22,Password Spray,Critical,Investigating,Password Spray incident with critical severity; status currently investigating.,heidi,2024-06-22 20:16:04
+519,2024-04-18,Ransomware,High,Closed,Ransomware incident with high severity; status currently closed.,oscar,2024-04-18 20:11:41
+520,2025-06-17,Phishing,High,Closed,Phishing incident with high severity; status currently closed.,mallory,2025-06-17 23:35:54
+521,2024-12-03,Vulnerability Exploit,Low,Monitoring,Vulnerability Exploit incident with low severity; status currently monitoring.,heidi,2024-12-03 19:25:52
+522,2024-11-22,Brute Force,High,Mitigated,Brute Force incident with high severity; status currently mitigated.,charlie,2024-11-22 12:35:05
+523,2024-07-20,Ransomware,Medium,Investigating,Ransomware incident with medium severity; status currently investigating.,ivan,2024-07-20 14:01:31
+524,2024-04-28,Brute Force,High,Open,Brute Force incident with high severity; status currently open.,ivan,2024-04-28 07:42:51
+525,2024-03-20,Data Breach,High,Investigating,Data Breach incident with high severity; status currently investigating.,charlie,2024-03-20 22:07:47
+526,2025-03-06,Data Breach,High,Mitigated,Data Breach incident with high severity; status currently mitigated.,mallory,2025-03-06 05:31:47
+527,2024-10-11,DDoS,Medium,Mitigated,DDoS incident with medium severity; status currently mitigated.,grace,2024-10-11 12:19:44
+528,2025-07-12,Ransomware,Medium,Closed,Ransomware incident with medium severity; status currently closed.,eve,2025-07-12 13:35:40
+529,2025-10-05,DDoS,Medium,Open,DDoS incident with medium severity; status currently open.,bob,2025-10-05 14:55:02
+530,2025-06-13,Data Breach,Low,Closed,Data Breach incident with low severity; status currently closed.,ivan,2025-06-13 13:30:27
+531,2024-10-09,Vulnerability Exploit,High,Closed,Vulnerability Exploit incident with high severity; status currently closed.,judy,2024-10-09 11:35:07
+532,2025-10-30,Brute Force,High,Open,Brute Force incident with high severity; status currently open.,diana,2025-10-30 16:53:24
+533,2025-06-30,Ransomware,Critical,Closed,Ransomware incident with critical severity; status currently closed.,bob,2025-06-30 07:56:51
+534,2024-04-26,Brute Force,High,Closed,Brute Force incident with high severity; status currently closed.,heidi,2024-04-26 13:41:34
+535,2025-04-06,Insider Threat,High,Closed,Insider Threat incident with high severity; status currently closed.,heidi,2025-04-06 14:44:40
+536,2025-12-29,Password Spray,Medium,Open,Password Spray incident with medium severity; status currently open.,eve,2025-12-29 23:17:54
+537,2024-12-20,Brute Force,High,Closed,Brute Force incident with high severity; status currently closed.,heidi,2024-12-20 01:09:07
+538,2024-02-06,DDoS,Low,Mitigated,DDoS incident with low severity; status currently mitigated.,bob,2024-02-06 05:08:14
+539,2024-11-11,DDoS,Critical,Open,DDoS incident with critical severity; status currently open.,grace,2024-11-11 17:38:11
+540,2025-06-19,Data Breach,Critical,Monitoring,Data Breach incident with critical severity; status currently monitoring.,frank,2025-06-19 08:00:05
+541,2025-01-09,Vulnerability Exploit,Medium,Monitoring,Vulnerability Exploit incident with medium severity; status currently monitoring.,charlie,2025-01-09 18:40:26
+542,2024-12-15,Ransomware,Medium,Investigating,Ransomware incident with medium severity; status currently investigating.,grace,2024-12-15 06:25:30
+543,2024-08-18,Malware,Medium,Mitigated,Malware incident with medium severity; status currently mitigated.,grace,2024-08-18 07:39:41
+544,2025-12-10,DDoS,High,Closed,DDoS incident with high severity; status currently closed.,frank,2025-12-10 16:21:07
+545,2025-02-28,Insider Threat,High,Closed,Insider Threat incident with high severity; status currently closed.,judy,2025-02-28 17:04:34
+546,2024-04-21,Brute Force,Low,Open,Brute Force incident with low severity; status currently open.,eve,2024-04-21 03:58:53
+547,2025-08-21,Insider Threat,Medium,Investigating,Insider Threat incident with medium severity; status currently investigating.,diana,2025-08-21 21:42:50
+548,2025-06-24,Malware,Low,Mitigated,Malware incident with low severity; status currently mitigated.,heidi,2025-06-24 10:15:22
+549,2025-03-26,DDoS,Low,Closed,DDoS incident with low severity; status currently closed.,diana,2025-03-26 04:30:39
+550,2025-03-28,Unauthorized Access,Low,Mitigated,Unauthorized Access incident with low severity; status currently mitigated.,eve,2025-03-28 23:33:31
+551,2025-04-03,Malware,High,Mitigated,Malware incident with high severity; status currently mitigated.,heidi,2025-04-03 09:32:39
+552,2025-01-07,Unauthorized Access,Medium,Investigating,Unauthorized Access incident with medium severity; status currently investigating.,oscar,2025-01-07 23:48:46
+553,2025-05-11,Phishing,Medium,Investigating,Phishing incident with medium severity; status currently investigating.,diana,2025-05-11 17:13:07
+554,2024-09-05,Unauthorized Access,Low,Open,Unauthorized Access incident with low severity; status currently open.,grace,2024-09-05 14:29:29
+555,2025-06-27,Vulnerability Exploit,High,Investigating,Vulnerability Exploit incident with high severity; status currently investigating.,frank,2025-06-27 12:32:08
+556,2025-10-30,Malware,Medium,Open,Malware incident with medium severity; status currently open.,frank,2025-10-30 14:30:49
+557,2024-05-17,Phishing,Low,Closed,Phishing incident with low severity; status currently closed.,ivan,2024-05-17 17:20:46
+558,2025-12-26,Unauthorized Access,Medium,Mitigated,Unauthorized Access incident with medium severity; status currently mitigated.,ivan,2025-12-26 20:19:43
+559,2024-06-27,Phishing,Medium,Closed,Phishing incident with medium severity; status currently closed.,judy,2024-06-27 07:06:43
+560,2024-02-06,Brute Force,Medium,Closed,Brute Force incident with medium severity; status currently closed.,grace,2024-02-06 18:12:44
+561,2025-11-11,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,eve,2025-11-11 11:07:28
+562,2024-02-24,Malware,Critical,Investigating,Malware incident with critical severity; status currently investigating.,mallory,2024-02-24 16:26:43
+563,2024-09-14,Malware,Low,Closed,Malware incident with low severity; status currently closed.,bob,2024-09-14 19:15:04
+564,2024-06-06,Ransomware,Medium,Open,Ransomware incident with medium severity; status currently open.,heidi,2024-06-06 03:47:41
+565,2025-07-23,Vulnerability Exploit,Medium,Open,Vulnerability Exploit incident with medium severity; status currently open.,frank,2025-07-23 13:00:32
+566,2025-05-23,Vulnerability Exploit,High,Open,Vulnerability Exploit incident with high severity; status currently open.,oscar,2025-05-23 09:15:31
+567,2025-10-12,Unauthorized Access,High,Open,Unauthorized Access incident with high severity; status currently open.,frank,2025-10-12 17:01:43
+568,2025-04-25,Unauthorized Access,Medium,Mitigated,Unauthorized Access incident with medium severity; status currently mitigated.,heidi,2025-04-25 11:17:23
+569,2025-02-21,Vulnerability Exploit,Critical,Closed,Vulnerability Exploit incident with critical severity; status currently closed.,judy,2025-02-21 10:32:22
+570,2025-11-24,Password Spray,High,Mitigated,Password Spray incident with high severity; status currently mitigated.,ivan,2025-11-24 09:30:19
+571,2025-03-31,Vulnerability Exploit,Low,Investigating,Vulnerability Exploit incident with low severity; status currently investigating.,frank,2025-03-31 08:40:05
+572,2025-03-06,Brute Force,Medium,Mitigated,Brute Force incident with medium severity; status currently mitigated.,diana,2025-03-06 06:45:30
+573,2024-07-26,Data Breach,High,Monitoring,Data Breach incident with high severity; status currently monitoring.,bob,2024-07-26 11:12:34
+574,2024-12-16,Brute Force,Medium,Closed,Brute Force incident with medium severity; status currently closed.,charlie,2024-12-16 12:57:33
+575,2025-09-25,Ransomware,Medium,Closed,Ransomware incident with medium severity; status currently closed.,frank,2025-09-25 15:18:12
+576,2024-06-08,DDoS,Critical,Investigating,DDoS incident with critical severity; status currently investigating.,frank,2024-06-08 03:32:45
+577,2025-01-19,Password Spray,Low,Closed,Password Spray incident with low severity; status currently closed.,diana,2025-01-19 02:48:27
+578,2024-04-28,Unauthorized Access,Low,Closed,Unauthorized Access incident with low severity; status currently closed.,mallory,2024-04-28 21:20:28
+579,2024-03-14,DDoS,Medium,Closed,DDoS incident with medium severity; status currently closed.,frank,2024-03-14 18:02:00
+580,2025-02-01,Brute Force,Critical,Mitigated,Brute Force incident with critical severity; status currently mitigated.,charlie,2025-02-01 11:26:53
+581,2025-06-07,Malware,Low,Investigating,Malware incident with low severity; status currently investigating.,ivan,2025-06-07 13:24:01
+582,2025-04-02,Data Breach,Critical,Mitigated,Data Breach incident with critical severity; status currently mitigated.,grace,2025-04-02 11:53:55
+583,2024-11-20,Ransomware,Medium,Mitigated,Ransomware incident with medium severity; status currently mitigated.,heidi,2024-11-20 05:03:10
+584,2025-06-27,Ransomware,Low,Investigating,Ransomware incident with low severity; status currently investigating.,grace,2025-06-27 15:23:05
+585,2025-11-28,Malware,Low,Closed,Malware incident with low severity; status currently closed.,alice,2025-11-28 16:19:01
+586,2025-01-02,Phishing,Low,Open,Phishing incident with low severity; status currently open.,oscar,2025-01-02 23:07:02
+587,2025-04-12,DDoS,Medium,Investigating,DDoS incident with medium severity; status currently investigating.,bob,2025-04-12 12:21:54
+588,2024-03-02,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,alice,2024-03-02 01:02:46
+589,2024-03-10,Malware,Critical,Investigating,Malware incident with critical severity; status currently investigating.,charlie,2024-03-10 15:53:32
+590,2025-08-21,Ransomware,Medium,Investigating,Ransomware incident with medium severity; status currently investigating.,alice,2025-08-21 21:55:53
+591,2025-09-30,Brute Force,High,Investigating,Brute Force incident with high severity; status currently investigating.,heidi,2025-09-30 20:19:01
+592,2025-01-27,Data Breach,Critical,Mitigated,Data Breach incident with critical severity; status currently mitigated.,grace,2025-01-27 14:33:08
+593,2025-01-02,Password Spray,Low,Investigating,Password Spray incident with low severity; status currently investigating.,frank,2025-01-02 23:25:45
+594,2025-05-04,Ransomware,Medium,Investigating,Ransomware incident with medium severity; status currently investigating.,diana,2025-05-04 21:47:23
+595,2024-12-20,Malware,High,Closed,Malware incident with high severity; status currently closed.,ivan,2024-12-20 13:37:53
+596,2024-04-07,DDoS,Medium,Mitigated,DDoS incident with medium severity; status currently mitigated.,ivan,2024-04-07 02:28:16
+597,2025-07-22,Brute Force,Critical,Investigating,Brute Force incident with critical severity; status currently investigating.,frank,2025-07-22 20:31:49
+598,2024-03-24,Unauthorized Access,Low,Closed,Unauthorized Access incident with low severity; status currently closed.,oscar,2024-03-24 15:57:00
+599,2025-03-31,Brute Force,Medium,Closed,Brute Force incident with medium severity; status currently closed.,eve,2025-03-31 19:28:30
+600,2024-07-09,DDoS,Medium,Mitigated,DDoS incident with medium severity; status currently mitigated.,mallory,2024-07-09 13:06:49
+601,2025-12-20,DDoS,Medium,Closed,DDoS incident with medium severity; status currently closed.,alice,2025-12-20 01:47:13
+602,2025-11-10,Password Spray,Medium,Mitigated,Password Spray incident with medium severity; status currently mitigated.,heidi,2025-11-10 16:20:24
+603,2025-06-06,Brute Force,High,Investigating,Brute Force incident with high severity; status currently investigating.,mallory,2025-06-06 23:37:08
+604,2025-01-03,Insider Threat,Medium,Open,Insider Threat incident with medium severity; status currently open.,eve,2025-01-03 04:23:07
+605,2024-11-09,Phishing,Medium,Open,Phishing incident with medium severity; status currently open.,grace,2024-11-09 10:03:35
+606,2025-03-05,Insider Threat,High,Investigating,Insider Threat incident with high severity; status currently investigating.,bob,2025-03-05 03:46:07
+607,2025-08-26,Malware,Low,Investigating,Malware incident with low severity; status currently investigating.,alice,2025-08-26 20:30:02
+608,2025-04-18,Vulnerability Exploit,High,Closed,Vulnerability Exploit incident with high severity; status currently closed.,heidi,2025-04-18 18:07:10
+609,2025-05-27,Unauthorized Access,Medium,Mitigated,Unauthorized Access incident with medium severity; status currently mitigated.,eve,2025-05-27 19:20:34
+610,2025-10-08,Phishing,Low,Investigating,Phishing incident with low severity; status currently investigating.,charlie,2025-10-08 17:30:32
+611,2025-09-18,DDoS,Critical,Closed,DDoS incident with critical severity; status currently closed.,eve,2025-09-18 02:39:34
+612,2025-01-22,DDoS,Medium,Investigating,DDoS incident with medium severity; status currently investigating.,diana,2025-01-22 21:29:52
+613,2024-09-07,Insider Threat,High,Mitigated,Insider Threat incident with high severity; status currently mitigated.,frank,2024-09-07 23:07:59
+614,2025-10-18,Insider Threat,Medium,Investigating,Insider Threat incident with medium severity; status currently investigating.,ivan,2025-10-18 10:09:14
+615,2024-01-22,Vulnerability Exploit,High,Closed,Vulnerability Exploit incident with high severity; status currently closed.,diana,2024-01-22 02:06:25
+616,2025-02-25,Vulnerability Exploit,High,Closed,Vulnerability Exploit incident with high severity; status currently closed.,grace,2025-02-25 20:44:23
+617,2024-02-02,Insider Threat,High,Closed,Insider Threat incident with high severity; status currently closed.,charlie,2024-02-02 14:59:40
+618,2025-02-09,Malware,High,Mitigated,Malware incident with high severity; status currently mitigated.,judy,2025-02-09 05:21:19
+619,2024-04-27,Vulnerability Exploit,High,Monitoring,Vulnerability Exploit incident with high severity; status currently monitoring.,frank,2024-04-27 17:56:50
+620,2024-12-02,Ransomware,Low,Open,Ransomware incident with low severity; status currently open.,oscar,2024-12-02 01:00:37
+621,2025-12-05,Brute Force,Critical,Monitoring,Brute Force incident with critical severity; status currently monitoring.,charlie,2025-12-05 18:33:05
+622,2025-01-12,Brute Force,High,Open,Brute Force incident with high severity; status currently open.,mallory,2025-01-12 13:11:03
+623,2025-10-23,Malware,Medium,Investigating,Malware incident with medium severity; status currently investigating.,alice,2025-10-23 18:08:57
+624,2025-01-06,Data Breach,Medium,Mitigated,Data Breach incident with medium severity; status currently mitigated.,charlie,2025-01-06 01:43:31
+625,2025-06-16,DDoS,High,Closed,DDoS incident with high severity; status currently closed.,judy,2025-06-16 07:21:50
+626,2024-05-31,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,oscar,2024-05-31 21:29:41
+627,2025-04-16,Ransomware,High,Closed,Ransomware incident with high severity; status currently closed.,eve,2025-04-16 04:53:42
+628,2024-12-26,Vulnerability Exploit,High,Investigating,Vulnerability Exploit incident with high severity; status currently investigating.,heidi,2024-12-26 15:24:03
+629,2024-12-29,Data Breach,Critical,Mitigated,Data Breach incident with critical severity; status currently mitigated.,eve,2024-12-29 00:22:00
+630,2024-05-03,Vulnerability Exploit,High,Investigating,Vulnerability Exploit incident with high severity; status currently investigating.,charlie,2024-05-03 00:34:51
+631,2025-03-15,Unauthorized Access,High,Investigating,Unauthorized Access incident with high severity; status currently investigating.,oscar,2025-03-15 18:33:21
+632,2025-04-09,DDoS,Low,Closed,DDoS incident with low severity; status currently closed.,heidi,2025-04-09 17:31:05
+633,2024-02-03,Malware,Medium,Monitoring,Malware incident with medium severity; status currently monitoring.,charlie,2024-02-03 18:21:30
+634,2024-12-14,Unauthorized Access,High,Closed,Unauthorized Access incident with high severity; status currently closed.,oscar,2024-12-14 12:22:52
+635,2024-08-09,Unauthorized Access,High,Mitigated,Unauthorized Access incident with high severity; status currently mitigated.,grace,2024-08-09 09:17:30
+636,2024-01-18,DDoS,Critical,Closed,DDoS incident with critical severity; status currently closed.,heidi,2024-01-18 04:06:04
+637,2024-03-11,Password Spray,Low,Closed,Password Spray incident with low severity; status currently closed.,bob,2024-03-11 22:17:47
+638,2024-11-18,Data Breach,Medium,Closed,Data Breach incident with medium severity; status currently closed.,eve,2024-11-18 21:01:14
+639,2025-12-05,Data Breach,High,Mitigated,Data Breach incident with high severity; status currently mitigated.,eve,2025-12-05 02:42:19
+640,2024-09-11,Brute Force,Medium,Closed,Brute Force incident with medium severity; status currently closed.,heidi,2024-09-11 04:43:32
+641,2025-10-10,DDoS,Low,Mitigated,DDoS incident with low severity; status currently mitigated.,heidi,2025-10-10 13:48:03
+642,2025-09-16,Insider Threat,Critical,Closed,Insider Threat incident with critical severity; status currently closed.,oscar,2025-09-16 13:36:38
+643,2024-08-26,Insider Threat,Medium,Closed,Insider Threat incident with medium severity; status currently closed.,mallory,2024-08-26 01:03:04
+644,2025-04-19,Phishing,Critical,Mitigated,Phishing incident with critical severity; status currently mitigated.,eve,2025-04-19 19:58:42
+645,2024-07-05,Brute Force,High,Mitigated,Brute Force incident with high severity; status currently mitigated.,mallory,2024-07-05 19:10:40
+646,2024-12-17,Password Spray,Critical,Mitigated,Password Spray incident with critical severity; status currently mitigated.,charlie,2024-12-17 08:10:31
+647,2025-10-31,Unauthorized Access,High,Closed,Unauthorized Access incident with high severity; status currently closed.,grace,2025-10-31 08:58:26
+648,2025-05-13,Brute Force,Medium,Investigating,Brute Force incident with medium severity; status currently investigating.,oscar,2025-05-13 17:03:07
+649,2024-01-19,Unauthorized Access,High,Open,Unauthorized Access incident with high severity; status currently open.,alice,2024-01-19 17:40:44
+650,2025-12-08,Brute Force,Medium,Mitigated,Brute Force incident with medium severity; status currently mitigated.,bob,2025-12-08 11:39:28
+651,2024-11-02,Unauthorized Access,Low,Open,Unauthorized Access incident with low severity; status currently open.,heidi,2024-11-02 06:27:36
+652,2025-06-26,Vulnerability Exploit,Low,Open,Vulnerability Exploit incident with low severity; status currently open.,mallory,2025-06-26 23:35:38
+653,2024-06-15,Phishing,High,Investigating,Phishing incident with high severity; status currently investigating.,diana,2024-06-15 07:20:00
+654,2024-06-23,Vulnerability Exploit,High,Investigating,Vulnerability Exploit incident with high severity; status currently investigating.,grace,2024-06-23 21:06:36
+655,2025-07-16,Unauthorized Access,Low,Mitigated,Unauthorized Access incident with low severity; status currently mitigated.,diana,2025-07-16 08:59:52
+656,2024-09-04,Brute Force,Medium,Investigating,Brute Force incident with medium severity; status currently investigating.,diana,2024-09-04 05:25:30
+657,2024-08-08,Phishing,Low,Open,Phishing incident with low severity; status currently open.,alice,2024-08-08 02:00:03
+658,2024-06-26,DDoS,Critical,Closed,DDoS incident with critical severity; status currently closed.,heidi,2024-06-26 22:04:12
+659,2024-12-30,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,judy,2024-12-30 23:31:29
+660,2024-12-22,Brute Force,High,Closed,Brute Force incident with high severity; status currently closed.,bob,2024-12-22 09:58:12
+661,2025-12-22,Phishing,Low,Investigating,Phishing incident with low severity; status currently investigating.,frank,2025-12-22 22:55:09
+662,2024-08-19,Phishing,Low,Mitigated,Phishing incident with low severity; status currently mitigated.,ivan,2024-08-19 16:46:56
+663,2025-08-03,Phishing,High,Open,Phishing incident with high severity; status currently open.,frank,2025-08-03 04:10:29
+664,2024-08-31,Vulnerability Exploit,Medium,Closed,Vulnerability Exploit incident with medium severity; status currently closed.,heidi,2024-08-31 04:48:13
+665,2024-03-14,Password Spray,High,Closed,Password Spray incident with high severity; status currently closed.,eve,2024-03-14 21:02:27
+666,2025-10-23,Ransomware,Medium,Monitoring,Ransomware incident with medium severity; status currently monitoring.,ivan,2025-10-23 21:45:32
+667,2024-09-16,Password Spray,Medium,Open,Password Spray incident with medium severity; status currently open.,alice,2024-09-16 02:10:15
+668,2025-09-14,Malware,Critical,Mitigated,Malware incident with critical severity; status currently mitigated.,frank,2025-09-14 08:34:12
+669,2025-04-01,DDoS,Low,Mitigated,DDoS incident with low severity; status currently mitigated.,frank,2025-04-01 07:32:19
+670,2024-06-20,DDoS,Low,Monitoring,DDoS incident with low severity; status currently monitoring.,diana,2024-06-20 03:13:22
+671,2024-12-26,Phishing,Medium,Open,Phishing incident with medium severity; status currently open.,grace,2024-12-26 09:04:52
+672,2025-12-05,Password Spray,Low,Mitigated,Password Spray incident with low severity; status currently mitigated.,charlie,2025-12-05 02:21:58
+673,2024-02-10,Ransomware,High,Mitigated,Ransomware incident with high severity; status currently mitigated.,alice,2024-02-10 00:00:51
+674,2024-01-24,Ransomware,Medium,Closed,Ransomware incident with medium severity; status currently closed.,grace,2024-01-24 19:32:31
+675,2024-10-08,Unauthorized Access,Medium,Monitoring,Unauthorized Access incident with medium severity; status currently monitoring.,bob,2024-10-08 04:34:45
+676,2024-02-19,Unauthorized Access,Medium,Open,Unauthorized Access incident with medium severity; status currently open.,ivan,2024-02-19 19:51:25
+677,2025-02-28,Phishing,High,Open,Phishing incident with high severity; status currently open.,mallory,2025-02-28 08:24:43
+678,2025-10-30,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,bob,2025-10-30 06:14:14
+679,2024-07-25,Ransomware,Low,Mitigated,Ransomware incident with low severity; status currently mitigated.,charlie,2024-07-25 12:52:58
+680,2024-03-22,Phishing,High,Investigating,Phishing incident with high severity; status currently investigating.,heidi,2024-03-22 14:21:45
+681,2025-09-10,Data Breach,Medium,Investigating,Data Breach incident with medium severity; status currently investigating.,judy,2025-09-10 11:26:43
+682,2024-07-22,Unauthorized Access,High,Open,Unauthorized Access incident with high severity; status currently open.,heidi,2024-07-22 16:54:43
+683,2025-11-14,Brute Force,Medium,Mitigated,Brute Force incident with medium severity; status currently mitigated.,charlie,2025-11-14 13:07:28
+684,2024-04-11,Malware,High,Closed,Malware incident with high severity; status currently closed.,bob,2024-04-11 17:47:40
+685,2025-06-21,Unauthorized Access,Critical,Closed,Unauthorized Access incident with critical severity; status currently closed.,oscar,2025-06-21 20:52:16
+686,2024-03-07,Insider Threat,High,Investigating,Insider Threat incident with high severity; status currently investigating.,bob,2024-03-07 11:11:06
+687,2025-06-17,Unauthorized Access,Medium,Investigating,Unauthorized Access incident with medium severity; status currently investigating.,bob,2025-06-17 11:05:06
+688,2024-05-22,Unauthorized Access,High,Closed,Unauthorized Access incident with high severity; status currently closed.,ivan,2024-05-22 17:39:34
+689,2024-05-06,Phishing,Medium,Mitigated,Phishing incident with medium severity; status currently mitigated.,bob,2024-05-06 22:41:40
+690,2025-05-07,Password Spray,Medium,Mitigated,Password Spray incident with medium severity; status currently mitigated.,alice,2025-05-07 05:39:44
+691,2025-10-10,Vulnerability Exploit,Medium,Open,Vulnerability Exploit incident with medium severity; status currently open.,eve,2025-10-10 21:14:57
+692,2025-12-18,Ransomware,Medium,Closed,Ransomware incident with medium severity; status currently closed.,diana,2025-12-18 09:30:52
+693,2025-05-06,Insider Threat,Low,Mitigated,Insider Threat incident with low severity; status currently mitigated.,bob,2025-05-06 22:40:51
+694,2024-02-15,Brute Force,Medium,Mitigated,Brute Force incident with medium severity; status currently mitigated.,diana,2024-02-15 02:35:48
+695,2024-10-24,Password Spray,Critical,Investigating,Password Spray incident with critical severity; status currently investigating.,heidi,2024-10-24 01:27:14
+696,2024-10-02,Brute Force,Low,Investigating,Brute Force incident with low severity; status currently investigating.,grace,2024-10-02 05:56:44
+697,2024-08-05,Phishing,Medium,Closed,Phishing incident with medium severity; status currently closed.,judy,2024-08-05 20:26:00
+698,2025-02-26,DDoS,Medium,Investigating,DDoS incident with medium severity; status currently investigating.,oscar,2025-02-26 17:13:22
+699,2025-02-04,DDoS,Low,Monitoring,DDoS incident with low severity; status currently monitoring.,heidi,2025-02-04 01:22:15
+700,2024-11-30,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,heidi,2024-11-30 16:57:36
+701,2025-09-22,DDoS,Critical,Mitigated,DDoS incident with critical severity; status currently mitigated.,oscar,2025-09-22 07:55:29
+702,2025-11-09,Ransomware,Low,Mitigated,Ransomware incident with low severity; status currently mitigated.,judy,2025-11-09 07:47:50
+703,2024-09-26,DDoS,High,Mitigated,DDoS incident with high severity; status currently mitigated.,eve,2024-09-26 01:59:20
+704,2025-12-04,Data Breach,High,Closed,Data Breach incident with high severity; status currently closed.,ivan,2025-12-04 09:51:12
+705,2025-08-08,DDoS,Medium,Mitigated,DDoS incident with medium severity; status currently mitigated.,grace,2025-08-08 07:23:39
+706,2024-10-10,Phishing,Critical,Monitoring,Phishing incident with critical severity; status currently monitoring.,ivan,2024-10-10 21:09:02
+707,2025-02-16,Unauthorized Access,Medium,Investigating,Unauthorized Access incident with medium severity; status currently investigating.,heidi,2025-02-16 00:52:04
+708,2024-08-09,Malware,Low,Open,Malware incident with low severity; status currently open.,diana,2024-08-09 22:12:02
+709,2024-06-18,Vulnerability Exploit,High,Monitoring,Vulnerability Exploit incident with high severity; status currently monitoring.,ivan,2024-06-18 13:46:50
+710,2025-05-05,Brute Force,Low,Closed,Brute Force incident with low severity; status currently closed.,ivan,2025-05-05 21:40:27
+711,2025-11-07,Insider Threat,High,Closed,Insider Threat incident with high severity; status currently closed.,charlie,2025-11-07 00:37:23
+712,2024-11-30,Data Breach,Medium,Closed,Data Breach incident with medium severity; status currently closed.,mallory,2024-11-30 00:57:13
+713,2025-04-27,Malware,Medium,Open,Malware incident with medium severity; status currently open.,frank,2025-04-27 01:56:25
+714,2025-09-11,Vulnerability Exploit,High,Closed,Vulnerability Exploit incident with high severity; status currently closed.,eve,2025-09-11 19:18:46
+715,2024-07-03,Unauthorized Access,Low,Investigating,Unauthorized Access incident with low severity; status currently investigating.,judy,2024-07-03 18:37:08
+716,2025-09-27,Insider Threat,Critical,Closed,Insider Threat incident with critical severity; status currently closed.,diana,2025-09-27 10:03:29
+717,2024-09-01,Vulnerability Exploit,Medium,Closed,Vulnerability Exploit incident with medium severity; status currently closed.,alice,2024-09-01 09:17:41
+718,2024-01-12,Unauthorized Access,High,Investigating,Unauthorized Access incident with high severity; status currently investigating.,alice,2024-01-12 01:54:14
+719,2025-01-20,Phishing,Medium,Mitigated,Phishing incident with medium severity; status currently mitigated.,ivan,2025-01-20 21:26:49
+720,2025-02-22,Brute Force,High,Open,Brute Force incident with high severity; status currently open.,frank,2025-02-22 22:21:26
+721,2025-03-10,Data Breach,High,Mitigated,Data Breach incident with high severity; status currently mitigated.,diana,2025-03-10 20:41:53
+722,2024-02-24,Password Spray,Medium,Mitigated,Password Spray incident with medium severity; status currently mitigated.,charlie,2024-02-24 04:33:38
+723,2025-12-18,Malware,High,Monitoring,Malware incident with high severity; status currently monitoring.,eve,2025-12-18 11:19:28
+724,2025-09-12,Malware,Low,Mitigated,Malware incident with low severity; status currently mitigated.,alice,2025-09-12 01:28:05
+725,2024-10-19,Malware,High,Closed,Malware incident with high severity; status currently closed.,judy,2024-10-19 19:34:19
+726,2024-08-03,Unauthorized Access,Critical,Mitigated,Unauthorized Access incident with critical severity; status currently mitigated.,mallory,2024-08-03 12:36:23
+727,2024-11-11,Vulnerability Exploit,Low,Investigating,Vulnerability Exploit incident with low severity; status currently investigating.,mallory,2024-11-11 10:05:24
+728,2025-04-22,Insider Threat,High,Mitigated,Insider Threat incident with high severity; status currently mitigated.,oscar,2025-04-22 15:34:19
+729,2024-01-12,Password Spray,Medium,Mitigated,Password Spray incident with medium severity; status currently mitigated.,alice,2024-01-12 20:30:24
+730,2024-01-26,Insider Threat,Low,Closed,Insider Threat incident with low severity; status currently closed.,heidi,2024-01-26 00:30:12
+731,2025-09-27,Password Spray,Critical,Open,Password Spray incident with critical severity; status currently open.,alice,2025-09-27 14:06:29
+732,2025-06-30,Brute Force,Medium,Mitigated,Brute Force incident with medium severity; status currently mitigated.,eve,2025-06-30 17:58:11
+733,2025-08-20,Malware,Medium,Mitigated,Malware incident with medium severity; status currently mitigated.,eve,2025-08-20 01:34:44
+734,2024-10-10,Ransomware,Medium,Open,Ransomware incident with medium severity; status currently open.,heidi,2024-10-10 03:13:57
+735,2024-02-19,Unauthorized Access,Medium,Open,Unauthorized Access incident with medium severity; status currently open.,mallory,2024-02-19 23:39:19
+736,2024-04-17,Password Spray,High,Closed,Password Spray incident with high severity; status currently closed.,judy,2024-04-17 12:55:46
+737,2024-03-24,Malware,Medium,Closed,Malware incident with medium severity; status currently closed.,charlie,2024-03-24 12:53:35
+738,2025-09-26,Malware,Medium,Investigating,Malware incident with medium severity; status currently investigating.,judy,2025-09-26 21:47:01
+739,2024-05-30,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,alice,2024-05-30 01:09:45
+740,2024-05-02,Insider Threat,Medium,Mitigated,Insider Threat incident with medium severity; status currently mitigated.,judy,2024-05-02 03:47:13
+741,2024-11-19,Vulnerability Exploit,High,Open,Vulnerability Exploit incident with high severity; status currently open.,eve,2024-11-19 13:14:39
+742,2025-07-10,Ransomware,High,Open,Ransomware incident with high severity; status currently open.,alice,2025-07-10 04:17:42
+743,2024-01-14,Unauthorized Access,Medium,Mitigated,Unauthorized Access incident with medium severity; status currently mitigated.,ivan,2024-01-14 10:26:14
+744,2025-01-19,Vulnerability Exploit,High,Mitigated,Vulnerability Exploit incident with high severity; status currently mitigated.,alice,2025-01-19 00:51:33
+745,2024-12-09,Password Spray,High,Mitigated,Password Spray incident with high severity; status currently mitigated.,oscar,2024-12-09 05:49:01
+746,2025-10-09,Vulnerability Exploit,Critical,Closed,Vulnerability Exploit incident with critical severity; status currently closed.,mallory,2025-10-09 22:55:21
+747,2024-07-02,DDoS,Medium,Mitigated,DDoS incident with medium severity; status currently mitigated.,alice,2024-07-02 22:48:38
+748,2025-07-10,Password Spray,Critical,Closed,Password Spray incident with critical severity; status currently closed.,mallory,2025-07-10 07:05:33
+749,2025-05-01,Data Breach,Low,Open,Data Breach incident with low severity; status currently open.,alice,2025-05-01 19:30:14
+750,2025-07-18,DDoS,Medium,Investigating,DDoS incident with medium severity; status currently investigating.,mallory,2025-07-18 10:17:33
+751,2025-07-08,Phishing,Medium,Closed,Phishing incident with medium severity; status currently closed.,oscar,2025-07-08 22:26:42
+752,2025-04-02,DDoS,High,Mitigated,DDoS incident with high severity; status currently mitigated.,ivan,2025-04-02 03:43:57
+753,2024-07-29,Password Spray,Critical,Investigating,Password Spray incident with critical severity; status currently investigating.,alice,2024-07-29 10:50:47
+754,2025-06-22,DDoS,Low,Mitigated,DDoS incident with low severity; status currently mitigated.,oscar,2025-06-22 18:10:08
+755,2024-08-15,Ransomware,High,Mitigated,Ransomware incident with high severity; status currently mitigated.,eve,2024-08-15 03:51:55
+756,2024-08-03,Unauthorized Access,Low,Investigating,Unauthorized Access incident with low severity; status currently investigating.,judy,2024-08-03 21:22:14
+757,2024-11-29,Phishing,Low,Mitigated,Phishing incident with low severity; status currently mitigated.,ivan,2024-11-29 06:23:00
+758,2025-04-26,Brute Force,High,Closed,Brute Force incident with high severity; status currently closed.,oscar,2025-04-26 01:53:14
+759,2025-08-11,Malware,High,Closed,Malware incident with high severity; status currently closed.,grace,2025-08-11 11:12:40
+760,2024-04-07,Vulnerability Exploit,High,Mitigated,Vulnerability Exploit incident with high severity; status currently mitigated.,mallory,2024-04-07 06:18:55
+761,2025-05-16,Malware,Low,Closed,Malware incident with low severity; status currently closed.,grace,2025-05-16 16:56:37
+762,2024-08-29,Data Breach,Medium,Investigating,Data Breach incident with medium severity; status currently investigating.,diana,2024-08-29 00:02:48
+763,2024-01-18,DDoS,Medium,Investigating,DDoS incident with medium severity; status currently investigating.,charlie,2024-01-18 15:28:09
+764,2025-02-02,Phishing,Medium,Investigating,Phishing incident with medium severity; status currently investigating.,frank,2025-02-02 01:41:45
+765,2025-09-25,Brute Force,Medium,Investigating,Brute Force incident with medium severity; status currently investigating.,mallory,2025-09-25 20:15:42
+766,2024-01-18,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,eve,2024-01-18 20:23:01
+767,2024-05-01,Unauthorized Access,Medium,Mitigated,Unauthorized Access incident with medium severity; status currently mitigated.,eve,2024-05-01 18:20:48
+768,2025-01-10,Insider Threat,High,Investigating,Insider Threat incident with high severity; status currently investigating.,grace,2025-01-10 09:17:17
+769,2025-07-14,Malware,Critical,Closed,Malware incident with critical severity; status currently closed.,grace,2025-07-14 20:40:02
+770,2024-02-11,Phishing,Low,Closed,Phishing incident with low severity; status currently closed.,ivan,2024-02-11 21:12:58
+771,2025-07-30,Insider Threat,Low,Investigating,Insider Threat incident with low severity; status currently investigating.,frank,2025-07-30 11:19:14
+772,2025-06-02,DDoS,High,Investigating,DDoS incident with high severity; status currently investigating.,frank,2025-06-02 03:01:50
+773,2025-10-10,Brute Force,Low,Closed,Brute Force incident with low severity; status currently closed.,heidi,2025-10-10 17:10:26
+774,2024-12-23,Phishing,Medium,Open,Phishing incident with medium severity; status currently open.,ivan,2024-12-23 09:08:12
+775,2025-07-13,Insider Threat,Medium,Mitigated,Insider Threat incident with medium severity; status currently mitigated.,heidi,2025-07-13 01:06:17
+776,2025-07-19,Vulnerability Exploit,High,Closed,Vulnerability Exploit incident with high severity; status currently closed.,diana,2025-07-19 13:42:30
+777,2024-05-30,Phishing,Critical,Investigating,Phishing incident with critical severity; status currently investigating.,ivan,2024-05-30 11:17:17
+778,2024-04-11,Insider Threat,High,Mitigated,Insider Threat incident with high severity; status currently mitigated.,oscar,2024-04-11 10:44:46
+779,2024-05-04,DDoS,Medium,Closed,DDoS incident with medium severity; status currently closed.,diana,2024-05-04 22:58:33
+780,2024-09-27,Password Spray,High,Open,Password Spray incident with high severity; status currently open.,heidi,2024-09-27 17:28:46
+781,2024-09-24,Brute Force,High,Investigating,Brute Force incident with high severity; status currently investigating.,alice,2024-09-24 19:38:03
+782,2024-03-29,Phishing,Low,Mitigated,Phishing incident with low severity; status currently mitigated.,charlie,2024-03-29 15:57:45
+783,2024-07-22,Insider Threat,Medium,Open,Insider Threat incident with medium severity; status currently open.,mallory,2024-07-22 15:15:58
+784,2025-05-02,Phishing,High,Investigating,Phishing incident with high severity; status currently investigating.,judy,2025-05-02 00:14:52
+785,2024-05-14,Brute Force,Medium,Monitoring,Brute Force incident with medium severity; status currently monitoring.,bob,2024-05-14 06:21:01
+786,2025-10-02,Malware,Critical,Mitigated,Malware incident with critical severity; status currently mitigated.,ivan,2025-10-02 02:02:47
+787,2024-08-22,Password Spray,High,Mitigated,Password Spray incident with high severity; status currently mitigated.,mallory,2024-08-22 03:35:35
+788,2024-04-24,Ransomware,Medium,Investigating,Ransomware incident with medium severity; status currently investigating.,judy,2024-04-24 20:36:58
+789,2024-02-20,Unauthorized Access,High,Mitigated,Unauthorized Access incident with high severity; status currently mitigated.,charlie,2024-02-20 07:38:53
+790,2024-09-12,Insider Threat,Medium,Mitigated,Insider Threat incident with medium severity; status currently mitigated.,alice,2024-09-12 18:49:26
+791,2024-01-27,Data Breach,Critical,Monitoring,Data Breach incident with critical severity; status currently monitoring.,oscar,2024-01-27 22:12:49
+792,2025-03-20,Brute Force,Medium,Investigating,Brute Force incident with medium severity; status currently investigating.,alice,2025-03-20 11:25:59
+793,2024-07-26,Vulnerability Exploit,High,Closed,Vulnerability Exploit incident with high severity; status currently closed.,grace,2024-07-26 10:11:23
+794,2025-01-20,Malware,Medium,Investigating,Malware incident with medium severity; status currently investigating.,judy,2025-01-20 05:29:15
+795,2025-05-03,Phishing,High,Closed,Phishing incident with high severity; status currently closed.,charlie,2025-05-03 13:08:02
+796,2024-02-10,Ransomware,Medium,Investigating,Ransomware incident with medium severity; status currently investigating.,diana,2024-02-10 14:45:31
+797,2024-01-13,Data Breach,Medium,Investigating,Data Breach incident with medium severity; status currently investigating.,mallory,2024-01-13 09:04:30
+798,2024-01-01,Brute Force,High,Closed,Brute Force incident with high severity; status currently closed.,grace,2024-01-01 13:27:38
+799,2024-03-27,Unauthorized Access,Low,Open,Unauthorized Access incident with low severity; status currently open.,ivan,2024-03-27 03:43:31
+800,2024-05-03,Malware,Low,Closed,Malware incident with low severity; status currently closed.,heidi,2024-05-03 05:01:22
+801,2024-06-06,Password Spray,Critical,Open,Password Spray incident with critical severity; status currently open.,diana,2024-06-06 20:27:05
+802,2025-10-23,Phishing,High,Closed,Phishing incident with high severity; status currently closed.,grace,2025-10-23 09:27:33
+803,2025-10-17,Ransomware,High,Mitigated,Ransomware incident with high severity; status currently mitigated.,ivan,2025-10-17 02:46:33
+804,2025-09-21,Vulnerability Exploit,High,Investigating,Vulnerability Exploit incident with high severity; status currently investigating.,charlie,2025-09-21 23:43:58
+805,2025-10-17,Password Spray,Critical,Monitoring,Password Spray incident with critical severity; status currently monitoring.,bob,2025-10-17 06:56:05
+806,2025-02-03,Malware,Medium,Closed,Malware incident with medium severity; status currently closed.,charlie,2025-02-03 16:19:01
+807,2025-09-20,Malware,Critical,Closed,Malware incident with critical severity; status currently closed.,grace,2025-09-20 20:49:53
+808,2024-06-03,DDoS,Medium,Closed,DDoS incident with medium severity; status currently closed.,alice,2024-06-03 07:16:29
+809,2024-07-15,Data Breach,High,Closed,Data Breach incident with high severity; status currently closed.,bob,2024-07-15 11:02:26
+810,2025-04-04,Unauthorized Access,Critical,Closed,Unauthorized Access incident with critical severity; status currently closed.,charlie,2025-04-04 21:25:25
+811,2025-01-22,Unauthorized Access,Low,Mitigated,Unauthorized Access incident with low severity; status currently mitigated.,alice,2025-01-22 12:54:45
+812,2024-04-28,Phishing,High,Closed,Phishing incident with high severity; status currently closed.,ivan,2024-04-28 03:32:38
+813,2025-05-11,Insider Threat,High,Closed,Insider Threat incident with high severity; status currently closed.,bob,2025-05-11 13:24:04
+814,2025-08-22,Password Spray,Medium,Mitigated,Password Spray incident with medium severity; status currently mitigated.,grace,2025-08-22 04:48:52
+815,2024-05-11,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,oscar,2024-05-11 13:38:25
+816,2025-10-05,Password Spray,Critical,Monitoring,Password Spray incident with critical severity; status currently monitoring.,ivan,2025-10-05 18:34:06
+817,2025-04-15,Data Breach,Low,Closed,Data Breach incident with low severity; status currently closed.,charlie,2025-04-15 16:15:04
+818,2024-07-13,Brute Force,High,Open,Brute Force incident with high severity; status currently open.,oscar,2024-07-13 04:49:10
+819,2024-07-18,Ransomware,Critical,Closed,Ransomware incident with critical severity; status currently closed.,grace,2024-07-18 22:40:57
+820,2024-01-24,Password Spray,High,Closed,Password Spray incident with high severity; status currently closed.,diana,2024-01-24 20:05:36
+821,2025-04-23,Vulnerability Exploit,Critical,Closed,Vulnerability Exploit incident with critical severity; status currently closed.,frank,2025-04-23 09:30:12
+822,2025-12-30,Unauthorized Access,Medium,Mitigated,Unauthorized Access incident with medium severity; status currently mitigated.,judy,2025-12-30 00:23:47
+823,2024-07-24,DDoS,Medium,Open,DDoS incident with medium severity; status currently open.,judy,2024-07-24 03:48:36
+824,2025-08-01,Password Spray,High,Open,Password Spray incident with high severity; status currently open.,grace,2025-08-01 01:06:24
+825,2024-09-22,Data Breach,Medium,Investigating,Data Breach incident with medium severity; status currently investigating.,diana,2024-09-22 23:36:53
+826,2024-07-24,Data Breach,Medium,Monitoring,Data Breach incident with medium severity; status currently monitoring.,bob,2024-07-24 23:33:00
+827,2024-03-17,DDoS,Medium,Open,DDoS incident with medium severity; status currently open.,alice,2024-03-17 21:03:14
+828,2025-11-21,Vulnerability Exploit,Medium,Closed,Vulnerability Exploit incident with medium severity; status currently closed.,grace,2025-11-21 03:07:47
+829,2024-08-21,Password Spray,Low,Investigating,Password Spray incident with low severity; status currently investigating.,diana,2024-08-21 09:34:35
+830,2024-05-23,Malware,High,Investigating,Malware incident with high severity; status currently investigating.,eve,2024-05-23 21:45:02
+831,2025-09-12,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,frank,2025-09-12 20:37:37
+832,2024-02-20,Ransomware,Medium,Mitigated,Ransomware incident with medium severity; status currently mitigated.,heidi,2024-02-20 03:08:39
+833,2024-02-18,Vulnerability Exploit,High,Open,Vulnerability Exploit incident with high severity; status currently open.,oscar,2024-02-18 03:44:03
+834,2024-09-25,Vulnerability Exploit,Medium,Mitigated,Vulnerability Exploit incident with medium severity; status currently mitigated.,ivan,2024-09-25 14:22:31
+835,2025-03-25,Insider Threat,High,Mitigated,Insider Threat incident with high severity; status currently mitigated.,oscar,2025-03-25 02:06:42
+836,2024-11-30,DDoS,Medium,Mitigated,DDoS incident with medium severity; status currently mitigated.,oscar,2024-11-30 07:46:09
+837,2025-11-02,Phishing,Medium,Closed,Phishing incident with medium severity; status currently closed.,oscar,2025-11-02 06:40:48
+838,2024-09-02,Malware,Medium,Closed,Malware incident with medium severity; status currently closed.,frank,2024-09-02 23:22:17
+839,2025-07-30,Vulnerability Exploit,High,Investigating,Vulnerability Exploit incident with high severity; status currently investigating.,frank,2025-07-30 22:56:00
+840,2024-08-30,Malware,Low,Closed,Malware incident with low severity; status currently closed.,ivan,2024-08-30 06:35:02
+841,2025-04-29,Unauthorized Access,High,Mitigated,Unauthorized Access incident with high severity; status currently mitigated.,charlie,2025-04-29 14:29:39
+842,2025-08-13,Data Breach,Critical,Mitigated,Data Breach incident with critical severity; status currently mitigated.,bob,2025-08-13 17:25:11
+843,2024-08-29,DDoS,High,Closed,DDoS incident with high severity; status currently closed.,judy,2024-08-29 14:08:50
+844,2025-07-30,Vulnerability Exploit,Low,Closed,Vulnerability Exploit incident with low severity; status currently closed.,alice,2025-07-30 21:04:46
+845,2025-09-19,Ransomware,Low,Monitoring,Ransomware incident with low severity; status currently monitoring.,ivan,2025-09-19 20:22:47
+846,2025-03-31,Password Spray,High,Closed,Password Spray incident with high severity; status currently closed.,oscar,2025-03-31 05:26:55
+847,2024-10-16,Ransomware,Medium,Closed,Ransomware incident with medium severity; status currently closed.,heidi,2024-10-16 17:25:01
+848,2025-05-08,Insider Threat,Medium,Mitigated,Insider Threat incident with medium severity; status currently mitigated.,oscar,2025-05-08 01:02:52
+849,2024-10-13,Ransomware,Medium,Investigating,Ransomware incident with medium severity; status currently investigating.,ivan,2024-10-13 05:31:15
+850,2024-10-16,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,alice,2024-10-16 17:44:38
+851,2024-02-29,Unauthorized Access,Low,Closed,Unauthorized Access incident with low severity; status currently closed.,charlie,2024-02-29 05:06:37
+852,2024-09-13,Data Breach,Medium,Monitoring,Data Breach incident with medium severity; status currently monitoring.,heidi,2024-09-13 16:00:54
+853,2024-01-06,Malware,High,Monitoring,Malware incident with high severity; status currently monitoring.,eve,2024-01-06 13:35:58
+854,2024-04-26,Unauthorized Access,Medium,Mitigated,Unauthorized Access incident with medium severity; status currently mitigated.,judy,2024-04-26 01:03:13
+855,2025-01-19,Ransomware,High,Investigating,Ransomware incident with high severity; status currently investigating.,ivan,2025-01-19 02:21:33
+856,2025-06-29,Data Breach,Medium,Mitigated,Data Breach incident with medium severity; status currently mitigated.,diana,2025-06-29 14:47:22
+857,2024-03-04,Malware,Medium,Closed,Malware incident with medium severity; status currently closed.,eve,2024-03-04 03:06:21
+858,2025-02-16,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,judy,2025-02-16 07:45:26
+859,2024-10-18,Ransomware,Low,Investigating,Ransomware incident with low severity; status currently investigating.,alice,2024-10-18 09:21:32
+860,2025-05-16,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,charlie,2025-05-16 05:46:21
+861,2024-04-23,Insider Threat,Medium,Closed,Insider Threat incident with medium severity; status currently closed.,eve,2024-04-23 03:57:47
+862,2025-04-29,Insider Threat,Low,Open,Insider Threat incident with low severity; status currently open.,heidi,2025-04-29 16:40:56
+863,2025-07-29,Phishing,Medium,Mitigated,Phishing incident with medium severity; status currently mitigated.,ivan,2025-07-29 07:21:06
+864,2024-12-27,Password Spray,High,Mitigated,Password Spray incident with high severity; status currently mitigated.,alice,2024-12-27 17:51:05
+865,2024-04-27,DDoS,High,Mitigated,DDoS incident with high severity; status currently mitigated.,ivan,2024-04-27 12:20:21
+866,2025-02-01,Brute Force,High,Investigating,Brute Force incident with high severity; status currently investigating.,frank,2025-02-01 10:36:32
+867,2025-04-11,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,mallory,2025-04-11 17:12:49
+868,2025-03-21,Vulnerability Exploit,Low,Open,Vulnerability Exploit incident with low severity; status currently open.,ivan,2025-03-21 15:27:21
+869,2024-08-23,Insider Threat,Medium,Closed,Insider Threat incident with medium severity; status currently closed.,judy,2024-08-23 03:29:31
+870,2024-10-07,Malware,Low,Closed,Malware incident with low severity; status currently closed.,eve,2024-10-07 18:04:22
+871,2024-06-30,Vulnerability Exploit,Low,Mitigated,Vulnerability Exploit incident with low severity; status currently mitigated.,diana,2024-06-30 14:47:25
+872,2024-04-27,Password Spray,Medium,Mitigated,Password Spray incident with medium severity; status currently mitigated.,frank,2024-04-27 17:01:32
+873,2024-02-16,Malware,Critical,Mitigated,Malware incident with critical severity; status currently mitigated.,eve,2024-02-16 16:28:05
+874,2025-08-26,Vulnerability Exploit,High,Mitigated,Vulnerability Exploit incident with high severity; status currently mitigated.,judy,2025-08-26 07:24:38
+875,2024-05-20,Vulnerability Exploit,Low,Closed,Vulnerability Exploit incident with low severity; status currently closed.,charlie,2024-05-20 14:27:31
+876,2024-07-25,Insider Threat,High,Closed,Insider Threat incident with high severity; status currently closed.,oscar,2024-07-25 20:49:01
+877,2024-07-04,Password Spray,Low,Open,Password Spray incident with low severity; status currently open.,frank,2024-07-04 16:18:29
+878,2025-08-15,DDoS,High,Open,DDoS incident with high severity; status currently open.,mallory,2025-08-15 21:59:46
+879,2025-12-21,Insider Threat,Low,Open,Insider Threat incident with low severity; status currently open.,bob,2025-12-21 15:39:25
+880,2025-04-09,Brute Force,Low,Open,Brute Force incident with low severity; status currently open.,charlie,2025-04-09 16:01:57
+881,2024-07-05,Unauthorized Access,Low,Closed,Unauthorized Access incident with low severity; status currently closed.,bob,2024-07-05 20:05:00
+882,2024-03-13,Unauthorized Access,Critical,Monitoring,Unauthorized Access incident with critical severity; status currently monitoring.,charlie,2024-03-13 07:00:49
+883,2024-02-15,Vulnerability Exploit,Low,Closed,Vulnerability Exploit incident with low severity; status currently closed.,alice,2024-02-15 17:21:21
+884,2025-06-24,DDoS,Medium,Closed,DDoS incident with medium severity; status currently closed.,alice,2025-06-24 06:24:37
+885,2024-07-31,Data Breach,Medium,Open,Data Breach incident with medium severity; status currently open.,grace,2024-07-31 23:56:15
+886,2025-10-13,Ransomware,Medium,Investigating,Ransomware incident with medium severity; status currently investigating.,charlie,2025-10-13 09:06:10
+887,2025-01-27,Phishing,Medium,Mitigated,Phishing incident with medium severity; status currently mitigated.,eve,2025-01-27 08:59:17
+888,2024-06-17,Unauthorized Access,Medium,Open,Unauthorized Access incident with medium severity; status currently open.,heidi,2024-06-17 10:36:21
+889,2025-02-10,Password Spray,Low,Closed,Password Spray incident with low severity; status currently closed.,grace,2025-02-10 23:48:01
+890,2025-03-02,Data Breach,Low,Monitoring,Data Breach incident with low severity; status currently monitoring.,alice,2025-03-02 09:52:06
+891,2025-11-16,Data Breach,Low,Closed,Data Breach incident with low severity; status currently closed.,mallory,2025-11-16 10:46:08
+892,2024-08-18,Ransomware,Medium,Closed,Ransomware incident with medium severity; status currently closed.,ivan,2024-08-18 10:28:27
+893,2025-09-02,Password Spray,High,Mitigated,Password Spray incident with high severity; status currently mitigated.,frank,2025-09-02 06:00:46
+894,2024-09-27,Malware,Critical,Mitigated,Malware incident with critical severity; status currently mitigated.,diana,2024-09-27 01:10:22
+895,2024-10-16,DDoS,Medium,Closed,DDoS incident with medium severity; status currently closed.,heidi,2024-10-16 12:02:34
+896,2025-03-01,DDoS,Medium,Investigating,DDoS incident with medium severity; status currently investigating.,frank,2025-03-01 03:54:08
+897,2024-03-20,Malware,Medium,Closed,Malware incident with medium severity; status currently closed.,ivan,2024-03-20 08:37:02
+898,2025-02-26,DDoS,Medium,Mitigated,DDoS incident with medium severity; status currently mitigated.,oscar,2025-02-26 00:51:50
+899,2025-04-21,Password Spray,Low,Closed,Password Spray incident with low severity; status currently closed.,ivan,2025-04-21 16:36:08
+900,2024-05-13,Data Breach,Medium,Closed,Data Breach incident with medium severity; status currently closed.,frank,2024-05-13 10:03:38
+901,2025-07-13,Insider Threat,Medium,Closed,Insider Threat incident with medium severity; status currently closed.,grace,2025-07-13 09:02:11
+902,2024-09-02,Malware,Medium,Investigating,Malware incident with medium severity; status currently investigating.,judy,2024-09-02 18:05:18
+903,2024-03-19,Brute Force,High,Closed,Brute Force incident with high severity; status currently closed.,judy,2024-03-19 10:27:36
+904,2025-12-26,Data Breach,Critical,Open,Data Breach incident with critical severity; status currently open.,judy,2025-12-26 18:18:00
+905,2025-06-03,Insider Threat,Medium,Closed,Insider Threat incident with medium severity; status currently closed.,diana,2025-06-03 08:05:23
+906,2024-11-09,Unauthorized Access,High,Closed,Unauthorized Access incident with high severity; status currently closed.,mallory,2024-11-09 10:46:08
+907,2024-12-30,Ransomware,High,Monitoring,Ransomware incident with high severity; status currently monitoring.,ivan,2024-12-30 14:41:35
+908,2025-05-22,Ransomware,Low,Investigating,Ransomware incident with low severity; status currently investigating.,mallory,2025-05-22 05:12:39
+909,2025-06-02,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,mallory,2025-06-02 01:14:32
+910,2024-10-14,Phishing,Low,Mitigated,Phishing incident with low severity; status currently mitigated.,charlie,2024-10-14 18:26:11
+911,2025-12-18,Password Spray,Medium,Investigating,Password Spray incident with medium severity; status currently investigating.,mallory,2025-12-18 15:52:37
+912,2025-05-13,Brute Force,Critical,Closed,Brute Force incident with critical severity; status currently closed.,bob,2025-05-13 17:05:21
+913,2025-12-21,Vulnerability Exploit,Medium,Closed,Vulnerability Exploit incident with medium severity; status currently closed.,mallory,2025-12-21 02:18:52
+914,2025-10-22,Phishing,High,Investigating,Phishing incident with high severity; status currently investigating.,grace,2025-10-22 20:54:58
+915,2024-12-05,Unauthorized Access,High,Closed,Unauthorized Access incident with high severity; status currently closed.,ivan,2024-12-05 05:59:07
+916,2025-02-01,Unauthorized Access,Low,Closed,Unauthorized Access incident with low severity; status currently closed.,frank,2025-02-01 23:54:43
+917,2024-07-10,DDoS,Medium,Open,DDoS incident with medium severity; status currently open.,eve,2024-07-10 05:10:49
+918,2024-10-02,Ransomware,Medium,Open,Ransomware incident with medium severity; status currently open.,diana,2024-10-02 11:14:25
+919,2024-05-26,Insider Threat,Low,Open,Insider Threat incident with low severity; status currently open.,ivan,2024-05-26 12:29:23
+920,2025-04-13,Unauthorized Access,High,Closed,Unauthorized Access incident with high severity; status currently closed.,oscar,2025-04-13 09:47:47
+921,2025-10-18,Ransomware,High,Closed,Ransomware incident with high severity; status currently closed.,judy,2025-10-18 07:27:53
+922,2025-12-31,Malware,High,Closed,Malware incident with high severity; status currently closed.,charlie,2025-12-31 04:42:55
+923,2024-04-10,Unauthorized Access,Low,Open,Unauthorized Access incident with low severity; status currently open.,charlie,2024-04-10 12:07:45
+924,2025-08-13,Ransomware,Critical,Mitigated,Ransomware incident with critical severity; status currently mitigated.,frank,2025-08-13 09:21:26
+925,2025-11-20,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,frank,2025-11-20 02:17:29
+926,2025-08-07,Ransomware,Critical,Mitigated,Ransomware incident with critical severity; status currently mitigated.,oscar,2025-08-07 08:57:59
+927,2024-01-07,Phishing,Medium,Mitigated,Phishing incident with medium severity; status currently mitigated.,eve,2024-01-07 10:38:44
+928,2024-08-21,Malware,Medium,Investigating,Malware incident with medium severity; status currently investigating.,diana,2024-08-21 19:57:12
+929,2025-12-05,Password Spray,High,Open,Password Spray incident with high severity; status currently open.,eve,2025-12-05 22:48:16
+930,2024-09-14,Malware,Medium,Investigating,Malware incident with medium severity; status currently investigating.,charlie,2024-09-14 15:12:22
+931,2025-03-04,Unauthorized Access,High,Closed,Unauthorized Access incident with high severity; status currently closed.,diana,2025-03-04 00:38:52
+932,2024-01-14,Brute Force,Low,Mitigated,Brute Force incident with low severity; status currently mitigated.,grace,2024-01-14 21:55:45
+933,2025-04-15,Malware,Critical,Mitigated,Malware incident with critical severity; status currently mitigated.,judy,2025-04-15 20:34:08
+934,2025-08-23,Insider Threat,Critical,Closed,Insider Threat incident with critical severity; status currently closed.,eve,2025-08-23 13:52:00
+935,2025-07-21,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,oscar,2025-07-21 19:57:14
+936,2025-01-27,DDoS,Low,Closed,DDoS incident with low severity; status currently closed.,grace,2025-01-27 11:11:02
+937,2025-04-22,Brute Force,High,Closed,Brute Force incident with high severity; status currently closed.,grace,2025-04-22 17:40:21
+938,2024-10-19,Insider Threat,High,Open,Insider Threat incident with high severity; status currently open.,alice,2024-10-19 10:15:21
+939,2025-06-29,Unauthorized Access,Low,Investigating,Unauthorized Access incident with low severity; status currently investigating.,oscar,2025-06-29 18:24:09
+940,2025-05-25,Vulnerability Exploit,High,Mitigated,Vulnerability Exploit incident with high severity; status currently mitigated.,eve,2025-05-25 05:18:41
+941,2025-07-19,Brute Force,Low,Closed,Brute Force incident with low severity; status currently closed.,frank,2025-07-19 19:55:57
+942,2024-04-08,Unauthorized Access,High,Investigating,Unauthorized Access incident with high severity; status currently investigating.,eve,2024-04-08 08:55:33
+943,2024-04-15,Ransomware,High,Investigating,Ransomware incident with high severity; status currently investigating.,eve,2024-04-15 05:47:52
+944,2025-04-21,DDoS,High,Open,DDoS incident with high severity; status currently open.,eve,2025-04-21 13:30:05
+945,2024-10-16,Unauthorized Access,Medium,Open,Unauthorized Access incident with medium severity; status currently open.,eve,2024-10-16 04:26:03
+946,2024-04-06,Unauthorized Access,Medium,Closed,Unauthorized Access incident with medium severity; status currently closed.,heidi,2024-04-06 03:12:34
+947,2025-04-09,Malware,Low,Mitigated,Malware incident with low severity; status currently mitigated.,eve,2025-04-09 05:36:55
+948,2025-01-03,Phishing,High,Closed,Phishing incident with high severity; status currently closed.,diana,2025-01-03 21:09:07
+949,2024-09-18,Data Breach,High,Closed,Data Breach incident with high severity; status currently closed.,judy,2024-09-18 17:28:49
+950,2024-04-27,Insider Threat,High,Closed,Insider Threat incident with high severity; status currently closed.,diana,2024-04-27 00:58:55
+951,2024-09-23,Phishing,High,Closed,Phishing incident with high severity; status currently closed.,charlie,2024-09-23 12:05:34
+952,2025-04-21,Data Breach,Low,Mitigated,Data Breach incident with low severity; status currently mitigated.,grace,2025-04-21 17:03:40
+953,2024-06-26,DDoS,High,Mitigated,DDoS incident with high severity; status currently mitigated.,grace,2024-06-26 03:28:55
+954,2025-07-24,Vulnerability Exploit,Medium,Mitigated,Vulnerability Exploit incident with medium severity; status currently mitigated.,diana,2025-07-24 11:33:49
+955,2025-08-26,Ransomware,Critical,Investigating,Ransomware incident with critical severity; status currently investigating.,ivan,2025-08-26 18:08:42
+956,2025-12-29,Password Spray,Low,Open,Password Spray incident with low severity; status currently open.,oscar,2025-12-29 23:51:35
+957,2024-06-02,Vulnerability Exploit,Medium,Closed,Vulnerability Exploit incident with medium severity; status currently closed.,grace,2024-06-02 14:54:28
+958,2024-02-18,Unauthorized Access,Critical,Open,Unauthorized Access incident with critical severity; status currently open.,bob,2024-02-18 11:41:35
+959,2024-08-19,Ransomware,Critical,Mitigated,Ransomware incident with critical severity; status currently mitigated.,ivan,2024-08-19 09:23:27
+960,2024-01-13,Unauthorized Access,High,Closed,Unauthorized Access incident with high severity; status currently closed.,judy,2024-01-13 08:29:29
+961,2024-09-14,Phishing,High,Mitigated,Phishing incident with high severity; status currently mitigated.,charlie,2024-09-14 04:23:18
+962,2024-12-18,Unauthorized Access,Medium,Closed,Unauthorized Access incident with medium severity; status currently closed.,oscar,2024-12-18 22:23:56
+963,2025-09-08,Data Breach,Critical,Closed,Data Breach incident with critical severity; status currently closed.,mallory,2025-09-08 17:44:28
+964,2024-01-27,Malware,Medium,Open,Malware incident with medium severity; status currently open.,grace,2024-01-27 16:04:01
+965,2025-11-05,Data Breach,High,Open,Data Breach incident with high severity; status currently open.,charlie,2025-11-05 03:46:46
+966,2024-07-09,Vulnerability Exploit,Critical,Closed,Vulnerability Exploit incident with critical severity; status currently closed.,oscar,2024-07-09 08:48:58
+967,2024-10-12,Vulnerability Exploit,Medium,Investigating,Vulnerability Exploit incident with medium severity; status currently investigating.,mallory,2024-10-12 05:54:29
+968,2024-09-24,Insider Threat,Critical,Mitigated,Insider Threat incident with critical severity; status currently mitigated.,eve,2024-09-24 10:25:25
+969,2024-02-16,Data Breach,High,Mitigated,Data Breach incident with high severity; status currently mitigated.,eve,2024-02-16 13:02:02
+970,2025-08-10,Password Spray,Low,Closed,Password Spray incident with low severity; status currently closed.,alice,2025-08-10 07:59:34
+971,2025-06-24,DDoS,Medium,Mitigated,DDoS incident with medium severity; status currently mitigated.,frank,2025-06-24 17:19:44
+972,2024-05-22,Malware,High,Closed,Malware incident with high severity; status currently closed.,heidi,2024-05-22 06:46:40
+973,2025-11-11,Brute Force,High,Monitoring,Brute Force incident with high severity; status currently monitoring.,ivan,2025-11-11 03:15:14
+974,2025-11-07,Phishing,Low,Investigating,Phishing incident with low severity; status currently investigating.,eve,2025-11-07 01:12:23
+975,2025-06-10,Data Breach,Medium,Closed,Data Breach incident with medium severity; status currently closed.,diana,2025-06-10 05:25:46
+976,2025-05-25,Password Spray,High,Closed,Password Spray incident with high severity; status currently closed.,alice,2025-05-25 15:24:35
+977,2025-09-09,Data Breach,High,Open,Data Breach incident with high severity; status currently open.,oscar,2025-09-09 06:43:32
+978,2025-09-08,DDoS,Critical,Open,DDoS incident with critical severity; status currently open.,ivan,2025-09-08 02:24:24
+979,2024-08-07,Malware,Medium,Investigating,Malware incident with medium severity; status currently investigating.,mallory,2024-08-07 01:35:25
+980,2024-04-13,Vulnerability Exploit,High,Closed,Vulnerability Exploit incident with high severity; status currently closed.,eve,2024-04-13 09:42:11
+981,2025-08-19,Password Spray,High,Mitigated,Password Spray incident with high severity; status currently mitigated.,judy,2025-08-19 09:51:26
+982,2024-03-06,Malware,Critical,Investigating,Malware incident with critical severity; status currently investigating.,bob,2024-03-06 05:58:43
+983,2024-07-05,Vulnerability Exploit,Critical,Investigating,Vulnerability Exploit incident with critical severity; status currently investigating.,grace,2024-07-05 05:16:02
+984,2024-11-13,Malware,Low,Monitoring,Malware incident with low severity; status currently monitoring.,alice,2024-11-13 03:15:52
+985,2024-04-06,DDoS,Medium,Closed,DDoS incident with medium severity; status currently closed.,heidi,2024-04-06 14:02:33
+986,2025-11-10,Malware,High,Closed,Malware incident with high severity; status currently closed.,eve,2025-11-10 09:46:02
+987,2024-10-01,Vulnerability Exploit,Low,Investigating,Vulnerability Exploit incident with low severity; status currently investigating.,frank,2024-10-01 06:13:58
+988,2024-10-11,Password Spray,Medium,Closed,Password Spray incident with medium severity; status currently closed.,charlie,2024-10-11 23:31:05
+989,2025-07-19,Password Spray,Low,Mitigated,Password Spray incident with low severity; status currently mitigated.,heidi,2025-07-19 11:51:20
+990,2025-08-10,Ransomware,Low,Open,Ransomware incident with low severity; status currently open.,heidi,2025-08-10 13:37:09
+991,2025-05-22,Password Spray,High,Open,Password Spray incident with high severity; status currently open.,bob,2025-05-22 17:04:29
+992,2025-02-16,Ransomware,Medium,Mitigated,Ransomware incident with medium severity; status currently mitigated.,eve,2025-02-16 17:13:35
+993,2024-09-17,Insider Threat,Low,Investigating,Insider Threat incident with low severity; status currently investigating.,mallory,2024-09-17 10:35:48
+994,2025-04-04,Phishing,High,Closed,Phishing incident with high severity; status currently closed.,heidi,2025-04-04 11:15:12
+995,2024-12-13,Ransomware,High,Mitigated,Ransomware incident with high severity; status currently mitigated.,eve,2024-12-13 13:09:48
+996,2024-05-12,Insider Threat,Medium,Closed,Insider Threat incident with medium severity; status currently closed.,grace,2024-05-12 08:42:01
+997,2025-12-19,Phishing,Medium,Mitigated,Phishing incident with medium severity; status currently mitigated.,judy,2025-12-19 12:19:49
+998,2025-11-30,Insider Threat,High,Closed,Insider Threat incident with high severity; status currently closed.,frank,2025-11-30 15:13:42
+999,2024-08-29,Brute Force,High,Investigating,Brute Force incident with high severity; status currently investigating.,heidi,2024-08-29 05:26:12
+1000,2024-05-28,Password Spray,High,Mitigated,Password Spray incident with high severity; status currently mitigated.,bob,2024-05-28 00:32:38
