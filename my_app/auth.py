@@ -90,3 +90,4 @@ def login_user(username: str, password: str) -> tuple[bool, str]:
                     return False, "Incorrect password."
 
     return False, f"Username '{username}' was not found."
+.
